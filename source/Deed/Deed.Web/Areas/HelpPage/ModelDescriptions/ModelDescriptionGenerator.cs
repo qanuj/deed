@@ -11,6 +11,7 @@ using System.Web.Http.Description;
 using System.Xml.Serialization;
 using Newtonsoft.Json;
 
+
 namespace Deed.Web.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
@@ -227,7 +228,7 @@ namespace Deed.Web.Areas.HelpPage.ModelDescriptions
             JsonIgnoreAttribute jsonIgnore = member.GetCustomAttribute<JsonIgnoreAttribute>();
             XmlIgnoreAttribute xmlIgnore = member.GetCustomAttribute<XmlIgnoreAttribute>();
             IgnoreDataMemberAttribute ignoreDataMember = member.GetCustomAttribute<IgnoreDataMemberAttribute>();
-            NonSerializedAttribute nonSerialized = member.GetCustomAttribute<NonSerializedAttribute>();
+           // NonSerializedAttribute nonSerialized = member.GetCustomAttribute<NonSerializedAttribute>();
             ApiExplorerSettingsAttribute apiExplorerSetting = member.GetCustomAttribute<ApiExplorerSettingsAttribute>();
 
             bool hasMemberAttribute = member.DeclaringType.IsEnum ?
@@ -244,7 +245,7 @@ namespace Deed.Web.Areas.HelpPage.ModelDescriptions
             return jsonIgnore == null &&
                 xmlIgnore == null &&
                 ignoreDataMember == null &&
-                nonSerialized == null &&
+               // nonSerialized == null &&
                 (apiExplorerSetting == null || !apiExplorerSetting.IgnoreApi) &&
                 (!hasDataContractAttribute || hasMemberAttribute);
         }

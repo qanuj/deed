@@ -40,3 +40,23 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+
+.price {
+
+    margin-left: 248px;
+    margin-top: -182px;
+}
+
+.more-details {
+ margin-left: 248px;
+
+}
+
+.property-meta {
+
+    margin-left: 248px;
+}
+.cap {
+    margin-left: 187px;
+
+}
