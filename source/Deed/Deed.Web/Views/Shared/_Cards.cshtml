@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Deed.Data.Objects.Student>
+
+<div>
+    @foreach (var m in Model)
+    {
+        <div>
+            @Html.Partial("_Card", m)
+        </div>  
+        
+        
+    }
+    </div>
+
