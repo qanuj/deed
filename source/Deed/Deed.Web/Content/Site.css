@@ -1,62 +1,86 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿.logo {
+    height: 90px;
+    width: 236px;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.tp-button.green.custom {
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    background: #ec894d;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.header-wrapper {
+    background-color: #252A2B;
 }
 
-/* styles for validation helpers */
-.field-validation-error {
-    color: #b94a48;
+.header-wrapper, #contact-email, #contact-email a, .user-nav a, .social_networks li a {
+    color: #929A9B;
 }
 
-.field-validation-valid {
-    display: none;
+    #contact-email a:hover, .user-nav a:hover {
+        color: #b0b8b9;
+    }
+
+#header-top, .social_networks li a, .user-nav a {
+    border-color: #343A3B;
 }
 
-input.input-validation-error {
-    border: 1px solid #b94a48;
+.main-menu ul li a {
+    color: #afb4b5;
 }
 
-input[type="checkbox"].input-validation-error {
-    border: 0 none;
+.main-menu ul li.current-menu-ancestor > a, .main-menu ul li.current-menu-parent > a, .main-menu ul li.current-menu-item > a, .main-menu ul li.current_page_item > a, .main-menu ul li:hover > a, .main-menu ul li ul, .main-menu ul li ul li ul {
+    background-color: #ec894d;
 }
 
-.validation-summary-errors {
-    color: #b94a48;
+.main-menu ul li.current-menu-ancestor > a, .main-menu ul li.current-menu-parent > a, .main-menu ul li.current-menu-item > a, .main-menu ul li.current_page_item > a, .main-menu ul li:hover > a, .main-menu ul li ul, .main-menu ul li ul li a, .main-menu ul li ul li ul, .main-menu ul li ul li ul li a {
+    color: #ffffff;
 }
 
-.validation-summary-valid {
-    display: none;
+.main-menu ul li ul li:hover > a, .main-menu ul li ul li ul li:hover > a {
+    background-color: #dc7d44;
 }
 
-.price {
 
-    margin-left: 248px;
-    margin-top: -182px;
+
+.contact-number {
+    color: #e7eff7;
 }
 
-.more-details {
- margin-left: 248px;
-
+.contact-number .fa-phone {
+    background-color: #37b3d9;
 }
 
-.property-meta {
-
-    margin-left: 248px;
+.pledge {
+    font-stretch: expanded;
+    font-size: larger;
 }
-.cap {
-    margin-left: 187px;
 
+.sidebar {
+    margin-top: 53px;
+}
+
+.fb {
+    max-width: 270px;
+}
+
+.gallery-4-columns {
+    
+  }
+
+
+.page-edit{
+ margin-bottom: 0px; 
+}
+
+.child-detail, ul > li {
+    list-style-type: none;
+}
+.child-detail > ul > li {
+    border-bottom: 1px solid #f1f1f1;
 }

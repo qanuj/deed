@@ -1,0 +1,97 @@
+﻿@model Deed.Data.Objects.Student
+
+@{
+    ViewBag.Title = "StudentDetails";
+}
+
+@Html.Partial("_pages")
+
+
+
+<div class="container contents lisitng-grid-layout">
+    <div class="row">
+        <div class="span9 main-wrap">
+            <div class="main">
+                <section class="listing-layout">
+                    <h3 class="title-heading">@Model.Name</h3>
+                    <div class="list-container">
+                        <article class="about-agent agent-single clearfix">
+                            <div class="detail">
+                                <figure class="agent-pic">
+                                    <a title="Student">
+                                        <img width="210" height="210" src="@Model.Picture" class="attachment-agent-image wp-post-image" alt="Student">
+                                    </a>
+                                </figure>
+                                @Model.History
+                            </div>
+                            <div class="row">
+                                <ul class="additional-details clearfix child-detail">
+                                    <li>
+                                        <strong>Father's Name: </strong>
+                                        <span>@Model.Father</span>
+                                    </li>
+                                    <li>
+                                        <strong>Mother's Name: </strong>
+                                        <span>@Model.Mother</span>
+                                    </li>
+                                </ul>
+                                <ul class="span9 additional-details clearfix child-detail">
+                                    <li>
+                                        <strong>Date of Birth: </strong>
+                                        <span>@Model.Birthday</span>
+                                    </li>
+                                    <li>
+                                        <strong>Class: </strong>
+                                        <span>@Model.Class</span>
+                                    </li>
+                                    <li>
+                                        <strong>Religion: </strong>
+                                        <span>@Model.Religion</span>
+                                        </li>
+                                        <li>
+                                            <strong>Adress: </strong>
+                                            <span>@Model.Address</span>
+                                    </li>
+                                    <li>
+                                        <strong>Village: </strong>
+                                        <span>@Model.Village</span>
+                                    </li>
+                                    <li>
+                                        <strong>Post Office: </strong>
+                                        <span>@Model.PostOffice</span>
+                                    </li>
+                                    <li>
+                                        <strong>Police Station: </strong>
+                                        <span>@Model.PoliceStation</span>
+                                    </li>
+                                    <li>
+                                        <strong>District: </strong>
+                                        <span>@Model.District</span>
+                                    </li>
+                                    <li>
+                                        <strong>Caste: </strong>
+                                        <span>@Model.Caste</span>
+                                    </li>
+                                    <li>
+                                        <strong>City: </strong>
+                                        <span>@Model.City</span>
+                                    </li>
+                                    <li>
+                                        <strong>State: </strong>
+                                        <span>@Model.State</span>
+                                    </li>
+                                    <li>
+                                        <strong>Country: </strong>
+                                        <span>@Model.Country</span>
+                                    </li>
+                                </ul>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+

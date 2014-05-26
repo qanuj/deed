@@ -12,14 +12,13 @@ using Deed.Web.Models;
 using Deed.Web.Providers;
 using Deed.Web.Results;
 
-
 namespace Deed.Web.Controllers
 {
     [Authorize]
     public class AccountController : Controller
     {
         public AccountController()
-            : this(new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()))) {
+            : this(new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new DeedDataContext()))) {
         }
 
         public AccountController(UserManager<ApplicationUser> userManager) {
