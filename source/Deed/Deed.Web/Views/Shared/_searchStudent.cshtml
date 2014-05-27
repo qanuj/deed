@@ -1,16 +1,48 @@
-﻿<section class="widget advance-search">
+﻿<section class="widget advance-search" style="margin-top:5px">
     <h4 class="title search-heading">Student Search <i class="fa fa-search"></i></h4><div class="as-form-wrap">
-        <form class="advance-search-form clearfix" action="http://deedaday.com/student-search/" method="get">
+@using (Html.BeginForm("Search", "Home", FormMethod.Get))
+{ 
+        <form class="" action="" method="get">
             <div class="option-bar large">
-                <input type="text" name="student-name" id="student" value="" placeholder="Enter Student Name">
-                <input type="text" name="student-age" id="student" value="" placeholder="Enter Student Age">
-                <input type="text" name="student-gender" id="student" value="" placeholder="Enter Student Gender">
-                <input type="text" name="district" id="student" value="" placeholder="Enter Student District">
+                <input type="text" name="StudentName" id="student" value="" placeholder="Enter Student Name">
+                <input type="text" name="StudentReligion" id="student" value="" placeholder="Enter Student Religion">
+                <input type="text" name="StudentCountry" id="student" value="" placeholder="Enter Student Country">
+                <input type="text" name="District" id="student" value="" placeholder="Enter Student District">
             </div>
 
             <div class="option-bar">
-                <input type="submit" value="Search" class=" real-btn btn">
+                <input id="search" type="submit" value="Search" class=" real-btn btn">
+
+                @*<button id="search">s</button>*@
             </div>
-        </form>
+        </form>}
     </div>
+
 </section>
+
+
+<script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+
+        $("#search").on('click', function () {
+
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("Search", "Home")',
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify({
+                    searchString: $('#student').val()
+                    
+                }),
+                success: function (data) {
+                    window.location = '/home/index'
+                }
+            });
+        });
+    });
+            
+</script>
+
+
+<script src="~/Scripts/jquery-2.1.1.js"></script>

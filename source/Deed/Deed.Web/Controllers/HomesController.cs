@@ -23,7 +23,7 @@ namespace Deed.Web.Controllers
         //    return View(student);
         //}
 
-        DeedDataContext db = new DeedDataContext();
+       // DeedDataContext db = new DeedDataContext();
         //
         // GET: /Student/
         //protected IQueryable<CardViewModel> Query()

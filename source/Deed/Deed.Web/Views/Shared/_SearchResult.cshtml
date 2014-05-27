@@ -1,0 +1,61 @@
+﻿@*@model Deed.Data.Objects.Student*@
+@model IEnumerable<Deed.Data.Objects.Student>
+
+<div class="container contents lisitng-grid-layout">
+       
+        <div>
+            @foreach (var m in Model)
+            {
+                <div class="span6" style="margin-top:5px">
+                    <article class="property-item clearfix">
+                        <h4>
+                            <a href="@Url.Action("StudentDetails", "Home", new {id=m.ID })" title="15421 Southwest 39th Terrace">
+                                @m.Name
+                            </a>
+                        </h4>
+
+                        <figure>
+                            <a href="@Url.Action("StudentDetails", "Home", new {id=m.ID })" title="@m.Name">
+                                <img width="244" height="163" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-10-244x163.jpg" class="attachment-property-thumb-image wp-post-image" alt="15421 Southwest 39th Terrace" title="15421 Southwest 39th Terrace">
+
+                            </a>
+                            @*"http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-10-244x163.jpg"  @m.Picture *@
+                            @*<figcaption class="cap">
+                                For Rent
+
+                            </figcaption>*@
+
+                        </figure>
+
+                        <div class="detail">
+
+                            <h5 class="price">
+                                @m.Caste
+
+                            </h5>
+
+                            @*<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh…</p>*@
+                            <a class="more-details" href="@Url.Action("StudentDetails", "Home", new {id=m.ID })">More Details <i class="fa fa-caret-right"></i></a>
+
+                            @*"http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/"*@
+
+                        </div>
+
+                        @*<div class="property-meta">
+                            <span><i class="icon-area"></i>2800&nbsp;Sq Ft</span><span><i class="icon-bed"></i>2&nbsp;Bedrooms</span><span><i class="icon-bath"></i>3&nbsp;Bathrooms</span><span><i class="icon-garage"></i>2&nbsp;Garages</span>
+
+                        </div>*@
+
+                    </article>
+
+                </div>
+
+
+
+            }
+        </div>
+
+    </div><!-- End contents row -->
+
+
+

@@ -228,9 +228,11 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DbController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HomesController.cs" />
     <Compile Include="Controllers\PagesController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -257,6 +259,9 @@
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\custom-responsive.css" />
     <Content Include="Content\css\custom.css" />
+    <Content Include="Content\css\font-awesome-ie7.css" />
+    <Content Include="Content\css\font-awesome-ie7.min.css" />
+    <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\login-style.css" />
     <Content Include="Content\css\main.css" />
@@ -265,6 +270,9 @@
     <Content Include="Content\css\rtl-custom-responsive.css" />
     <Content Include="Content\css\rtl-main.css" />
     <Content Include="Content\css\_responsive-utilities.css" />
+    <Content Include="Content\font\fontawesome-webfont.svg" />
+    <Content Include="Content\font\FranklinGothic-DemiCd-webfont.svg" />
+    <Content Include="Content\font\zocial-regular-webfont.svg" />
     <Content Include="Content\images\3d_bars-2560x1440.jpg" />
     <Content Include="Content\images\3d_inspiration-2560x1440.jpg" />
     <Content Include="Content\images\abstract_chaos-1920x1080.jpg" />
@@ -373,6 +381,16 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="Content\images\Thumbs.db" />
+    <Content Include="Content\font\fontawesome-webfont.eot" />
+    <Content Include="Content\font\fontawesome-webfont.ttf" />
+    <Content Include="Content\font\fontawesome-webfont.woff" />
+    <Content Include="Content\font\FontAwesome.otf" />
+    <Content Include="Content\font\FranklinGothic-DemiCd-webfont.eot" />
+    <Content Include="Content\font\FranklinGothic-DemiCd-webfont.ttf" />
+    <Content Include="Content\font\FranklinGothic-DemiCd-webfont.woff" />
+    <Content Include="Content\font\zocial-regular-webfont.eot" />
+    <Content Include="Content\font\zocial-regular-webfont.ttf" />
+    <Content Include="Content\font\zocial-regular-webfont.woff" />
     <None Include="Scripts\jquery-2.1.1-vsdoc.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
@@ -426,9 +444,12 @@
     <Content Include="Views\Shared\_works.cshtml" />
     <Content Include="Views\Shared\_Card.cshtml" />
     <Content Include="Views\Shared\_Cards.cshtml" />
+    <Content Include="Views\Home\StudentDetails.cshtml" />
+    <Content Include="Views\Shared\_SearchResult.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Db\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
