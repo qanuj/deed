@@ -37,16 +37,16 @@ namespace Deed.Data.Objects {
         public string Mother { get; set; }
         public DateTime? Birthday { get; set; }
         public string Class { get; set; }
-        public string Religion { get; set; }
+        public Religion Religion { get; set; }
         public string Address { get; set; }
         public string Village { get; set; }
         public string PostOffice { get; set; }
         public string PuliceStation { get; set; }
         public string District { get; set; }
         public string Caste { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
-        public string Country { get; set; }
+        public City City { get; set; }
+        public State State { get; set; }
+        public Country Country { get; set; }
         public string History { get; set; }
         public string Picture { get; set; }
         public string Video { get; set; }
@@ -100,10 +100,19 @@ namespace Deed.Data.Objects {
     public class Story : Page { }
     public class News : Page {}
 
-    public class Religion : Master { }
-    public class City : Master { }
-    public class Country : Master { }
-    public class State : Master { }
+    public class Religion : Master { public IList<Student> Students { get; set; } }
+    public class City : Master { public State State { get; set; } }
+    public class Country : Master
+	{
+	        public IList<Student> Students { get; set; }
+	        public IList<State> States { get; set; } 
+	}
+    public class State : Master 
+	{ 
+	        public Country Country { get; set; }
+	        public IList<City> Cities { get; set; }
+	    
+	}
     public class Master {
         public long ID {get;set;}
         public string Name {get;set;}

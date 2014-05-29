@@ -13,7 +13,7 @@ namespace Deed.Web.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201405260526577_first"; }
+            get { return "201405290752384_first"; }
         }
         
         string IMigrationMetadata.Source

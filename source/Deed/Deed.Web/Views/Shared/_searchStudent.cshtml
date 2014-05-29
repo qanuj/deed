@@ -5,9 +5,13 @@
         <form class="" action="" method="get">
             <div class="option-bar large">
                 <input type="text" name="StudentName" id="student" value="" placeholder="Enter Student Name">
-                <input type="text" name="StudentReligion" id="student" value="" placeholder="Enter Student Religion">
-                <input type="text" name="StudentCountry" id="student" value="" placeholder="Enter Student Country">
-                <input type="text" name="District" id="student" value="" placeholder="Enter Student District">
+                @Html.DropDownList("Religion", "Select Religion")
+                @Html.DropDownList("Country", "Select Country")
+                @Html.DropDownList("State", "Select State")
+                @Html.DropDownList("City", "Select City")
+
+                @*<input type="text" name="StudentCountry" id="student" value="" placeholder="Enter Student Country">
+                <input type="text" name="District" id="student" value="" placeholder="Enter Student District">*@
             </div>
 
             <div class="option-bar">
@@ -15,7 +19,8 @@
 
                 @*<button id="search">s</button>*@
             </div>
-        </form>}
+        </form>
+}
     </div>
 
 </section>

@@ -237,12 +237,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201405260526577_first.cs" />
-    <Compile Include="Migrations\201405260526577_first.Designer.cs">
-      <DependentUpon>201405260526577_first.cs</DependentUpon>
+    <Compile Include="Migrations\201405290752384_first.cs" />
+    <Compile Include="Migrations\201405290752384_first.Designer.cs">
+      <DependentUpon>201405290752384_first.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ComboItem.cs" />
     <Compile Include="Models\DeedDataContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
@@ -466,8 +467,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201405260526577_first.resx">
-      <DependentUpon>201405260526577_first.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201405290752384_first.resx">
+      <DependentUpon>201405290752384_first.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
