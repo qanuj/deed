@@ -1,7 +1,18 @@
-﻿<div id="home-flexslider" class="clearfix">
+﻿
+@*<link href="~/Content/css/style.css" rel="stylesheet" />
+<link href="~/Content/css/settings.css" rel="stylesheet" />
+<link href="~/Content/css/responsive.css" rel="stylesheet" />
+<link href="~/Content/css/dynamic-captions.css" rel="stylesheet" />
+
+<link href="~/Content/css/settings.css" rel="stylesheet" />
+
+<script src="~/Scripts/jquery.ui.core.min.js"></script>*@
+
+
+<div id="home-flexslider" class="clearfix">
     <div class="flexslider">
         <ul class="slides">
-            <li>
+            @*<li>
                 <div class="desc-wrap">
                     <div class="slide-description">
                         <h3><a href="http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/">15421 Southwest 39th Terrace</a></h3>
@@ -44,10 +55,32 @@
                     </div>
                 </div>
                 <a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/"><img src="http://deedaday.co.uk/wp-content/uploads/2014/05/slide44.jpg" alt="Florida 5, Pinecrest, FL"></a>
+            </li>*@
+            <li>
+                <video style="display:block;background:transparent url('http://educateachild.org/sites/default/files/carousel/sequence1920x1080_1.jpg') no-repeat 0 0;" id="carousel_video" autoplay="" loop="" poster="/sites/default/themes/eac/images/custom/2x2.png">
+                    <!--poster=""  <source src="http://eac.com.testing.effusion.dh.bytemark.co.uk/sites/default/themes/eac/images/custom/boy.ogv" type="video/ogg"/> -->
+                    <!-- <source src="http://eac.com.testing.effusion.dh.bytemark.co.uk/sites/default/themes/eac/images/custom/boy.mp4" type="video/mp4"/> -->
+                    <!-- <source src="http://eac.com.testing.effusion.dh.bytemark.co.uk/sites/default/themes/eac/images/custom/boy.webm" type="video/webm"/>
+        poster="/sites/default/themes/eac/images/custom/2x2.png"
+         -->
+                    <source src="http://eac.educationaboveall.net/films/sequence1280x720.mp4" type="video/mp4">
+                    <source src="http://eac.educationaboveall.net/films/sequence1280x720.ogv" type="video/ogg">
+                    <source src="http://eac.educationaboveall.net/films/sequence1280x720.webm" type="video/webm">
+                    <img id="video_first_slide" src="http://educateachild.org/sites/default/files/carousel/sequence1920x1080_1.jpg">
+
+                </video>
+                
+                
             </li>
         </ul>
     </div>
+
 </div>
 
 
 
+
+@*<script src="~/Scripts/jquery.themepunch.revolution.min.js"></script>
+<script src="~/Scripts/jquery.themepunch.plugins.min.js"></script>
+<script src="~/Scripts/jquery.flexslider-min.js"></script>
+<script src="~/Scripts/jquery.jcarousel.min.js"></script>*@

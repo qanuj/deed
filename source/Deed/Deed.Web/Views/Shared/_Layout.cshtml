@@ -8,15 +8,9 @@
     @Styles.Render("~/Content/style/")
     @Styles.Render("~/Content/bootstrap/")
     @Scripts.Render("~/bundles/modernizr")
-
-
-
-
-
-
 </head>
+@Html.Partial("links")
 <body>
-
 
     <div id="body">
         @RenderSection("featured", required: false)
@@ -38,3 +32,7 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
+<script src="~/Scripts/custom.js"></script>
+<script src="~/Scripts/jquery.ui.position.min.js"></script>
+<script src="~/Scripts/jquery.ui.widget.min.js"></script>
+<script src="~/Scripts/jquery.ui.menu.min.js"></script>

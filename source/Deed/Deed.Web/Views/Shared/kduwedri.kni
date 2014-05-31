@@ -93,38 +93,16 @@
                                             </ul>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="@Url.Action("Index", "Pledge")">Pledge/Support Us</a>
+                                            <a href="@Url.Action("Do", "Pages")">Pledge/Support Us</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="@Url.Action("ViewAllStudents", "Homes")" class="pledge">Projects</a>
-                                            <ul class="sub-menu" style="display: block;">
-                                                <li id="menu-item-706" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-706"><a href="@Url.Action("WhatWeDo", "AboutUs", new { area = "", id = "" })">Sponsor A Child</a></li>
-                                                <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("HowItWorks", "AboutUs", new { area = "", id = "" })">Part Sponsor</a></li>
-                                                <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("EthicsAndCulture", "AboutUs", new { area = "", id = "" })">Support Deed a Day</a></li>
-                                            </ul>
+                                            <a href="@Url.Action("ViewAllStudents", "Homes")" class="pledge">Properties</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
                                             <a href="@Url.Action("Media", "Homes")">Media/News</a>
-                                            <ul class="sub-menu" style="display: block;">
-                                                <li id="menu-item-706" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-706"><a href="@Url.Action("WhatWeDo", "AboutUs", new { area = "", id = "" })">Photos</a></li>
-                                                <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("HowItWorks", "AboutUs", new { area = "", id = "" })">Videos</a></li>
-                                                <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("EthicsAndCulture", "AboutUs", new { area = "", id = "" })">News</a></li>
-                                                <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("EthicsAndCulture", "AboutUs", new { area = "", id = "" })">Anual Events</a></li>
-
-                                            </ul>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="@Url.Action("Media", "Homes")">Lend A Hand</a>
-                                            <ul class="sub-menu" style="display: block;">
-                                                <li id="menu-item-706" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-706"><a href="@Url.Action("WhatWeDo", "AboutUs", new { area = "", id = "" })">Start A Chapter</a></li>
-                                                <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("HowItWorks", "AboutUs", new { area = "", id = "" })">Volunteer</a></li>
-                                                <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("EthicsAndCulture", "AboutUs", new { area = "", id = "" })">Spread The Word</a></li>
-                                                <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("EthicsAndCulture", "AboutUs", new { area = "", id = "" })">Anual Events</a></li>
-
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="@Url.Action("Index", "ContactUs")">Contact Us</a>
+                                            <a href="@Url.Action("ContactUs", "Homes")">Contact Us</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page ">
                                             <a href="@Url.Action("Login", "Account")">Sponsor Login</a>

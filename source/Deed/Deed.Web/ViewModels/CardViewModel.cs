@@ -11,6 +11,8 @@ namespace Deed.Web.ViewModels
         
         public long ID { get; set; }
         public string Name { get; set; }
+        public string Father { get; set; }
+        public string Mother { get; set; }
         public DateTime DOB { get; set; }
         public string Religion { get; set; }
         public string Adress { get; set; }
