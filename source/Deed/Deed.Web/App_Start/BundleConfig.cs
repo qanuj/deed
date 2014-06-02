@@ -23,7 +23,7 @@ namespace Deed.Web {
                         "~/Scripts/jquery.isotope.min.js",
                         "~/Scripts/jquery.jquery.ui.autocomplete.min.js",
                         "~/Scripts/jquery.ui.widget.min.js",
-                        "~/Scripts/main.js"
+                        "~/Scripts/custom.js"
                         
                         
                         
