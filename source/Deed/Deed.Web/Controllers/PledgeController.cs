@@ -50,5 +50,28 @@ namespace Deed.Web.Controllers
             return query;
             
         }
+
+        public ActionResult Sponsor(long[] SelectedItems)
+        {
+            var stu=new List<Student>();
+            foreach (var i in SelectedItems)
+            {
+
+                var s = db.Students.FirstOrDefault(r => r.ID == SelectedItems[i]);
+
+                stu.Add(s);
+
+            }
+
+
+            return PartialView("_Grid",stu);
+            
+        }
+
+
+
+
+
+
 	}
 }

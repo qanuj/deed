@@ -1,0 +1,45 @@
+/* Child Theme - Custom CSS File for Buyers to Modify */
+.header-wrapper{
+background-color:#252A2B;
+}
+
+.header-wrapper, #contact-email, #contact-email a, .user-nav a, .social_networks li a{
+color:#929A9B;
+}
+
+#contact-email a:hover, .user-nav a:hover{
+color:#b0b8b9;
+}
+
+#header-top, .social_networks li a, .user-nav a{
+border-color:#343A3B;
+}
+
+.main-menu ul li a{
+color:#afb4b5;
+}
+
+.main-menu ul li.current-menu-ancestor > a, .main-menu ul li.current-menu-parent > a, .main-menu ul li.current-menu-item > a, .main-menu ul li.current_page_item > a, .main-menu ul li:hover > a, .main-menu ul li ul, .main-menu ul li ul li ul{
+background-color:#ec894d;
+}
+
+.main-menu ul li.current-menu-ancestor > a, .main-menu ul li.current-menu-parent > a, .main-menu ul li.current-menu-item > a, .main-menu ul li.current_page_item > a, .main-menu ul li:hover > a, .main-menu ul li ul, .main-menu ul li ul li a, .main-menu ul li ul li ul, .main-menu ul li ul li ul li a{
+color:#ffffff;
+}
+
+.main-menu ul li ul li:hover > a, .main-menu ul li ul li ul li:hover > a{
+background-color:#dc7d44;
+}
+
+@media (min-width: 980px) {
+.contact-number, .contact-number .outer-strip{
+background-color:#4dc7ec;
+}
+
+.contact-number{
+color:#e7eff7;
+}
+
+.contact-number .fa-phone{
+background-color:#37b3d9;
+}

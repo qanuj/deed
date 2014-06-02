@@ -1,0 +1,20 @@
+﻿@model List<Deed.Data.Objects.Student>
+         
+@{
+    ViewBag.Title = "_Grid";
+}
+
+<h2>_Grid</h2>
+
+
+<section id="photos">
+
+    @foreach(var i in  Model){
+        
+       
+  <img src="@i.Picture" alt="Little doggie">
+  <img src="@i.Picture" alt="Little kittie">
+ 
+    }
+</section>
+

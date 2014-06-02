@@ -44,6 +44,10 @@
                                         </h5>
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>
                                         <a class="more-details" href="@Url.Action("Details", "Pledge", new {id=m.ID })">More Details <i class="fa fa-caret-right"></i></a>
+                                        @*<span class="pull-right"><input type="submit" value="Select" class="real-btn login-btn" /></span>*@
+                                        <span class="pull-right"><a id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</a></span>
+
+                                        
                                     </div>
 
                                     <div class="property-meta">
@@ -54,7 +58,9 @@
                             </div>
                         }
                     </div>
-
+                    <div>
+                        <span class="sponsor-btn"><input type="submit" id="sponsor" value="Sponsor" class="real-btn login-btn" /></span>
+                    </div>
 
                     <div class="pagination"><a href="http://alt-realhomes.inspirythemes.com/listing/" class="real-btn current">1</a> <a href="http://alt-realhomes.inspirythemes.com/listing/page/2/" class="real-btn">2</a> </div>
                 </section>
@@ -68,11 +74,35 @@
     </div>
 
 
+<script type="text/javascript">
+    $(document).ready(function () {
 
+        var slectedItems = new Array();
+        $("#select").on('click', function (e) {
+            e.preventDefault();
+            var closeButton = $(this);
+            slectedItems.push(closeButton.attr("data-id"));
+            
+        });
 
+        $(".real-btn ").on('click', function (e) {
+            e.preventDefault();
+            var closeButton = $(this);
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("Sponsor")',
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify({
+                    SelectedItems: selectedItems,
+                    
+                }),
+                success: function (data) {
+                    //window.location = '/admin/territory/index'
+                }
+            });
 
+        });
+        
+    });
+</script>
 
-
-
-
-    
