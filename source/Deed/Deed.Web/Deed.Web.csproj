@@ -276,6 +276,7 @@
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\login-style.css" />
     <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\prettyPhoto.css" />
     <Content Include="Content\css\realhomes-admin-styles.css" />
     <Content Include="Content\css\responsive.css" />
     <Content Include="Content\css\rtl-custom-responsive.css" />
@@ -372,6 +373,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap-carousel.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\custom.js" />
@@ -443,6 +445,8 @@
     <Content Include="Scripts\jquery.jcarousel.min.js" />
     <Content Include="Scripts\jquery.localisation.js" />
     <Content Include="Scripts\jquery.prettyPhoto.js" />
+    <Content Include="Scripts\jquery.selectbox.js" />
+    <Content Include="Scripts\jquery.swipebox.min.js" />
     <Content Include="Scripts\jquery.themepunch.plugins.min.js" />
     <Content Include="Scripts\jquery.themepunch.revolution.min.js" />
     <Content Include="Scripts\jquery.transit.min.js" />
