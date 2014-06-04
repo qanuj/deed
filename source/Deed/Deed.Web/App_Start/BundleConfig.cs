@@ -9,7 +9,7 @@ namespace Deed.Web {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js",
                         "~/Scripts/jquery-ui-{version}.js",
-                        "~/Scripts/jquery.flexslider-min.js",
+                        "~/Scripts/bootstrap.js",
                         "~/Scripts/jquery.jcarousel.min.js",
                         "~/Scripts/jquery.themepunch.revolution.min.js",
                         "~/Scripts/jquery.ui.core.min.js",
@@ -17,12 +17,14 @@ namespace Deed.Web {
                         "~/Scripts/jquery.ui.position.min.js",
                         "~/Scripts/respond.matchmedia.addListener.js",
                         "~/Scripts/respond.matchmedia.addListener.min.js",
-                        "~/Scripts/jquery.easing.1.3.js",
+                        "~/Scripts/jquery.flexslider-min.js",
+                        //"~/Scripts/jquery.easing.1.3.js",
                         "~/Scripts/jquery.elastislide.js",
                         "~/Scripts/jquery.form.js",
                         "~/Scripts/jquery.isotope.min.js",
                         "~/Scripts/jquery.jquery.ui.autocomplete.min.js",
                         "~/Scripts/jquery.ui.widget.min.js",
+                        "~/Scripts/jquery.localisation.js",
                         "~/Scripts/custom.js"
                         
                         
@@ -35,17 +37,18 @@ namespace Deed.Web {
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"
+            //bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+            //          "~/Scripts/bootstrap.js"
                      
-                    ));
+            //        ));
 
             
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/css/font-awesome.css",
-                      "~/Content/css/style.css",
+                      "~/Content/css/styleRes.css",
+                      "~/Content/css/flexslider.css",
                       "~/Content/css/client.css",
                        "~/Content/site.css",
                        "~/Content/css/swipebox.css",

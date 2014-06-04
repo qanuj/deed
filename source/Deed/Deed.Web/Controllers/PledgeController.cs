@@ -51,21 +51,26 @@ namespace Deed.Web.Controllers
             
         }
 
-        public ActionResult Sponsor(long[] SelectedItems)
+        public ActionResult Sponsor(long[] Selected)
         {
             var stu=new List<Student>();
-            foreach (var i in SelectedItems)
+            foreach (var i in Selected)
             {
 
-                var s = db.Students.FirstOrDefault(r => r.ID == SelectedItems[i]);
+                var s = db.Students.FirstOrDefault(r => r.ID==i);
 
                 stu.Add(s);
 
             }
 
 
-            return PartialView("_Grid",stu);
+            return View();
             
+        }
+
+        public ActionResult Grid()
+        {
+            return PartialView("_Grid");
         }
 
 

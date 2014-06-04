@@ -284,6 +284,7 @@
     <Content Include="Content\css\style.css" />
     <Content Include="Content\css\swipebox.css" />
     <Content Include="Content\css\_responsive-utilities.css" />
+    <Content Include="Content\flexslider.css" />
     <Content Include="Content\font\fontawesome-webfont.svg" />
     <Content Include="Content\font\FranklinGothic-DemiCd-webfont.svg" />
     <Content Include="Content\font\zocial-regular-webfont.svg" />
@@ -355,6 +356,10 @@
     <Content Include="Content\images\rtl-icon-disc-small.png" />
     <Content Include="Content\images\rtl-icon-tick.png" />
     <Content Include="Content\images\rtl-widget-list-bullet.png" />
+    <Content Include="Content\images\slide-1-layer-1.png" />
+    <Content Include="Content\images\slide-1-layer-2.png" />
+    <Content Include="Content\images\slide-1.jpg" />
+    <Content Include="Content\images\slide-2.jpg" />
     <Content Include="Content\images\slider-nav-left.png" />
     <Content Include="Content\images\slider-nav-right.png" />
     <Content Include="Content\images\slideshow-nav-left.png" />
@@ -362,6 +367,7 @@
     <Content Include="Content\images\sticky-pin.png" />
     <Content Include="Content\images\widget-list-bullet.png" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\styleRes.css" />
     <Content Include="Content\__MACOSX\SeamlessResponsivePhotoGrid\css\._style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -435,6 +441,7 @@
     <Content Include="Scripts\jquery.flexslider-min.js" />
     <Content Include="Scripts\jquery.form.js" />
     <Content Include="Scripts\jquery.jcarousel.min.js" />
+    <Content Include="Scripts\jquery.localisation.js" />
     <Content Include="Scripts\jquery.prettyPhoto.js" />
     <Content Include="Scripts\jquery.themepunch.plugins.min.js" />
     <Content Include="Scripts\jquery.themepunch.revolution.min.js" />
@@ -508,6 +515,7 @@
     <Content Include="Views\ContactUs\Index.cshtml" />
     <Content Include="Views\Shared\_PageHead.cshtml" />
     <Content Include="Views\Shared\_Grid.cshtml" />
+    <Content Include="Views\Pledge\Sponsor.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

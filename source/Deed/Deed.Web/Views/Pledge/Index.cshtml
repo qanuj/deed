@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "Support Us";
 }
+
 <div class="page-head" style="background-repeat: no-repeat;background-position: center top;background-image: url('http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/12/banner.jpg'); background-size: cover; ">
     <div class="container">
         <div class="wrap clearfix">
@@ -45,7 +46,8 @@
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>
                                         <a class="more-details" href="@Url.Action("Details", "Pledge", new {id=m.ID })">More Details <i class="fa fa-caret-right"></i></a>
                                         @*<span class="pull-right"><input type="submit" value="Select" class="real-btn login-btn" /></span>*@
-                                        <span class="pull-right"><a id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</a></span>
+                                        @*<span class="pull-right"><a id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</a></span>*@
+                                        <button id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</button>
 
                                         
                                     </div>
@@ -77,27 +79,27 @@
 <script type="text/javascript">
     $(document).ready(function () {
 
-        var slectedItems = new Array();
+        var slectedItems=[ ];
         $("#select").on('click', function (e) {
             e.preventDefault();
             var closeButton = $(this);
-            slectedItems.push(closeButton.attr("data-id"));
+            slectedItems.push($(this).attr("data-id"));
             
         });
 
-        $(".real-btn ").on('click', function (e) {
+        $("#sponsor").on('click', function (e) {
             e.preventDefault();
             var closeButton = $(this);
             $.ajax({
                 type: "POST",
-                url: '@Url.Action("Sponsor")',
+                url: '/Pledge/Sponsor',
                 contentType: 'application/json; charset=utf-8',
                 data: JSON.stringify({
-                    SelectedItems: selectedItems,
+                    Selected:slectedItems
                     
                 }),
                 success: function (data) {
-                    //window.location = '/admin/territory/index'
+                   window.location = '/Pledge/Grid'
                 }
             });
 

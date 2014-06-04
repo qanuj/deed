@@ -1,4 +1,4 @@
-﻿@model List<Deed.Data.Objects.Student>
+﻿@*@model List<Deed.Data.Objects.Student>*@
          
 @{
     ViewBag.Title = "_Grid";
@@ -6,15 +6,33 @@
 
 <h2>_Grid</h2>
 
+<link href="~/Content/__MACOSX/SeamlessResponsivePhotoGrid/css/._style.css" rel="stylesheet" />
+@*<a href="~/Content/__MACOSX/SeamlessResponsivePhotoGrid/._css">~/Content/__MACOSX/SeamlessResponsivePhotoGrid/._css</a>*@
+
+
 
 <section id="photos">
 
-    @foreach(var i in  Model){
+    @*@foreach(var i in  Model){*@
         
        
-  <img src="@i.Picture" alt="Little doggie">
-  <img src="@i.Picture" alt="Little kittie">
- 
-    }
+  @*<img src="@i.Picture" alt="Little doggie">
+  <img src="@i.Picture" alt="Little kittie">*@
+        
+        
+
+
+    <img src="~/Content/images/slide-1-layer-1.png" />
+
+    
+
+    <img src="~/Content/images/slide-1.jpg" />
+
+    
+    <img src="~/Content/images/slide-1-layer-1.png" />
+    
+        
+        
+    @*}*@
 </section>
 
