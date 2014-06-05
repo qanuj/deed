@@ -53,7 +53,7 @@ namespace Deed.Web
 
 
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
+            bundles.Add(new StyleBundle("~/Styles/css").Include(
 
                       "~/Content/css/client1.css",
                       "~/Content/css/client.css",
