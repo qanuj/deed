@@ -301,10 +301,14 @@
     <Content Include="Content\images\carousel-nav-right.png" />
     <Content Include="Content\images\comment-detail-wrap-arrow.png" />
     <Content Include="Content\images\container-gradient.png" />
+    <Content Include="Content\images\DScool.jpg" />
     <Content Include="Content\images\dropdown-arrow.png" />
     <Content Include="Content\images\dropdown-interest.png" />
     <Content Include="Content\images\dropdown-month.png" />
     <Content Include="Content\images\dropdown-year.png" />
+    <Content Include="Content\images\Dscool1.jpg" />
+    <Content Include="Content\images\Dscool2.jpg" />
+    <Content Include="Content\images\Dscool3.jpg" />
     <Content Include="Content\images\feature-list-bullet.png" />
     <Content Include="Content\images\flex-arrow-left.png" />
     <Content Include="Content\images\flex-arrow-right.png" />
