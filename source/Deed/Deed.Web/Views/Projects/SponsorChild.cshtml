@@ -1,0 +1,76 @@
+﻿
+@{
+    //ViewBag.Title = "SponsorChild";
+}
+
+@*<h2>SponsorChild</h2>*@
+
+
+
+
+
+
+
+
+<div class="container contents lisitng-grid-layout">
+    <div class="row">
+        <div class="span9 main-wrap">
+            <div class="main ">
+                
+
+                    <section class="listing-layout">
+
+                        <h3 class="post-title">Search Student</h3>
+
+                        <div id="map_canvas" style="width: 800px; height :347px; margin-left:29px;margin-top:36px;"></div>
+
+                        <div class="list-container clearfix">
+                           
+                                <div class="span6 ">
+                                    <article class="property-item clearfix">
+
+                                        <h4><a href="http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/" title="15421 Southwest 39th Terrace">Name</a></h4>
+
+                                        <figure>
+                                            <a href="http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/" title="15421 Southwest 39th Terrace">
+                                                <img width="244" height="163" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-10-244x163.jpg" class="attachment-property-thumb-image wp-post-image" alt="15421 Southwest 39th Terrace" title="15421 Southwest 39th Terrace">
+                                            </a>
+                                        </figure>
+
+                                        <div class="detail">
+                                            <h5 class="price">
+                                                Caste
+                                            </h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>
+                                            @*<a class="more-details" href="@Url.Action("Details", "Pledge", new {id=m.ID })">More Details <i class="fa fa-caret-right"></i></a>*@
+                                            <a class="more-details" href="@Url.Action("slid", "Pledge")">More Details <i class="fa fa-caret-right"></i></a>
+
+                                            @*<span class="pull-right"><input type="submit" value="Select" class="real-btn login-btn" /></span>*@
+                                            @*<span class="pull-right"><a id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</a></span>*@
+                                            <button id="select" class="btn btn-xs btn-danger pull-right" >Select</button>
+
+
+                                        </div>
+
+                                        <div class="property-meta">
+                                            <span><b>Father:</b></span><span>Father</span><span><b>Mother:</b></span><span>Mother</span>
+                                        </div>
+
+                                    </article>
+                                </div>
+                            
+                        </div>
+                        <div>
+                            <span class="sponsor-btn"><input type="submit" id="sponsor" value="Sponsor" class="real-btn login-btn" /></span>
+                        </div>
+
+                        <div class="pagination"><a href="http://alt-realhomes.inspirythemes.com/listing/" class="real-btn current" style="margin-left: 394px;">1</a> <a href="http://alt-realhomes.inspirythemes.com/listing/page/2/" class="real-btn">2</a> </div>
+                    </section>
+
+                </div>
+        </div>
+        @*@Html.Partial("_works")*@
+
+
+    </div>
+</div>

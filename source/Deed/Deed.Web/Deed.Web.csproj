@@ -239,6 +239,7 @@
     <Compile Include="Controllers\HomesController.cs" />
     <Compile Include="Controllers\PagesController.cs" />
     <Compile Include="Controllers\PledgeController.cs" />
+    <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
@@ -542,6 +543,8 @@
     <Content Include="Views\Pledge\Sponsor.cshtml" />
     <Content Include="Views\Pledge\slid.cshtml" />
     <Content Include="Views\Pledge\PledgeIndex.cshtml" />
+    <Content Include="Views\Projects\SponsorChild.cshtml" />
+    <Content Include="Views\Projects\SponsorProject.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
