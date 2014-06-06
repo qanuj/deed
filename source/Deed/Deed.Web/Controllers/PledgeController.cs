@@ -17,6 +17,12 @@ namespace Deed.Web.Controllers
             return View(Query());
         }
 
+        public ActionResult PledgeIndex()
+        {
+            return View();
+        }
+
+
         public ActionResult Details(long id)
         {
             var s = db.Students.FirstOrDefault(x => x.ID == id);
