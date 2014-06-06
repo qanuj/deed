@@ -38,7 +38,9 @@ namespace Deed.Web
                         "~/Scripts/jquery.localisation.js",
                         "~/Scripts/custom.js",
                         "~/Scripts/respond.matchmedia.addListener.js",
-                        "~/Scripts/respond.matchmedia.addListener.min.js"
+                        "~/Scripts/respond.matchmedia.addListener.min.js",
+                        "~/Scripts/js-image-slider.js"
+
                 ));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
@@ -72,7 +74,9 @@ namespace Deed.Web
                         "~/Content/css/custom.css",
                         "~/Content/css/child-custom.css",
                        "~/Content/site.css",
-                       "~/Content/css/styleRes.css"
+                        "~/Content/js-image-slider.css",
+                         "~/Content/site.css",
+                       "~/Content/css/generic.css"
 
                     ));
         }

@@ -23,6 +23,14 @@ namespace Deed.Web.Controllers
             return View(s);
 
         }
+
+        public ActionResult slid()
+        {
+            
+            return View();
+
+        }
+
         protected IQueryable<CardViewModel> Query()
         {
             var query = from r in db.Students

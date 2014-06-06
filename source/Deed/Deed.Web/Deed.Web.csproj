@@ -289,8 +289,10 @@
     <Content Include="Content\font\fontawesome-webfont.svg" />
     <Content Include="Content\font\FranklinGothic-DemiCd-webfont.svg" />
     <Content Include="Content\font\zocial-regular-webfont.svg" />
+    <Content Include="Content\generic.css" />
     <Content Include="Content\images\3d_bars-2560x1440.jpg" />
     <Content Include="Content\images\3d_inspiration-2560x1440.jpg" />
+    <Content Include="Content\images\aaaaaaaa.jpg" />
     <Content Include="Content\images\abstract_chaos-1920x1080.jpg" />
     <Content Include="Content\images\ajax-loader.gif" />
     <Content Include="Content\images\arrow-black.png" />
@@ -368,10 +370,17 @@
     <Content Include="Content\images\slide-2.jpg" />
     <Content Include="Content\images\slider-nav-left.png" />
     <Content Include="Content\images\slider-nav-right.png" />
+    <Content Include="Content\images\SliderImg\image-slider-1.jpg" />
+    <Content Include="Content\images\SliderImg\image-slider-2.jpg" />
+    <Content Include="Content\images\SliderImg\image-slider-3.jpg" />
+    <Content Include="Content\images\SliderImg\image-slider-4.jpg" />
+    <Content Include="Content\images\SliderImg\image-slider-5.jpg" />
+    <Content Include="Content\images\SliderImg\loadingslid.gif" />
     <Content Include="Content\images\slideshow-nav-left.png" />
     <Content Include="Content\images\slideshow-nav-right.png" />
     <Content Include="Content\images\sticky-pin.png" />
     <Content Include="Content\images\widget-list-bullet.png" />
+    <Content Include="Content\js-image-slider.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\styleRes.css" />
     <Content Include="Content\__MACOSX\SeamlessResponsivePhotoGrid\css\._style.css" />
@@ -464,6 +473,12 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js-image-slider.js" />
+    <Content Include="Scripts\jssor.core.js" />
+    <Content Include="Scripts\jssor.player.ytiframe.js" />
+    <Content Include="Scripts\jssor.slider.js" />
+    <Content Include="Scripts\jssor.slider.mini.js" />
+    <Content Include="Scripts\jssor.utils.js" />
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr-2.7.2.js" />
     <Content Include="Scripts\respond.js" />
@@ -525,6 +540,7 @@
     <Content Include="Views\Shared\_PageHead.cshtml" />
     <Content Include="Views\Shared\_Grid.cshtml" />
     <Content Include="Views\Pledge\Sponsor.cshtml" />
+    <Content Include="Views\Pledge\slid.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

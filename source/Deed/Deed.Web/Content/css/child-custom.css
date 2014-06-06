@@ -40,6 +40,13 @@ background-color:#4dc7ec;
 color:#e7eff7;
 }
 
+.ibox{
+width:389px;
+height:389px;
+border:2px solid;
+border-radius:0px;
+}
+
 .contact-number .fa-phone{
 background-color:#37b3d9;
 }

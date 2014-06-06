@@ -28,12 +28,12 @@
                 <img src="slide-5.jpg" alt="Caption for slide 5" />*@
 
 
-                            <img src="~/Content/images/DScool.jpg " />
+                            <img src="~/Content/images/SliderImg/image-slider-1.jpg" />
                             <img src="~/Content/images/Dscool4.jpg" />
                             <img src="~/Content/images/Dscool3.jpg" />
                             <img src="~/Content/images/Dscool1.jpg" />
                             <img src="~/Content/images/Dscool2.jpg" />
-                            <img src="~/Content/images/DScool.jpg" />
+                            <img src="~/Content/images/SliderImg/image-slider-5.jpg" />
                         </div>
                     </div>
 
