@@ -237,6 +237,7 @@
     <Compile Include="Controllers\DbController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HomesController.cs" />
+    <Compile Include="Controllers\MediaController.cs" />
     <Compile Include="Controllers\PagesController.cs" />
     <Compile Include="Controllers\PledgeController.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
@@ -545,6 +546,10 @@
     <Content Include="Views\Pledge\PledgeIndex.cshtml" />
     <Content Include="Views\Projects\SponsorChild.cshtml" />
     <Content Include="Views\Projects\SponsorProject.cshtml" />
+    <Content Include="Views\Media\Index.cshtml" />
+    <Content Include="Views\Media\Photos.cshtml" />
+    <Content Include="Views\Media\Videos.cshtml" />
+    <Content Include="Views\Media\AnnualEvents.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

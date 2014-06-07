@@ -39,6 +39,7 @@ namespace Deed.Web
                         "~/Scripts/custom.js",
                         "~/Scripts/respond.matchmedia.addListener.js",
                         "~/Scripts/respond.matchmedia.addListener.min.js",
+                        "~/Scripts/main.js",
                         "~/Scripts/js-image-slider.js"
 
                 ));

@@ -120,8 +120,8 @@
                                             <ul class="sub-menu" style="display: block;">
                                                 <li id="menu-item-706" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-706"><a href="@Url.Action("Photos", "Media")">Photos</a></li>
                                                 <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("Videos", "Media")">Videos</a></li>
-                                                <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("Index", "Media")">News</a></li>
-                                                <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("AnnualEvents", "Media")">Anual Events</a></li>
+                                                <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("EthicsAndCulture", "AboutUs", new { area = "", id = "" })">News</a></li>
+                                                <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("EthicsAndCulture", "AboutUs", new { area = "", id = "" })">Anual Events</a></li>
 
                                             </ul>
                                         </li>
