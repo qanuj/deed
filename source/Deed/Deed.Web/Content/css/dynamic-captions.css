@@ -60,6 +60,30 @@ border-width:5px;
 border-color:rgb(255, 255, 255);
 border-style:solid;
 }
+.tp-caption.roundedtext1 {
+font-size:30px;
+line-height:30px;
+font-weight:700;
+font-family:Lato;
+color:rgb(255, 255, 255);
+text-decoration:none;
+background:transparent;
+background-size: cover;
+padding:50px 10px;
+text-shadow:none;
+border-radius:500px 500px 500px 500px;
+border-width:5px;
+border-color:rgb(255, 255, 255);
+border-style:solid;
+}
+
+.img-circular{
+ width: 400px;
+	height: 400px;
+	border-radius: 250px;
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+}
 
 .tp-caption.large_bold_black_text {
 font-size:36px;

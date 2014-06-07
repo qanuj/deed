@@ -611,7 +611,7 @@ website:   	http://www.themepunch.com
 /************************************
 		-	TP BANNER TIMER		-
 *************************************/
-.tp-bannertimer								{	width:100%; height:10px; background:url(../images/slide-1-layer-1.png);position:absolute; z-index:200; top:0px;}
+.tp-bannertimer								{	width:100%; height:10px; background:url(../images/timer.png);position:absolute; z-index:200; top:0px;}
 .tp-bannertimer.tp-bottom					{	top:auto; bottom:0px !important;height:5px;}
 
 
