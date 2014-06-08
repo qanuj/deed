@@ -1,0 +1,1378 @@
+﻿@{
+    //ViewBag.Title = "SponsorChild";
+}
+
+@*<h2>SponsorChild</h2>*@
+
+
+
+
+
+
+<div class="page-head" style="background-repeat: no-repeat; background-position: center top; background-image: url('/Content/images/SliderImg/13772.jpg'); background-size: cover; ">
+    <div class="container">
+        <div class="wrap clearfix">
+            <h1 class="page-title"><span>Sponsor Project</span></h1>
+            <p></p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container contents single">
+    <div class="row">
+        <div class="span9 main-wrap">
+            <!-- Main Content -->
+            <div class="main">
+
+                <div class="inner-wrapper">
+                    <article id="post-1402211475" class="post-1402211475 page type-page status-publish hentry clearfix">
+                        <h3 class="post-title">Projects matching your search</h3>
+                        <hr>
+
+                        <!-- seo_title: "" -->
+                        <!-- seo_description: "" -->
+                        <!-- seo_keywords: "" -->
+                        <!-- canonical: "" -->
+
+
+
+                        <script src="http://cdn4.diverse-cdn.com/api/combo-js/config=dsidxpress.js/1ecd95" data-handle="dsidx"></script>
+                        <div id="dsidx" class="dsidx-results">
+
+
+
+
+                            <div class="dsidx-paging-control">
+                                Properties
+                                1 - 25 of 100
+                                |
+
+                                « First
+
+                                |
+
+                                &lt; Previous
+
+                                |
+                                <a href="page-2?idx-d-SortOrders%3C0%3E-Column=DateAdded&amp;idx-d-SortOrders%3C0%3E-Direction=DESC">
+                                    Next &gt;
+                                </a>
+                                |
+                                <a href="page-4?idx-d-SortOrders%3C0%3E-Column=DateAdded&amp;idx-d-SortOrders%3C0%3E-Direction=DESC">
+                                    Last »
+                                </a>
+                            </div>
+                            <div class="dsidx-sorting-control">
+                                Sorted by
+                                <form>
+                                    <select>
+                                        <option value="DateAdded|DESC" selected="selected">
+                                            Time on market, newest first
+                                        </option>
+                                        <option value="DateAdded|ASC">
+                                            Time on market, oldest first
+                                        </option>
+
+                                        <option value="Price|DESC">
+                                            Price, highest first
+                                        </option>
+                                        <option value="Price|ASC">
+                                            Price, lowest first
+                                        </option>
+
+                                        <option value="OverallPriceDropPercent|DESC">
+                                            Price drop %, largest first
+                                        </option>
+
+                                        <option value="WalkScore|DESC">
+                                            Walk Score®, highest first
+                                        </option>
+
+                                        <option value="ImprovedSqFt|DESC">
+                                            Improved size, largest first
+                                        </option>
+
+                                        <option value="LotSqFt|DESC">
+                                            Lot size, largest first
+                                        </option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div id="dsidx-map-control"><a href="javascript:void(0)"><img src="http://cdn1.diverse-cdn.com/api/images/dsidxpress/icons/map.png/193ad5"> Hide map</a></div>
+                            @*<div id="dsidx-map" style="display: block; width: 100%; height: 400px; position: relative; overflow: hidden; -webkit-transform: translateZ(0px); background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; -webkit-transform-origin: 0px 0px; -webkit-transform: matrix(1, 0, 0, 1, 0, 0);"><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; width: 100%; z-index: 200;"><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div></div><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; width: 100%; z-index: 201;"><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: 188px; top: 22px;"><canvas draggable="false" height="256" width="256" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: 444px; top: 22px;"><canvas draggable="false" height="256" width="256" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: 444px; top: -234px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: 188px; top: -234px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: 188px; top: 278px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: 444px; top: 278px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: -68px; top: 22px;"><canvas draggable="false" height="256" width="256" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: 700px; top: 22px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: -68px; top: 278px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: 700px; top: -234px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: -68px; top: -234px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: 700px; top: 278px;"></div></div></div></div></div><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; width: 100%; z-index: 202;"><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div></div><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 188px; top: 22px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 444px; top: 22px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 444px; top: -234px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 188px; top: -234px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 188px; top: 278px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 444px; top: 278px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: -68px; top: 22px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 700px; top: 22px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: -68px; top: 278px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 700px; top: -234px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: -68px; top: -234px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 700px; top: 278px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 188px; top: 22px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@264040384&amp;src=apiv3&amp;hl=en-US&amp;x=353&amp;y=820&amp;z=11&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 444px; top: 22px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@264034577&amp;src=apiv3&amp;hl=en-US&amp;x=354&amp;y=820&amp;z=11&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 444px; top: -234px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@264041197&amp;src=apiv3&amp;hl=en-US&amp;x=354&amp;y=819&amp;z=11&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 188px; top: -234px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@264039945&amp;src=apiv3&amp;hl=en-US&amp;x=353&amp;y=819&amp;z=11&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 188px; top: 278px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@264010152&amp;src=apiv3&amp;hl=en-US&amp;x=353&amp;y=821&amp;z=11&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 444px; top: 278px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@264036576&amp;src=apiv3&amp;hl=en-US&amp;x=354&amp;y=821&amp;z=11&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: -68px; top: 22px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@264026947&amp;src=apiv3&amp;hl=en-US&amp;x=352&amp;y=820&amp;z=11&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 700px; top: 22px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@264000000&amp;src=apiv3&amp;hl=en-US&amp;x=355&amp;y=820&amp;z=11&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: -68px; top: 278px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@264000000&amp;src=apiv3&amp;hl=en-US&amp;x=352&amp;y=821&amp;z=11&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 700px; top: -234px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@264000000&amp;src=apiv3&amp;hl=en-US&amp;x=355&amp;y=819&amp;z=11&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: -68px; top: -234px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@264041994&amp;src=apiv3&amp;hl=en-US&amp;x=352&amp;y=819&amp;z=11&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 700px; top: 278px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@264000000&amp;src=apiv3&amp;hl=en-US&amp;x=355&amp;y=821&amp;z=11&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div></div></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="http://maps.google.com/maps?ll=33.622795,-117.79392&amp;z=11&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 62px; height: 26px; cursor: pointer;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 62px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 165px; bottom: 0px; width: 125px;"><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span style="">Map data ©2014 Google</span></div></div></div><div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 264px; top: 110px; background-color: white;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Map data ©2014 Google</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2014 Google</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; position: absolute; -webkit-user-select: none; right: 95px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;"><a href="http://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;"><a target="_new" title="Report errors in the road map or imagery to Google" href="http://maps.google.com/maps?ll=33.622795,-117.79392&amp;z=11&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3&amp;skstate=action:mps_dialog$apiref:1&amp;output=classic" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div></div></div>*@
+                            <div id="map_canvas" style="width: 800px; height :347px; margin-left:0;margin-top:0;"></div>
+                            <ol id="dsidx-listings">
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649469-100_sunny_st_newport_beach_ca_92707">
+                                                <img src="http://1.idx-pics.diverse-cdn.com/554/20649469/0-full.jpg" alt="Photo of 100 Sunny St., Newport Beach, CA 92707 (MLS # 20649469)" title="Photo of 100 Sunny St., Newport Beach, CA 92707 (MLS # 20649469)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649469-100_sunny_st_newport_beach_ca_92707">
+                                                100 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $230,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>4 beds, 2 part baths</div>
+                                        <div>Home size: 1,850 sq ft</div>
+                                        <div>Lot size: 7,000 sqft</div>
+                                        <div>Year built: 1961</div>
+                                        <div>Parking spots: 2</div>
+                                        <div>Days on market: 2,363</div>
+                                        <div>Walk Score®: 71</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649468-99_sunny_st_newport_beach_ca_92663">
+                                                <img src="http://2.idx-pics.diverse-cdn.com/554/20649468/0-full.jpg" alt="Photo of 99 Sunny St., Newport Beach, CA 92663 (MLS # 20649468)" title="Photo of 99 Sunny St., Newport Beach, CA 92663 (MLS # 20649468)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649468-99_sunny_st_newport_beach_ca_92663">
+                                                99 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $249,900
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>2 beds, 1 full bath</div>
+                                        <div>Home size: 671 sq ft</div>
+                                        <div>Lot size: 7,503 sqft</div>
+                                        <div>Year built: 1957</div>
+                                        <div>Parking spots: 1</div>
+                                        <div>Days on market: 2,365</div>
+                                        <div>Walk Score®: 66</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649470-98_sunny_st_newport_beach_ca_92663">
+                                                <img src="http://1.idx-pics.diverse-cdn.com/554/20649470/0-full.jpg" alt="Photo of 98 Sunny St., Newport Beach, CA 92663 (MLS # 20649470)" title="Photo of 98 Sunny St., Newport Beach, CA 92663 (MLS # 20649470)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649470-98_sunny_st_newport_beach_ca_92663">
+                                                98 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $300,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>3 beds, 1 full, 1 part baths</div>
+                                        <div>Home size: 1,128 sq ft</div>
+                                        <div>Lot size: 5,900 sqft</div>
+                                        <div>Year built: 1949</div>
+                                        <div>Parking spots: 2</div>
+                                        <div>Days on market: 2,370</div>
+                                        <div>Walk Score®: 68</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649467-97_sunny_st_newport_beach_ca_92663">
+                                                <img src="http://1.idx-pics.diverse-cdn.com/554/20649467/0-full.jpg" alt="Photo of 97 Sunny St., Newport Beach, CA 92663 (MLS # 20649467)" title="Photo of 97 Sunny St., Newport Beach, CA 92663 (MLS # 20649467)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649467-97_sunny_st_newport_beach_ca_92663">
+                                                97 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $330,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>2 beds, 1 full bath</div>
+                                        <div>Home size: 1,064 sq ft</div>
+                                        <div>Lot size: 3,850 sqft</div>
+                                        <div>Year built: 1905</div>
+                                        <div>Parking spots: 2</div>
+                                        <div>Days on market: 2,377</div>
+                                        <div>Walk Score®: 77</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649466-96_sunny_st_newport_beach_ca_92661">
+                                                <img src="http://2.idx-pics.diverse-cdn.com/554/20649466/0-full.jpg" alt="Photo of 96 Sunny St., Newport Beach, CA 92661 (MLS # 20649466)" title="Photo of 96 Sunny St., Newport Beach, CA 92661 (MLS # 20649466)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649466-96_sunny_st_newport_beach_ca_92661">
+                                                96 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $439,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>2 beds, 1 full bath</div>
+                                        <div>Home size: 1,146 sq ft</div>
+                                        <div>Lot size: 8,685 sqft</div>
+                                        <div>Year built: 1939</div>
+                                        <div>Days on market: 2,379</div>
+                                        <div>Walk Score®: 66</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649482-95_sunny_st_newport_beach_ca_92661">
+                                                <img src="http://2.idx-pics.diverse-cdn.com/554/20649482/0-full.jpg" alt="Photo of 95 Sunny St., Newport Beach, CA 92661 (MLS # 20649482)" title="Photo of 95 Sunny St., Newport Beach, CA 92661 (MLS # 20649482)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649482-95_sunny_st_newport_beach_ca_92661">
+                                                95 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $189,900
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>3 beds, 1 full bath</div>
+                                        <div>Home size: 1,338 sq ft</div>
+                                        <div>Lot size: 2,496 sqft</div>
+                                        <div>Year built: 1906</div>
+                                        <div>Days on market: 2,382</div>
+                                        <div>Walk Score®: 82</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649464-93_sunny_st_newport_beach_ca_92660">
+                                                <img src="http://2.idx-pics.diverse-cdn.com/554/20649464/0-full.jpg" alt="Photo of 93 Sunny St., Newport Beach, CA 92660 (MLS # 20649464)" title="Photo of 93 Sunny St., Newport Beach, CA 92660 (MLS # 20649464)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649464-93_sunny_st_newport_beach_ca_92660">
+                                                93 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $349,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>3 beds, 3 baths</div>
+                                        <div>Home size: 3,200 sq ft</div>
+                                        <div>Lot size: 7,900 sqft</div>
+                                        <div>Year built: 1987</div>
+                                        <div>Parking spots: 5</div>
+                                        <div>Days on market: 2,383</div>
+                                        <div>Walk Score®: 57</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649483-91_sunny_st_newport_beach_ca_92660">
+                                                <img src="http://1.idx-pics.diverse-cdn.com/554/20649483/0-full.jpg" alt="Photo of 91 Sunny St., Newport Beach, CA 92660 (MLS # 20649483)" title="Photo of 91 Sunny St., Newport Beach, CA 92660 (MLS # 20649483)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649483-91_sunny_st_newport_beach_ca_92660">
+                                                91 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $180,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>3 beds, 4 full, 1 part baths</div>
+                                        <div>Home size: 3,971 sq ft</div>
+                                        <div>Lot size: 5,994 sqft</div>
+                                        <div>Year built: 1997</div>
+                                        <div>Parking spots: 2</div>
+                                        <div>Days on market: 2,385</div>
+                                        <div>Walk Score®: 6</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649465-94_sunny_st_newport_beach_ca_92660">
+                                                <img src="http://1.idx-pics.diverse-cdn.com/554/20649465/0-full.jpg" alt="Photo of 94 Sunny St., Newport Beach, CA 92660 (MLS # 20649465)" title="Photo of 94 Sunny St., Newport Beach, CA 92660 (MLS # 20649465)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649465-94_sunny_st_newport_beach_ca_92660">
+                                                94 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $104,900
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>4 beds, 2 baths</div>
+                                        <div>Home size: 2,179 sq ft</div>
+                                        <div>Lot size: 6,700 sqft</div>
+                                        <div>Year built: 1966</div>
+                                        <div>Parking spots: 2</div>
+                                        <div>Days on market: 2,385</div>
+                                        <div>Walk Score®: 35</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649463-90_sunny_st_newport_beach_ca_92660">
+                                                <img src="http://1.idx-pics.diverse-cdn.com/554/20649463/0-full.jpg" alt="Photo of 90 Sunny St., Newport Beach, CA 92660 (MLS # 20649463)" title="Photo of 90 Sunny St., Newport Beach, CA 92660 (MLS # 20649463)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649463-90_sunny_st_newport_beach_ca_92660">
+                                                90 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $140,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>4 beds, 3 full baths</div>
+                                        <div>Home size: 2,745 sq ft</div>
+                                        <div>Lot size: 7,000 sqft</div>
+                                        <div>Year built: 2005</div>
+                                        <div>Parking spots: 3</div>
+                                        <div>Days on market: 2,392</div>
+                                        <div>Walk Score®: 0</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649493-89_sunny_st_newport_beach_ca_92660">
+                                                <img src="http://2.idx-pics.diverse-cdn.com/554/20649493/0-full.jpg" alt="Photo of 89 Sunny St., Newport Beach, CA 92660 (MLS # 20649493)" title="Photo of 89 Sunny St., Newport Beach, CA 92660 (MLS # 20649493)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649493-89_sunny_st_newport_beach_ca_92660">
+                                                89 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $249,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>2 beds, 1 full bath</div>
+                                        <div>Home size: 853 sq ft</div>
+                                        <div>Year built: 1982</div>
+                                        <div>Parking spots: 2</div>
+                                        <div>Days on market: 2,407</div>
+                                        <div>Walk Score®: 75</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649492-88_sunny_st_newport_beach_ca_92660">
+                                                <img src="http://1.idx-pics.diverse-cdn.com/554/20649492/0-full.jpg" alt="Photo of 88 Sunny St., Newport Beach, CA 92660 (MLS # 20649492)" title="Photo of 88 Sunny St., Newport Beach, CA 92660 (MLS # 20649492)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649492-88_sunny_st_newport_beach_ca_92660">
+                                                88 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $215,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>4 beds, 3 full baths</div>
+                                        <div>Home size: 2,234 sq ft</div>
+                                        <div>Lot size: 6,969 sqft</div>
+                                        <div>Year built: 1997</div>
+                                        <div>Parking spots: 2</div>
+                                        <div>Days on market: 2,407</div>
+                                        <div>Walk Score®: 25</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649472-87_sunny_st_newport_beach_ca_92660">
+                                                <img src="http://1.idx-pics.diverse-cdn.com/554/20649472/0-full.jpg" alt="Photo of 87 Sunny St., Newport Beach, CA 92660 (MLS # 20649472)" title="Photo of 87 Sunny St., Newport Beach, CA 92660 (MLS # 20649472)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649472-87_sunny_st_newport_beach_ca_92660">
+                                                87 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $499,999
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>3 beds, 1 full, 1 part baths</div>
+                                        <div>Home size: 1,326 sq ft</div>
+                                        <div>Lot size: 4,280 sqft</div>
+                                        <div>Year built: 1947</div>
+                                        <div>Parking spots: 1</div>
+                                        <div>Days on market: 2,408</div>
+                                        <div>Walk Score®: 68</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649462-86_sunny_st_newport_beach_ca_92660">
+                                                <img src="http://2.idx-pics.diverse-cdn.com/554/20649462/0-full.jpg" alt="Photo of 86 Sunny St., Newport Beach, CA 92660 (MLS # 20649462)" title="Photo of 86 Sunny St., Newport Beach, CA 92660 (MLS # 20649462)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649462-86_sunny_st_newport_beach_ca_92660">
+                                                86 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $399,999
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>3 beds, 2 full baths</div>
+                                        <div>Home size: 1,323 sq ft</div>
+                                        <div>Lot size: 8,804 sqft</div>
+                                        <div>Year built: 1923</div>
+                                        <div>Days on market: 2,414</div>
+                                        <div>Walk Score®: 72</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649491-85_sunny_st_newport_beach_ca_92660">
+                                                <img src="http://2.idx-pics.diverse-cdn.com/554/20649491/0-full.jpg" alt="Photo of 85 Sunny St., Newport Beach, CA 92660 (MLS # 20649491)" title="Photo of 85 Sunny St., Newport Beach, CA 92660 (MLS # 20649491)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649491-85_sunny_st_newport_beach_ca_92660">
+                                                85 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $399,999
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>2 beds, 1 full bath</div>
+                                        <div>Home size: 1,332 sq ft</div>
+                                        <div>Lot size: 6,647 sqft</div>
+                                        <div>Year built: 2001</div>
+                                        <div>Parking spots: 2</div>
+                                        <div>Days on market: 2,416</div>
+                                        <div>Walk Score®: 58</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649461-84_sunny_st_newport_beach_ca_92660">
+                                                <img src="http://1.idx-pics.diverse-cdn.com/554/20649461/0-full.jpg" alt="Photo of 84 Sunny St., Newport Beach, CA 92660 (MLS # 20649461)" title="Photo of 84 Sunny St., Newport Beach, CA 92660 (MLS # 20649461)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649461-84_sunny_st_newport_beach_ca_92660">
+                                                84 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $499,999
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>2 beds, 1 full bath</div>
+                                        <div>Home size: 617 sq ft</div>
+                                        <div>Lot size: 2,962 sqft</div>
+                                        <div>Year built: 1924</div>
+                                        <div>Days on market: 2,418</div>
+                                        <div>Walk Score®: 65</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649460-83_sunny_st_newport_beach_ca_92660">
+                                                <img src="http://2.idx-pics.diverse-cdn.com/554/20649460/0-full.jpg" alt="Photo of 83 Sunny St., Newport Beach, CA 92660 (MLS # 20649460)" title="Photo of 83 Sunny St., Newport Beach, CA 92660 (MLS # 20649460)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649460-83_sunny_st_newport_beach_ca_92660">
+                                                83 Sunny St., Newport Beach
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $530,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>3 beds, 2 full baths</div>
+                                        <div>Home size: 1,213 sq ft</div>
+                                        <div>Lot size: 6,000 sqft</div>
+                                        <div>Year built: 1960</div>
+                                        <div>Parking spots: 2</div>
+                                        <div>Days on market: 2,420</div>
+                                        <div>Walk Score®: 89</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649490-82_sunny_st_mission_viejo_ca_92692">
+                                                <img src="http://1.idx-pics.diverse-cdn.com/554/20649490/0-full.jpg" alt="Photo of 82 Sunny St., Mission Viejo, CA 92692 (MLS # 20649490)" title="Photo of 82 Sunny St., Mission Viejo, CA 92692 (MLS # 20649490)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649490-82_sunny_st_mission_viejo_ca_92692">
+                                                82 Sunny St., Mission Viejo
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $609,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>3 beds, 1 full, 1 part baths</div>
+                                        <div>Home size: 2,314 sq ft</div>
+                                        <div>Lot size: 9,150 sqft</div>
+                                        <div>Year built: 1964</div>
+                                        <div>Parking spots: 2</div>
+                                        <div>Days on market: 2,426</div>
+                                        <div>Walk Score®: 26</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649471-92_sunny_st_mission_viejo_ca_92692">
+                                                <img src="http://2.idx-pics.diverse-cdn.com/554/20649471/0-full.jpg" alt="Photo of 92 Sunny St., Mission Viejo, CA 92692 (MLS # 20649471)" title="Photo of 92 Sunny St., Mission Viejo, CA 92692 (MLS # 20649471)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649471-92_sunny_st_mission_viejo_ca_92692">
+                                                92 Sunny St., Mission Viejo
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $460,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>4 beds, 2 full baths</div>
+                                        <div>Home size: 1,764 sq ft</div>
+                                        <div>Lot size: 7,360 sqft</div>
+                                        <div>Year built: 1954</div>
+                                        <div>Parking spots: 2</div>
+                                        <div>Days on market: 2,427</div>
+                                        <div>Walk Score®: 63</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649473-81_sunny_st_mission_viejo_ca_92692">
+                                                <img src="http://2.idx-pics.diverse-cdn.com/554/20649473/0-full.jpg" alt="Photo of 81 Sunny St., Mission Viejo, CA 92692 (MLS # 20649473)" title="Photo of 81 Sunny St., Mission Viejo, CA 92692 (MLS # 20649473)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649473-81_sunny_st_mission_viejo_ca_92692">
+                                                81 Sunny St., Mission Viejo
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $319,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>4 beds, 3 full, 1 part baths</div>
+                                        <div>Home size: 3,100 sq ft</div>
+                                        <div>Year built: 2000</div>
+                                        <div>Parking spots: 3</div>
+                                        <div>Days on market: 2,433</div>
+                                        <div>Walk Score®: 51</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649487-80_sunny_st_mission_viejo_ca_92692">
+                                                <img src="http://1.idx-pics.diverse-cdn.com/554/20649487/0-full.jpg" alt="Photo of 80 Sunny St., Mission Viejo, CA 92692 (MLS # 20649487)" title="Photo of 80 Sunny St., Mission Viejo, CA 92692 (MLS # 20649487)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649487-80_sunny_st_mission_viejo_ca_92692">
+                                                80 Sunny St., Mission Viejo
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $159,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>4 beds, 3 full, 1 part baths</div>
+                                        <div>Home size: 3,600 sq ft</div>
+                                        <div>Lot size: 8,000 sqft</div>
+                                        <div>Year built: 2005</div>
+                                        <div>Parking spots: 3</div>
+                                        <div>Days on market: 2,438</div>
+                                        <div>Walk Score®: 20</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649475-78_sunny_st_mission_viejo_ca_92692">
+                                                <img src="http://2.idx-pics.diverse-cdn.com/554/20649475/0-full.jpg" alt="Photo of 78 Sunny St., Mission Viejo, CA 92692 (MLS # 20649475)" title="Photo of 78 Sunny St., Mission Viejo, CA 92692 (MLS # 20649475)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649475-78_sunny_st_mission_viejo_ca_92692">
+                                                78 Sunny St., Mission Viejo
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $395,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>2 beds, 1 full, 1 part baths</div>
+                                        <div>Home size: 950 sq ft</div>
+                                        <div>Lot size: 10,776 sqft</div>
+                                        <div>Year built: 1980</div>
+                                        <div>Parking spots: 2</div>
+                                        <div>Days on market: 2,439</div>
+                                        <div>Walk Score®: 43</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649486-79_sunny_st_mission_viejo_ca_92692">
+                                                <img src="http://2.idx-pics.diverse-cdn.com/554/20649486/0-full.jpg" alt="Photo of 79 Sunny St., Mission Viejo, CA 92692 (MLS # 20649486)" title="Photo of 79 Sunny St., Mission Viejo, CA 92692 (MLS # 20649486)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649486-79_sunny_st_mission_viejo_ca_92692">
+                                                79 Sunny St., Mission Viejo
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $235,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>5 beds, 2 full, 1 part baths</div>
+                                        <div>Home size: 3,400 sq ft</div>
+                                        <div>Lot size: 5,000 sqft</div>
+                                        <div>Year built: 2005</div>
+                                        <div>Parking spots: 2</div>
+                                        <div>Days on market: 2,441</div>
+                                        <div>Walk Score®: 43</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649474-77_sunny_st_mission_viejo_ca_92692">
+                                                <img src="http://1.idx-pics.diverse-cdn.com/554/20649474/0-full.jpg" alt="Photo of 77 Sunny St., Mission Viejo, CA 92692 (MLS # 20649474)" title="Photo of 77 Sunny St., Mission Viejo, CA 92692 (MLS # 20649474)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649474-77_sunny_st_mission_viejo_ca_92692">
+                                                77 Sunny St., Mission Viejo
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $359,900
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>5 beds, 5 full, 1 part baths</div>
+                                        <div>Home size: 5,000 sq ft</div>
+                                        <div>Lot size: 10,200 sqft</div>
+                                        <div>Year built: 2005</div>
+                                        <div>Parking spots: 3</div>
+                                        <div>Days on market: 2,444</div>
+                                        <div>Walk Score®: 26</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                                <li class="dsidx-listing">
+                                    <div class="dsidx-media">
+                                        <div class="dsidx-photo">
+                                            <a href="/realhomes/idx/mls-20649459-76_sunny_st_mission_viejo_ca_92692">
+                                                <img src="http://2.idx-pics.diverse-cdn.com/554/20649459/0-full.jpg" alt="Photo of 76 Sunny St., Mission Viejo, CA 92692 (MLS # 20649459)" title="Photo of 76 Sunny St., Mission Viejo, CA 92692 (MLS # 20649459)">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-primary-data">
+                                        <div class="dsidx-address">
+                                            <a href="/realhomes/idx/mls-20649459-76_sunny_st_mission_viejo_ca_92692">
+                                                76 Sunny St., Mission Viejo
+                                            </a>
+                                        </div>
+                                        <div class="dsidx-price">
+                                            $300,000
+                                        </div>
+                                    </div>
+                                    <div class="dsidx-secondary-data">
+                                        <div>1 bed, 1 full bath</div>
+                                        <div>Home size: 552 sq ft</div>
+                                        <div>Lot size: 888 sqft</div>
+                                        <div>Year built: 1957</div>
+                                        <div>Days on market: 2,445</div>
+                                        <div>Walk Score®: 92</div>
+
+                                    </div>
+                                </li>
+                                <li><hr></li>
+                            </ol>
+
+                            <div class="dsidx-paging-control">
+                                Properties
+                                1 - 25 of 100
+                                |
+
+                                « First
+
+                                |
+
+                                &lt; Previous
+
+                                |
+                                <a href="page-2?idx-d-SortOrders%3C0%3E-Column=DateAdded&amp;idx-d-SortOrders%3C0%3E-Direction=DESC">
+                                    Next &gt;
+                                </a>
+                                |
+                                <a href="page-4?idx-d-SortOrders%3C0%3E-Column=DateAdded&amp;idx-d-SortOrders%3C0%3E-Direction=DESC">
+                                    Last »
+                                </a>
+                            </div>
+                            <div id="dsidx-disclaimer">
+                                <p>Listing information deemed reliable but not guaranteed</p><p>This <a href="http://www.diversesolutions.com">IDX Software</a> is (c) <a href="http://www.diversesolutions.com">Diverse Solutions</a> 2014.</p>
+                            </div>
+
+
+
+                        </div>
+
+                        <script src="http://maps.google.com/maps/api/js?sensor=false" data-handle="googlemaps3"></script>
+                        <script src="http://maps.gstatic.com/intl/en_us/mapfiles/api-3/17/2/main.js" type="text/javascript"></script>
+                        <script>
+                            dsidx.activate('results');
+                            dsidx.activate('search');
+                            dsidx.activate('auth');
+                            dsidx.pluginVersion = '2.1.4';
+                            dsidx.pluginUrl = '/realhomes/wp-content/plugins/dsidxpress/';
+                            dsidx.idxActivationPath = '/realhomes/idx/';
+                            dsidx.dataSets['results'] = [{ "PhotoCount": 8, "PhotoUriBase": "http://1.idx-pics.diverse-cdn.com/554/20649469/", "BathsShortString": "2 part baths", "BedsShortString": "4 beds", "ImprovedSqFt": "1,850", "LotSqFt": "7,000", "Price": "$230,000", "PrettyUriForUrl": "mls-20649469-100_sunny_st_newport_beach_ca_92707", "Address": "100 Sunny St.", "City": "Newport Beach", "Latitude": 33.661149, "Longitude": -117.883478, "MlsNumber": "20649469", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 2.0, "BedsTotal": 4, "SalePrice": "$230,000", "ListingStatusID": 1 }, { "PhotoCount": 9, "PhotoUriBase": "http://2.idx-pics.diverse-cdn.com/554/20649468/", "BathsShortString": "1 full bath", "BedsShortString": "2 beds", "ImprovedSqFt": "671", "LotSqFt": "7,503", "Price": "$249,900", "PrettyUriForUrl": "mls-20649468-99_sunny_st_newport_beach_ca_92663", "Address": "99 Sunny St.", "City": "Newport Beach", "Latitude": 33.627818, "Longitude": -117.949408, "MlsNumber": "20649468", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 1.0, "BedsTotal": 2, "SalePrice": "$249,900", "ListingStatusID": 1 }, { "PhotoCount": 9, "PhotoUriBase": "http://1.idx-pics.diverse-cdn.com/554/20649470/", "BathsShortString": "1 full, 1 part baths", "BedsShortString": "3 beds", "ImprovedSqFt": "1,128", "LotSqFt": "5,900", "Price": "$300,000", "PrettyUriForUrl": "mls-20649470-98_sunny_st_newport_beach_ca_92663", "Address": "98 Sunny St.", "City": "Newport Beach", "Latitude": 33.617357, "Longitude": -117.912617, "MlsNumber": "20649470", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 2.0, "BedsTotal": 3, "SalePrice": "$300,000", "ListingStatusID": 1 }, { "PhotoCount": 9, "PhotoUriBase": "http://1.idx-pics.diverse-cdn.com/554/20649467/", "BathsShortString": "1 full bath", "BedsShortString": "2 beds", "ImprovedSqFt": "1,064", "LotSqFt": "3,850", "Price": "$330,000", "PrettyUriForUrl": "mls-20649467-97_sunny_st_newport_beach_ca_92663", "Address": "97 Sunny St.", "City": "Newport Beach", "Latitude": 33.613931, "Longitude": -117.930920, "MlsNumber": "20649467", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 1.0, "BedsTotal": 2, "SalePrice": "$330,000", "ListingStatusID": 1 }, { "PhotoCount": 8, "PhotoUriBase": "http://2.idx-pics.diverse-cdn.com/554/20649466/", "BathsShortString": "1 full bath", "BedsShortString": "2 beds", "ImprovedSqFt": "1,146", "LotSqFt": "8,685", "Price": "$439,000", "PrettyUriForUrl": "mls-20649466-96_sunny_st_newport_beach_ca_92661", "Address": "96 Sunny St.", "City": "Newport Beach", "Latitude": 33.597335, "Longitude": -117.889849, "MlsNumber": "20649466", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 1.0, "BedsTotal": 2, "SalePrice": "$439,000", "ListingStatusID": 1 }, { "PhotoCount": 7, "PhotoUriBase": "http://2.idx-pics.diverse-cdn.com/554/20649482/", "BathsShortString": "1 full bath", "BedsShortString": "3 beds", "ImprovedSqFt": "1,338", "LotSqFt": "2,496", "Price": "$189,900", "PrettyUriForUrl": "mls-20649482-95_sunny_st_newport_beach_ca_92661", "Address": "95 Sunny St.", "City": "Newport Beach", "Latitude": 33.595841, "Longitude": -117.885033, "MlsNumber": "20649482", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 1.0, "BedsTotal": 3, "SalePrice": "$189,900", "ListingStatusID": 1 }, { "PhotoCount": 5, "PhotoUriBase": "http://2.idx-pics.diverse-cdn.com/554/20649464/", "BathsShortString": "3 baths", "BedsShortString": "3 beds", "ImprovedSqFt": "3,200", "LotSqFt": "7,900", "Price": "$349,000", "PrettyUriForUrl": "mls-20649464-93_sunny_st_newport_beach_ca_92660", "Address": "93 Sunny St.", "City": "Newport Beach", "Latitude": 33.638745, "Longitude": -117.882757, "MlsNumber": "20649464", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 3.0, "BedsTotal": 3, "SalePrice": "$349,000", "ListingStatusID": 1 }, { "PhotoCount": 9, "PhotoUriBase": "http://1.idx-pics.diverse-cdn.com/554/20649483/", "BathsShortString": "4 full, 1 part baths", "BedsShortString": "3 beds", "ImprovedSqFt": "3,971", "LotSqFt": "5,994", "Price": "$180,000", "PrettyUriForUrl": "mls-20649483-91_sunny_st_newport_beach_ca_92660", "Address": "91 Sunny St.", "City": "Newport Beach", "Latitude": 33.638454, "Longitude": -117.897021, "MlsNumber": "20649483", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 5.0, "BedsTotal": 3, "SalePrice": "$3,175,000", "ListingStatusID": 1 }, { "PhotoCount": 9, "PhotoUriBase": "http://1.idx-pics.diverse-cdn.com/554/20649465/", "BathsShortString": "2 baths", "BedsShortString": "4 beds", "ImprovedSqFt": "2,179", "LotSqFt": "6,700", "Price": "$104,900", "PrettyUriForUrl": "mls-20649465-94_sunny_st_newport_beach_ca_92660", "Address": "94 Sunny St.", "City": "Newport Beach", "Latitude": 33.636397, "Longitude": -117.870601, "MlsNumber": "20649465", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 2.0, "BedsTotal": 4, "SalePrice": "$104,900", "ListingStatusID": 1 }, { "PhotoCount": 9, "PhotoUriBase": "http://1.idx-pics.diverse-cdn.com/554/20649463/", "BathsShortString": "3 full baths", "BedsShortString": "4 beds", "ImprovedSqFt": "2,745", "LotSqFt": "7,000", "Price": "$140,000", "PrettyUriForUrl": "mls-20649463-90_sunny_st_newport_beach_ca_92660", "Address": "90 Sunny St.", "City": "Newport Beach", "Latitude": 33.635529, "Longitude": -117.866165, "MlsNumber": "20649463", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 3.0, "BedsTotal": 4, "SalePrice": "$140,000", "ListingStatusID": 1 }, { "PhotoCount": 9, "PhotoUriBase": "http://2.idx-pics.diverse-cdn.com/554/20649493/", "BathsShortString": "1 full bath", "BedsShortString": "2 beds", "ImprovedSqFt": "853", "LotSqFt": "0", "Price": "$249,000", "PrettyUriForUrl": "mls-20649493-89_sunny_st_newport_beach_ca_92660", "Address": "89 Sunny St.", "City": "Newport Beach", "Latitude": 33.630180, "Longitude": -117.873823, "MlsNumber": "20649493", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 1.0, "BedsTotal": 2, "SalePrice": "$110,000", "ListingStatusID": 1 }, { "PhotoCount": 7, "PhotoUriBase": "http://1.idx-pics.diverse-cdn.com/554/20649492/", "BathsShortString": "3 full baths", "BedsShortString": "4 beds", "ImprovedSqFt": "2,234", "LotSqFt": "6,969", "Price": "$215,000", "PrettyUriForUrl": "mls-20649492-88_sunny_st_newport_beach_ca_92660", "Address": "88 Sunny St.", "City": "Newport Beach", "Latitude": 33.620850, "Longitude": -117.868814, "MlsNumber": "20649492", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 3.0, "BedsTotal": 4, "SalePrice": "$195,000", "ListingStatusID": 1 }, { "PhotoCount": 7, "PhotoUriBase": "http://1.idx-pics.diverse-cdn.com/554/20649472/", "BathsShortString": "1 full, 1 part baths", "BedsShortString": "3 beds", "ImprovedSqFt": "1,326", "LotSqFt": "4,280", "Price": "$499,999", "PrettyUriForUrl": "mls-20649472-87_sunny_st_newport_beach_ca_92660", "Address": "87 Sunny St.", "City": "Newport Beach", "Latitude": 33.620150, "Longitude": -117.858337, "MlsNumber": "20649472", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 2.0, "BedsTotal": 3, "SalePrice": "$499,999", "ListingStatusID": 1 }, { "PhotoCount": 7, "PhotoUriBase": "http://2.idx-pics.diverse-cdn.com/554/20649462/", "BathsShortString": "2 full baths", "BedsShortString": "3 beds", "ImprovedSqFt": "1,323", "LotSqFt": "8,804", "Price": "$399,999", "PrettyUriForUrl": "mls-20649462-86_sunny_st_newport_beach_ca_92660", "Address": "86 Sunny St.", "City": "Newport Beach", "Latitude": 33.618661, "Longitude": -117.884506, "MlsNumber": "20649462", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 2.0, "BedsTotal": 3, "SalePrice": "$399,999", "ListingStatusID": 1 }, { "PhotoCount": 9, "PhotoUriBase": "http://2.idx-pics.diverse-cdn.com/554/20649491/", "BathsShortString": "1 full bath", "BedsShortString": "2 beds", "ImprovedSqFt": "1,332", "LotSqFt": "6,647", "Price": "$399,999", "PrettyUriForUrl": "mls-20649491-85_sunny_st_newport_beach_ca_92660", "Address": "85 Sunny St.", "City": "Newport Beach", "Latitude": 33.618423, "Longitude": -117.900258, "MlsNumber": "20649491", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 1.0, "BedsTotal": 2, "SalePrice": "$250,000", "ListingStatusID": 1 }, { "PhotoCount": 9, "PhotoUriBase": "http://1.idx-pics.diverse-cdn.com/554/20649461/", "BathsShortString": "1 full bath", "BedsShortString": "2 beds", "ImprovedSqFt": "617", "LotSqFt": "2,962", "Price": "$499,999", "PrettyUriForUrl": "mls-20649461-84_sunny_st_newport_beach_ca_92660", "Address": "84 Sunny St.", "City": "Newport Beach", "Latitude": 33.614041, "Longitude": -117.901247, "MlsNumber": "20649461", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 1.0, "BedsTotal": 2, "SalePrice": "$499,999", "ListingStatusID": 1 }, { "PhotoCount": 9, "PhotoUriBase": "http://2.idx-pics.diverse-cdn.com/554/20649460/", "BathsShortString": "2 full baths", "BedsShortString": "3 beds", "ImprovedSqFt": "1,213", "LotSqFt": "6,000", "Price": "$530,000", "PrettyUriForUrl": "mls-20649460-83_sunny_st_newport_beach_ca_92660", "Address": "83 Sunny St.", "City": "Newport Beach", "Latitude": 33.613053, "Longitude": -117.878940, "MlsNumber": "20649460", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 2.0, "BedsTotal": 3, "SalePrice": "$530,000", "ListingStatusID": 1 }, { "PhotoCount": 9, "PhotoUriBase": "http://1.idx-pics.diverse-cdn.com/554/20649490/", "BathsShortString": "1 full, 1 part baths", "BedsShortString": "3 beds", "ImprovedSqFt": "2,314", "LotSqFt": "9,150", "Price": "$609,000", "PrettyUriForUrl": "mls-20649490-82_sunny_st_mission_viejo_ca_92692", "Address": "82 Sunny St.", "City": "Mission Viejo", "Latitude": 33.653804, "Longitude": -117.642474, "MlsNumber": "20649490", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 2.0, "BedsTotal": 3, "SalePrice": "$2,000,000", "ListingStatusID": 1 }, { "PhotoCount": 9, "PhotoUriBase": "http://2.idx-pics.diverse-cdn.com/554/20649471/", "BathsShortString": "2 full baths", "BedsShortString": "4 beds", "ImprovedSqFt": "1,764", "LotSqFt": "7,360", "Price": "$460,000", "PrettyUriForUrl": "mls-20649471-92_sunny_st_mission_viejo_ca_92692", "Address": "92 Sunny St.", "City": "Mission Viejo", "Latitude": 33.646862, "Longitude": -117.638432, "MlsNumber": "20649471", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 2.0, "BedsTotal": 4, "SalePrice": "$460,000", "ListingStatusID": 1 }, { "PhotoCount": 9, "PhotoUriBase": "http://2.idx-pics.diverse-cdn.com/554/20649473/", "BathsShortString": "3 full, 1 part baths", "BedsShortString": "4 beds", "ImprovedSqFt": "3,100", "LotSqFt": "0", "Price": "$319,000", "PrettyUriForUrl": "mls-20649473-81_sunny_st_mission_viejo_ca_92692", "Address": "81 Sunny St.", "City": "Mission Viejo", "Latitude": 33.634379, "Longitude": -117.643684, "MlsNumber": "20649473", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 4.0, "BedsTotal": 4, "SalePrice": "$319,000", "ListingStatusID": 1 }, { "PhotoCount": 9, "PhotoUriBase": "http://1.idx-pics.diverse-cdn.com/554/20649487/", "BathsShortString": "3 full, 1 part baths", "BedsShortString": "4 beds", "ImprovedSqFt": "3,600", "LotSqFt": "8,000", "Price": "$159,000", "PrettyUriForUrl": "mls-20649487-80_sunny_st_mission_viejo_ca_92692", "Address": "80 Sunny St.", "City": "Mission Viejo", "Latitude": 33.623679, "Longitude": -117.644193, "MlsNumber": "20649487", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 4.0, "BedsTotal": 4, "SalePrice": "$835,000", "ListingStatusID": 1 }, { "PhotoCount": 9, "PhotoUriBase": "http://2.idx-pics.diverse-cdn.com/554/20649475/", "BathsShortString": "1 full, 1 part baths", "BedsShortString": "2 beds", "ImprovedSqFt": "950", "LotSqFt": "10,776", "Price": "$395,000", "PrettyUriForUrl": "mls-20649475-78_sunny_st_mission_viejo_ca_92692", "Address": "78 Sunny St.", "City": "Mission Viejo", "Latitude": 33.623628, "Longitude": -117.644244, "MlsNumber": "20649475", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 2.0, "BedsTotal": 2, "SalePrice": "$395,000", "ListingStatusID": 1 }, { "PhotoCount": 8, "PhotoUriBase": "http://2.idx-pics.diverse-cdn.com/554/20649486/", "BathsShortString": "2 full, 1 part baths", "BedsShortString": "5 beds", "ImprovedSqFt": "3,400", "LotSqFt": "5,000", "Price": "$235,000", "PrettyUriForUrl": "mls-20649486-79_sunny_st_mission_viejo_ca_92692", "Address": "79 Sunny St.", "City": "Mission Viejo", "Latitude": 33.590804, "Longitude": -117.646673, "MlsNumber": "20649486", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 3.0, "BedsTotal": 5, "SalePrice": "$200,000", "ListingStatusID": 1 }, { "PhotoCount": 5, "PhotoUriBase": "http://1.idx-pics.diverse-cdn.com/554/20649474/", "BathsShortString": "5 full, 1 part baths", "BedsShortString": "5 beds", "ImprovedSqFt": "5,000", "LotSqFt": "10,200", "Price": "$359,900", "PrettyUriForUrl": "mls-20649474-77_sunny_st_mission_viejo_ca_92692", "Address": "77 Sunny St.", "City": "Mission Viejo", "Latitude": 33.589429, "Longitude": -117.649301, "MlsNumber": "20649474", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 6.0, "BedsTotal": 5, "SalePrice": "$359,900", "ListingStatusID": 1 }, { "PhotoCount": 8, "PhotoUriBase": "http://2.idx-pics.diverse-cdn.com/554/20649459/", "BathsShortString": "1 full bath", "BedsShortString": "1 bed", "ImprovedSqFt": "552", "LotSqFt": "888", "Price": "$300,000", "PrettyUriForUrl": "mls-20649459-76_sunny_st_mission_viejo_ca_92692", "Address": "76 Sunny St.", "City": "Mission Viejo", "Latitude": 33.584423, "Longitude": -117.642748, "MlsNumber": "20649459", "ListingAttributionText": null, "IdxIconUri": null, "BathsTotal": 1.0, "BedsTotal": 1, "SalePrice": "$300,000", "ListingStatusID": 1 }];
+                            dsidx.wp_options = { "ResultsDefaultState": "listmap" };
+                            dsidx.contentDomId = '1402211475';
+                            dsidx.mapStart = {
+                                zoom: 9,
+                                latitude: 33.888657501240,
+                                longitude: -117.894287109375
+                            }
+                        </script>
+                    </article>
+                    <section id="comments"></section><!-- end of comments -->
+                </div>
+
+            </div><!-- End Main Content -->
+
+        </div> <!-- End span9 -->
+
+        <div class="span3 sidebar-wrap">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <section id="dsidx-search-2" class="widget clearfix dsidx-widget-search">
+                    <h3 class="title">IDX Real Estate Search</h3>			<div class="dsidx-search-widget dsidx-widget">
+                        <form action="http://inspirythemesdemo.com/realhomes/idx/" method="get" onsubmit="return dsidx_w.searchWidget.validate();">
+                            <select name="idx-q-PropertyTypes" class="dsidx-search-widget-propertyTypes">
+                                <option value="">- All property types -</option>
+                                <option value="1030">Residential / All</option>
+                                <option value="1031">Residential / Condo</option>
+                                <option value="1032">Residential / Single Family</option>
+                            </select>
+                            <label id="idx-search-invalid-msg" style="color:red"></label>				<select id="idx-q-Cities" name="idx-q-Cities" class="idx-q-Location-Filter">
+                                <option value="">- City -</option>
+                                <option value="Irvine">Irvine</option>
+                                <option value="Laguna Beach">Laguna Beach</option>
+                                <option value="Laguna Woods">Laguna Woods</option>
+                                <option value="Lake Forest">Lake Forest</option>
+                                <option value="Mission Viejo">Mission Viejo</option>
+                                <option value="Newport Beach">Newport Beach</option>
+                            </select>				<select id="idx-q-Communities" name="idx-q-Communities" class="idx-q-Location-Filter">
+                                <option value="">- Community -</option>
+                                <option value="Agua Dulce">Agua Dulce</option>
+                                <option value="Anaheim East Of Harbor">Anaheim East Of Harbor</option>
+                                <option value="Anaheim West Of Harbor">Anaheim West Of Harbor</option>
+                                <option value="Artesia">Artesia</option>
+                                <option value="Bellflower South Of 91 Frwy (rf">Bellflower South Of 91 Frwy (rf</option>
+                                <option value="Belmont Shore/Park,Naples,Marin">Belmont Shore/Park,Naples,Marin</option>
+                                <option value="Big Bear Lake">Big Bear Lake</option>
+                                <option value="California City">California City</option>
+                                <option value="Camarillo">Camarillo</option>
+                                <option value="Capistrano Beach">Capistrano Beach</option>
+                                <option value="Catalina">Catalina</option>
+                                <option value="Central Simi">Central Simi</option>
+                                <option value="Central South Sfv">Central South Sfv</option>
+                                <option value="Compton N Of Rosecrans, E Of Ce">Compton N Of Rosecrans, E Of Ce</option>
+                                <option value="Compton S Of Rosecrans, E Of Ce">Compton S Of Rosecrans, E Of Ce</option>
+                                <option value="Corona">Corona</option>
+                                <option value="Coto De Caza">Coto De Caza</option>
+                                <option value="Country Club Park">Country Club Park</option>
+                                <option value="Cuddy Valley">Cuddy Valley</option>
+                                <option value="Del Obispo">Del Obispo</option>
+                                <option value="Desert Hot Springs">Desert Hot Springs</option>
+                                <option value="Downtown Area, Alamitos Beach (">Downtown Area, Alamitos Beach (</option>
+                                <option value="East Bluff - Harbor View">East Bluff - Harbor View</option>
+                                <option value="East North Sfv">East North Sfv</option>
+                                <option value="East Simi">East Simi</option>
+                                <option value="East South Sfv">East South Sfv</option>
+                                <option value="Frazier Park">Frazier Park</option>
+                                <option value="Fullerton">Fullerton</option>
+                                <option value="Garden Grove E Of Euclid, W Of">Garden Grove E Of Euclid, W Of</option>
+                                <option value="Hemet/San Jacinto">Hemet/San Jacinto</option>
+                                <option value="Indio South Of East Valley (314">Indio South Of East Valley (314</option>
+                                <option value="Ladera Ranch">Ladera Ranch</option>
+                                <option value="Laguna Canyon">Laguna Canyon</option>
+                                <option value="Laguna Village">Laguna Village</option>
+                                <option value="Lake Elsinore North">Lake Elsinore North</option>
+                                <option value="Lancaster">Lancaster</option>
+                                <option value="Lennox">Lennox</option>
+                                <option value="Mammoth Lakes">Mammoth Lakes</option>
+                                <option value="N Of Bolsa, S Of Gg, E Of Brook">N Of Bolsa, S Of Gg, E Of Brook</option>
+                                <option value="Newhall 1">Newhall 1</option>
+                                <option value="Newport Coast">Newport Coast</option>
+                                <option value="North Laguna">North Laguna</option>
+                                <option value="North San Diego County">North San Diego County</option>
+                                <option value="Northeast Downey, N Of Fireston">Northeast Downey, N Of Fireston</option>
+                                <option value="Northwest Huntington Beach">Northwest Huntington Beach</option>
+                                <option value="Orange &amp; Garden Grove, E Of Har">Orange &amp; Garden Grove, E Of Har</option>
+                                <option value="Orange, Orange Park Acres E Of">Orange, Orange Park Acres E Of</option>
+                                <option value="Out Of Area">Out Of Area</option>
+                                <option value="Palmdale">Palmdale</option>
+                                <option value="Pasadena Nw">Pasadena Nw</option>
+                                <option value="Perris">Perris</option>
+                                <option value="Pine Mountain Club">Pine Mountain Club</option>
+                                <option value="Pinon Pines">Pinon Pines</option>
+                                <option value="Rancho Santa Margarita Central">Rancho Santa Margarita Central</option>
+                                <option value="Riverside">Riverside</option>
+                                <option value="Santa Fe Springs">Santa Fe Springs</option>
+                                <option value="Seal Beach">Seal Beach</option>
+                                <option value="South Laguna">South Laguna</option>
+                                <option value="South Torrance">South Torrance</option>
+                                <option value="Valencia Northpark">Valencia Northpark</option>
+                                <option value="Ventura">Ventura</option>
+                                <option value="West Covina">West Covina</option>
+                                <option value="West Huntington Beach">West Huntington Beach</option>
+                                <option value="West North Sfv">West North Sfv</option>
+                                <option value="West South Sfv">West South Sfv</option>
+                                <option value="Westside">Westside</option>
+                            </select>				<select id="idx-q-TractIdentifiers" name="idx-q-TractIdentifiers" class="idx-q-Location-Filter">
+                                <option value="">- Tract -</option>
+                                <option value="-ROSSITER RANCH (CUST)">-ROSSITER RANCH (CUST)</option>
+                                <option value="Amarante (AMRN)">Amarante (AMRN)</option>
+                                <option value="Balboa (One Ford Road) (OFBB)">Balboa (One Ford Road) (OFBB)</option>
+                                <option value="Belmont Shore (BSD)">Belmont Shore (BSD)</option>
+                                <option value="Custom ROSSITER RANCH (CUST)">Custom ROSSITER RANCH (CUST)</option>
+                                <option value="Custom (CUST)">Custom (CUST)</option>
+                                <option value="CUSTOM REMODEL (CUST)">CUSTOM REMODEL (CUST)</option>
+                                <option value="DESERT ROSE (OTHR)">DESERT ROSE (OTHR)</option>
+                                <option value="Downtown Area (DOWN)">Downtown Area (DOWN)</option>
+                                <option value="Emerald Bay (EB)">Emerald Bay (EB)</option>
+                                <option value="Fairway Oaks (FO)">Fairway Oaks (FO)</option>
+                                <option value="Happy Valley (HPVY)">Happy Valley (HPVY)</option>
+                                <option value="Heller and Hayes Tract (AB)">Heller and Hayes Tract (AB)</option>
+                                <option value="Hidden Meadows (905)">Hidden Meadows (905)</option>
+                                <option value="Leisure World (OTHR)">Leisure World (OTHR)</option>
+                                <option value="Mobile/Modular/Manufactured (MMM)">Mobile/Modular/Manufactured (MMM)</option>
+                                <option value="Montara (Darrah) (262)">Montara (Darrah) (262)</option>
+                                <option value="Naples (NA)">Naples (NA)</option>
+                                <option value="North Trail Ranch (NOTR)">North Trail Ranch (NOTR)</option>
+                                <option value="Other (OTHR)">Other (OTHR)</option>
+                                <option value="Pelican Point (NCPP)">Pelican Point (NCPP)</option>
+                                <option value="RAMONA SUNRISE (OTHR)">RAMONA SUNRISE (OTHR)</option>
+                                <option value="Sherborne (SHER)">Sherborne (SHER)</option>
+                                <option value="South Laguna Bluffs (SLB)">South Laguna Bluffs (SLB)</option>
+                                <option value="Starlight Estates (OTHR)">Starlight Estates (OTHR)</option>
+                                <option value="Terramonte (TEM)">Terramonte (TEM)</option>
+                                <option value="THE COLLECTION (000000)">THE COLLECTION (000000)</option>
+                                <option value="Unknown (OTHR)">Unknown (OTHR)</option>
+                                <option value="Upper Diamond (UD)">Upper Diamond (UD)</option>
+                                <option value="Village Walk (Copperhill) (VLWK)">Village Walk (Copperhill) (VLWK)</option>
+                                <option value="Westside/North of Willow (WNW)">Westside/North of Willow (WNW)</option>
+                                <option value="Willmore District (WM)">Willmore District (WM)</option>
+                            </select>				<select id="idx-q-ZipCodes" name="idx-q-ZipCodes" class="idx-q-Location-Filter">
+                                <option value="">- Zip -</option>
+                                <option value="92602">92602</option>
+                                <option value="92603">92603</option>
+                                <option value="92604">92604</option>
+                                <option value="92606">92606</option>
+                                <option value="92610">92610</option>
+                                <option value="92612">92612</option>
+                                <option value="92614">92614</option>
+                                <option value="92618">92618</option>
+                                <option value="92620">92620</option>
+                                <option value="92630">92630</option>
+                                <option value="92637">92637</option>
+                                <option value="92651">92651</option>
+                                <option value="92653">92653</option>
+                                <option value="92660">92660</option>
+                                <option value="92661">92661</option>
+                                <option value="92663">92663</option>
+                                <option value="92679">92679</option>
+                                <option value="92691">92691</option>
+                                <option value="92692">92692</option>
+                                <option value="92707">92707</option>
+                            </select>				<label for="idx-q-MlsNumbers">MLS #</label>
+                            <input id="idx-q-MlsNumbers" name="idx-q-MlsNumbers" type="text" class="dsidx-mlsnumber">				<label for="idx-q-PriceMin">Price</label>
+                            <input id="idx-q-PriceMin" name="idx-q-PriceMin" type="text" class="dsidx-price" placeholder="min price">
+                            <input id="idx-q-PriceMax" name="idx-q-PriceMax" type="text" class="dsidx-price" placeholder="max price">						<label for="idx-q-ImprovedSqFtMin">Size</label>
+                            <input id="idx-q-ImprovedSqFtMin" name="idx-q-ImprovedSqFtMin" type="text" class="dsidx-improvedsqft" placeholder="min sqft">				<label for="idx-q-BedsMin">Beds</label>
+                            <input id="idx-q-BedsMin" name="idx-q-BedsMin" type="text" class="dsidx-beds" placeholder="min bedrooms">
+                            <label for="idx-q-BathsMin">Baths</label>
+                            <input id="idx-q-BathsMin" name="idx-q-BathsMin" type="text" class="dsidx-baths" placeholder="min bathrooms">
+                            <div class="dsidx-search-button search-form">
+                                <input type="submit" class="submit real-btn" value="Search for properties">
+                            </div>
+                        </form>
+                    </div>
+                </section><section id="dsidx-listings-2" class="widget clearfix dsidx-widget-listings">
+                    <h3 class="title">IDX Latest Real Estate</h3>
+                    <!-- -->
+
+                    <div id="6a394a5d-1cdd-4a36-a346-955310f6e001" class="dsidx-results-widget dsidx-widget ">
+                        <ul class="dsidx-list dsidx-panel" style="display: none;">
+                            <li class="">
+                                <a href="/realhomes/idx/mls-20649418-19_sunny_st_irvine_ca_92620" title="19 Sunny St., Irvine, CA 92620 (MLS # 20649418)">
+                                    $184,900
+                                    -
+                                    19 Sunny St.
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/realhomes/idx/mls-20649414-14_sunny_st_irvine_ca_92620" title="14 Sunny St., Irvine, CA 92620 (MLS # 20649414)">
+                                    $589,000
+                                    -
+                                    14 Sunny St.
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/realhomes/idx/mls-20649416-17_sunny_st_irvine_ca_92620" title="17 Sunny St., Irvine, CA 92620 (MLS # 20649416)">
+                                    $559,500
+                                    -
+                                    17 Sunny St.
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/realhomes/idx/mls-20649417-18_sunny_st_irvine_ca_92620" title="18 Sunny St., Irvine, CA 92620 (MLS # 20649417)">
+                                    $669,000
+                                    -
+                                    18 Sunny St.
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="dsidx-map dsidx-panel" style="display: none;">
+                            <div class="dsidx-container"></div>
+                            <div class="dsidx-results-widget-map-details"></div>
+                        </div>
+                        <div class="dsidx-expanded dsidx-panel" style="display: block;">
+                            <div class="featured-listing " data-mls_id="20649418">
+                                <a class="dsidx-photo" href="/realhomes/idx/mls-20649418-19_sunny_st_irvine_ca_92620">
+                                    <img src="http://cdn1.diverse-cdn.com/api/images/dsidxpress/no-photos-available-w100.jpg/45bd98">
+                                </a>
+                                <h4>
+                                    <a href="/realhomes/idx/mls-20649418-19_sunny_st_irvine_ca_92620" title="19 Sunny St., Irvine, CA 92620 (MLS # 20649418)">
+                                        19 Sunny St.
+                                        , Irvine
+                                    </a>
+                                </h4>
+                                <ul>
+                                    <li>Home size: 2,918 sq ft</li>
+                                    <li>Lot size: 36,590 sqft</li>
+                                    <li>Year built: 1984</li>
+                                </ul>
+                                <ul>
+                                    <li class="beds">3 beds</li>
+                                    <li class="baths">3 baths</li>
+                                    <li class="price">$184,900</li>
+                                </ul>
+                            </div>
+                            <div class="featured-listing " data-mls_id="20649414">
+                                <a class="dsidx-photo" href="/realhomes/idx/mls-20649414-14_sunny_st_irvine_ca_92620">
+                                    <img src="http://1.idx-pics.diverse-cdn.com/554/20649414/0-thumb.jpg" alt="Photo of 14 Sunny St., Irvine, CA 92620 (MLS # 20649414)">
+                                </a>
+                                <h4>
+                                    <a href="/realhomes/idx/mls-20649414-14_sunny_st_irvine_ca_92620" title="14 Sunny St., Irvine, CA 92620 (MLS # 20649414)">
+                                        14 Sunny St.
+                                        , Irvine
+                                    </a>
+                                </h4>
+                                <ul>
+                                    <li>Home size: 3,284 sq ft</li>
+                                    <li>Lot size: 10,811 sqft</li>
+                                    <li>Year built: 1980</li>
+                                </ul>
+                                <ul>
+                                    <li class="beds">4 beds</li>
+                                    <li class="baths">3 full, 1 part baths</li>
+                                    <li class="price">$589,000</li>
+                                </ul>
+                            </div>
+                            <div class="featured-listing " data-mls_id="20649416">
+                                <a class="dsidx-photo" href="/realhomes/idx/mls-20649416-17_sunny_st_irvine_ca_92620">
+                                    <img src="http://1.idx-pics.diverse-cdn.com/554/20649416/0-thumb.jpg" alt="Photo of 17 Sunny St., Irvine, CA 92620 (MLS # 20649416)">
+                                </a>
+                                <h4>
+                                    <a href="/realhomes/idx/mls-20649416-17_sunny_st_irvine_ca_92620" title="17 Sunny St., Irvine, CA 92620 (MLS # 20649416)">
+                                        17 Sunny St.
+                                        , Irvine
+                                    </a>
+                                </h4>
+                                <ul>
+                                    <li>Home size: 1,136 sq ft</li>
+                                    <li>Lot size: 5,194 sqft</li>
+                                    <li>Year built: 1953</li>
+                                </ul>
+                                <ul>
+                                    <li class="beds">3 beds</li>
+                                    <li class="baths">1 full bath</li>
+                                    <li class="price">$559,500</li>
+                                </ul>
+                            </div>
+                            <div class="featured-listing " data-mls_id="20649417">
+                                <a class="dsidx-photo" href="/realhomes/idx/mls-20649417-18_sunny_st_irvine_ca_92620">
+                                    <img src="http://2.idx-pics.diverse-cdn.com/554/20649417/0-thumb.jpg" alt="Photo of 18 Sunny St., Irvine, CA 92620 (MLS # 20649417)">
+                                </a>
+                                <h4>
+                                    <a href="/realhomes/idx/mls-20649417-18_sunny_st_irvine_ca_92620" title="18 Sunny St., Irvine, CA 92620 (MLS # 20649417)">
+                                        18 Sunny St.
+                                        , Irvine
+                                    </a>
+                                </h4>
+                                <ul>
+                                    <li>Home size: 1,437 sq ft</li>
+                                    <li>Lot size: 6,575 sqft</li>
+                                    <li>Year built: 1954</li>
+                                </ul>
+                                <ul>
+                                    <li class="beds">3 beds</li>
+                                    <li class="baths">1 full, 1 part baths</li>
+                                    <li class="price">$669,000</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dsidx-slideshow dsidx-panel" style="display: none;">
+                            <a href="javascript:void(0)" class="dsidx-slideshow-control dsidx-move-up">previous</a>
+                            <ul>
+                                <li class="featured-listing ">
+                                    <a class="dsidx-photo" href="/realhomes/idx/mls-20649418-19_sunny_st_irvine_ca_92620">
+                                        <img src="http://cdn1.diverse-cdn.com/api/images/dsidxpress/no-photos-available-w100.jpg/45bd98">
+                                    </a>
+                                    <h4>
+                                        <a href="/realhomes/idx/mls-20649418-19_sunny_st_irvine_ca_92620" title="19 Sunny St., Irvine, CA 92620 (MLS # 20649418)">
+                                            19 Sunny St.
+                                            , Irvine
+                                        </a>
+                                    </h4>
+                                    <p>
+                                        <span>Home size: 2,918 sq ft</span>
+                                        <span>Lot size: 36,590 sqft</span>
+                                        <span>Year built: 1984</span>
+                                    </p>
+                                    <p>
+                                        <span class="beds">3 beds</span>
+                                        <span class="baths">3 baths</span>
+                                        <span class="price">$184,900</span>
+                                    </p>
+                                </li>
+                                <li class="featured-listing ">
+                                    <a class="dsidx-photo" href="/realhomes/idx/mls-20649414-14_sunny_st_irvine_ca_92620">
+                                        <img src="http://1.idx-pics.diverse-cdn.com/554/20649414/0-thumb.jpg" alt="Photo of 14 Sunny St., Irvine, CA 92620 (MLS # 20649414)">
+                                    </a>
+                                    <h4>
+                                        <a href="/realhomes/idx/mls-20649414-14_sunny_st_irvine_ca_92620" title="14 Sunny St., Irvine, CA 92620 (MLS # 20649414)">
+                                            14 Sunny St.
+                                            , Irvine
+                                        </a>
+                                    </h4>
+                                    <p>
+                                        <span>Home size: 3,284 sq ft</span>
+                                        <span>Lot size: 10,811 sqft</span>
+                                        <span>Year built: 1980</span>
+                                    </p>
+                                    <p>
+                                        <span class="beds">4 beds</span>
+                                        <span class="baths">3 full, 1 part baths</span>
+                                        <span class="price">$589,000</span>
+                                    </p>
+                                </li>
+                                <li class="featured-listing ">
+                                    <a class="dsidx-photo" href="/realhomes/idx/mls-20649416-17_sunny_st_irvine_ca_92620">
+                                        <img src="http://1.idx-pics.diverse-cdn.com/554/20649416/0-thumb.jpg" alt="Photo of 17 Sunny St., Irvine, CA 92620 (MLS # 20649416)">
+                                    </a>
+                                    <h4>
+                                        <a href="/realhomes/idx/mls-20649416-17_sunny_st_irvine_ca_92620" title="17 Sunny St., Irvine, CA 92620 (MLS # 20649416)">
+                                            17 Sunny St.
+                                            , Irvine
+                                        </a>
+                                    </h4>
+                                    <p>
+                                        <span>Home size: 1,136 sq ft</span>
+                                        <span>Lot size: 5,194 sqft</span>
+                                        <span>Year built: 1953</span>
+                                    </p>
+                                    <p>
+                                        <span class="beds">3 beds</span>
+                                        <span class="baths">1 full bath</span>
+                                        <span class="price">$559,500</span>
+                                    </p>
+                                </li>
+                                <li class="featured-listing ">
+                                    <a class="dsidx-photo" href="/realhomes/idx/mls-20649417-18_sunny_st_irvine_ca_92620">
+                                        <img src="http://2.idx-pics.diverse-cdn.com/554/20649417/0-thumb.jpg" alt="Photo of 18 Sunny St., Irvine, CA 92620 (MLS # 20649417)">
+                                    </a>
+                                    <h4>
+                                        <a href="/realhomes/idx/mls-20649417-18_sunny_st_irvine_ca_92620" title="18 Sunny St., Irvine, CA 92620 (MLS # 20649417)">
+                                            18 Sunny St.
+                                            , Irvine
+                                        </a>
+                                    </h4>
+                                    <p>
+                                        <span>Home size: 1,437 sq ft</span>
+                                        <span>Lot size: 6,575 sqft</span>
+                                        <span>Year built: 1954</span>
+                                    </p>
+                                    <p>
+                                        <span class="beds">3 beds</span>
+                                        <span class="baths">1 full, 1 part baths</span>
+                                        <span class="price">$669,000</span>
+                                    </p>
+                                </li>
+                            </ul>
+                            <a href="javascript:void(0)" class="dsidx-slideshow-control dsidx-move-down">next</a>
+                        </div>
+                        <div class="dsidx-controls">&nbsp;<a href="javascript:void(0)" data-panel="list" style="display: inline; border-bottom-style: none; padding: 0px 5px;">list</a><a href="javascript:void(0)" data-panel="slideshow" style="display: inline; border-bottom-style: none; padding: 0px 5px;">slideshow</a><a href="javascript:void(0)" data-panel="expanded" style="display: inline; border-bottom-style: none; padding: 0px 5px;">details</a><a href="javascript:void(0)" data-panel="map" style="display: inline; border-bottom-style: none; padding: 0px 5px;">map</a></div>
+                    </div>
+
+
+                    <script>
+                        dsidx.activate('resultsWidget', function () {
+                            dsidx.resultsWidget.setInitialState('6a394a5d-1cdd-4a36-a346-955310f6e001', 'expanded');
+                        });
+                        dsidx.idxActivationPath = '/realhomes/idx/';
+                        dsidx.dataSets['6a394a5d-1cdd-4a36-a346-955310f6e001'] = [{ "PhotoCount": 0, "PhotoUriBase": null, "BathsShortString": "3 baths", "BedsShortString": "3 beds", "ImprovedSqFt": "2,918", "Price": "$184,900", "SalePrice": "$184,900", "Status": "Active", "PrettyUriForUrl": "mls-20649418-19_sunny_st_irvine_ca_92620", "ShortDescription": "19 Sunny St., Irvine, CA 92620 (MLS # 20649418)", "Latitude": 33.728466, "Longitude": -117.752787, "MlsNumber": "20649418", "ListingAttribution": null, "IdxIconUri": null }, { "PhotoCount": 5, "PhotoUriBase": "http://1.idx-pics.diverse-cdn.com/554/20649414/", "BathsShortString": "3 full, 1 part baths", "BedsShortString": "4 beds", "ImprovedSqFt": "3,284", "Price": "$589,000", "SalePrice": "$589,000", "Status": "Active", "PrettyUriForUrl": "mls-20649414-14_sunny_st_irvine_ca_92620", "ShortDescription": "14 Sunny St., Irvine, CA 92620 (MLS # 20649414)", "Latitude": 33.715493, "Longitude": -117.758407, "MlsNumber": "20649414", "ListingAttribution": null, "IdxIconUri": null }, { "PhotoCount": 8, "PhotoUriBase": "http://1.idx-pics.diverse-cdn.com/554/20649416/", "BathsShortString": "1 full bath", "BedsShortString": "3 beds", "ImprovedSqFt": "1,136", "Price": "$559,500", "SalePrice": "$559,500", "Status": "Active", "PrettyUriForUrl": "mls-20649416-17_sunny_st_irvine_ca_92620", "ShortDescription": "17 Sunny St., Irvine, CA 92620 (MLS # 20649416)", "Latitude": 33.698981, "Longitude": -117.761667, "MlsNumber": "20649416", "ListingAttribution": null, "IdxIconUri": null }, { "PhotoCount": 9, "PhotoUriBase": "http://2.idx-pics.diverse-cdn.com/554/20649417/", "BathsShortString": "1 full, 1 part baths", "BedsShortString": "3 beds", "ImprovedSqFt": "1,437", "Price": "$669,000", "SalePrice": "$669,000", "Status": "Active", "PrettyUriForUrl": "mls-20649417-18_sunny_st_irvine_ca_92620", "ShortDescription": "18 Sunny St., Irvine, CA 92620 (MLS # 20649417)", "Latitude": 33.698337, "Longitude": -117.760748, "MlsNumber": "20649417", "ListingAttribution": null, "IdxIconUri": null }];
+                    </script>
+
+                </section><section id="dsidx-single-listing-2" class="widget clearfix dsidx-widget-single-listing-wrap" style="border: none; background: transparent;">
+
+                    <!-- -->
+
+
+                    <div id="d18754c7-4e7c-4bf9-b5da-a443268e8b1c" class="dsidx-widget dsidx-widget-single-listing">
+                        <h3 class="widget-title"><a href="/realhomes/idx/mls-20649469-100_sunny_st_newport_beach_ca_92707">100 Sunny St.</a></h3>
+                        <div class="dsidx-widget-single-listing-body">
+                            <div class="dsidx-widget-single-listing-photos">
+                                <div class="dsidx-widget-single-listing-slideshow">
+                                    <span class="dsidx-widget-single-listing-photo">
+                                        <a href="/realhomes/idx/mls-20649469-100_sunny_st_newport_beach_ca_92707">
+                                            <img src="http://1.idx-pics.diverse-cdn.com/554/20649469/0-medium.jpg" alt="Photo for 100 Sunny St., Newport Beach, CA 92707 (MLS # 20649469)">
+                                        </a>
+                                    </span>
+                                    <span class="dsidx-widget-single-listing-photo">
+                                        <a href="/realhomes/idx/mls-20649469-100_sunny_st_newport_beach_ca_92707">
+                                            <span class="img-placeholder" data-img-src="http://1.idx-pics.diverse-cdn.com/554/20649469/1-medium.jpg" data-img-alt="Photo for 100 Sunny St., Newport Beach, CA 92707 (MLS # 20649469)"></span>
+                                        </a>
+                                    </span>
+                                    <span class="dsidx-widget-single-listing-photo">
+                                        <a href="/realhomes/idx/mls-20649469-100_sunny_st_newport_beach_ca_92707">
+                                            <span class="img-placeholder" data-img-src="http://1.idx-pics.diverse-cdn.com/554/20649469/2-medium.jpg" data-img-alt="Photo for 100 Sunny St., Newport Beach, CA 92707 (MLS # 20649469)"></span>
+                                        </a>
+                                    </span>
+                                    <span class="dsidx-widget-single-listing-photo">
+                                        <a href="/realhomes/idx/mls-20649469-100_sunny_st_newport_beach_ca_92707">
+                                            <span class="img-placeholder" data-img-src="http://1.idx-pics.diverse-cdn.com/554/20649469/3-medium.jpg" data-img-alt="Photo for 100 Sunny St., Newport Beach, CA 92707 (MLS # 20649469)"></span>
+                                        </a>
+                                    </span>
+                                    <span class="dsidx-widget-single-listing-photo">
+                                        <a href="/realhomes/idx/mls-20649469-100_sunny_st_newport_beach_ca_92707">
+                                            <span class="img-placeholder" data-img-src="http://1.idx-pics.diverse-cdn.com/554/20649469/4-medium.jpg" data-img-alt="Photo for 100 Sunny St., Newport Beach, CA 92707 (MLS # 20649469)"></span>
+                                        </a>
+                                    </span>
+                                    <span class="dsidx-widget-single-listing-photo">
+                                        <a href="/realhomes/idx/mls-20649469-100_sunny_st_newport_beach_ca_92707">
+                                            <span class="img-placeholder" data-img-src="http://1.idx-pics.diverse-cdn.com/554/20649469/5-medium.jpg" data-img-alt="Photo for 100 Sunny St., Newport Beach, CA 92707 (MLS # 20649469)"></span>
+                                        </a>
+                                    </span>
+                                    <span class="dsidx-widget-single-listing-photo">
+                                        <a href="/realhomes/idx/mls-20649469-100_sunny_st_newport_beach_ca_92707">
+                                            <span class="img-placeholder" data-img-src="http://1.idx-pics.diverse-cdn.com/554/20649469/6-medium.jpg" data-img-alt="Photo for 100 Sunny St., Newport Beach, CA 92707 (MLS # 20649469)"></span>
+                                        </a>
+                                    </span>
+                                    <span class="dsidx-widget-single-listing-photo">
+                                        <a href="/realhomes/idx/mls-20649469-100_sunny_st_newport_beach_ca_92707">
+                                            <span class="img-placeholder" data-img-src="http://1.idx-pics.diverse-cdn.com/554/20649469/7-medium.jpg" data-img-alt="Photo for 100 Sunny St., Newport Beach, CA 92707 (MLS # 20649469)"></span>
+                                        </a>
+                                    </span>
+                                </div>
+
+                                <a href="javascript:void(0)" class="dsidx-widget-single-listing-slideshow-control dsidx-widget-single-listing-slideshow-prev">Previous</a>
+                                <a href="javascript:void(0)" class="dsidx-widget-single-listing-slideshow-control dsidx-widget-single-listing-slideshow-next">Next</a>
+                            </div>
+                            <div class="dsidx-widget-single-listing-meta">
+                                <div class="dsidx-widget-single-listing-details">
+                                    <span class="dsidx-widget-single-listing-detail">
+                                        4
+                                        <span class="dsidx-widget-single-listing-detail-description">BR</span>
+                                    </span>
+                                    <span class="dsidx-widget-single-listing-detail">
+                                        2
+                                        <span class="dsidx-widget-single-listing-detail-description">BA</span>
+                                    </span>
+                                    <span class="dsidx-widget-single-listing-detail">
+                                        1,850
+                                        <span class="dsidx-widget-single-listing-detail-description">SQ. FT.</span>
+                                    </span>
+                                </div>
+                                <div class="dsidx-widget-single-listing-price">$230,000</div>
+                                <div class="dsidx-widget-single-listing-photo-count">8</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <script type="text/javascript">
+                        dsidx.activate('detailsWidget');
+                    </script>
+
+                </section>
+            </aside><!-- End Sidebar -->
+
+        </div>
+    </div><!-- End contents row -->
+
+</div>
