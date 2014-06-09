@@ -15,6 +15,8 @@ namespace Deed.Web {
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            //http://go.microsoft.com/fwlink/?LinkId=26088
         }
     }
 }

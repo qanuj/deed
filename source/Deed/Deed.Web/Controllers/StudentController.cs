@@ -10,35 +10,11 @@ namespace Deed.Web.Controllers
 {
     public class StudentController : Controller
     {
-        //DeedDataContext db = new DeedDataContext();
-        ////
-        //// GET: /Student/
-        //protected IQueryable<CardViewModel> Query()
-        //{
-        //    var s = db.Students;
-        //    var result = from r in s
-        //                 select new CardViewModel
-        //                     {
-        //                         Name = "ANNDY",
-        //                         District = "Mumbai",
-        //                         Adress = "Mumbai",
-        //                         Caste = "Hindu",
-        //                         City = "Mumbai",
-        //                         Country = "India",
-        //                         History = "",
-        //                         State = "Maharashtra",
-        //                         Religion = "Hindu",
-        //                         DOB = DateTime.Now,
-        //                         PostOffice = "Mumbai",
+        readonly Deed.Data.Legacy.DataContext db = new Data.Legacy.DataContext();
 
-
-        //                     };
-        //    return result;
-        //}
-
-        //public ActionResult Index()
-        //{
-        //    return View(Query());
-        //}
+        public ActionResult Query() {
+            var students=db.Students.OrderByDescending(x=>x.id).Select(x=>new { last=x.last_name,picture=x.image,gender=x.male }).Take(10);
+            return Json(students, JsonRequestBehavior.AllowGet);
+        }
 	}
 }
