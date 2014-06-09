@@ -394,6 +394,11 @@
     <Content Include="Content\images\SliderImg\image-slider-3.jpg" />
     <Content Include="Content\images\SliderImg\image-slider-4.jpg" />
     <Content Include="Content\images\SliderImg\image-slider-5.jpg" />
+    <Content Include="Content\images\SliderImg\InvertedImg\s1.jpg" />
+    <Content Include="Content\images\SliderImg\InvertedImg\s190.jpg" />
+    <Content Include="Content\images\SliderImg\InvertedImg\s190L.jpg" />
+    <Content Include="Content\images\SliderImg\InvertedImg\s190v.jpg" />
+    <Content Include="Content\images\SliderImg\InvertedImg\s1h.jpg" />
     <Content Include="Content\images\SliderImg\Jaspreet Singh Rural.jpg" />
     <Content Include="Content\images\SliderImg\Kabir Nanda Rural.jpg" />
     <Content Include="Content\images\SliderImg\loadingslid.gif" />
