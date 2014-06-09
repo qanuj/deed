@@ -246,6 +246,7 @@
     <Compile Include="Controllers\DbController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HomesController.cs" />
+    <Compile Include="Controllers\LendAHandController.cs" />
     <Compile Include="Controllers\MediaController.cs" />
     <Compile Include="Controllers\PagesController.cs" />
     <Compile Include="Controllers\PledgeController.cs" />
@@ -585,6 +586,11 @@
     <Content Include="Views\Media\Videos.cshtml" />
     <Content Include="Views\Media\AnnualEvents.cshtml" />
     <Content Include="Views\Media\Player.cshtml" />
+    <Content Include="Views\Projects\SprtDeedADay.cshtml" />
+    <Content Include="Views\LendAHand\Index.cshtml" />
+    <Content Include="Views\LendAHand\SrtCptr.cshtml" />
+    <Content Include="Views\LendAHand\Vtr.cshtml" />
+    <Content Include="Views\LendAHand\SprdTheWrd.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

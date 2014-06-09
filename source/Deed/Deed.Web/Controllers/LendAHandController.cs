@@ -6,30 +6,26 @@ using System.Web.Mvc;
 
 namespace Deed.Web.Controllers
 {
-    public class ProjectsController : Controller
+    public class LendAHandController : Controller
     {
         //
-        // GET: /Projects/
+        // GET: /LendAHand/
         public ActionResult Index()
         {
             return View();
         }
-
-
-        public ActionResult SponsorChild()
+        public ActionResult SrtCptr()
         {
             return View();
         }
-
-        public ActionResult SponsorProject()
+        public ActionResult Vtr()
         {
             return View();
         }
-
-
-        public ActionResult SprtDeedADay()
+        public ActionResult SprdTheWrd()
         {
             return View();
         }
+       
 	}
 }
