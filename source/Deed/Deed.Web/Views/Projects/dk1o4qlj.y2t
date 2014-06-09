@@ -210,7 +210,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
 
-        this.each($("#progresss"), function () {
+        $(this).each($("#progresss"), function () {
             var bar1 = $("#progresss").progressbar();
             bar1.progress(50);
         });

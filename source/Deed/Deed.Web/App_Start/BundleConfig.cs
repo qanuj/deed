@@ -40,6 +40,7 @@ namespace Deed.Web
                         "~/Scripts/respond.matchmedia.addListener.js",
                         "~/Scripts/respond.matchmedia.addListener.min.js",
                         "~/Scripts/main.js",
+                        "~/Scripts/ProgresBar.js",
                         "~/Scripts/js-image-slider.js"
 
                 ));
@@ -77,6 +78,7 @@ namespace Deed.Web
                        "~/Content/site.css",
                         "~/Content/js-image-slider.css",
                          "~/Content/site.css",
+                         "~/Content/Progress.css",
                        "~/Content/css/generic.css"
 
                     ));

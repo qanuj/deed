@@ -403,7 +403,7 @@
     <Content Include="Content\images\sticky-pin.png" />
     <Content Include="Content\images\widget-list-bullet.png" />
     <Content Include="Content\js-image-slider.css" />
-    <Content Include="Content\mennu.css" />
+    <Content Include="Content\Progress.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\styleRes.css" />
     <Content Include="Content\__MACOSX\SeamlessResponsivePhotoGrid\css\._style.css" />
@@ -485,6 +485,7 @@
     <Content Include="Scripts\jquery.form.js" />
     <Content Include="Scripts\jquery.jcarousel.min.js" />
     <Content Include="Scripts\jquery.localisation.js" />
+    <Content Include="Scripts\jquery.mambo.min.js" />
     <Content Include="Scripts\jquery.prettyPhoto.js" />
     <Content Include="Scripts\jquery.selectbox.js" />
     <Content Include="Scripts\jquery.swipebox.min.js" />
@@ -508,6 +509,7 @@
     <Content Include="Scripts\jssor.utils.js" />
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr-2.7.2.js" />
+    <Content Include="Scripts\ProgresBar.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />

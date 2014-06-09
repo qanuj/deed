@@ -45,7 +45,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>
                                     <a class="more-details" href="http://inspirythemesdemo.com/realhomes/property/15421-southwest-39th-terrace/">More Details <i class="fa fa-caret-right"></i></a>
                                 </div>
-                                <div id="progresss"></div>
+                                <div id=" progresss"></div>
                                 <div class="property-meta">
                                     <span><i class="icon-area"></i>2800&nbsp;Sq Ft</span><span><i class="icon-bed"></i>2&nbsp;Bedrooms</span><span><i class="icon-bath"></i>3&nbsp;Bathrooms</span><span><i class="icon-garage"></i>2&nbsp;Garages</span>
                                 </div>
@@ -72,7 +72,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>
                                     <a class="more-details" href="http://inspirythemesdemo.com/realhomes/property/700-front-street-key-west-fl/">More Details <i class="fa fa-caret-right"></i></a>
                                 </div>
-                                <div id="progresss"></div>
+
                                 <div class="property-meta">
                                     <span><i class="icon-area"></i>3800&nbsp;Sq Ft</span><span><i class="icon-bed"></i>4&nbsp;Bedrooms</span><span><i class="icon-bath"></i>3&nbsp;Bathrooms</span><span><i class="icon-garage"></i>2&nbsp;Garages</span>
                                 </div>
@@ -99,7 +99,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>
                                     <a class="more-details" href="http://inspirythemesdemo.com/realhomes/property/1200-anastasia-avenue-coral-gables/">More Details <i class="fa fa-caret-right"></i></a>
                                 </div>
-                                <div id="progresss"></div>
+
                                 <div class="property-meta">
                                     <span><i class="icon-area"></i>4500&nbsp;Sq Ft</span><span><i class="icon-bed"></i>4&nbsp;Bedrooms</span><span><i class="icon-bath"></i>4&nbsp;Bathrooms</span><span><i class="icon-garage"></i>2&nbsp;Garages</span>
                                 </div>
@@ -126,7 +126,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>
                                     <a class="more-details" href="http://inspirythemesdemo.com/realhomes/property/retail-store-southwest-186th-street/">More Details <i class="fa fa-caret-right"></i></a>
                                 </div>
-                                <div id="progresss"></div>
+
                                 <div class="property-meta">
                                     <span><i class="icon-area"></i>3400&nbsp;Sq Ft</span>
                                 </div>
@@ -153,7 +153,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>
                                     <a class="more-details" href="http://inspirythemesdemo.com/realhomes/property/apartment-building-having-35-apartments/15-apartments-of-type-b/">More Details <i class="fa fa-caret-right"></i></a>
                                 </div>
-                                <div id="progresss"></div>
+
                                 <div class="property-meta">
                                     <span><i class="icon-area"></i>1450&nbsp;Sq Ft</span><span><i class="icon-bed"></i>2&nbsp;Bedrooms</span><span><i class="icon-bath"></i>1&nbsp;Bathroom</span>
                                 </div>
@@ -180,7 +180,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>
                                     <a class="more-details" href="http://inspirythemesdemo.com/realhomes/property/apartment-building-having-35-apartments/20-apartments-of-type-a/">More Details <i class="fa fa-caret-right"></i></a>
                                 </div>
-                                <div id="progresss"></div>
+
                                 <div class="property-meta">
                                     <span><i class="icon-area"></i>1650&nbsp;Sq Ft</span><span><i class="icon-bed"></i>2&nbsp;Bedrooms</span><span><i class="icon-bath"></i>2&nbsp;Bathrooms</span>
                                 </div>
@@ -210,13 +210,11 @@
 <script type="text/javascript">
     $(document).ready(function () {
 
-        this.each($("#progresss"), function () {
-            var bar1 = $("#progresss").progressbar();
-            bar1.progress(50);
-        });
 
 
-        
+
+        var bar1 = $("#progress1").progressbar();
+        bar1.progress(60);
 
 
 
