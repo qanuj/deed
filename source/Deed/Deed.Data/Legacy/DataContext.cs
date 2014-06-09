@@ -4,9 +4,10 @@ namespace Deed.Data.Legacy {
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
+   // [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public partial class DataContext : DbContext {
         public DataContext()
-            : base("name=LegacyDataContext") {
+            : base("LegacyDataContext") {
         }
 
         public virtual DbSet<BackupDetail> BackupDetails { get; set; }
