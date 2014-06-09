@@ -7,9 +7,6 @@ using System.Linq;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Threading.Tasks;
 
-
-
-
 namespace Deed.Data.Model
 {
     public class DeedUser : IdentityUser
