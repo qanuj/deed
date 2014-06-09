@@ -35,5 +35,11 @@ namespace Deed.Web.Controllers
             return View();
         }
 
+        public ActionResult Player()
+        {
+            return View();
+        }
+
+
 	}
 }

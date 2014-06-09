@@ -3264,6 +3264,13 @@ address {
 }
 .gallery-item .media_container a.link {
   right: 0;
+  background-image: url(../images/controls_play_32.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.gallery-item .media_container a.linkk {
+  right: 0;
   background-image: url(../images/icon-link.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
