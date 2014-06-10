@@ -218,7 +218,6 @@ body {
 -------------------------------------------------------------------------*/
 #header-top {
   border-bottom: 1px solid #343a3b;
-  margin-bottom: 30px;
 }
 #header-top #lang_sel {
   float: left;
@@ -443,6 +442,7 @@ body {
   text-align: center;
   max-width: 100%;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 #logo a, #logo img {
   display: inline-block;
@@ -3263,6 +3263,13 @@ address {
   transition: ease-in-out 0.2s;
 }
 .gallery-item .media_container a.link {
+  right: 0;
+  background-image: url(../images/controls_play_32.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.gallery-item .media_container a.linkk {
   right: 0;
   background-image: url(../images/icon-link.png);
   background-repeat: no-repeat;

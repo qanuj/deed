@@ -18,6 +18,8 @@ namespace Deed.Web.Controllers {
                          {
                              ID=r.ID,
                              Name = r.Name+" "+r.Father+" "+r.Mother,
+                             Father=r.Father,
+                             Mother=r.Mother,
                              District = r.District,
                              Adress = r.Address,
                              Caste = r.Caste,
@@ -44,7 +46,7 @@ namespace Deed.Web.Controllers {
                 var St = Convert.ToInt64(State);
                 var s = from m in db.Students select m;
                 s = s.Where(c => c.Name == StudentName || c.Religion.ID == Re || c.Country.ID == Co || c.State.ID == St);
-                return PartialView("_SearchResult", s);
+                return View("SearchResult", s);
             }
             return RedirectToAction("Index");
         }

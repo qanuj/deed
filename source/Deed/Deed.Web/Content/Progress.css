@@ -1,0 +1,14 @@
+﻿/*#progresss
+{
+width:50%;
+height:50%;
+background:red;
+transition-property:width;
+transition-duration:5s;
+transition-delay:2s;
+
+/* Safari */
+-webkit-transition-property:width; 
+-webkit-transition-duration:5s;
+-webkit-transition-delay:2s;
+}*/

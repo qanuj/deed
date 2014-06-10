@@ -42,6 +42,12 @@
     <Reference Include="Antlr3.Runtime">
       <HintPath>..\packages\Antlr3.Runtime.PCL.3.5.0.3\lib\portable-win+net40+sl40+wp\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="BundleTransformer.Core">
+      <HintPath>..\packages\BundleTransformer.Core.1.8.32\lib\net40\BundleTransformer.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BundleTransformer.Less">
+      <HintPath>..\packages\BundleTransformer.Less.1.8.33\lib\net40\BundleTransformer.Less.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
@@ -49,6 +55,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="JavaScriptEngineSwitcher.Core">
+      <HintPath>..\packages\JavaScriptEngineSwitcher.Core.1.1.3\lib\net40\JavaScriptEngineSwitcher.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -210,6 +219,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\CasteController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\StudentController.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
     <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
     <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
@@ -238,11 +251,17 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AboutUsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\DbController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HomesController.cs" />
+    <Compile Include="Controllers\LendAHandController.cs" />
+    <Compile Include="Controllers\MediaController.cs" />
     <Compile Include="Controllers\PagesController.cs" />
+    <Compile Include="Controllers\PledgeController.cs" />
+    <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
@@ -269,24 +288,34 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\child-custom.css" />
+    <Content Include="Content\css\client.css" />
     <Content Include="Content\css\custom-responsive.css" />
     <Content Include="Content\css\custom.css" />
+    <Content Include="Content\css\dynamic-captions.css" />
     <Content Include="Content\css\font-awesome-ie7.css" />
     <Content Include="Content\css\font-awesome-ie7.min.css" />
     <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\login-style.css" />
     <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\prettyPhoto.css" />
     <Content Include="Content\css\realhomes-admin-styles.css" />
     <Content Include="Content\css\responsive.css" />
     <Content Include="Content\css\rtl-custom-responsive.css" />
     <Content Include="Content\css\rtl-main.css" />
+    <Content Include="Content\css\settings.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\swipebox.css" />
     <Content Include="Content\css\_responsive-utilities.css" />
+    <Content Include="Content\flexslider.css" />
     <Content Include="Content\font\fontawesome-webfont.svg" />
     <Content Include="Content\font\FranklinGothic-DemiCd-webfont.svg" />
     <Content Include="Content\font\zocial-regular-webfont.svg" />
+    <Content Include="Content\generic.css" />
     <Content Include="Content\images\3d_bars-2560x1440.jpg" />
     <Content Include="Content\images\3d_inspiration-2560x1440.jpg" />
+    <Content Include="Content\images\aaaaaaaa.jpg" />
     <Content Include="Content\images\abstract_chaos-1920x1080.jpg" />
     <Content Include="Content\images\ajax-loader.gif" />
     <Content Include="Content\images\arrow-black.png" />
@@ -297,10 +326,16 @@
     <Content Include="Content\images\carousel-nav-right.png" />
     <Content Include="Content\images\comment-detail-wrap-arrow.png" />
     <Content Include="Content\images\container-gradient.png" />
+    <Content Include="Content\images\controls_play_32.png" />
+    <Content Include="Content\images\DScool.jpg" />
     <Content Include="Content\images\dropdown-arrow.png" />
     <Content Include="Content\images\dropdown-interest.png" />
     <Content Include="Content\images\dropdown-month.png" />
     <Content Include="Content\images\dropdown-year.png" />
+    <Content Include="Content\images\Dscool1.jpg" />
+    <Content Include="Content\images\Dscool2.jpg" />
+    <Content Include="Content\images\Dscool3.jpg" />
+    <Content Include="Content\images\Dscool4.jpg" />
     <Content Include="Content\images\feature-list-bullet.png" />
     <Content Include="Content\images\flex-arrow-left.png" />
     <Content Include="Content\images\flex-arrow-right.png" />
@@ -339,8 +374,12 @@
     <Content Include="Content\images\icon-umbrella.png" />
     <Content Include="Content\images\icon-video.png" />
     <Content Include="Content\images\icon-zoom.png" />
+    <Content Include="Content\images\Jaspreet Singh Rural.jpg" />
+    <Content Include="Content\images\Kabir Nanda Rural.jpg" />
     <Content Include="Content\images\loading.gif" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\media_controls_play_small.png" />
+    <Content Include="Content\images\Parminder Singh Rural.jpg" />
     <Content Include="Content\images\paypal.png" />
     <Content Include="Content\images\play-btn.png" />
     <Content Include="Content\images\play-btn2.png" />
@@ -353,18 +392,54 @@
     <Content Include="Content\images\rtl-icon-disc-small.png" />
     <Content Include="Content\images\rtl-icon-tick.png" />
     <Content Include="Content\images\rtl-widget-list-bullet.png" />
+    <Content Include="Content\images\slide-1-layer-1.png" />
+    <Content Include="Content\images\slide-1-layer-2.png" />
+    <Content Include="Content\images\slide-1.jpg" />
+    <Content Include="Content\images\slide-2.jpg" />
     <Content Include="Content\images\slider-nav-left.png" />
     <Content Include="Content\images\slider-nav-right.png" />
+    <Content Include="Content\images\SliderImg\13772.jpg" />
+    <Content Include="Content\images\SliderImg\cute-sardar.jpg" />
+    <Content Include="Content\images\SliderImg\Gaurav Pandey Rural.jpg" />
+    <Content Include="Content\images\SliderImg\image-slider-1.jpg" />
+    <Content Include="Content\images\SliderImg\image-slider-2.jpg" />
+    <Content Include="Content\images\SliderImg\image-slider-3.jpg" />
+    <Content Include="Content\images\SliderImg\image-slider-4.jpg" />
+    <Content Include="Content\images\SliderImg\image-slider-5.jpg" />
+    <Content Include="Content\images\SliderImg\InvertedImg\s1.jpg" />
+    <Content Include="Content\images\SliderImg\InvertedImg\s190.jpg" />
+    <Content Include="Content\images\SliderImg\InvertedImg\s190L.jpg" />
+    <Content Include="Content\images\SliderImg\InvertedImg\s190v.jpg" />
+    <Content Include="Content\images\SliderImg\InvertedImg\s1h.jpg" />
+    <Content Include="Content\images\SliderImg\Jaspreet Singh Rural.jpg" />
+    <Content Include="Content\images\SliderImg\Kabir Nanda Rural.jpg" />
+    <Content Include="Content\images\SliderImg\loadingslid.gif" />
+    <Content Include="Content\images\SliderImg\Parminder Singh Rural.jpg" />
+    <Content Include="Content\images\SliderImg\s1.jpg" />
+    <Content Include="Content\images\SliderImg\school building FINAL d 6.jpg" />
     <Content Include="Content\images\slideshow-nav-left.png" />
     <Content Include="Content\images\slideshow-nav-right.png" />
     <Content Include="Content\images\sticky-pin.png" />
     <Content Include="Content\images\widget-list-bullet.png" />
+    <Content Include="Content\js-image-slider.css" />
+    <Content Include="Content\Progress.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\styleRes.css" />
+    <Content Include="Content\__MACOSX\SeamlessResponsivePhotoGrid\css\._style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap-carousel.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\jquery-1.10.1.min.js" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Content\carouselLess.less" />
+    <None Include="BundleTransformer.Configuration.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Scripts\jquery-2.1.0.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Scripts\jquery-2.1.1.min.map" />
@@ -373,25 +448,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Areas\HelpPage\Views\Web.config" />
-    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="Content\font\fontawesome-webfont.eot" />
     <Content Include="Content\font\fontawesome-webfont.ttf" />
     <Content Include="Content\font\fontawesome-webfont.woff" />
@@ -402,13 +458,77 @@
     <Content Include="Content\font\zocial-regular-webfont.eot" />
     <Content Include="Content\font\zocial-regular-webfont.ttf" />
     <Content Include="Content\font\zocial-regular-webfont.woff" />
-    <None Include="Scripts\jquery-2.1.1-vsdoc.js" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Student\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Student\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Caste\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Caste\Create.cshtml" />
+    <Content Include="Content\css\client1" />
+    <Content Include="Content\css\css" />
+    <Content Include="Content\css\css1" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Content\__MACOSX\SeamlessResponsivePhotoGrid\._css" />
+    <Content Include="Content\__MACOSX\SeamlessResponsivePhotoGrid\._index.php" />
+    <Content Include="Scripts\jquery-2.1.0.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-filetype.js" />
+    <Content Include="Scripts\jquery-migrate.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.4.js" />
+    <Content Include="Scripts\jquery-ui-1.10.4.min.js" />
+    <Content Include="Scripts\jquery-ui-i18n.js" />
+    <Content Include="Scripts\jquery-ui-i18n.min.js" />
+    <Content Include="Scripts\jquery.easing.1.3.js" />
+    <Content Include="Scripts\jquery.elastislide.js" />
+    <Content Include="Scripts\jquery.flexslider-min.js" />
+    <Content Include="Scripts\jquery.form.js" />
+    <Content Include="Scripts\jquery.jcarousel.min.js" />
+    <Content Include="Scripts\jquery.localisation.js" />
+    <Content Include="Scripts\jquery.mambo.min.js" />
+    <Content Include="Scripts\jquery.prettyPhoto.js" />
+    <Content Include="Scripts\jquery.selectbox.js" />
+    <Content Include="Scripts\jquery.swipebox.min.js" />
+    <Content Include="Scripts\jquery.themepunch.plugins.min.js" />
+    <Content Include="Scripts\jquery.themepunch.revolution.min.js" />
+    <Content Include="Scripts\jquery.transit.min.js" />
+    <Content Include="Scripts\jquery.ui.autocomplete.min.js" />
+    <Content Include="Scripts\jquery.ui.core.min.js" />
+    <Content Include="Scripts\jquery.ui.menu.min.js" />
+    <Content Include="Scripts\jquery.ui.position.min.js" />
+    <Content Include="Scripts\jquery.ui.widget.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js-image-slider.js" />
+    <Content Include="Scripts\jssor.core.js" />
+    <Content Include="Scripts\jssor.player.ytiframe.js" />
+    <Content Include="Scripts\jssor.slider.js" />
+    <Content Include="Scripts\jssor.slider.mini.js" />
+    <Content Include="Scripts\jssor.utils.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr-2.7.2.js" />
+    <Content Include="Scripts\ProgresBar.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
@@ -422,7 +542,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
@@ -457,9 +576,36 @@
     <Content Include="Views\Shared\_Cards.cshtml" />
     <Content Include="Views\Home\StudentDetails.cshtml" />
     <Content Include="Views\Shared\_SearchResult.cshtml" />
+    <Content Include="Views\AboutUs\WhatWeDo.cshtml" />
+    <Content Include="Views\AboutUs\HowItWorks.cshtml" />
+    <Content Include="Views\AboutUs\EthicsAndCulture.cshtml" />
+    <Content Include="Views\AboutUs\Index.cshtml" />
+    <Content Include="Views\Shared\Card.cshtml" />
+    <Content Include="Views\Shared\SearchResult.cshtml" />
+    <Content Include="Views\Pledge\Index.cshtml" />
+    <Content Include="Views\Pledge\Details.cshtml" />
+    <Content Include="Views\ContactUs\Index.cshtml" />
+    <Content Include="Views\Shared\_PageHead.cshtml" />
+    <Content Include="Views\Shared\_Grid.cshtml" />
+    <Content Include="Views\Pledge\Sponsor.cshtml" />
+    <Content Include="Views\Pledge\slid.cshtml" />
+    <Content Include="Views\Pledge\PledgeIndex.cshtml" />
+    <Content Include="Views\Projects\SponsorChild.cshtml" />
+    <Content Include="Views\Projects\SponsorProject.cshtml" />
+    <Content Include="Views\Media\Index.cshtml" />
+    <Content Include="Views\Media\Photos.cshtml" />
+    <Content Include="Views\Media\Videos.cshtml" />
+    <Content Include="Views\Media\AnnualEvents.cshtml" />
+    <Content Include="Views\Media\Player.cshtml" />
+    <Content Include="Views\Projects\SprtDeedADay.cshtml" />
+    <Content Include="Views\LendAHand\Index.cshtml" />
+    <Content Include="Views\LendAHand\SrtCptr.cshtml" />
+    <Content Include="Views\LendAHand\Vtr.cshtml" />
+    <Content Include="Views\LendAHand\SprdTheWrd.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Views\Db\" />
   </ItemGroup>
   <ItemGroup>
@@ -495,11 +641,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>64345</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:64345/</IISUrl>
+          <IISUrl>http://local.deedconsole.co.uk</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

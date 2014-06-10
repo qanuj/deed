@@ -1,0 +1,166 @@
+﻿<div class="container contents blog-page">
+    <div class="row">
+        <div class="span9 main-wrap">
+            <!-- Main Content -->
+            <div class="main">
+
+                <div class="inner-wrapper">
+
+                    <article class="post-25 post type-post status-publish format-image has-post-thumbnail hentry category-sales tag-custom tag-interior">
+                        <header>
+                            <h3 class="post-title"><a href="http://inspirythemesdemo.com/realhomes/lorem-post-with-image-format/">Lorem Post With Image Format</a></h3>
+                            <div class="post-meta image-meta thumb-exist">
+                                <span>Posted on <span class="date"> August 01, 2013</span></span>
+                                <span>by <span class="author-link"><a href="http://inspirythemesdemo.com/realhomes/author/saqib/" title="Posts by John Doe" rel="author">John Doe</a></span> in <a href="http://inspirythemesdemo.com/realhomes/category/sales/" title="View all posts in Sales">Sales</a> </span>
+                            </div>
+                        </header>
+                        <figure>
+                            <span class="format-icon image"></span>
+                            <a href="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/news-01.jpg" class="swipebox" title="Lorem Post With Image Format">
+                                <img width="830" height="323" src="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/news-01.jpg" class="attachment-post-featured-image wp-post-image" alt=" Lorem Post With Image Format" title=" Lorem Post With Image Format">
+                            </a>
+                        </figure>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo…</p>
+                        <a class="real-btn" href="http://inspirythemesdemo.com/realhomes/lorem-post-with-image-format/">Read more</a>
+                    </article>
+
+                    <article class="post-23 post type-post status-publish format-video has-post-thumbnail hentry category-market-updates tag-custom tag-trend">
+                        <header>
+                            <h3 class="post-title"><a href="http://inspirythemesdemo.com/realhomes/example-video-blog-post/">Example Video Blog Post</a></h3>
+                            <div class="post-meta video-meta thumb-exist">
+                                <span>Posted on <span class="date"> August 01, 2013</span></span>
+                                <span>by <span class="author-link"><a href="http://inspirythemesdemo.com/realhomes/author/saqib/" title="Posts by John Doe" rel="author">John Doe</a></span> in <a href="http://inspirythemesdemo.com/realhomes/category/market-updates/" title="View all posts in Market Updates">Market Updates</a> </span>
+                            </div>
+                        </header>
+                        <div class="post-video">
+                            <span class="format-icon video"></span>
+                            <div class="video-wrapper">
+                                <iframe src="http://player.vimeo.com/video/23534361" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo…</p>
+                        <a class="real-btn" href="http://inspirythemesdemo.com/realhomes/example-video-blog-post/">Read more</a>
+                    </article>
+
+                    <article class="post-15 post type-post status-publish format-gallery has-post-thumbnail hentry category-market-updates tag-beach tag-interior">
+                        <header>
+                            <h3 class="post-title"><a href="http://inspirythemesdemo.com/realhomes/example-post-with-gallery-post-format/">Example Post With Gallery Post Format</a></h3>
+                            <div class="post-meta gallery-meta thumb-exist">
+                                <span>Posted on <span class="date"> August 01, 2013</span></span>
+                                <span>by <span class="author-link"><a href="http://inspirythemesdemo.com/realhomes/author/saqib/" title="Posts by John Doe" rel="author">John Doe</a></span> in <a href="http://inspirythemesdemo.com/realhomes/category/market-updates/" title="View all posts in Market Updates">Market Updates</a> </span>
+                            </div>
+                        </header>
+                        <div class="listing-slider">
+                            <span class="format-icon gallery"></span>
+
+                            <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                                <ul class="slides" style="width: 1000%; -webkit-transition: 0.6s; transition: 0.6s; -webkit-transform: translate3d(-2484px, 0px, 0px);">
+                                    <li class="clone" style="float: left; display: block; width: 828px;"><a href="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/news-03.jpg" title="" class="swipebox"><img src="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/news-03.jpg" alt="Chair One"></a></li>
+                                    <li class="" style="float: left; display: block; width: 828px;"><a href="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/news-06.jpg" title="" class="swipebox"><img src="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/news-06.jpg" alt="Chair Three"></a></li>
+                                    <li class="" style="float: left; display: block; width: 828px;"><a href="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/news-04.jpg" title="" class="swipebox"><img src="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/news-04.jpg" alt="Chair Two"></a></li>
+                                    <li style="float: left; display: block; width: 828px;" class="flex-active-slide"><a href="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/news-03.jpg" title="" class="swipebox"><img src="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/news-03.jpg" alt="Chair One"></a></li>
+                                    <li class="clone" style="float: left; display: block; width: 828px;"><a href="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/news-06.jpg" title="" class="swipebox"><img src="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/news-06.jpg" alt="Chair Three"></a></li>
+                                </ul>
+                            </div><ol class="flex-control-nav flex-control-paging"><li><a class="">1</a></li><li><a class="">2</a></li><li><a class="flex-active">3</a></li></ol><ul class="flex-direction-nav" style="display: none;"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul>
+                        </div>    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo…</p>
+                        <a class="real-btn" href="http://inspirythemesdemo.com/realhomes/example-post-with-gallery-post-format/">Read more</a>
+                    </article>
+
+                    <article class="post-12 post type-post status-publish format-image has-post-thumbnail hentry category-comfort tag-garden tag-interior">
+                        <header>
+                            <h3 class="post-title"><a href="http://inspirythemesdemo.com/realhomes/example-post-with-image-post-format/">Example Post With Image Post Format</a></h3>
+                            <div class="post-meta image-meta thumb-exist">
+                                <span>Posted on <span class="date"> August 01, 2013</span></span>
+                                <span>by <span class="author-link"><a href="http://inspirythemesdemo.com/realhomes/author/saqib/" title="Posts by John Doe" rel="author">John Doe</a></span> in <a href="http://inspirythemesdemo.com/realhomes/category/comfort/" title="View all posts in Comfort">Comfort</a> </span>
+                            </div>
+                        </header>
+                        <figure>
+                            <span class="format-icon image"></span>
+                            <a href="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/news-05.jpg" class="swipebox" title="Example Post With Image Post Format">
+                                <img width="830" height="323" src="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/news-05.jpg" class="attachment-post-featured-image wp-post-image" alt="Example Post With Image Post Format" title="Example Post With Image Post Format">
+                            </a>
+                        </figure>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo…</p>
+                        <a class="real-btn" href="http://inspirythemesdemo.com/realhomes/example-post-with-image-post-format/">Read more</a>
+                    </article>
+                    <div class="pagination"><a href="http://inspirythemesdemo.com/realhomes/news/" class="real-btn current">1</a> <a href="http://inspirythemesdemo.com/realhomes/news/page/2/" class="real-btn">2</a> </div>
+                </div>
+
+            </div><!-- End Main Content -->
+
+        </div> <!-- End span9 -->
+
+        <div class="span3 sidebar-wrap">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <section id="search-2" class="widget clearfix widget_search">
+                    <form role="search" method="get" id="searchform" class="searchform" action="http://inspirythemesdemo.com/realhomes/">
+                        <div>
+                            <label class="screen-reader-text" for="s">Search for:</label>
+                            <input type="text" value="" name="s" id="s">
+                            <input type="submit" id="searchsubmit" value="Search">
+                        </div>
+                    </form>
+                </section><section id="featured_properties_widget-2" class="widget clearfix Featured_Properties_Widget">
+                    <h3 class="title">Featured Properties</h3>            <ul class="featured-properties">
+                        <li>
+                            <figure>
+                                <a href="http://inspirythemesdemo.com/realhomes/property/3015-grand-avenue-cocowalk/">
+                                    <img width="246" height="162" src="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/property-06-246x162.jpg" class="attachment-grid-view-image wp-post-image" alt="property 06">
+                                </a>
+                            </figure>
+                            <h4><a href="http://inspirythemesdemo.com/realhomes/property/3015-grand-avenue-cocowalk/" title="3015 Grand Avenue, CocoWalk">3015 Grand Avenue, CocoWalk</a></h4>
+                            <p>Ut wisi enim ad minim veniam, quis… <a href="http://inspirythemesdemo.com/realhomes/property/3015-grand-avenue-cocowalk/">Read More</a></p>
+                            <span class="price">$4,350 Per Month</span>
+                        </li>
+                        <li>
+                            <figure>
+                                <a href="http://inspirythemesdemo.com/realhomes/property/700-front-street-key-west-fl/">
+                                    <img width="246" height="162" src="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/property-08-246x162.jpg" class="attachment-grid-view-image wp-post-image" alt="property 08">
+                                </a>
+                            </figure>
+                            <h4><a href="http://inspirythemesdemo.com/realhomes/property/700-front-street-key-west-fl/" title="700 Front Street, Key West, FL">700 Front Street, Key West, FL</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing… <a href="http://inspirythemesdemo.com/realhomes/property/700-front-street-key-west-fl/">Read More</a></p>
+                            <span class="price">$850,000 </span>
+                        </li>
+                    </ul>
+                </section><section id="categories-2" class="widget clearfix widget_categories">
+                    <h3 class="title">Categories</h3>		<ul>
+                        <li class="cat-item cat-item-2">
+                            <a href="http://inspirythemesdemo.com/realhomes/category/comfort/" title="View all posts filed under Comfort">Comfort</a>
+                        </li>
+                        <li class="cat-item cat-item-3">
+                            <a href="http://inspirythemesdemo.com/realhomes/category/luxury/" title="View all posts filed under Luxury">Luxury</a>
+                        </li>
+                        <li class="cat-item cat-item-4">
+                            <a href="http://inspirythemesdemo.com/realhomes/category/market-updates/" title="View all posts filed under Market Updates">Market Updates</a>
+                        </li>
+                        <li class="cat-item cat-item-5">
+                            <a href="http://inspirythemesdemo.com/realhomes/category/sales/" title="View all posts filed under Sales">Sales</a>
+                        </li>
+                    </ul>
+                </section>		<section id="recent-posts-4" class="widget clearfix widget_recent_entries">
+                    <h3 class="title">Recent Posts</h3>		<ul>
+                        <li>
+                            <a href="http://inspirythemesdemo.com/realhomes/lorem-post-with-image-format/">Lorem Post With Image Format</a>
+                        </li>
+                        <li>
+                            <a href="http://inspirythemesdemo.com/realhomes/example-video-blog-post/">Example Video Blog Post</a>
+                        </li>
+                        <li>
+                            <a href="http://inspirythemesdemo.com/realhomes/example-post-with-gallery-post-format/">Example Post With Gallery Post Format</a>
+                        </li>
+                        <li>
+                            <a href="http://inspirythemesdemo.com/realhomes/example-post-with-image-post-format/">Example Post With Image Post Format</a>
+                        </li>
+                        <li>
+                            <a href="http://inspirythemesdemo.com/realhomes/lorem-ipsum-dolor-sit-amet/">Lorem Ipsum Dolor Sit Amet</a>
+                        </li>
+                    </ul>
+                </section><section id="recent-comments-2" class="widget clearfix widget_recent_comments"><h3 class="title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><a href="http://realhomes.inspirythemes.com" rel="external nofollow" class="url">Lolyd Budd</a> on <a href="http://inspirythemesdemo.com/realhomes/lorem-post-with-image-format/#comment-6">Lorem Post With Image Format</a></li><li class="recentcomments"><a href="http://realhomes.inspirythemes.com" rel="external nofollow" class="url">Alex Shiels</a> on <a href="http://inspirythemesdemo.com/realhomes/lorem-post-with-image-format/#comment-5">Lorem Post With Image Format</a></li><li class="recentcomments"><a href="http://realhomes.inspirythemes.com" rel="external nofollow" class="url">John Doe</a> on <a href="http://inspirythemesdemo.com/realhomes/lorem-post-with-image-format/#comment-4">Lorem Post With Image Format</a></li><li class="recentcomments"><a href="http://realhomes.inspirythemes.com" rel="external nofollow" class="url">Alex Shiels</a> on <a href="http://inspirythemesdemo.com/realhomes/lorem-post-with-image-format/#comment-3">Lorem Post With Image Format</a></li><li class="recentcomments"><a href="http://realhomes.inspirythemes.com" rel="external nofollow" class="url">Lloyd Budd</a> on <a href="http://inspirythemesdemo.com/realhomes/lorem-post-with-image-format/#comment-2">Lorem Post With Image Format</a></li></ul></section>
+            </aside><!-- End Sidebar -->
+
+        </div>
+    </div><!-- End contents row -->
+</div>

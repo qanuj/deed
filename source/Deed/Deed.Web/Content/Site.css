@@ -84,17 +84,6 @@
 .child-detail > ul > li {
     border-bottom: 1px solid #f1f1f1;
 }
-
-
-
-
-
-
-
-
-
-
-
 .price {
  
      margin-left: 248px;
@@ -114,3 +103,6 @@
      margin-left: 187px;
  
   }
+.sponsor-btn {
+    margin-left:395px;
+}

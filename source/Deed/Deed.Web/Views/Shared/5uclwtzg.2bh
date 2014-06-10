@@ -1,0 +1,117 @@
+﻿<div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin: 0px auto; padding: 0px; max-height: 550px; overflow: visible; height: 550px; background-color: rgb(222, 222, 222);">
+    <div id="rev_slider_1_1" class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive" style="max-height: 550px; height: 550px;">
+        <ul style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: 550px;">
+            <!-- SLIDE  -->
+            <li data-transition="random" data-slotamount="7" data-masterspeed="900" style="width: 100%; height: 100%; overflow: hidden; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, 0, 0, 1); -webkit-transform-origin: 50% 50% 0px; opacity: 1; visibility: visible; left: 0px; top: 0px; position: absolute; z-index: 18;">
+                <!-- MAIN IMAGE -->
+                <div class="slotholder" style="width: 100%; height: 100%; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, 0, 0, 1);" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center top" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-lazydone="undefined" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/revslider/realhomes/bg_slide_1.jpg" data-src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/revslider/realhomes/bg_slide_1.jpg" style="width: 100%; height: 100%; position: relative; opacity: 0; background-image: url(http://alt-realhomes.inspirythemes.com/wp-content/uploads/revslider/realhomes/bg_slide_1.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 0%; background-repeat: no-repeat;"></div></div>
+                <!-- LAYERS -->
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption lfr start" data-x="700" data-y="75" data-speed="900" data-start="900" data-easing="Sine.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 2; left: 789.5px; top: 75px; visibility: visible; opacity: 0; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 1364, 0, 0, 1);">
+                    <img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/revslider/realhomes/sofa.png" alt="" style="width: 389px; height: 389px;">
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption realhomes_large_white skewfromleft tp-resizeme start" data-x="100" data-y="140" data-speed="800" data-start="800" data-easing="Sine.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 3; white-space: nowrap; min-height: 0px; min-width: 0px; line-height: 44px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 36px; left: 189.5px; top: 140px; visibility: visible; opacity: 0; -webkit-transform: matrix3d(1, 0, 0, 0, 0.99619, 0.08715, 0, 0, 0, 0, 1, -0.00166, -530, 0, 0, 1);">
+                    15421 Southwest 39th Terrace
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption small_text skewfromleft tp-resizeme start" data-x="102" data-y="205" data-speed="600" data-start="1100" data-easing="Sine.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 4; white-space: pre; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 14px; left: 191.5px; top: 205px; visibility: visible; opacity: 0; max-width: 40px; -webkit-transform: matrix3d(1, 0, 0, 0, 0.99619, 0.08715, 0, 0, 0, 0, 1, -0.00166, -55, 0, 0, 1);">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                    magna aliquyam erat, sed diam voluptua.
+                </div>
+
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption lfb tp-resizeme start" data-x="102" data-y="305" data-speed="900" data-start="1400" data-easing="Sine.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 5; white-space: nowrap; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 14px; left: 191.5px; top: 305px; visibility: visible; opacity: 0; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, 575, 0, 1);">
+                    <a href="http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/" class="tp-button green custom small" style="min-height: 0px; min-width: 0px; line-height: 45px; border-width: 0px; margin: 0px; padding: 10px 15px; letter-spacing: 1px; font-size: 16px;">View Details</a>
+                </div>
+
+                <!-- LAYER NR. 5 -->
+                <div class="tp-caption medium_white_bg_text lfb tp-resizeme start" data-x="788" data-y="356" data-speed="300" data-start="2000" data-easing="Sine.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 6; white-space: nowrap; min-height: 0px; min-width: 0px; line-height: 30px; border-width: 0px; margin: 0px; padding: 5px 20px 10px 30px; letter-spacing: 0px; font-size: 24px; left: 877.5px; top: 356px; visibility: visible; opacity: 0; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, 575, 0, 1);">
+                    Coolest Main Feature
+                </div>
+
+                <!-- LAYER NR. 6 -->
+                <div class="tp-caption roundedtext lfb tp-resizeme start" data-x="668" data-y="305" data-speed="600" data-start="1700" data-easing="Sine.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 7; white-space: nowrap; min-height: 0px; min-width: 0px; line-height: 30px; border-width: 5px; margin: 0px; padding: 50px 10px; letter-spacing: 0px; font-size: 30px; left: 757.5px; top: 305px; visibility: visible; opacity: 0; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, 575, 0, 1);">
+                    $34,000
+                </div>
+            </li>
+            <!-- SLIDE  -->
+            <li data-transition="random" data-slotamount="7" data-masterspeed="300" style="width: 100%; height: 100%; overflow: hidden; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, 0, 0, 1); -webkit-transform-origin: 50% 50% 0px; visibility: visible; left: 0px; top: 0px; opacity: 1; position: absolute; z-index: 20;">
+                <!-- MAIN IMAGE -->
+                <div class="slotholder" style="width: 100%; height: 100%; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, 0, 0, 1);" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center top" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-lazydone="undefined" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/revslider/realhomes/bg_slide_2.jpg" data-src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/revslider/realhomes/bg_slide_2.jpg" style="width: 100%; height: 100%; position: relative; opacity: 1; background-image: url(http://alt-realhomes.inspirythemes.com/wp-content/uploads/revslider/realhomes/bg_slide_2.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 0%; background-repeat: no-repeat;"></div></div>
+                <!-- LAYERS -->
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption large_bold_black_text sft tp-resizeme start" data-x="center" data-hoffset="0" data-y="60" data-speed="300" data-start="500" data-easing="Cubic.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 2; white-space: nowrap; min-height: 0px; min-width: 0px; line-height: 42px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 36px; left: 368.5px; top: 60px; visibility: visible; opacity: 1; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
+                    1200 Anastasia Avenue, Coral Gables
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption normal_text_dark sft tp-resizeme start" data-x="center" data-hoffset="0" data-y="110" data-speed="300" data-start="800" data-easing="Quad.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 3; white-space: normal; min-height: 0px; min-width: 0px; line-height: 28px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 16px; left: 249.5px; top: 110px; visibility: visible; opacity: 1; max-width: 850px; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua.
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption sfl start" data-x="center" data-hoffset="-250" data-y="bottom" data-voffset="-50" data-speed="300" data-start="1400" data-easing="Cubic.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 4; left: 314px; top: 279px; visibility: visible; opacity: 1; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
+                    <img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/revslider/realhomes/slide_2_img_1.png" alt="" style="width: 221px; height: 221px;">
+                </div>
+
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption sfb start" data-x="center" data-hoffset="0" data-y="bottom" data-voffset="-50" data-speed="300" data-start="1100" data-easing="Cubic.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 5; left: 564px; top: 279px; visibility: visible; opacity: 1; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
+                    <img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/revslider/realhomes/slide_2_img_2.png" alt="" style="width: 221px; height: 221px;">
+                </div>
+
+                <!-- LAYER NR. 5 -->
+                <div class="tp-caption sfr start" data-x="center" data-hoffset="250" data-y="bottom" data-voffset="-50" data-speed="300" data-start="1700" data-easing="Cubic.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 6; left: 814px; top: 279px; visibility: visible; opacity: 1; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
+                    <img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/revslider/realhomes/slide_2_img_3.png" alt="" style="width: 221px; height: 221px;">
+                </div>
+
+                <!-- LAYER NR. 6 -->
+                <div class="tp-caption black randomrotate tp-resizeme start" data-x="center" data-hoffset="-100" data-y="center" data-voffset="-70" data-speed="300" data-start="2000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 7; white-space: nowrap; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 14px; left: 496.5px; top: 182.5px; visibility: visible; opacity: 1; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
+                    <a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/" class="tp-button green custom small" style="min-height: 0px; min-width: 0px; line-height: 45px; border-width: 0px; margin: 0px; padding: 10px 15px; letter-spacing: 1px; font-size: 16px;">View Details</a>
+                </div>
+
+                <!-- LAYER NR. 7 -->
+                <div class="tp-caption large_bold_black_text customin tp-resizeme start" data-x="center" data-hoffset="118" data-y="center" data-voffset="-71" data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="300" data-start="2300" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 8; white-space: nowrap; min-height: 0px; min-width: 0px; line-height: 42px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 36px; left: 714.5px; top: 183px; visibility: visible; opacity: 1; -webkit-transform-origin: 50% 50% 0px; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
+                    $480,000
+                </div>
+            </li>
+            <!-- SLIDE  -->
+            <li data-transition="random" data-slotamount="7" data-masterspeed="300" style="width: 100%; height: 100%; overflow: hidden; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, 0, 0, 1); -webkit-transform-origin: 50% 50% 0px; opacity: 1; visibility: visible; left: 0px; top: 0px; position: absolute; z-index: 18;">
+                <!-- MAIN IMAGE -->
+                <div class="slotholder" style="width: 100%; height: 100%; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, 0, 0, 1);" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="center top" data-kenburns="undefined" data-easeme="undefined" data-bgfit="cover" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined"><div class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-lazydone="undefined" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/revslider/realhomes/bg_slide_3.jpg" data-src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/revslider/realhomes/bg_slide_3.jpg" style="width: 100%; height: 100%; position: relative; opacity: 0; background-image: url(http://alt-realhomes.inspirythemes.com/wp-content/uploads/revslider/realhomes/bg_slide_3.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 0%; background-repeat: no-repeat;"></div></div>
+                <!-- LAYERS -->
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption lfl start" data-x="150" data-y="70" data-speed="500" data-start="500" data-easing="Quart.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 2; left: 239.5px; top: 70px; visibility: visible; opacity: 0; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, -415, 0, 0, 1);">
+                    <img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/revslider/realhomes/slide_img_1.png" alt="" data-ww="400" data-hh="400" style="width: 400px; height: 400px;">
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption large_bold_white_heading lft tp-resizeme start" data-x="596" data-y="120" data-speed="400" data-start="800" data-easing="Quart.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 3; white-space: pre; min-height: 0px; min-width: 0px; line-height: 60px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 54px; left: 685.5px; top: 120px; visibility: visible; opacity: 0; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, -205, 0, 1);">
+                    Special
+                    Offer Price
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption lfb tp-resizeme start" data-x="600" data-y="370" data-speed="300" data-start="2000" data-easing="Quart.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 4; white-space: nowrap; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 14px; left: 689.5px; top: 370px; visibility: visible; opacity: 0; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, 575, 0, 1);">
+                    <a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/" class="tp-button green custom small" style="min-height: 0px; min-width: 0px; line-height: 45px; border-width: 0px; margin: 0px; padding: 10px 15px; letter-spacing: 1px; font-size: 16px;">View Details</a>
+                </div>
+
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption small_text lfr tp-resizeme start" data-x="600" data-y="265" data-speed="400" data-start="1700" data-easing="Quart.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 5; white-space: normal; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 14px; left: 689.5px; top: 265px; visibility: visible; opacity: 0; max-width: 400px; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 1364, 0, 0, 1);">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </div>
+
+                <!-- LAYER NR. 5 -->
+                <div class="tp-caption medium_bold_price_text lfb tp-resizeme start" data-x="286" data-y="390" data-speed="300" data-start="1400" data-easing="Quart.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 6; white-space: nowrap; min-height: 0px; min-width: 0px; line-height: 36px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 28px; left: 375.5px; top: 390px; visibility: visible; opacity: 0; -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, 575, 0, 1);">
+                    $480,000
+                </div>
+            </li>
+        </ul>
+        <div class="tp-bannertimer" style="width: 40.83333333328483%; visibility: visible;"></div>	<div class="tp-loader spinner3" style="visibility: hidden; opacity: 0;"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>
+    </div>
+    <div style="position: absolute; margin-top: -20px; left: 20px; top: 275px;" class="tp-leftarrow tparrows default hidearrows"></div><div style="position: absolute; margin-top: -20px; right: 20px; top: 275px;" class="tp-rightarrow tparrows default hidearrows"></div>
+</div>
