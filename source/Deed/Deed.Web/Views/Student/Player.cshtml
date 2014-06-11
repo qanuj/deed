@@ -1,0 +1,31 @@
+﻿
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button id="d" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        </div>
+        <div class="modal-body">
+            <embed width="569" height="394" src="@ViewBag.link" type="application/x-shockwave-flash" />
+        </div>
+
+    </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+
+
+
+<script type="text/javascript">
+
+    (function (e) {
+        $("#d").click(function () {
+
+            window.location = '/media/videos'
+        });
+
+    });
+
+</script>
+
+
+
+

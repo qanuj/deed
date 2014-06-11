@@ -602,6 +602,9 @@
     <Content Include="Views\LendAHand\SrtCptr.cshtml" />
     <Content Include="Views\LendAHand\Vtr.cshtml" />
     <Content Include="Views\LendAHand\SprdTheWrd.cshtml" />
+    <Content Include="Views\Student\Videogallery.cshtml" />
+    <Content Include="Views\Student\Player.cshtml" />
+    <Content Include="Views\Student\PhotoGallery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

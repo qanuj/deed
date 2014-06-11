@@ -22,5 +22,48 @@ namespace Deed.Web.Controllers
             var items = db.YouTubeVideos.OrderByDescending(x => x.id).Take(10);
             return Json(items, JsonRequestBehavior.AllowGet);
         }
+
+
+        //Media 
+
+        public ActionResult Videogallery()
+        {
+            return View(Videos());
+
+        }
+
+        public ActionResult Photogallery()
+        {
+            return View(Videos());
+
+        }
+
+        public ActionResult Player(string linkk)
+        {
+            ViewBag.link = linkk;
+            return View();
+
+        }
+
+
+
+
+
+
+        //Pledge Controller
+
+        public ActionResult PledgeIndex()
+        { 
+            return View(Query());
+        
+        }
+        public ActionResult PledgeDetail(long id)
+        {
+            var s = db.Students.FirstOrDefault(x => x.id == id);
+            return View(s);
+
+        }
+
+        
 	}
 }

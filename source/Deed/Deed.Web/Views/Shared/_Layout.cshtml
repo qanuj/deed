@@ -230,7 +230,7 @@
         background-color:#e3712c;
         }
 
-        @media (min-width: 980px) {
+        @@media (min-width: 980px) {
         .contact-number, .contact-number .outer-strip{
         background-color:#4dc7ec;
         }
@@ -326,49 +326,53 @@
                                         <li id="menu-item-716" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-716"><a href="http://inspirythemesdemo.com/realhomes/?module=banner">Home with Simple Banner</a></li>
                                     </ul>
                                 </li>
-                                <li id="menu-item-729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-729">
-                                    <a href="http://inspirythemesdemo.com/realhomes/listing/">Listing</a>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="@Url.Action("Index", "AboutUs")">About Us</a>
                                     <ul class="sub-menu">
-                                        <li id="menu-item-730" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-730"><a href="http://inspirythemesdemo.com/realhomes/listing/">Simple Listing</a></li>
-                                        <li id="menu-item-717" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-717"><a href="http://inspirythemesdemo.com/realhomes/listing/?module=properties-map">Simple Listing with Google Map</a></li>
-                                        <li id="menu-item-728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-728"><a href="http://inspirythemesdemo.com/realhomes/grid-listing/">Grid Listing</a></li>
-                                        <li id="menu-item-718" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-718"><a href="http://inspirythemesdemo.com/realhomes/grid-listing/?module=properties-map">Grid Listing with Google Map</a></li>
+                                        <li id="menu-item-706" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-706"><a href="@Url.Action("WhatWeDo", "AboutUs", new { area = "", id = "" })">What We Do</a></li>
+                                        <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("HowItWorks", "AboutUs", new { area = "", id = "" })">How It Works</a></li>
+                                        <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("EthicsAndCulture", "AboutUs", new { area = "", id = "" })">Ethics And Culture</a></li>
                                     </ul>
                                 </li>
-                                <li id="menu-item-722" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-722"><a href="http://inspirythemesdemo.com/realhomes/news/">News</a></li>
-                                <li id="menu-item-719" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-719"><a href="http://inspirythemesdemo.com/realhomes/idx/">IDX</a></li>
-                                <li id="menu-item-723" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-723">
-                                    <a href="http://inspirythemesdemo.com/realhomes/3-columns-gallery/">Gallery</a>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    @*<a href="@Url.Action("Index", "Pledge")">Pledge/Support Us</a>*@
+                                    <a href="@Url.Action("PledgeIndex", "Student")">Pledge/Support Us</a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="@Url.Action("SponsorProject", "Projects")" class="pledge">Projects</a>
                                     <ul class="sub-menu">
-                                        <li id="menu-item-726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-726"><a href="http://inspirythemesdemo.com/realhomes/2-columns-gallery/">2 Columns Gallery</a></li>
-                                        <li id="menu-item-725" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-725"><a href="http://inspirythemesdemo.com/realhomes/3-columns-gallery/">3 Columns Gallery</a></li>
-                                        <li id="menu-item-724" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-724"><a href="http://inspirythemesdemo.com/realhomes/4-columns-gallery/">4 Columns Gallery</a></li>
+                                        <li id="menu-item-706" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-706"><a href="@Url.Action("SponsorChild", "Projects")">Give To A Child</a></li>
+                                        <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("SponsorProject", "Projects", new { area = "", id = "" })">Part Sponsor</a></li>
+                                        <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("SprtDeedADay", "Projects", new { area = "", id = "" })">Support Deed a Day</a></li>
                                     </ul>
                                 </li>
-                                <li id="menu-item-704" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-704">
-                                    <a href="#">Pages</a>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="@Url.Action("Index", "Media")">Media/News</a>
                                     <ul class="sub-menu">
-                                        <li id="menu-item-727" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-727"><a href="http://inspirythemesdemo.com/realhomes/agents/">Agents</a></li>
-                                        <li id="menu-item-732" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-732"><a href="http://inspirythemesdemo.com/realhomes/typography/">Typography</a></li>
-                                        <li id="menu-item-733" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-733"><a href="http://inspirythemesdemo.com/realhomes/columns/">Columns</a></li>
-                                        <li id="menu-item-712" class="menu-item menu-item-type-taxonomy menu-item-object-property-status menu-item-712"><a href="http://inspirythemesdemo.com/realhomes/property-status/for-rent/">For Rent</a></li>
-                                        <li id="menu-item-711" class="menu-item menu-item-type-taxonomy menu-item-object-property-status menu-item-711"><a href="http://inspirythemesdemo.com/realhomes/property-status/for-sale/">For Sale</a></li>
-                                        <li id="menu-item-705" class="menu-item menu-item-type-taxonomy menu-item-object-property-city menu-item-705"><a href="http://inspirythemesdemo.com/realhomes/property-city/miami/">Miami City</a></li>
+                                        <li id="menu-item-706" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-706"><a href="@Url.Action("Photos", "Media")">Photos</a></li>
+                                        <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("Videos", "Media")">Videos</a></li>
+                                        <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("Index", "Media")">News</a></li>
+                                        <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("AnnualEvents", "Media")">Annual Events</a></li>
+
+
                                     </ul>
                                 </li>
-                                <li id="menu-item-709" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-709">
-                                    <a href="#">Types</a>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="@Url.Action("Index", "LendAHand")">Lend A Hand</a>
                                     <ul class="sub-menu">
-                                        <li id="menu-item-707" class="menu-item menu-item-type-taxonomy menu-item-object-property-type menu-item-707"><a href="http://inspirythemesdemo.com/realhomes/property-type/single-family-home/">Single Family Home</a></li>
-                                        <li id="menu-item-779" class="menu-item menu-item-type-taxonomy menu-item-object-property-type menu-item-779"><a href="http://inspirythemesdemo.com/realhomes/property-type/apartment-building/">Apartment Building</a></li>
-                                        <li id="menu-item-778" class="menu-item menu-item-type-taxonomy menu-item-object-property-type menu-item-778"><a href="http://inspirythemesdemo.com/realhomes/property-type/apartment/">Apartment</a></li>
-                                        <li id="menu-item-780" class="menu-item menu-item-type-taxonomy menu-item-object-property-type menu-item-780"><a href="http://inspirythemesdemo.com/realhomes/property-type/office/">Office</a></li>
-                                        <li id="menu-item-781" class="menu-item menu-item-type-taxonomy menu-item-object-property-type menu-item-781"><a href="http://inspirythemesdemo.com/realhomes/property-type/shop/">Shop</a></li>
-                                        <li id="menu-item-706" class="menu-item menu-item-type-taxonomy menu-item-object-property-type menu-item-706"><a href="http://inspirythemesdemo.com/realhomes/property-type/villa/">Villa</a></li>
-                                        <li id="menu-item-708" class="menu-item menu-item-type-taxonomy menu-item-object-property-type menu-item-708"><a href="http://inspirythemesdemo.com/realhomes/property-type/condominium/">Condominium</a></li>
+                                        <li id="menu-item-706" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-706"><a href="@Url.Action("SrtCptr", "LendAHand", new { area = "", id = "" })">Start A Chapter</a></li>
+                                        <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("Vtr", "LendAHand", new { area = "", id = "" })">Volunteer</a></li>
+                                        <li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="@Url.Action("SprdTheWrd", "LendAHand", new { area = "", id = "" })">Spread The Word</a></li>
+
+
                                     </ul>
                                 </li>
-                                <li id="menu-item-731" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-731"><a href="http://inspirythemesdemo.com/realhomes/contact-us/">Contact us</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="@Url.Action("Index", "ContactUs")">Contact Us</a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                    <a href="@Url.Action("Login", "Account")">Sponsor Login</a>
+                                </li>
                             </ul>
                         </div>
                     </nav>
