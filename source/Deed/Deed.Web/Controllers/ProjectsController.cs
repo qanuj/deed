@@ -46,7 +46,10 @@ namespace Deed.Web.Controllers
         {
             return View();
         }
-
+        public ActionResult SponsorProject()
+        {
+            return View();
+        }
 
         public ActionResult SponsorChild()
         {
