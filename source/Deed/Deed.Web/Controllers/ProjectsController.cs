@@ -3,13 +3,45 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Deed.Web.ViewModels;
 
 namespace Deed.Web.Controllers
 {
-    public class ProjectsController : Controller
+    public class ProjectsController : DbController
     {
         //
         // GET: /Projects/
+
+        protected IQueryable<CardViewModel> Query()
+        {
+            var query = from r in db.Students
+
+                        select new CardViewModel
+                        {
+                            ID = r.id,
+                            Name = r.first_name,
+                            Father = r.father_first_name,
+                            Mother = r.mother_first_name,
+                            District = r.district,
+                            Adress1 = r.address_line1,
+                            Adress2 = r.address_line2,
+                            //Caste = r.cast_id,
+                            City = r.city,
+                            Country = r.country,
+                            History = r.family_history,
+                            State = r.state,
+                            Religion = r.religion,
+                            DOB = DateTime.Now,
+                            PostOffice = r.post_office,
+                            Picture = r.image,
+                            PoliceStation = r.police_station
+
+                        };
+            query = query.OrderByDescending(x => x.ID).Take(10);
+            return query;
+
+        }
+
         public ActionResult Index()
         {
             return View();
@@ -18,12 +50,14 @@ namespace Deed.Web.Controllers
 
         public ActionResult SponsorChild()
         {
-            return View();
+
+            return View(Query());
         }
 
-        public ActionResult SponsorProject()
+        public ActionResult PartSponsor()
         {
-            return View();
+            var std = db.Students.OrderByDescending(x => x.id).Take(10);
+            return View(Query());
         }
 
 

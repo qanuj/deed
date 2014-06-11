@@ -608,6 +608,7 @@
     <Content Include="Views\Student\PhotoGallery.cshtml" />
     <Content Include="Views\Student\Pledgge.cshtml" />
     <Content Include="Views\Homes\Index.cshtml" />
+    <Content Include="Views\Projects\PartSponsor.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

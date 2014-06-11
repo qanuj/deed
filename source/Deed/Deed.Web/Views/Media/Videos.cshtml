@@ -1,4 +1,7 @@
-﻿<div class="page-head" style="background-repeat: no-repeat; background-position: center top; background-image: url('/Content/images/SliderImg/13772.jpg'); background-size: cover; ">
+﻿@model IEnumerable<Deed.Data.Legacy.YouTubeVideos>
+
+
+<div class="page-head" style="background-repeat: no-repeat; background-position: center top; background-image: url('/Content/images/SliderImg/13772.jpg'); background-size: cover; ">
     <div class="container">
         <div class="wrap clearfix">
             <h1 class="page-title"><span>Video Gallery</span></h1>
@@ -31,137 +34,26 @@
                     <!-- Gallery Container -->
                     <div id="gallery-container">
                         <div id="contentModal"></div>
-                        <div class="gallery-4-columns isotope clearfix" style="position: relative; overflow: hidden; height: 812px;">
-                            <div class="post-93 property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-rent" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate(0px, 0px);">
-                                <figure>
-                                    <div class="media_container" style="display: none; opacity: 1;">
-                                        @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="15421 Southwest 39th Terrace"></a>*@
-                                        <a class="link" href="@Url.Action("Player", "Media")"></a>
-                                    </div>
-                                    <img class="img-border" src="http://img.youtube.com/vi/XhxpHQ8Kwag/0.jpg" style="width:335px; height:150px;" alt="15421 Southwest 39th Terrace">
-                                </figure>
-                                <h5 class="item-title"><a href="~/Content/images/Dscool4.jpg" title="15421 Southwest 39th Terrace">PhotoName</a></h5>
-                            </div>
-                            <div class="post-79 property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-sale">
-                                <figure>
-                                    <div class="media_container">
-                                        @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="700 Front Street, Key West, FL"></a>*@
-                                        <a class="link" href="@Url.Action("Player", "Media")"></a>
-                                    </div>
-                                    <img class="img-border" src="http://img.youtube.com/vi/wg6cnDCPA80/0.jpg" style="width:335px; height:150px;" alt="15421 Southwest 39th Terrace">
-                                </figure>
-                                <h5 class="item-title"><a href="~/Content/images/Dscool4.jpg" title="700 Front Street, Key West, FL">700 Front Street, Key West, FL</a></h5>
-                            </div>
-                            <div class="post-72 property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-sale">
-                                <figure>
-                                    <div class="media_container">
-                                        @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="1200 Anastasia Avenue, Coral Gables"></a>*@
-                                        <a class="link" href="@Url.Action("Player", "Media")"></a>
-                                    </div>
-                                    <img class="img-border" src="http://img.youtube.com/vi/_JM0_0JBHG8/0.jpg" style="width:335px; height:150px;" alt="15421 Southwest 39th Terrace">
-                                </figure>
-                                <h5 class="item-title"><a href="~/Content/images/Dscool4.jpg" title="1200 Anastasia Avenue, Coral Gables">1200 Anastasia Avenue, Coral Gables</a></h5>
-                            </div>
-                            <div class="post-771 property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-rent">
-                                <figure>
-                                    <div class="media_container" style="display: none; opacity: 1;">
-                                        @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="Retail Store – Southwest 186th Street"></a>*@
-                                        <a class="link" href="@Url.Action("Player", "Media")"></a>
-                                    </div>
-                                    <img class="img-border" src="http://img.youtube.com/vi/8RpaGefYo08/0.jpg" style="width:335px; height:150px;" alt="15421 Southwest 39th Terrace">
-                                </figure>
-                                <h5 class="item-title"><a href="~/Content/images/Dscool4.jpg" title="Retail Store – Southwest 186th Street">Retail Store – Southwest 186th Street</a></h5>
-                            </div>
-                            <div class="post-766 property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-rent">
-                                <figure>
-                                    <div class="media_container">
-                                        @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="15 Apartments of Type B"></a>*@
-                                        <a class="link" href="@Url.Action("Player", "Media")"></a>
-                                    </div>
-                                    <img class="img-border" src="http://img.youtube.com/vi/WX6zpFc8pE8/0.jpg?" style="width:335px; height:150px;" alt="15421 Southwest 39th Terrace">
-                                </figure>
-                                <h5 class="item-title"><a href="~/Content/images/Dscool4.jpg" title="15 Apartments of Type B">15 Apartments of Type B</a></h5>
-                            </div>
-                            <div class="post-764 property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-rent">
-                                <figure>
-                                    <div class="media_container">
-                                        @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="20 Apartments of Type A"></a>*@
-                                        <a class="link" href="@Url.Action("Player", "Media")"></a>
-                                    </div>
-                                    <img class="img-border" src="http://img.youtube.com/vi/8RpaGefYo08/0.jpg" style="width:335px; height:150px;" alt="15421 Southwest 39th Terrace">
-                                </figure>
-                                <h5 class="item-title"><a href="~/Content/images/Dscool4.jpg" title="20 Apartments of Type A">20 Apartments of Type A</a></h5>
-                            </div>
-                            <div class="post-762 property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-sale">
-                                <figure>
-                                    <div class="media_container">
-                                        @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="Apartment Building Having 35 Apartments"></a>*@
-                                        <a class="link" href="@Url.Action("Player", "Media")"></a>
-                                    </div>
-                                    <img class="img-border" src="http://img.youtube.com/vi/JvWvJBSAqCU/0.jpg" style="width:335px; height:150px;" alt="15421 Southwest 39th Terrace">
-                                </figure>
-                                 <h5 class="item-title"><a href="~/Content/images/Dscool4.jpg" title="Apartment Building Having 35 Apartments">Apartment Building Having 35 Apartments</a></h5>
-                            </div>
-                            <div class="post-775 property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-rent">
-                                <figure>
-                                    <div class="media_container">
-                                        @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="3895 NW 107th Ave"></a>*@
-                                        <a class="link" href="@Url.Action("Player", "Media")"></a>
-                                    </div>
-                                    <img class="img-border" src="~/Content/images/Dscool4.jpg" alt="3895 NW 107th Ave">
-                                </figure>
-                                <h5 class="item-title"><a href="~/Content/images/Dscool4.jpg" title="3895 NW 107th Ave">3895 NW 107th Ave</a></h5>
-                            </div>
-                            <div class="post-77 property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-sale" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate(0px, 416px);">
-                                <figure>
-                                    <div class="media_container">
-                                        @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="1903 Hollywood Boulevard"></a>*@
-                                        <a class="link" href="@Url.Action("Player", "Media")"></a>
-                                    </div>
-                                    <img class="img-border" src="~/Content/images/Dscool4.jpg" alt="1903 Hollywood Boulevard">
-                                </figure>
-                                <h5 class="item-title"><a href="~/Content/images/Dscool4.jpg" title="1903 Hollywood Boulevard">1903 Hollywood Boulevard</a></h5>
-                            </div>
-                            <div class="post-70 property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-rent">
-                                <figure>
-                                    <div class="media_container">
-                                        @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="401 Biscayne Boulevard, Miami"></a>*@
-                                        <a class="link" href="@Url.Action("Player", "Media")"></a>
-                                    </div>
-                                    <img class="img-border" src="~/Content/images/Dscool4.jpg" alt="401 Biscayne Boulevard, Miami">
-                                </figure>
-                                <h5 class="item-title"><a href="~/Content/images/Dscool4.jpg" title="401 Biscayne Boulevard, Miami">401 Biscayne Boulevard, Miami</a></h5>
-                            </div>
-                            <div class="post-75 property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-rent">
-                                <figure>
-                                    <div class="media_container">
-                                        @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="3015 Grand Avenue, CocoWalk"></a>*@
-                                        <a class="link" href="@Url.Action("Player", "Media")"></a>
-                                    </div>
-                                    <img class="img-border" src="~/Content/images/Dscool4.jpg" alt="3015 Grand Avenue, CocoWalk">
-                                </figure>
-                                <h5 class="item-title"><a href="~/Content/images/Dscool4.jpg" title="3015 Grand Avenue, CocoWalk">3015 Grand Avenue, CocoWalk</a></h5>
-                            </div>
-                            <div class="post-68 property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-sale">
-                                <figure>
-                                    <div class="media_container">
-                                        @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="60 Merrick Way, Miami"></a>*@
-                                        <a class="link" href="@Url.Action("Player", "Media")"></a>
-                                    </div>
-                                    <img class="img-border" src="~/Content/images/Dscool4.jpg" alt="60 Merrick Way, Miami">
-                                </figure>
-                                <h5 class="item-title"><a href="~/Content/images/Dscool4.jpg" title="60 Merrick Way, Miami">60 Merrick Way, Miami</a></h5>
-                            </div>
-                            <div class="post-56 property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-sale">
-                                <figure>
-                                    <div class="media_container">
-                                        @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="Florida 5, Pinecrest, FL"></a>*@
-                                        <a class="link" href="@Url.Action("Player", "Media")"></a>
-                                    </div>
-                                    <img class="img-border" src="~/Content/images/Dscool4.jpg" alt="Florida 5, Pinecrest, FL">
-                                </figure>
-                                <h5 class="item-title"><a href="~/Content/images/Dscool4.jpg" title="Florida 5, Pinecrest, FL">Florida 5, Pinecrest, FL</a></h5>
-                            </div>
+                        <div class="gallery-4-columns  clearfix">
+
+
+                            @foreach (var m in Model)
+                            {
+                                <div class="post property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-sale">
+                                    <figure>
+                                        <div class="media_container">
+                                            @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="Florida 5, Pinecrest, FL"></a>*@
+                                            <a class="link" href="@m.link"></a>
+                                        </div>
+                                        <img class="img-border" src="http://img.youtube.com/vi/+@m.link+?autoplay=1" alt="@m.title">
+                                    </figure>
+                                    <h5 class="item-title"><a href="@m.link" title="@m.title">@m.title</a></h5>
+                                </div>
+
+                            }
+
+
+
                         </div>
                     </div>
                     <!-- end of gallery container -->
@@ -182,11 +74,11 @@
     (function (e) {
         $(".link").on('click', function () {
             var newbutton = $(this);
-            $.get('/Media/Player', function (d) {
+            $.get('/Student/Player', { linkk: $(this).attr("href") }, function (d) {
                 if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(true); }
             });
         });
-       
+
 
     });
 

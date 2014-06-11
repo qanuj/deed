@@ -15,7 +15,7 @@ using Deed.Web.Results;
 namespace Deed.Web.Controllers
 {
     [Authorize]
-    public class AccountController : Controller
+    public class AccountController : DbController
     {
         public AccountController()
             : this(new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new DeedDataContext()))) {

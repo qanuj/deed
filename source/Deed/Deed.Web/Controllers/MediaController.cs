@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Deed.Web.Controllers
 {
-    public class MediaController : Controller
+    public class MediaController : DbController
     {
         //
         // GET: /Media/
@@ -17,12 +17,14 @@ namespace Deed.Web.Controllers
 
         public ActionResult Photos()
         {
-            return View();
+            var items = db.Students.OrderByDescending(x => x.id).Take(10);
+            return View(items);
         }
 
         public ActionResult Videos()
         {
-            return View();
+            var items = db.YouTubeVideos.OrderByDescending(x => x.id).Take(20);
+            return View(items);
         }
 
         public ActionResult News()
@@ -32,7 +34,8 @@ namespace Deed.Web.Controllers
 
         public ActionResult AnnualEvents()
         {
-            return View();
+            var items = db.YouTubeVideos.OrderByDescending(x => x.id).Take(20);
+            return View(items);
         }
 
         public ActionResult Player()

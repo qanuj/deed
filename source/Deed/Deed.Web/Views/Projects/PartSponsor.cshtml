@@ -1,12 +1,12 @@
 ﻿@model IEnumerable<Deed.Web.ViewModels.CardViewModel>
 @{
-    ViewBag.Title = "Support Us";
+    ViewBag.Title = "Part Sponsor";
 }
 
 <div class="page-head" style="background-repeat: no-repeat; background-position: center top; background-image: url('/Content/images/SliderImg/13772.jpg'); background-size: cover; ">
     <div class="container">
         <div class="wrap clearfix">
-            <h1 class="page-title"><span>Give To Child</span></h1>
+            <h1 class="page-title"><span>Part Sponsor</span></h1>
             <p></p>
         </div>
     </div>
@@ -18,8 +18,8 @@
 
                 <section class="listing-layout">
 
-                    <h3 class="title-heading">Students</h3>
-                    <div id="map_canvas" style="width: 800px; height :347px; margin-left:29px;margin-top:36px;"></div>
+                    <h3 class="title-heading">Part Sponsor</h3>
+                    @*<div id="map_canvas" style="width: 800px; height :347px; margin-left:29px;margin-top:36px;"></div>*@
                     <div class="view-type clearfix">
                         <a class="list active" href="http://alt-realhomes.inspirythemes.com/listing/?view=list"></a>
                         <a class="grid" href="http://alt-realhomes.inspirythemes.com/listing/?view=grid"></a>
@@ -46,11 +46,11 @@
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>
                                         @*<a class="more-details" href="@Url.Action("Details", "Pledge", new {id=m.ID })">More Details <i class="fa fa-caret-right"></i></a>*@
                                         <a class="more-details" href="@Url.Action("PledgeDetail", "Student", new { id=@m.ID})">More Details <i class="fa fa-caret-right"></i></a>
-
+                                       
                                         @*<span class="pull-right"><input type="submit" value="Select" class="real-btn login-btn" /></span>*@
                                         @*<span class="pull-right"><a id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</a></span>*@
                                         <button id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</button>
-
+                                        <div id="progresss"></div>
 
                                     </div>
 
@@ -86,7 +86,7 @@
         var barrrr = bar1.progress(50);
 
     });
-    </script>
+</script>
 
 
 
