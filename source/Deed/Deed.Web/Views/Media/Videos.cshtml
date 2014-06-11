@@ -43,9 +43,9 @@
                                     <figure>
                                         <div class="media_container">
                                             @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="Florida 5, Pinecrest, FL"></a>*@
-                                            <a class="link" href="@m.link"></a>
+                                            <a class="link" href="http://youtube.com/v/@m.link?autoplay=1"></a>
                                         </div>
-                                        <img class="img-border" src="http://img.youtube.com/vi/+@m.link+?autoplay=1" alt="@m.title">
+                                        <img class="img-border" src="http://img.youtube.com/vi/@m.link/0.jpg?autoplay=1" style="width:247px;height:124px" alt="@m.title">
                                     </figure>
                                     <h5 class="item-title"><a href="@m.link" title="@m.title">@m.title</a></h5>
                                 </div>
@@ -74,7 +74,7 @@
     (function (e) {
         $(".link").on('click', function () {
             var newbutton = $(this);
-            $.get('/Student/Player', { linkk: $(this).attr("href") }, function (d) {
+            $.get('/Media/Player', { linkk: $(this).attr("href") }, function (d) {
                 if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(true); }
             });
         });

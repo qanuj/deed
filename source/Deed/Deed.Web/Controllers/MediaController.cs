@@ -38,9 +38,11 @@ namespace Deed.Web.Controllers
             return View(items);
         }
 
-        public ActionResult Player()
+        public ActionResult Player(string linkk)
         {
+            ViewBag.link = linkk;
             return View();
+
         }
 
 
