@@ -34,7 +34,7 @@
                     <!-- Gallery Container -->
                     <div id="gallery-container">
                         <div id="contentModal"></div>
-                        <div class="gallery-4-columns isotope clearfix" style="position: relative; overflow: hidden; height: 812px;">
+                        <div class="gallery-4-columns  clearfix">
                             
 
                             @foreach (var m in Model)
@@ -46,7 +46,7 @@
                                         @*<a class="swipebox zoom" href="~/Content/images/Dscool4.jpg" title="Florida 5, Pinecrest, FL"></a>*@
                                         <a class="link" href="@m.link"></a>
                                     </div>
-                                    <img class="img-border" src="@m.link" alt="@m.title">
+                                    <img class="img-border" src="http://img.youtube.com/vi/+@m.link+?autoplay=1" alt="@m.title">
                                 </figure>
                                 <h5 class="item-title"><a href="@m.link" title="@m.title">@m.title</a></h5>
                             </div>

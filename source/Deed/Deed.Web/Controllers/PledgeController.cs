@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Deed.Web.ViewModels;
-using Deed.Data.Objects;
+using Deed.Data.Legacy;
 
 namespace Deed.Web.Controllers
 {
@@ -25,7 +25,7 @@ namespace Deed.Web.Controllers
 
         public ActionResult Details(long id)
         {
-            var s = db.Students.FirstOrDefault(x => x.ID == id);
+            var s = db.Students.FirstOrDefault(x => x.id == id);
             return View(s);
 
         }
@@ -43,24 +43,26 @@ namespace Deed.Web.Controllers
 
                         select new CardViewModel
                         {
-                            ID = r.ID,
-                            Name = r.Name + " " + r.Father + " " + r.Mother,
-                            Father=r.Father,
-                            Mother=r.Mother,
-                            District = r.District,
-                            Adress = r.Address,
-                            Caste = r.Caste,
-                           // City = r.City.Name,
-                            //Country = r.Country.Name,
-                            History = r.History,
-                            //State = r.State.Name,
-                            //Religion = r.Religion.Name,
+                            ID = r.id,
+                            Name = r.first_name,
+                            Father = r.father_first_name,
+                            Mother = r.mother_first_name,
+                            District = r.district,
+                            Adress1 = r.address_line1,
+                            Adress2 = r.address_line2,
+                            //Caste = r.cast_id,
+                            City = r.city,
+                            Country = r.country,
+                            History = r.family_history,
+                            State = r.state,
+                            Religion = r.religion,
                             DOB = DateTime.Now,
-                            PostOffice = r.PostOffice,
-                            Picture = r.Picture
+                            PostOffice = r.post_office,
+                            Picture = r.image,
+                            PoliceStation = r.police_station
 
                         };
-
+            query = query.OrderByDescending(x => x.ID).Take(10);
             return query;
             
         }
@@ -71,7 +73,7 @@ namespace Deed.Web.Controllers
             foreach (var i in Selected)
             {
 
-                var s = db.Students.FirstOrDefault(r => r.ID==i);
+                var s = db.Students.FirstOrDefault(r => r.id==i);
 
                 stu.Add(s);
 

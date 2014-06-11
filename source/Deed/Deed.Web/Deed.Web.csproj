@@ -502,6 +502,7 @@
     <Content Include="Scripts\jquery.elastislide.js" />
     <Content Include="Scripts\jquery.flexslider-min.js" />
     <Content Include="Scripts\jquery.form.js" />
+    <Content Include="Scripts\jquery.isotope.min.js" />
     <Content Include="Scripts\jquery.jcarousel.min.js" />
     <Content Include="Scripts\jquery.localisation.js" />
     <Content Include="Scripts\jquery.mambo.min.js" />
@@ -605,6 +606,8 @@
     <Content Include="Views\Student\Videogallery.cshtml" />
     <Content Include="Views\Student\Player.cshtml" />
     <Content Include="Views\Student\PhotoGallery.cshtml" />
+    <Content Include="Views\Student\Pledgge.cshtml" />
+    <Content Include="Views\Homes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

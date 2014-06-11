@@ -15,7 +15,8 @@ namespace Deed.Web.ViewModels
         public string Mother { get; set; }
         public DateTime DOB { get; set; }
         public string Religion { get; set; }
-        public string Adress { get; set; }
+        public string Adress1 { get; set; }
+        public string Adress2 { get; set; }
         public string PostOffice { get; set; }
         public string PoliceStation { get; set; }
         public string District { get; set; }

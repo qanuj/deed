@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Deed.Web.ViewModels.CardViewModel>
+﻿@model IEnumerable<Deed.Data.Legacy.Student>
 @{
     ViewBag.Title = "Support Us";
 }
@@ -31,11 +31,11 @@
                             <div class="span6 ">
                                 <article class="property-item clearfix">
 
-                                    <h4><a href="http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/" title="">@m.Name</a></h4>
+                                    <h4><a href="http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/" title="@m.first_name">@m.first_name</a></h4>
 
                                     <figure>
                                         <a href="http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/" title="15421 Southwest 39th Terrace">
-                                            <img width="244" height="163" src="@m.Picture" class="attachment-property-thumb-image wp-post-image" alt="@m.Name" title="@m.Name">
+                                            <img width="244" height="163" src="@m.image" class="attachment-property-thumb-image wp-post-image" alt="@m.first_name" title="@m.first_name">
                                         </a>
                                     </figure>
 
@@ -45,17 +45,17 @@
                                         </h5>
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>
                                         @*<a class="more-details" href="@Url.Action("Details", "Pledge", new {id=m.ID })">More Details <i class="fa fa-caret-right"></i></a>*@
-                                        <a class="more-details" href="@Url.Action("PledgeDetail", "Student", new { id=@m.ID})">More Details <i class="fa fa-caret-right"></i></a>
+                                        <a class="more-details" href="@Url.Action("PledgeDetail", "Student", new { id=@m.id})">More Details <i class="fa fa-caret-right"></i></a>
 
                                         @*<span class="pull-right"><input type="submit" value="Select" class="real-btn login-btn" /></span>*@
                                         @*<span class="pull-right"><a id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</a></span>*@
-                                        <button id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</button>
+                                        <button id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.id">Select</button>
 
 
                                     </div>
 
                                     <div class="property-meta">
-                                        <span><b>Father:</b></span><span>@m.Father</span><span><b>Mother:</b></span><span>@m.Mother</span>
+                                        <span><b>Father:</b></span><span>@m.father_first_name</span><span><b>Mother:</b></span><span>@m.mother_first_name</span>
                                     </div>
 
                                 </article>

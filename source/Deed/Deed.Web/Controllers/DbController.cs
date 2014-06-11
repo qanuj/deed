@@ -9,19 +9,22 @@ namespace Deed.Web.Controllers
 {
     public class DbController : Controller
     {
-        private DeedDataContext _db;
-        protected DeedDataContext db
-        {
-            get
-            {
-                if (_db == null)
-                {
-                    _db = new DeedDataContext();
-                    //_db.My = my;
-                }
-                return _db;
-            }
-        }
+        //private DeedDataContext _db;
+        //protected DeedDataContext db
+        //{
+        //    get
+        //    {
+        //        if (_db == null)
+        //        {
+        //            _db = new DeedDataContext();
+        //            //_db.My = my;
+        //        }
+        //        return _db;
+        //    }
+        //}
+
+        public readonly Deed.Data.Legacy.DataContext db = new Data.Legacy.DataContext();
+        
         
 	}
 }

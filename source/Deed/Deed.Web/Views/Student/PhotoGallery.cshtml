@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Deed.Data.Legacy.YouTubeVideos>
+﻿@model IEnumerable<Deed.Data.Legacy.Student>
 
 <div class="page-head" style="background-repeat: no-repeat; background-position: center top; background-image: url('/Content/images/SliderImg/13772.jpg'); background-size: cover; ">
     <div class="container">
@@ -29,19 +29,19 @@
 
                     <!-- Gallery Container -->
                     <div id="gallery-container">
-                        <div class="gallery-4-columns isotope clearfix" style="position: relative; overflow: hidden; height: 812px;">
+                        <div class="gallery-4-columns isotope clearfix">
                             
                             @foreach (var m in Model)
                             { 
-                                <div class="post-93 property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-rent" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate(0px, 0px);">
+                                <div class="post-93 property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-rent" >
                                 <figure>
-                                    <div class="media_container" style="display: none; opacity: 1;">
-                                        <a class="swipebox zoom" href="@m.show_on_home" title="@m.show_on_home"></a>
-                                        <a class="link" href="@m.show_on_home"></a>
+                                    <div class="media_container" >
+                                        <a class="swipebox zoom" href="@m.image" title="@m.first_name"></a>
+                                        <a class="link" href="@m.image"></a>
                                     </div>
-                                    <img class="img-border" src="@m.show_on_home" alt="@m.show_on_home">
+                                    <img class="img-border" src="@m.image" alt="@m.first_name">
                                 </figure>
-                                <h5 class="item-title"><a href="@m.show_on_home" title="@m.show_on_home">@m.title</a></h5>
+                                <h5 class="item-title"><a href="detailPage" title="@m.first_name">@m.first_name</a></h5>
                             </div>
                             }
                             

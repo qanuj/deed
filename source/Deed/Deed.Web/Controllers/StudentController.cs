@@ -12,25 +12,36 @@ namespace Deed.Web.Controllers
     {
         readonly Deed.Data.Legacy.DataContext db = new Data.Legacy.DataContext();
 
-        public ActionResult Query() {
-            var students=db.Students.OrderByDescending(x=>x.id).Select(x=>new
-            { last=x.last_name,picture=x.image,gender=x.male }).Take(10);
-            return Json(students, JsonRequestBehavior.AllowGet);
-        }
+        //public ActionResult Query() {
+        //    var students=db.Students.OrderByDescending(x=>x.id).Select(x=>new
+        //    { last=x.last_name,picture=x.image,gender=x.male }).Take(10);
+        //    return Json(students, JsonRequestBehavior.AllowGet);
+        //}
 
-        public ActionResult Videos() {
-            var items = db.YouTubeVideos.OrderByDescending(x => x.id).Take(10);
-            return Json(items, JsonRequestBehavior.AllowGet);
-        }
+        //public ActionResult Videos() {
+        //    var items = db.YouTubeVideos.OrderByDescending(x => x.id).Take(10);
+        //    return vi(items, JsonRequestBehavior.AllowGet);
+        //}
 
-
-        //Media 
-
-        public ActionResult Videogallery()
+        public ActionResult Pledge()
         {
-            return View(Videos());
-
+            var std = db.Students.OrderByDescending(x => x.id).Take(10);
+            return View("Pledgge", std);
         }
+
+        public ActionResult Videos()
+        {
+            var items = db.YouTubeVideos.OrderByDescending(x => x.id).Take(20);
+            return View("Videogallery",items);
+        }
+
+
+        public ActionResult Photos()
+        {
+            var items = db.Students.OrderByDescending(x => x.id).Take(10);
+            return View("Photogallery", items);
+        }
+       
 
         public ActionResult Photogallery()
         {
@@ -52,11 +63,11 @@ namespace Deed.Web.Controllers
 
         //Pledge Controller
 
-        public ActionResult PledgeIndex()
-        { 
-            return View(Query());
+        //public ActionResult PledgeIndex()
+        //{ 
+        //    return View(Query());
         
-        }
+        //}
         public ActionResult PledgeDetail(long id)
         {
             var s = db.Students.FirstOrDefault(x => x.id == id);
