@@ -68,5 +68,15 @@ namespace Deed.Web.Controllers
         {
             return View();
         }
+
+        public ActionResult ChildDetail(long id)
+        {
+            var s = db.Students.FirstOrDefault(x => x.id == id);
+            return View(s);
+
+        }
+
+
+
 	}
 }

@@ -611,6 +611,8 @@
     <Content Include="Views\Homes\Index.cshtml" />
     <Content Include="Views\Projects\PartSponsor.cshtml" />
     <Content Include="Views\Pledge\Cart.cshtml" />
+    <Content Include="Views\Projects\ChildDetail.cshtml" />
+    <Content Include="Views\Projects\ProjectDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
