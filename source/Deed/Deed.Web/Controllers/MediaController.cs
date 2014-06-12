@@ -17,7 +17,7 @@ namespace Deed.Web.Controllers
 
         public ActionResult Photos()
         {
-            var items = db.Students.OrderByDescending(x => x.id).Take(10);
+            var items = db.Students.OrderBy(x => x.first_name).Take(10);
             return View(items);
         }
 

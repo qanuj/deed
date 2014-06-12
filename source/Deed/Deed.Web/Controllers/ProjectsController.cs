@@ -37,7 +37,7 @@ namespace Deed.Web.Controllers
                             PoliceStation = r.police_station
 
                         };
-            query = query.OrderByDescending(x => x.ID).Take(10);
+            query = query.OrderBy(x => x.Name).Take(10);
             return query;
 
         }
@@ -59,7 +59,7 @@ namespace Deed.Web.Controllers
 
         public ActionResult PartSponsor()
         {
-            var std = db.Students.OrderByDescending(x => x.id).Take(10);
+            //var std = db.Students.OrderBy(x => x.first_name).Take(10);
             return View(Query());
         }
 

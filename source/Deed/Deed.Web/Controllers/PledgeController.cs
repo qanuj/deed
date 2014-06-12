@@ -62,7 +62,7 @@ namespace Deed.Web.Controllers
                             PoliceStation = r.police_station
 
                         };
-            query = query.OrderByDescending(x => x.ID).Take(10);
+            query = query.OrderBy(x => x.Name).Take(10);
             return query;
             
         }
