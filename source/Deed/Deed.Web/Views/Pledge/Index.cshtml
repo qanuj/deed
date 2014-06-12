@@ -39,7 +39,7 @@
                                         </a>
                                     </figure>
 
-                                    <div class="detail">
+                                    <div class="detail" id="divstudent">
                                         <h5 class="price">
                                             &#163; 3,850 Per Year
                                         </h5>
@@ -82,30 +82,46 @@
     $(document).ready(function () {
 
         var slectedItems = [];
-        $("#select").on('click', function (e) {
+        $("#divstudent #select").on('click', function (e) {
+            
+
             e.preventDefault();
             var closeButton = $(this);
             slectedItems.push($(this).attr("data-id"));
-
+            //$(this).text("Selected");
+            $(this).replaceWith("<a class='btn btn-warning' disabled='disabled' id='e' >Student has been selected</a>");
+            
         });
 
         $("#sponsor").on('click', function (e) {
-            e.preventDefault();
-            var closeButton = $(this);
-            $.ajax({
-                type: "POST",
-                url: '/Pledge/Sponsor',
-                contentType: 'application/json; charset=utf-8',
-                data: JSON.stringify({
-                    Selected: slectedItems
+          e.preventDefault();
+          var closeButton = $(this);
+          $.ajax({
+              type: "POST",
+              url: '/Pledge/Cart',
+              contentType: 'application/json; charset=utf-8',
+              data: JSON.stringify({
+                  Selected: $.unique(slectedItems)
 
-                }),
-                success: function (data) {
-                    window.location = '/Pledge/Grid'
-                }
-            });
+              }),
+              success: function (d) {
+                  if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(true); }
+              }
+          });
 
-        });
+       });
+
+        //$("#sponsor").on('click', function () {
+        //    var newbutton = $(this);
+            
+
+        //    $.get('/Pledge/Cart', { Selected: slectedItems }
+                
+
+        //    ,function (d) {
+        //        if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(true); }
+        //    });
+        //});
 
     });
 </script>

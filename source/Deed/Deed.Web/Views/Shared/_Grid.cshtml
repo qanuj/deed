@@ -1,4 +1,4 @@
-﻿@*@model List<Deed.Data.Objects.Student>*@
+﻿
          
 @{
     ViewBag.Title = "_Grid";
@@ -11,28 +11,43 @@
 
 
 
-<section id="photos">
-
-    @*@foreach(var i in  Model){*@
-        
-       
-  @*<img src="@i.Picture" alt="Little doggie">
-  <img src="@i.Picture" alt="Little kittie">*@
-        
-        
 
 
-    <img src="~/Content/images/slide-1-layer-1.png" />
 
-    
 
-    <img src="~/Content/images/slide-1.jpg" />
 
-    
-    <img src="~/Content/images/slide-1-layer-1.png" />
-    
-        
-        
-    @*}*@
-</section>
+
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button id="d" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        </div>
+        <div class="modal-body">
+            <section id="photos">
+                <img src="~/Content/images/slide-1-layer-1.png" />
+                <img src="~/Content/images/slide-1-layer-1.png" />
+                <img src="~/Content/images/slide-1-layer-1.png" />
+            </section>
+</div>
+
+    </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+
+
+
+<script type="text/javascript">
+
+    (function (e) {
+        $("#d").click(function () {
+
+            window.location = '/media/videos'
+        });
+
+    });
+
+</script>
+
+
+
 

@@ -416,6 +416,7 @@
     <Content Include="Content\images\SliderImg\loadingslid.gif" />
     <Content Include="Content\images\SliderImg\Parminder Singh Rural.jpg" />
     <Content Include="Content\images\SliderImg\s1.jpg" />
+    <Content Include="Content\images\SliderImg\s2.jpg" />
     <Content Include="Content\images\SliderImg\school building FINAL d 6.jpg" />
     <Content Include="Content\images\slideshow-nav-left.png" />
     <Content Include="Content\images\slideshow-nav-right.png" />
@@ -609,6 +610,7 @@
     <Content Include="Views\Student\Pledgge.cshtml" />
     <Content Include="Views\Homes\Index.cshtml" />
     <Content Include="Views\Projects\PartSponsor.cshtml" />
+    <Content Include="Views\Pledge\Cart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

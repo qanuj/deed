@@ -1,0 +1,42 @@
+﻿@model List<Deed.Data.Legacy.Student>
+
+@{
+    ViewBag.Title = "_Grid";
+}
+@*<h2>_Grid</h2>*@
+<link href="~/Content/__MACOSX/SeamlessResponsivePhotoGrid/css/._style.css" rel="stylesheet" />
+@*<a href="~/Content/__MACOSX/SeamlessResponsivePhotoGrid/._css">~/Content/__MACOSX/SeamlessResponsivePhotoGrid/._css</a>*@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button id="d" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        </div>
+        <div class="modal-body">
+            <section id="photos">
+
+                @foreach (var m in Model)
+                {
+                    <img src="http://deedaday.in/img/upload/students/@m.image" />
+
+                }
+
+                @*<img src="~/Content/images/SliderImg/s2.jpg" />
+                <img src="~/Content/images/SliderImg/cute-sardar.jpg" />
+                <img src="~/Content/images/SliderImg/cute-sardar.jpg" />
+                <img src="~/Content/images/SliderImg/cute-sardar.jpg" />
+                <img src="~/Content/images/SliderImg/cute-sardar.jpg" />
+
+                <img src="~/Content/images/SliderImg/s1.jpg" />
+
+                <img src="~/Content/images/SliderImg/s2.jpg" />
+                <img src="~/Content/images/SliderImg/s2.jpg" />*@
+
+            </section>
+
+
+
+        </div>
+
+    </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->

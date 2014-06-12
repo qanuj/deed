@@ -67,9 +67,10 @@ namespace Deed.Web.Controllers
             
         }
 
-        public ActionResult Sponsor(long[] Selected)
+        public ActionResult Cart(long[] Selected)
         {
             var stu=new List<Student>();
+            
             foreach (var i in Selected)
             {
 
@@ -80,14 +81,14 @@ namespace Deed.Web.Controllers
             }
 
 
-            return View();
+            return View(stu);
             
         }
 
-        public ActionResult Grid()
-        {
-            return PartialView("_Grid");
-        }
+        //public ActionResult Cart()
+        //{
+        //    return View();
+        //}
 
 
 
