@@ -39,7 +39,7 @@
                                         </a>
                                     </figure>
 
-                                    <div class="detail">
+                                    <div class="detail" id="ProgressParent">
                                         <h5 class="price">
                                             &#163; 3,850 Per Year
                                         </h5>
@@ -79,11 +79,15 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
+        //var bar1 = $("#ProgressParent #progresss").progressbar({value:37});
+        //var bar1 = $("#ProgressParent #progresss").progressbar();
+        //var barrrr = bar1.progress(50);
 
-        var bar1 = $("#progresss").progressbar();
-        var barrrr = bar1.progress(50);
-        var bar1 = $(".d").progressbar();
-        var barrrr = bar1.progress(50);
+        $("#ProgressParent #progresss").each(
+
+            function () { $(this).progressbar().progress(50); }
+
+            );
 
     });
 </script>
