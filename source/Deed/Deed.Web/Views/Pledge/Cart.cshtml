@@ -1,4 +1,4 @@
-﻿@model List<Deed.Data.Legacy.Student>
+﻿@model Deed.Web.ViewModels.SponsorPaymentViewModel
 
 @{
     ViewBag.Title = "_Grid";
@@ -13,30 +13,21 @@
 
         </div>
         <div class="modal-body">
-            <section id="photos">
+            <div class="row">
+                <section id="photos">
 
-                @foreach (var m in Model)
-                {
-                    <img src="http://deedaday.in/img/upload/students/@m.image" />
-
-                }
-
-                @*<img src="~/Content/images/SliderImg/s2.jpg" />
-                <img src="~/Content/images/SliderImg/cute-sardar.jpg" />
-                <img src="~/Content/images/SliderImg/cute-sardar.jpg" />
-                <img src="~/Content/images/SliderImg/cute-sardar.jpg" />
-                <img src="~/Content/images/SliderImg/cute-sardar.jpg" />
-
-                <img src="~/Content/images/SliderImg/s1.jpg" />
-
-                <img src="~/Content/images/SliderImg/s2.jpg" />
-                <img src="~/Content/images/SliderImg/s2.jpg" />*@
-
-            </section>
-
-
-
-        </div>
-
+                    @foreach (var m in Model.Picture)
+                        {
+                            <div class="col-md-3 col-sm-3" style="margin-bottom:10px;">
+                                <img class="close " data-dismiss="img" src="http://deedaday.in/img/upload/students/@m" style=" height:163px;width:100%" />
+                            </div>
+                        }
+                </section>
+            </div>
+                <section>
+                    @Html.Partial("Pay")
+                </section>
+            </div>
+       
     </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->

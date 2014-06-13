@@ -18,7 +18,7 @@
 
                 <section class="listing-layout">
 
-                    <h3 class="title-heading">Students</h3>
+                    <h3 class="title-heading"><a class="">Sponsor Selected Students</a> </h3>
 
                     <div class="view-type clearfix">
                         <a class="list active" href="http://alt-realhomes.inspirythemes.com/listing/?view=list"></a>
@@ -63,7 +63,7 @@
                         }
                     </div>
                     <div>
-                        <span class="sponsor-btn"><input type="submit" id="sponsor" value="Sponsor" class="real-btn login-btn" /></span>
+                        @*<span class="sponsor-btn"><input type="submit" id="sponsor" value="Sponsor" class="real-btn login-btn" /></span>*@
                     </div>
 
                     <div class="pagination"><a href="http://alt-realhomes.inspirythemes.com/listing/" class="real-btn current" style="margin-left: 394px;">1</a> <a href="http://alt-realhomes.inspirythemes.com/listing/page/2/" class="real-btn">2</a> </div>
@@ -93,8 +93,9 @@
             
         });
 
-        $("#sponsor").on('click', function (e) {
-          e.preventDefault();
+        $(".listing-layout .title-heading").on('click', function (e) {
+            e.preventDefault();
+            $(this).text("Loading.....");
           var closeButton = $(this);
           $.ajax({
               type: "POST",
@@ -105,7 +106,7 @@
 
               }),
               success: function (d) {
-                  if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(true); }
+                  if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(true); closeButton.text("Sponsor Selected Student"); }
               }
           });
 

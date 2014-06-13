@@ -1,0 +1,114 @@
+﻿@model Deed.Web.ViewModels.SponsorPaymentViewModel
+
+
+<div class="main">
+
+    @*<form role="form">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Check me out
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>*@
+
+
+
+    <div class="inner-wrapper">
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "", role = "form" }))
+                        {
+            @Html.AntiForgeryToken()
+            @*<h4>Create a new account.</h4>*@
+            @Html.ValidationSummary()
+            <label> Fill Details:</label>
+            <div class="form-group">
+                @*@Html.LabelFor(m=>m.Name, new { })*@
+                <div class="">
+                    @Html.TextBoxFor(m => m.Name, new { @placeholder = "First Name",@class="form-control" })
+                </div>
+            </div>
+             <div class="form-group">
+                @*@Html.LabelFor(m=>m.Name, new {  })*@
+                <div class="">
+                    @Html.TextBoxFor(m => m.Name, new { @placeholder = "Last Name", @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @*@Html.LabelFor(m=>m.Name, new {  })*@
+                <div class="">
+                    @Html.TextBoxFor(m => m.Name, new { @placeholder = "Email", @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @*@Html.LabelFor(m=>m.Name, new {  })*@
+                <div class="">
+                    @Html.TextBoxFor(m => m.Name, new { @placeholder = "Mobile", @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @*@Html.LabelFor(m=>m.Name, new {  })*@
+                <div class="">
+                    @Html.TextBoxFor(m => m.Name, new { @placeholder = "Address Line 1", @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @*@Html.LabelFor(m=>m.Name, new {  })*@
+                <div class="">
+                    @Html.TextBoxFor(m => m.Name, new { @placeholder = "Address Line 2", @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @*@Html.LabelFor(m=>m.Name, new {  })*@
+                <div class="">
+                    @Html.TextBoxFor(m => m.Name, new { @placeholder = "City", @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @*@Html.LabelFor(m=>m.Name, new {  })*@
+                <div class="">
+                    @Html.TextBoxFor(m => m.Name, new { @placeholder = "State", @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @*@Html.LabelFor(m=>m.Name, new {  })*@
+                <div class="">
+                    @Html.TextBoxFor(m => m.Name, new { @placeholder = "Postal Code", @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @*@Html.LabelFor(m=>m.Name, new {  })*@
+                <div class="">
+                    @Html.TextBoxFor(m => m.Name, new { @placeholder = "Nationality", @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @*@Html.LabelFor(m=>m.Name, new {  })*@
+                <div class="">
+                    @Html.TextBoxFor(m => m.Name, new { @placeholder = "Card Issuing Country ", @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @*@Html.LabelFor(m=>m.Name, new {  })*@
+                <div class="">
+                    @Html.TextBoxFor(m => m.Name, new { @placeholder = "Card Issuing Country ", @class = "form-control" })
+                    
+                </div>
+            </div>
+            }
+        <button id="select" class="btn btn-xs btn-danger pull-right">Next</button>
+</div>
+    
+</div>

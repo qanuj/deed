@@ -69,20 +69,26 @@ namespace Deed.Web.Controllers
 
         public ActionResult Cart(long[] Selected)
         {
-            var stu=new List<Student>();
-            
+
+            List<string> list = new List<string>();
             foreach (var i in Selected)
             {
 
-                var s = db.Students.FirstOrDefault(r => r.id==i);
+                var s = db.Students.FirstOrDefault(g => g.id == i);
+                list.Add(s.image);
 
-                stu.Add(s);
+
 
             }
+            var r = new SponsorPaymentViewModel
+            {
 
+                Picture = list
 
-            return View(stu);
-            
+            };
+
+            return View(r);
+
         }
 
         //public ActionResult Cart()

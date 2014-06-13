@@ -280,6 +280,7 @@
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CardViewModel.cs" />
+    <Compile Include="ViewModels\SponsorPaymentViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -589,7 +590,7 @@
     <Content Include="Views\ContactUs\Index.cshtml" />
     <Content Include="Views\Shared\_PageHead.cshtml" />
     <Content Include="Views\Shared\_Grid.cshtml" />
-    <Content Include="Views\Pledge\Sponsor.cshtml" />
+    <Content Include="Views\Pledge\Sponsorr.cshtml" />
     <Content Include="Views\Pledge\slid.cshtml" />
     <Content Include="Views\Pledge\PledgeIndex.cshtml" />
     <Content Include="Views\Projects\SponsorChild.cshtml" />
@@ -613,6 +614,7 @@
     <Content Include="Views\Pledge\Cart.cshtml" />
     <Content Include="Views\Projects\ChildDetail.cshtml" />
     <Content Include="Views\Projects\ProjectDetail.cshtml" />
+    <Content Include="Views\Pledge\Pay.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

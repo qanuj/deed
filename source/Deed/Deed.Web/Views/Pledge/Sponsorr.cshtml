@@ -1,0 +1,29 @@
+﻿@model Deed.Web.ViewModels.SponsorPaymentViewModel
+@{
+    
+}
+
+<div class="container contents single login-register">
+    <div class="row">
+        <div class="span12 main-wrap">
+            
+                <h3><span>Register</span></h3>
+            <div class="row">
+                <section id="photos">
+
+
+                    @foreach (var m in Model.Picture)
+                    {
+
+                        <img src="http://deedaday.in/img/upload/students/@m" style="width:244px; height:163px;" />
+
+                    }
+                </section>
+            </div>
+                @Html.Partial("Pay")
+           
+        </div>
+    </div>
+</div>
+
+
