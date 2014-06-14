@@ -18,7 +18,7 @@
 
                 <section class="listing-layout">
 
-                    <h3 class="title-heading"><a class="">Sponsor Selected Students</a> </h3>
+                    <h3 class="title-heading"><a class="">Sponsor Students</a> </h3>
 
                     <div class="view-type clearfix">
                         <a class="list active" href="http://alt-realhomes.inspirythemes.com/listing/?view=list"></a>
@@ -78,13 +78,13 @@
 </div>
 
 
-<script type="text/javascript">
-    $(document).ready(function () {
+<script type="text/javascript" async>
+    //$(document).ready(function () {
 
         var slectedItems = [];
         $("#divstudent #select").on('click', function (e) {
             
-
+            $(".listing-layout .title-heading").text("Sponsor Selected Student");
             e.preventDefault();
             var closeButton = $(this);
             slectedItems.push($(this).attr("data-id"));
@@ -110,20 +110,11 @@
               }
           });
 
-       });
+        });
 
-        //$("#sponsor").on('click', function () {
-        //    var newbutton = $(this);
-            
+       
 
-        //    $.get('/Pledge/Cart', { Selected: slectedItems }
-                
 
-        //    ,function (d) {
-        //        if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(true); }
-        //    });
-        //});
-
-    });
+    //});
 </script>
 

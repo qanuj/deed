@@ -17,17 +17,23 @@
                 <section id="photos">
 
                     @foreach (var m in Model.Picture)
-                        {
-                            <div class="col-md-3 col-sm-3" style="margin-bottom:10px;">
-                                <img class="close " data-dismiss="img" src="http://deedaday.in/img/upload/students/@m" style=" height:163px;width:100%" />
-                            </div>
-                        }
+                    {
+                        <div class="col-md-3 col-sm-3 close" style="margin-bottom:10px;">
+                            x<img class=" " data-dismiss="img" src="http://deedaday.in/img/upload/students/@m" style=" height:163px;width:100%" />
+                        </div>
+                    }
                 </section>
             </div>
-                <section>
-                    @Html.Partial("Pay")
-                </section>
-            </div>
-       
+            <section>
+                @Html.Partial("Pay")
+            </section>
+        </div>
+
     </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
+
+<script type="text/javascript">
+    $("#photos").on('click','.close',function (e) {
+        $(this).hide();
+    });
+</script>

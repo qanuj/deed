@@ -384,7 +384,7 @@
                 
                 $(".list-group .list-group-item").popover('show');
                 $(".list-group #cls").on('click', function (e) {
-                    $(this).parent().hide();
+                    $(this).parent().remove();
                 });
             });
     });

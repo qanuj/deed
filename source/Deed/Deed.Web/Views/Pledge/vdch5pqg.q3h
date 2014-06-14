@@ -1,13 +1,4 @@
-﻿<div class="page-head" style="background-repeat: no-repeat; background-position: center top; background-image: url('/Content/images/SliderImg/13772.jpg'); background-size: cover; ">
-    <div class="container">
-        <div class="wrap clearfix">
-            <h1 class="page-title"><span>Sponshership Basket</span></h1>
-            <p></p>
-        </div>
-    </div>
-</div>
-
-<div class="container contents contact-page">
+﻿<div class="container contents contact-page">
     <div class="row">
         <div class="span9 main-wrap">
             <!-- Main Content -->
@@ -18,40 +9,25 @@
                     <div class="">
                         <h1>Selected Students </h1>
                         <div class="panel panel-success">
-                            <div class="panel-heading">Selected Students</div>
+                            <div class="panel-heading">Selected Students List</div>
                             @*<div class="panel-body">
                                 Panel body content goes here...
                             </div>*@
                             <ul class="list-group">
-                                <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Mantej Singh Dhanjal" data-content="Amount:&#163; 222,Religion:,Class:Hindu,Age:13 "><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
+                                <li class="list-group-item"><img src="~/Content/images/SliderImg/s2.jpg" data-container="body" data-toggle="popover" data-placement="right" data-content="50% Has been sponsored to  " /></li>
                                 
-                                <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Guru Thakur" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
-                                <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Monty" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
-                                <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Montex" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
-                                <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Gurpeet" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
+                                <li class="list-group-item" ><div data-container="body" data-toggle="popover" data-placement="right" data-content="50% Has been sponsored to "><img src="~/Content/images/SliderImg/s2.jpg" /></div></li>
+                                <li class="list-group-item"><img src="~/Content/images/SliderImg/s2.jpg"  /></li>
+                                <li class="list-group-item"><img src="~/Content/images/SliderImg/s2.jpg" data-container="body" data-toggle="popover" data-placement="right" data-content="50% Has been sponsored to  " /></li>
+                                <li class="list-group-item"><img src="~/Content/images/SliderImg/s2.jpg" data-container="body" data-toggle="popover" data-placement="right" data-content="50% Has been sponsored to  " /></li>
                             </ul>
-                            <div class="panel-body">
-            Panel body content goes here...
-        </div>
                         </div>
 
-                        <div class="panel panel-info">
-                            <div class="panel-heading">Choose Payment Mode</div>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Bootstrap 3 - Panel Primary</div>
                             <div class="panel-body">Panel content goes here..</div>
                         </div>
-                        <div class="panel panel-info">
-                            <div class="panel-heading">Choose Payment GateWay</div>
-                            <div class="panel-body">Panel content goes here..</div>
-                        </div>
-                        <div class="panel panel-info">
-                            <div class="panel-heading">HDFC Bank Payment Gateway</div>
-                            <div class="panel-body">Panel content goes here..</div>
-                        </div>
-                        <div class="panel panel-info">
-                            <div class="panel-heading">Proceed To Pay</div>
-
-                        </div>
-                        @*<div class="panel panel-success">
+                        <div class="panel panel-success">
                             <div class="panel-heading">Heading</div>
                             <div class="panel-body">Panel Success</div>
                         </div>
@@ -62,7 +38,7 @@
                         <div class="panel panel-danger">
                             <div class="panel-heading">Heading</div>
                             <div class="panel-body">Panel Danger</div>
-                        </div>*@
+                        </div>
                         <div class="panel panel-info">
                             <div class="panel-heading">Heading</div>
                             <div class="panel-body">Panel Info</div>
@@ -70,11 +46,11 @@
 
 
                         <hr>
-                        <a  class="btn-primary" href="">Proceed To Pay</a>
+                        <a href="http://bootply.com/61518">Edit with Bootply</a>
                         <hr>
 
                     </div>
-                    @*<section class="contact-details clearfix">
+                    <section class="contact-details clearfix">
                         <h3>Real Homes</h3><address>3015 Grand Ave, Coconut Grove,<br> Merrick Way, FL 12345</address>                                    <ul class="contacts-list">
                             <li class="phone"> Phone: 1-800-555-1234</li>
                             <li class="mobile"> Mobile: 123-456-7890</li>
@@ -124,7 +100,7 @@
                             <div class="error-container"></div>
                             <div id="message-sent">&nbsp;</div>
                         </form>
-                    </section>*@
+                    </section>
 
                 </div>
 
@@ -383,9 +359,6 @@
             function () {
                 
                 $(".list-group .list-group-item").popover('show');
-                $(".list-group #cls").on('click', function (e) {
-                    $(this).parent().hide();
-                });
             });
     });
 </script>

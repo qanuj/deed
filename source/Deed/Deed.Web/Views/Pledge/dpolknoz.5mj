@@ -25,31 +25,31 @@
                             <ul class="list-group">
                                 <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Mantej Singh Dhanjal" data-content="Amount:&#163; 222,Religion:,Class:Hindu,Age:13 "><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
                                 
-                                <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Guru Thakur" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
-                                <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Monty" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
-                                <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Montex" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
-                                <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Gurpeet" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
+                                <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Guru Thakur" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13  "><img src="~/Content/images/SliderImg/s2.jpg" /><p>Thanks</p><div id="cls" class="close">X</div></li>
+                                <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Monty" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13  "><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
+                                <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Montex" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13  "><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
+                                <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Gurpeet" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13  "><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
                             </ul>
                             <div class="panel-body">
             Panel body content goes here...
         </div>
                         </div>
 
-                        <div class="panel panel-info">
+                        <div class="panel panel-primary">
                             <div class="panel-heading">Choose Payment Mode</div>
                             <div class="panel-body">Panel content goes here..</div>
                         </div>
-                        <div class="panel panel-info">
+                        <div class="panel panel-primary">
                             <div class="panel-heading">Choose Payment GateWay</div>
                             <div class="panel-body">Panel content goes here..</div>
                         </div>
-                        <div class="panel panel-info">
+                        <div class="panel panel-primary">
                             <div class="panel-heading">HDFC Bank Payment Gateway</div>
                             <div class="panel-body">Panel content goes here..</div>
                         </div>
-                        <div class="panel panel-info">
+                        <div class="panel panel-primary">
                             <div class="panel-heading">Proceed To Pay</div>
-
+                            
                         </div>
                         @*<div class="panel panel-success">
                             <div class="panel-heading">Heading</div>
@@ -62,11 +62,11 @@
                         <div class="panel panel-danger">
                             <div class="panel-heading">Heading</div>
                             <div class="panel-body">Panel Danger</div>
-                        </div>*@
+                        </div>
                         <div class="panel panel-info">
                             <div class="panel-heading">Heading</div>
                             <div class="panel-body">Panel Info</div>
-                        </div>
+                        </div>*@
 
 
                         <hr>
@@ -383,7 +383,7 @@
             function () {
                 
                 $(".list-group .list-group-item").popover('show');
-                $(".list-group #cls").on('click', function (e) {
+                $(".list-group-item #cls").on('click', function (e) {
                     $(this).parent().hide();
                 });
             });
