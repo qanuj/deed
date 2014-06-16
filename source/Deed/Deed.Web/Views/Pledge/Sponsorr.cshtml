@@ -37,15 +37,50 @@
                                 }
                             </ul>
                             <div class="panel-body">
-            Panel body content goes here...
+                                <div class="panel panel-info">
+                                    @*<div class="panel-heading">Total Expenses</div>*@
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Add 5% Admin Charges=</li>
+
+                                        <li class="list-group-item">Total Amount=</li>
+                                        <li class="list-group-item">Total Students=</li>
+
+                                    </ul>
+                                </div>
         </div>
                         </div>
 
                         <div class="panel panel-info">
                             <div class="panel-heading">Choose Payment Mode</div>
-                            <div class="panel-body">Panel content goes here..</div>
+                            <div class="panel-body">
+                                <div>
+                                    
+
+                                    <label >
+                                        <select>
+                                            <option value="1" selected="selected">Yearly</option>
+                                            <option value="2">Half Yearly</option>
+                                        </select>
+                                    </label>
+
+
+                                    <label  style="margin-left:40px">
+                                        <span >Total Amount : <span>&#163;&nbsp;200.63</span></span>
+                                        <span class="amount_he" style="display:none" id="p2">Total Amount : <span >&#163;200.63</span></span>
+
+                                        
+                                    </label>
+                                    <div>&nbsp;</div>
+                                    <div>Would you like to share your personal details on our Network ? <input type="radio" name="data[Client_temp][pdaccept]" value="Yes" checked="checked">Yes <input type="radio" name="data[Client_temp][pdaccept]" value="No">No</div>
+                                    <div>&nbsp;</div>
+                                    <input type="radio" ><span >CC Avenue (International Payment Gateway with High Reputation)</span><div class="cl">&nbsp;</div><span class="amount_he">HDFC Bank Payment Gateway</span><div class="cl">&nbsp;</div><input type="radio" name="data[Client_temp][pay_mod]" value="1" checked="checked"> <span class="credit_card">UK Donors</span> <input type="radio" name="data[Client_temp][pay_mod]" value="2"> <span class="credit_card">International Donors</span> <!--<input type="radio" value="3" name="data[Client_temp][pay_mod]"><span class="credit_card">Overseas passport holders with Indian cards</span> <div class="cl">&nbsp;</div> --><span class="credit_card"><a href="/clients/payment_fails">Manual Payment / Transfer</a></span><div class="cl">&nbsp;</div><input name="submit"  type="submit" value="Proceed To Pay">
+                                    <div >&nbsp;</div>
+                                </div>
+
+
+                            </div>
                         </div>
-                        <div class="panel panel-info">
+                        @*<div class="panel panel-info">
                             <div class="panel-heading">Choose Payment GateWay</div>
                             <div class="panel-body">Panel content goes here..</div>
                         </div>
@@ -54,7 +89,7 @@
                             <div class="panel-body">Panel content goes here..</div>
                         </div>
                         <div class="panel panel-info">
-                            <div class="panel-heading">Proceed To Pay</div>
+                            <div class="panel-heading">Proceed To Pay</div>*@
 
                         </div>
                         @*<div class="panel panel-success">
@@ -69,15 +104,15 @@
                             <div class="panel-heading">Heading</div>
                             <div class="panel-body">Panel Danger</div>
                         </div>*@
-                        <div class="panel panel-info">
+                        @*<div class="panel panel-info">
                             <div class="panel-heading">Heading</div>
                             <div class="panel-body">Panel Info</div>
-                        </div>
+                        </div>*@
 
 
-                        <hr>
+                        @*<hr>
                         <a  class="btn-primary" href="">Proceed To Pay</a>
-                        <hr>
+                        <hr>*@
 
                     </div>
                     @*<section class="contact-details clearfix">
