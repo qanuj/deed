@@ -12,12 +12,38 @@ namespace Deed.Web.ViewModels
     public class SponsorPaymentViewModel
     {
         public List<long> StudentId { get; set; }
-        public string Name { get; set; }
-        public List<string> Picture{ get; set; }
+        public List<string> Picture { get; set; }
         public List<Student> Students { get; set; }
+        public string Name { get; set; }
         public int count { get; set; }
 
-        
+        //[Required]
+        //public string ClientFirstName { get; set; }
+        //[Required]
+        //public string ClientLastName { get; set; }
+        // [Required]
+        //public string Email { get; set; }
+        //[Required]
+        // public string Mobile { get; set; }
+        //[Required]
+        //public string AddressLine1 { get; set; }
+        // [Required]
+        //public string addessLine2 { get; set; }
+        // [Required]
+        //public string City { get; set; }
+        // [Required]
+        //public string State { get; set; }
+        // [Required]
+        //public string PostalCode { get; set; }
+        // [Required]
+        //public string Nationality { get; set; }
+        // [Required]
+        //public string CardIssuingCountry  { get; set; }
+                
+
+
+
+
 
         public int client_id { get; set; }
 

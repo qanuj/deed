@@ -100,6 +100,19 @@ namespace Deed.Web.Controllers
             List<string> listImage = new List<string>();
             List<Student> Std = new List<Student>();
             int count = 0;
+            //if (ModelState.IsValid)
+            //{
+            //    var clientProfile = new ClientProfile { 
+                
+            //    address_line1=objSprPayViewModel.AddressLine1,
+            //    address_line2=objSprPayViewModel.addessLine2,
+            //    city=objSprPayViewModel.City,
+            //    state=objSprPayViewModel.State,
+            //    country=objSprPayViewModel.CardIssuingCountry
+
+            //    };
+            //    db.ClientProfiles.Add(clientProfile);
+            //}
             foreach (var i in objSprPayViewModel.StudentId)
             {
 

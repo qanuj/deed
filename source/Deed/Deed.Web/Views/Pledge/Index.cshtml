@@ -49,7 +49,7 @@
 
                                         @*<span class="pull-right"><input type="submit" value="Select" class="real-btn login-btn" /></span>*@
                                         @*<span class="pull-right"><a id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</a></span>*@
-                                        <button id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</button>
+                                        <button id="select" data-src="http://deedaday.in/img/upload/students/@m.Picture" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</button>
 
 
                                     </div>
@@ -72,47 +72,91 @@
             </div>
         </div>
         @*@Html.Partial("_works")*@
+        <div class="panel panel-success pull-right">
+            <div class="panel-heading">Selected Students</div>
+            @*<div class="panel-body">
+                    Panel body content goes here...
+                </div>*@
+            <ul class="list-group" id="stdimg">
+                @*<li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Mantej Singh Dhanjal" data-content="Amount:&#163; 222,Religion:,Class:Hindu,Age:13 "><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
 
+                    <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Guru Thakur" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
+                    <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Monty" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
+                    <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Montex" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
+                    <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Gurpeet" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>*@
+
+
+            </ul>
+            <div class="panel-body">
+                <div class="panel panel-info">
+                    @*<div class="panel-heading">Total Expenses</div>*@
+                    <ul class="list-group">
+                        <li class="list-group-item">Total Selected Students=</li>
+                        <li class="list-group-item">Add 5% Admin Charges=</li>
+                        <li class="list-group-item">Total Amount=</li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </div>
 </div>
 
 
+
+
+
+
+
 <script type="text/javascript" async>
     //$(document).ready(function () {
 
-        var slectedItems = [];
-        $("#divstudent #select").on('click', function (e) {
+    var slectedItems = [];
+    var i = 0;
+    $("#divstudent #select").on('click', function (e) {
+
+        $(".panel-success #stdimg").append('<li class="list-group-item"><img id="img" style="height:150px; width:150px" src=' + $(this).attr('data-src') + ' ><div id="cls" class="close">X</div></li>');
+        $(".listing-layout .title-heading").text("Sponsor Selected Student");
+        e.preventDefault();
+        var closeButton = $(this);
+        slectedItems.push($(this).attr("data-id"));
+        //$(this).text("Selected");
+        $(this).replaceWith("<a class='btn btn-warning' disabled='disabled' id='e' >Student has been selected</a>");
+
+    });
+
+    
+
+                //$(".list-group .list-group-item").popover('show');
+                $(".list-group #cls").on('click', function (e) {
+                    $(this).parent().hide();
+                });
             
-            $(".listing-layout .title-heading").text("Sponsor Selected Student");
-            e.preventDefault();
-            var closeButton = $(this);
-            slectedItems.push($(this).attr("data-id"));
-            //$(this).text("Selected");
-            $(this).replaceWith("<a class='btn btn-warning' disabled='disabled' id='e' >Student has been selected</a>");
-            
+
+
+
+    $(".listing-layout .title-heading").on('click', function (e) {
+        e.preventDefault();
+        $(this).text("Loading.....");
+        var closeButton = $(this);
+        $.ajax({
+            type: "POST",
+            url: '/Pledge/Cart',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({
+                Selected: $.unique(slectedItems)
+
+            }),
+            success: function (d) {
+                if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(true); closeButton.text("Sponsor Selected Student"); }
+            }
         });
 
-        $(".listing-layout .title-heading").on('click', function (e) {
-            e.preventDefault();
-            $(this).text("Loading.....");
-          var closeButton = $(this);
-          $.ajax({
-              type: "POST",
-              url: '/Pledge/Cart',
-              contentType: 'application/json; charset=utf-8',
-              data: JSON.stringify({
-                  Selected: $.unique(slectedItems)
+    });
 
-              }),
-              success: function (d) {
-                  if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(true); closeButton.text("Sponsor Selected Student"); }
-              }
-          });
 
-        });
-
-       
 
 
     //});
