@@ -28,7 +28,7 @@
 
 
     <div class="inner-wrapper">
-        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "", role = "form" }))
+        @using (Html.BeginForm("Sponsorr", "Pledge", FormMethod.Post, new { @class = "", role = "form" }))
                         {
             @Html.AntiForgeryToken()
             @*<h4>Create a new account.</h4>*@
@@ -108,7 +108,8 @@
                 </div>
             </div>
             }
-        <a id="select" class="btn btn-xs btn-danger pull-right">Next</a>
+        @*<a id="select" class="btn btn-xs btn-danger pull-right">Next</a>*@
+        @*<button id="submit" type="submit" class="btn btn-xs btn-danger pull-right">Submit</button>*@
 </div>
     
 </div>

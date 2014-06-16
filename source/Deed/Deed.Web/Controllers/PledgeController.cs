@@ -70,12 +70,14 @@ namespace Deed.Web.Controllers
         public ActionResult Cart(long[] Selected)
         {
 
-            List<string> list = new List<string>();
+            List<string> listImage = new List<string>();
+            List<long> listStudentId = new List<long>();
             foreach (var i in Selected)
             {
 
                 var s = db.Students.FirstOrDefault(g => g.id == i);
-                list.Add(s.image);
+                listImage.Add(s.image);
+                listStudentId.Add(s.id);
 
 
 
@@ -83,7 +85,8 @@ namespace Deed.Web.Controllers
             var r = new SponsorPaymentViewModel
             {
 
-                Picture = list
+                Picture = listImage,
+                StudentId=listStudentId
 
             };
 
@@ -91,14 +94,50 @@ namespace Deed.Web.Controllers
 
         }
 
-
-        public ActionResult Sponsorr()
+        [HttpPost]
+        public ActionResult Sponsorr(SponsorPaymentViewModel objSprPayViewModel)
         {
-            return View();
+            List<string> listImage = new List<string>();
+            List<Student> Std = new List<Student>();
+            foreach (var i in objSprPayViewModel.StudentId)
+            {
+
+                var s = db.Students.FirstOrDefault(g => g.id == i);
+                Std.Add(s);
+
+            }
+            var r = new SponsorPaymentViewModel
+            {
+
+               Students=Std
+               
+
+            };
+            return View(r);
         }
 
 
+        public ActionResult PayNext(List<long> Selected)
+        {
+            List<Student> Std = new List<Student>();
+            foreach (var i in Selected)
+            {
 
+                var s = db.Students.FirstOrDefault(g => g.id == i);
+                Std.Add(s);
+
+
+
+            }
+            var r = new SponsorPaymentViewModel
+            {
+
+                Students = Std
+                
+
+            };
+            return View("Sponsorr",r);
+        }
 
 
 

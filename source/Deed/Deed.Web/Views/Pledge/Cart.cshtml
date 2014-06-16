@@ -9,8 +9,9 @@
 <div class="modal-dialog">
     <div class="modal-content">
         <div class="modal-header">
+            
             <button id="d" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
+            <a id="next" class="btn  btn-danger pull-right" style="margin-right: 13px">Next</a>
         </div>
         <div class="modal-body">
             <div class="row">
@@ -22,13 +23,105 @@
                             x<img class=" " data-dismiss="img" src="http://deedaday.in/img/upload/students/@m" style=" height:163px;width:100%" />
                         </div>
                     }
+                   
                 </section>
             </div>
             <section>
-                @Html.Partial("Pay")
-            </section>
-        </div>
+                <div class="inner-wrapper">
+                    @using (Html.BeginForm("Sponsorr", "Pledge", FormMethod.Post, new { @class = "", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @*<h4>Create a new account.</h4>*@
+                        @Html.ValidationSummary()
+                        <label> Fill Details:</label>
+                        <div class="form-group">
+                            @*@Html.LabelFor(m=>m.Name, new { })*@
+                            <div class="">
+                                @Html.TextBoxFor(m => m.Name, new { @placeholder = "First Name", @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @*@Html.LabelFor(m=>m.Name, new {  })*@
+                            <div class="">
+                                @Html.TextBoxFor(m => m.Name, new { @placeholder = "Last Name", @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @*@Html.LabelFor(m=>m.Name, new {  })*@
+                            <div class="">
+                                @Html.TextBoxFor(m => m.Name, new { @placeholder = "Email", @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @*@Html.LabelFor(m=>m.Name, new {  })*@
+                            <div class="">
+                                @Html.TextBoxFor(m => m.Name, new { @placeholder = "Mobile", @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @*@Html.LabelFor(m=>m.Name, new {  })*@
+                            <div class="">
+                                @Html.TextBoxFor(m => m.Name, new { @placeholder = "Address Line 1", @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @*@Html.LabelFor(m=>m.Name, new {  })*@
+                            <div class="">
+                                @Html.TextBoxFor(m => m.Name, new { @placeholder = "Address Line 2", @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @*@Html.LabelFor(m=>m.Name, new {  })*@
+                            <div class="">
+                                @Html.TextBoxFor(m => m.Name, new { @placeholder = "City", @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @*@Html.LabelFor(m=>m.Name, new {  })*@
+                            <div class="">
+                                @Html.TextBoxFor(m => m.Name, new { @placeholder = "State", @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @*@Html.LabelFor(m=>m.Name, new {  })*@
+                            <div class="">
+                                @Html.TextBoxFor(m => m.Name, new { @placeholder = "Postal Code", @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @*@Html.LabelFor(m=>m.Name, new {  })*@
+                            <div class="">
+                                @Html.TextBoxFor(m => m.Name, new { @placeholder = "Nationality", @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @*@Html.LabelFor(m=>m.Name, new {  })*@
+                            <div class="">
+                                @Html.TextBoxFor(m => m.Name, new { @placeholder = "Card Issuing Country ", @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @*@Html.LabelFor(m=>m.Name, new {  })*@
+                            <div class="">
+                                @Html.TextBoxFor(m => m.Name, new { @placeholder = "Card Issuing Country ", @class = "form-control" })
 
+                            </div>
+                        </div>
+                        foreach (var StudentId in Model.StudentId)
+                        { 
+                        @Html.HiddenFor(y => StudentId)
+                        }
+                            
+                        <button id="submit" type="submit" class="btn btn-xs btn-danger pull-right">Submit</button>
+                    }
+                    @*<a id="select" class="btn btn-xs btn-danger pull-right">Next</a>*@
+                    
+                </div>
+                
+            </section>
+            
+        </div>
+        
     </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
 
@@ -36,4 +129,26 @@
     $("#photos").on('click','.close',function (e) {
         $(this).hide();
     });
+
+    $("#next").on('click', function (e) {
+
+        $.ajax({
+            type: "POST",
+            url: '/Pledge/PayNext',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({
+                Selected:'@Model.StudentId'
+
+
+            }),
+            success: function (d) {
+                if (!!d) { }
+            }
+        });
+
+
+    });
+
+
+
 </script>

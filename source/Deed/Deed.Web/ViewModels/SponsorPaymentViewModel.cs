@@ -1,4 +1,5 @@
-﻿using Microsoft.Build.Framework;
+﻿using Deed.Data.Legacy;
+using Microsoft.Build.Framework;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -10,9 +11,11 @@ namespace Deed.Web.ViewModels
 {
     public class SponsorPaymentViewModel
     {
-        public long image_iD { get; set; }
+        public List<long> StudentId { get; set; }
         public string Name { get; set; }
         public List<string> Picture{ get; set; }
+
+        public List<Student> Students { get; set; }
 
         
 
