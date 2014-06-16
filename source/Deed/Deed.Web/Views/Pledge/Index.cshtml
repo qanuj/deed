@@ -99,6 +99,7 @@
                     </ul>
                 </div>
             </div>
+            <div><button id="submit" type="submit" class="btn btn-xs btn-danger pull-right">Sponsor</button></div>
         </div>
 
     </div>
@@ -124,18 +125,12 @@
         slectedItems.push($(this).attr("data-id"));
         //$(this).text("Selected");
         $(this).replaceWith("<a class='btn btn-warning' disabled='disabled' id='e' >Student has been selected</a>");
+        $(".list-group .list-group-item #cls").click(function (e) {
+           // alert("vhhhhssssss")
+            $(".list-group #cls").parent().hide();
+        });
 
     });
-
-    
-
-                //$(".list-group .list-group-item").popover('show');
-                $(".list-group #cls").on('click', function (e) {
-                    $(this).parent().hide();
-                });
-            
-
-
 
     $(".listing-layout .title-heading").on('click', function (e) {
         e.preventDefault();
@@ -157,6 +152,10 @@
     });
 
 
+    
+
+    //$(".list-group .list-group-item").popover('show');
+    
 
 
     //});
