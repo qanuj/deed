@@ -118,16 +118,36 @@
     var i = 0;
     $("#divstudent #select").on('click', function (e) {
 
-        $(".panel-success #stdimg").append('<li class="list-group-item"><img id="img" style="height:150px; width:150px" src=' + $(this).attr('data-src') + ' ><div id="cls" class="close">X</div></li>');
+        //$(".panel-success #stdimg").append('<li class="list-group-item"><img id="img" style="height:150px; width:150px" src=' + $(this).attr('data-src') + ' ><div id="cls" class="close">X</div></li>');
         $(".listing-layout .title-heading").text("Sponsor Selected Student");
         e.preventDefault();
         var closeButton = $(this);
         slectedItems.push($(this).attr("data-id"));
         //$(this).text("Selected");
         $(this).replaceWith("<a class='btn btn-warning' disabled='disabled' id='e' >Student has been selected</a>");
-        $(".list-group .list-group-item #cls").click(function (e) {
-           // alert("vhhhhssssss")
-            $(".list-group #cls").parent().hide();
+        $.ajax({
+            type: "POST",
+            url: '/Pledge/Details',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({
+                id: $(this).attr("data-id")
+
+            }),
+            success: function (d) {
+                if (!!d) {
+                    @*$('<div class="modal fade">' + d + '</div>').modal(true); closeButton.text("Sponsor Selected Student");
+                    <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="@m.first_name" data-content="Amount:&#163 222 ,Village:@m.village,Phone:@m.phone1"><img src="http://deedaday.in/img/upload/students/@m.image" style="width:150px; height: 150px;" /><div id="cls" class="close">X</div></li>*@
+                    $(".panel-success #stdimg").append('<li class="list-group-item" data-container="body"  data-toggle="popover" data-placement="top" data-original-title="' + d.first_name + '" data-content=Village:' + d.village + '><img id="img" style="height:150px; width:150px" src="http://deedaday.in/img/upload/students/'+d.image+'"><div id="cls" class="close">X</div></li>');
+                    $(".list-group .list-group-item").popover();
+                }
+            }
+        });
+
+        
+
+        $(".list-group  #cls").click(function (e) {
+           
+            $(this).parent().hide();
         });
 
     });

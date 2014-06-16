@@ -24,8 +24,15 @@ namespace Deed.Web.Controllers
 
 
         public ActionResult Details(long id)
+
         {
             var s = db.Students.FirstOrDefault(x => x.id == id);
+            if (Request.IsAjaxRequest())
+            {
+
+                return Json(s, JsonRequestBehavior.AllowGet);
+            }
+            
             return View(s);
 
         }
