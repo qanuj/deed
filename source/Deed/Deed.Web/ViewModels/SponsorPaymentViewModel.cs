@@ -14,8 +14,8 @@ namespace Deed.Web.ViewModels
         public List<long> StudentId { get; set; }
         public string Name { get; set; }
         public List<string> Picture{ get; set; }
-
         public List<Student> Students { get; set; }
+        public int count { get; set; }
 
         
 

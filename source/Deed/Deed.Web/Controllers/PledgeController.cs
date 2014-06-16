@@ -99,17 +99,20 @@ namespace Deed.Web.Controllers
         {
             List<string> listImage = new List<string>();
             List<Student> Std = new List<Student>();
+            int count = 0;
             foreach (var i in objSprPayViewModel.StudentId)
             {
 
                 var s = db.Students.FirstOrDefault(g => g.id == i);
                 Std.Add(s);
+                ++count;
 
             }
             var r = new SponsorPaymentViewModel
             {
 
-               Students=Std
+               Students=Std,
+               count=count
                
 
             };
