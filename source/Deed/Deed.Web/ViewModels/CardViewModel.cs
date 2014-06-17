@@ -26,6 +26,7 @@ namespace Deed.Web.ViewModels
         public string Caste { get; set; }
         public string Picture { get; set; }
         public string History { get; set; }
+        public string Class { get; set; }
 
 
 
