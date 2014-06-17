@@ -13,7 +13,7 @@
 </div>
 <div class="container contents lisitng-grid-layout">
     <div class="row">
-        <div class="span9 main-wrap">
+        <div class="col-md-8 main-wrap">
             <div class="main ">
 
                 <section class="listing-layout">
@@ -74,19 +74,18 @@
         @*@Html.Partial("_works")*@
         <div class="panel panel-success pull-right">
             <div class="panel-heading">Selected Students</div>
-            @*<div class="panel-body">
-                    Panel body content goes here...
-                </div>*@
-            <ul class="list-group" id="stdimg">
-                @*<li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Mantej Singh Dhanjal" data-content="Amount:&#163; 222,Religion:,Class:Hindu,Age:13 "><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
-
-                    <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Guru Thakur" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
-                    <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Monty" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
-                    <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Montex" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
-                    <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Gurpeet" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>*@
-
-
-            </ul>
+            <div class="panel-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr><th>Child</th><th>About Child</th><th>Required</th><th>Remove</th>
+                            </tr>
+                    </thead>
+                    <tbody id="sprcarttbody">
+                       
+                        
+                    </tbody>
+                </table>
+            </div>
             <div class="panel-body">
                 <div class="panel panel-info">
                     @*<div class="panel-heading">Total Expenses</div>*@
@@ -139,10 +138,9 @@
             }),
             success: function (d) {
                 if (!!d) {
-                    @*$('<div class="modal fade">' + d + '</div>').modal(true); closeButton.text("Sponsor Selected Student");
-                    <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="@m.first_name" data-content="Amount:&#163 222 ,Village:@m.village,Phone:@m.phone1"><img src="http://deedaday.in/img/upload/students/@m.image" style="width:150px; height: 150px;" /><div id="cls" class="close">X</div></li>*@
-                    $(".panel-success #stdimg").append('<li class="list-group-item" data-container="body"  data-toggle="popover" data-placement="top" data-original-title="' + d.first_name + '" data-content="Village:' + d.village +', Religion:'+d.religion+'"><img id="img" style="height:150px; width:150px" src="http://deedaday.in/img/upload/students/'+d.image+'"><div id="cls" class="close">X</div></li>');
-                    $(".list-group .list-group-item").popover();
+                    
+                    $(" #sprcarttbody").append('<tr> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.image + '"></td><td><b>Name:</br></b>'+d.first_name+'</br><b>Religion:</br></b>'+d.religion+'</br><b>Class:</br></b>'+d.clas_id+'</td><td>&#163;3,600</td><td><div class="close" style="float:left">X</div></td></tr>');
+                    //$(".list-group .list-group-item").popover();
                 }
             }
         });
@@ -204,3 +202,4 @@
     //});
 </script>
 
+@*'<li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="' + d.first_name + '" data-content="Village:' + d.village + ', Religion:' + d.religion + '"><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.image + '"><div>Name:' + d.first_name + '</div><div id="cls" class="close">X</div></li>'*@
