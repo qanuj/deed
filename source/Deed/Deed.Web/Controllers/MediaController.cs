@@ -31,6 +31,10 @@ namespace Deed.Web.Controllers
         {
             return View();
         }
+        public ActionResult NewsDetail()
+        {
+            return View();
+        }
 
         public ActionResult AnnualEvents()
         {
