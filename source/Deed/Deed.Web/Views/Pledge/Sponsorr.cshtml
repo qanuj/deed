@@ -34,7 +34,7 @@
 
                                         @foreach (var m in Model.Students)
                                         {
-                                            <tr class="tr"> <td align="center" valign="top"><img id="img" style="height:100px; width:100px" src="http://deedaday.in/img/upload/students/@m.image"></td><td><b>Name:</b>@m.first_name<br><br><b>Religion:</b>@m.religion<br><br><b>Class:</b> @m.clas_id</td><td>&#163;3,600</td><td class="clsparent"><div id="cls" class="close clos" style="float:left">X</div></td></tr>
+                                            <tr class="tr"> <td align="center" valign="top"><img id="img" style="height:100px; width:100px" src="http://deedaday.in/img/upload/students/@m.image"></td><td><b>Name:</b>@m.first_name<br><br><b>Religion:</b>@m.religion<br><br><b>Class:</b> @m.clas_id</td><td>&#163;3,600</td><td class="clsparent"><div data-name="@m.first_name" id="cls" class="close clos" style="float:left">X</div></td></tr>
                                         }
 
 
@@ -512,18 +512,18 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        //var bar1 = $("#ProgressParent #progresss").progressbar({value:37});
-        //var bar1 = $("#ProgressParent #progresss").progressbar();
-        //var barrrr = bar1.progress(50);
+        $("td > div").on('click',function (e) {
+            //alert("showw");
+            var closeButton = $(this);
+            if (confirm("Are you sure you want to remove '" + closeButton.attr("data-name") + "' ?")) {
+                @*$.post("@Url.Action("Remove")", { id: closeButton.attr("data-id")}, function (d) {
+                    if (!!d.success) {
+                        closeButton.parent().remove();
+                    }
+                });*@
 
-        $(".list-group .list-group-item").each(
-
-            function () {
-
-                $(".list-group .list-group-item").popover('show');
-                $(".list-group #cls").on('click', function (e) {
-                    $(this).parent().hide();
-                });
-            });
+                closeButton.closest("tr").remove();
+            };
+        });
     });
 </script>
