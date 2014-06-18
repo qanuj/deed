@@ -72,6 +72,8 @@
             </div>
         </div>
         @*@Html.Partial("_works")*@
+@using (Html.BeginForm("Sponsorr", "Pledge", FormMethod.Post, new { @class = "", role = "form" }))
+                    {
         <div class="panel panel-success pull-right">
             <div class="panel-heading">Selected Students</div>
             <div class="panel-body">
@@ -80,7 +82,7 @@
                         <tr><th>Child</th><th>About Child</th><th>Required</th><th>Remove</th>
                             </tr>
                     </thead>
-                    <tbody id="sprcarttbody">
+                    <tbody class="trr" id="sprcarttbody">
                        
                         
                     </tbody>
@@ -104,7 +106,7 @@
             
             </div>
         </div>
-
+                    }
     </div>
 </div>
 
@@ -139,21 +141,23 @@
             success: function (d) {
                 if (!!d) {
                     
-                    $(" #sprcarttbody").append('<tr> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.image + '"></td><td><b>Name:</br></b>'+d.first_name+'</br><b>Religion:</br></b>'+d.religion+'</br><b>Class:</br></b>'+d.clas_id+'</td><td>&#163;3,600</td><td><div class="close" style="float:left">X</div></td></tr>');
+                    $(" #sprcarttbody").append('<tr class="tr"> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.image + '"></td><td><b>Name:</br></b>' + d.first_name + '</br><b>Religion:</br></b>' + d.religion + '</br><b>Class:</br></b>' + d.clas_id + '</td><td>&#163;3,600</td><td class="clsparent"><div id="cls"class="close clos" style="float:left">X</div></td></tr><input id="StudentId" name="StudentId" type="hidden" value="'+d.id+'">');
                     //$(".list-group .list-group-item").popover();
                 }
             }
         });
+       
 
+                //$(".list-group .list-group-item").popover('show');
+                $(".close .clos #cls").on('click', function (e) {
+                    alert("showw");
+                   // $(".clsparent").parent().hide();
+                });
+           
         
 
-        $(".list-group  #cls").click(function (e) {
-           
-            $(this).parent().hide();
-        });
-
     });
-
+    
     $(".listing-layout .title-heading").on('click', function (e) {
         e.preventDefault();
         $(this).text("Loading.....");
@@ -173,24 +177,24 @@
 
     });
 
-    $("#sprbtn #submit").on('click', function (e) {
-        e.preventDefault();
-        $(this).text("Loading.....");
-        var closeButton = $(this);
-        $.ajax({
-            type: "POST",
-            url: '/Pledge/Cart',
-            contentType: 'application/json; charset=utf-8',
-            data: JSON.stringify({
-                Selected: $.unique(slectedItems)
+    //$("#sprbtn #submit").on('click', function (e) {
+    //    e.preventDefault();
+    //    $(this).text("Loading.....");
+    //    var closeButton = $(this);
+    //    $.ajax({
+    //        type: "POST",
+    //        url: '/Pledge/Cart',
+    //        contentType: 'application/json; charset=utf-8',
+    //        data: JSON.stringify({
+    //            Selected: $.unique(slectedItems)
 
-            }),
-            success: function (d) {
-                if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(true);}
-            }
-        });
+    //        }),
+    //        success: function (d) {
+    //            if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(true);}
+    //        }
+    //    });
 
-    });
+    //});
 
 
     

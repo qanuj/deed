@@ -17,25 +17,32 @@
                 <div class="inner-wrapper">
                     <article id="post-131" class="post-131 page type-page status-publish hentry clearfix"></article>
                     <div class="">
-                        <h1>Selected Students </h1>
+                        <h1>Sponsorship Basket </h1>
                         <div class="panel panel-success">
                             <div class="panel-heading">Selected Students</div>
-                            @*<div class="panel-body">
-                                    Panel body content goes here...
-                                </div>*@
-                            <ul class="list-group">
-                                @*<li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Mantej Singh Dhanjal" data-content="Amount:&#163; 222,Religion:,Class:Hindu,Age:13 "><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
+                            <div class="panel-body">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Child</th>
+                                            <th>About Child</th>
+                                            <th>Required</th>
+                                            <th>Remove</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="trr" id="sprcarttbody">
 
-                                    <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Guru Thakur" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
-                                    <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Monty" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
-                                    <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Montex" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>
-                                    <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="Gurpeet" data-content="Amount:&#163 222 ,Religion:,Class:Hindu,Age:13"><img src="~/Content/images/SliderImg/s2.jpg" /><div id="cls" class="close">X</div></li>*@
+                                        @foreach (var m in Model.Students)
+                                        {
+                                            <tr class="tr"> <td align="center" valign="top"><img id="img" style="height:100px; width:100px" src="http://deedaday.in/img/upload/students/@m.image"></td><td><b>Name:</b>@m.first_name<br><br><b>Religion:</b>@m.religion<br><br><b>Class:</b> @m.clas_id</td><td>&#163;3,600</td><td class="clsparent"><div id="cls" class="close clos" style="float:left">X</div></td></tr>
+                                        }
 
-                                @foreach (var m in Model.Students)
-                                {
-                                    <li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="@m.first_name" data-content="Amount:&#163 222 ,Village:@m.village,Phone:@m.phone1"><img src="http://deedaday.in/img/upload/students/@m.image" style="width:150px; height: 150px;" /><div id="cls" class="close">X</div></li>
-                                }
-                            </ul>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+
                             <div class="panel-body">
                                 <div class="panel panel-info">
                                     @*<div class="panel-heading">Total Expenses</div>*@
@@ -46,6 +53,15 @@
 
                                     </ul>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading">Fill Details</div>
+                            <div class="panel-body">
+                                
+
+
                             </div>
                         </div>
 
@@ -169,6 +185,7 @@
             </div>
 
         </div><!-- End Main Content -->
+
     </div><!-- End span9 -->
 </div><!-- End contents row -->
 </div>
