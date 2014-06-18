@@ -57,7 +57,7 @@
                         </div>
 
                         <div class="panel panel-info">
-                            <div class="panel-heading">Fill Your Details</div>
+                            <div class="panel-heading">Fill Details</div>
                             <div class="panel-body">
                                 <form class="form-horizontal" role="form">
                                     <div class="form-group">
