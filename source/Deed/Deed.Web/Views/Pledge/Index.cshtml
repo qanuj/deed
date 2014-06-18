@@ -141,17 +141,26 @@
             success: function (d) {
                 if (!!d) {
                     
-                    $(" #sprcarttbody").append('<tr class="tr"> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.image + '"></td><td><b>Name:</br></b>' + d.first_name + '</br><b>Religion:</br></b>' + d.religion + '</br><b>Class:</br></b>' + d.clas_id + '</td><td>&#163;3,600</td><td class="clsparent"><div id="cls"class="close clos" style="float:left">X</div></td></tr><input id="StudentId" name="StudentId" type="hidden" value="'+d.id+'">');
+                    $(" #sprcarttbody").append('<tr> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.image + '"></td><td><b>Name:</br></b>' + d.first_name + '</br><b>Religion:</br></b>' + d.religion + '</br><b>Class:</br></b>' + d.clas_id + '</td><td>&#163;3,600</td><td class="clsparent"><div data-name="' + d.first_name + '" data-stdid="' + d.id + '" id="cls"class="close clos" style="float:left">X</div></td><input id="StudentId" name="StudentId" type="hidden" value="' + d.id + '"></tr>');
                     //$(".list-group .list-group-item").popover();
                 }
             }
         });
        
 
-                //$(".list-group .list-group-item").popover('show');
-                $(".close .clos #cls").on('click', function (e) {
-                    alert("showw");
-                   // $(".clsparent").parent().hide();
+                
+                $("td > div").on('click',function (e) {
+                    //alert("showw");
+                    var closeButton = $(this);
+                    if (confirm("Are you sure you want to remove '" + closeButton.attr("data-name") + "' ?")) {
+                        @*$.post("@Url.Action("Remove")", { id: closeButton.attr("data-id")}, function (d) {
+                            if (!!d.success) {
+                                closeButton.parent().remove();
+                            }
+                        });*@
+
+                        closeButton.closest("tr").remove();
+                    };
                 });
            
         
