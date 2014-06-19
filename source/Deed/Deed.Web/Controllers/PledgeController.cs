@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Deed.Web.ViewModels;
 using Deed.Data.Legacy;
+using PagedList;
 
 namespace Deed.Web.Controllers
 {
@@ -12,9 +13,10 @@ namespace Deed.Web.Controllers
     {
         //
         // GET: /Pledge/
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
-            return View(Query());
+            var pageNumber = page ?? 1;
+            return View(Query().ToPagedList(pageNumber,10));
         }
 
         public ActionResult PledgeIndex()
@@ -69,7 +71,7 @@ namespace Deed.Web.Controllers
                             PoliceStation = r.police_station
 
                         };
-            query = query.OrderBy(x => x.Name).Take(10);
+            query = query.OrderBy(x => x.Name);
             return query;
             
         }

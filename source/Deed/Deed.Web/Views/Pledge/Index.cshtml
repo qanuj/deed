@@ -1,4 +1,7 @@
-﻿@model IEnumerable<Deed.Web.ViewModels.CardViewModel>
+﻿
+@*@model IEnumerable<Deed.Web.ViewModels.CardViewModel>*@
+@model PagedList.IPagedList<Deed.Web.ViewModels.CardViewModel>
+@using PagedList
 @{
     ViewBag.Title = "Support Us";
 }
@@ -66,7 +69,7 @@
                         @*<span class="sponsor-btn"><input type="submit" id="sponsor" value="Sponsor" class="real-btn login-btn" /></span>*@
                     </div>
 
-                    <div class="pagination"><a href="http://alt-realhomes.inspirythemes.com/listing/" class="real-btn current" style="margin-left: 394px;">1</a> <a href="http://alt-realhomes.inspirythemes.com/listing/page/2/" class="real-btn">2</a> </div>
+                    <div class="pagination"><a href="@Url.Action("Index", new { page=1 })" class="real-btn current" style="margin-left: 323px;">1</a> <a href="@Url.Action("Index", new { page=2 })" class="real-btn">2</a> <a href="@Url.Action("Index", new { page=3 })" class="real-btn">3</a></div>
                 </section>
 
             </div>

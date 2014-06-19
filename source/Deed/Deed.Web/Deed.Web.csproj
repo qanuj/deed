@@ -143,6 +143,12 @@
     <Reference Include="Owin.Types">
       <HintPath>..\packages\Owin.Types.0.8.5\lib\net40\Owin.Types.dll</HintPath>
     </Reference>
+    <Reference Include="PagedList">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -425,6 +431,7 @@
     <Content Include="Content\images\sticky-pin.png" />
     <Content Include="Content\images\widget-list-bullet.png" />
     <Content Include="Content\js-image-slider.css" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="Content\Progress.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\styleRes.css" />
