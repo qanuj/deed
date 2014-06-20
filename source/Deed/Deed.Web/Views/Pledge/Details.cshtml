@@ -394,6 +394,8 @@
             </section>
 
         </div>
+@using (Html.BeginForm("Sponsorr", "Pledge", FormMethod.Post, new { @class = "", role = "form" }))
+{ 
         <div class="panel panel-success pull-right">
             <div class="panel-heading">Selected Students</div>
             <ul class="list-group" id="studentli"></ul>
@@ -409,10 +411,10 @@
                     </ul>
                 </div>
             </div>
-
+            <button id="submit" type="submit" class="btn btn-xs btn-danger pull-right">Sponsor</button>
         </div>
 
-
+}
     </div>
     <!-- End contents row -->
 </div>
@@ -434,7 +436,7 @@
                 success: function (d) {
                     if (!!d) {
 
-                        $(" #studentli").append('<li class="list-group-item"><img id ="imgg" data-container="body" data-toggle="popover" data-placement="top" data-original-title="' + d.first_name + '" data-content="Village:' + d.village + ', Religion:' + d.religion + '" style="width:150px;height:150px" src="http://deedaday.in/img/upload/students/' + d.image + '"><div class="close" id="cls">X</div></li>');
+                        $(" #studentli").append('<li class="list-group-item"><img id ="imgg" data-container="body" data-toggle="popover" data-placement="top" data-original-title="' + d.first_name + '" data-content="Village:' + d.village + ', Religion:' + d.religion + '" style="width:150px;height:150px" src="http://deedaday.in/img/upload/students/' + d.image + '"><div class="close" id="cls">X</div><input id="StudentId" name="StudentId" type="hidden" value="' + d.id + '"></li>');
                         //++i;
                         //var sele=$("Total Childs=+'i'+") ;
                         $(".list-group .list-group-item #selectedstd").text(function () { return "Total Children=" + ++i });
