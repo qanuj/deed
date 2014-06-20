@@ -436,7 +436,7 @@
                 success: function (d) {
                     if (!!d) {
 
-                        $(" #studentli").append('<li class="list-group-item"><img id ="imgg" data-container="body" data-toggle="popover" data-placement="top" data-original-title="' + d.first_name + '" data-content="Village:' + d.village + ', Religion:' + d.religion + '" style="width:150px;height:150px" src="http://deedaday.in/img/upload/students/' + d.image + '"><div class="close" id="cls">X</div><input id="StudentId" name="StudentId" type="hidden" value="' + d.id + '"></li>');
+                        $(" #studentli").append('<li class="list-group-item"><img id ="imgg" data-container="body" data-toggle="popover" data-placement="top" data-original-title="' + d.first_name + '" data-content="Village:' + d.village + ', Religion:' + d.religion + '" style="width:150px;height:150px" src="http://deedaday.in/img/upload/students/' + d.image + '"><div data-name="'+d.first_name+'" class="close" id="cls">X</div><input id="StudentId" name="StudentId" type="hidden" value="' + d.id + '"></li>');
                         //++i;
                         //var sele=$("Total Childs=+'i'+") ;
                         $(".list-group .list-group-item #selectedstd").text(function () { return "Total Children=" + ++i });
@@ -444,7 +444,19 @@
                 }
             });
             $(".list-group .list-group-item #imgg").popover();
-                
+            $("li > div ").on('click',function (e) {
+                //alert("showw");
+                var closeButton = $(this);
+                if (confirm("Are you sure you want to remove '" + closeButton.attr("data-name") + "' ?")) {
+                    @*$.post("@Url.Action("Remove")", { id: closeButton.attr("data-id")}, function (d) {
+                        if (!!d.success) {
+                            closeButton.parent().remove();
+                        }
+                    });*@
+
+                    closeButton.closest("li").remove();
+                };
+            });    
             
         });
 
