@@ -116,14 +116,14 @@
                     <article class="property-item clearfix">
                         <div class="wrap clearfix">
                             <h4 class="title">
-                                Property ID :@Model.id
+                                Student ID :@Model.id
                             </h4>
                             <h5 class="price">
                                 <span class="status-label">
                                     Need
                                 </span>
                                 <span>
-                                    &#163; 3,850 Per Year
+                                    &#163; 3,850 for 12 Years
                                 </span>
                             </h5>
                         </div>
@@ -135,8 +135,8 @@
                         </div>
 
                         <div class="content clearfix">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                            <p>@Model.family_history</p>
+                            @*<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>*@
                             <h4 class="additional-title">Additional Details</h4>
                             <ul class="additional-details clearfix">
                                 <li>
@@ -202,7 +202,7 @@
 
                     </article>
                     <div class="property-video">
-                        <span class="video-label">Property Video</span>
+                        <span class="video-label">Personal Request Video</span>
                         <a href="http://vimeo.com/70301553" class="pretty-photo" title="Video">
                             <div class="play-btn"></div>
                             <img src="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/property-10-818x417.jpg" alt="15421 Southwest 39th Terrace">
@@ -394,7 +394,28 @@
             </section>
 
         </div>
-        <!-- End span9 -->
+        <div class="panel panel-success pull-right">
+            <div class="panel-heading">Selected Students</div>
+            <ul class="list-group">
+                <li class="list-group-item"></li>
+             
+
+
+            </ul>
+            <div class="panel-body">
+                <div class="panel panel-info">
+                    @*<div class="panel-heading">Total Expenses</div>*@
+                    <ul class="list-group">
+                        <li class="list-group-item"><div id="selectedstd"></div></li>
+                        @*<li class="list-group-item">Add 5% Admin Charges=</li>*@
+                        <li class="list-group-item">Total Amount=</li>
+
+
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
 
 
     </div>
@@ -403,11 +424,9 @@
 
 <script type="text/javascript">
     $(window).load(function () {
-       var s= $('.flexslider').flexslider({
-            animation: "slide",
-            animationLoop: false,
-            itemWidth: 210,
-            itemMargin: 5
-        });
+       
+
+
+
     });
     </script>
