@@ -437,13 +437,13 @@
                         $(" #studentli").append('<li class="list-group-item"><img id ="imgg" data-container="body" data-toggle="popover" data-placement="top" data-original-title="' + d.first_name + '" data-content="Village:' + d.village + ', Religion:' + d.religion + '" style="width:150px;height:150px" src="http://deedaday.in/img/upload/students/' + d.image + '"><div class="close" id="cls">X</div></li>');
                         //++i;
                         //var sele=$("Total Childs=+'i'+") ;
-                        $(".list-group .list-group-item #selectedstd").text(function () { return "Total Childs=" + ++i });
+                        $(".list-group .list-group-item #selectedstd").text(function () { return "Total Children=" + ++i });
                     }
                 }
             });
-            $(".list-group .list-group-item #imgg").each(function () {
-                $(".list-group .list-group-item #imgg").popover();
-            });
+            $(".list-group .list-group-item #imgg").popover();
+                
+            
         });
 
 

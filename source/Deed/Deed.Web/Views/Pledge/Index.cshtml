@@ -147,7 +147,7 @@
                     $(" #sprcarttbody").append('<tr> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.image + '"></td><td><b>Name:</br></b>' + d.first_name + '</br><b>Religion:</br></b>' + d.religion + '</br><b>Class:</br></b>' + d.clas_id + '</td><td>&#163;3,600</td><td class="clsparent"><div data-name="' + d.first_name + '" data-stdid="' + d.id + '" id="cls"class="close clos" style="float:left">X</div></td><input id="StudentId" name="StudentId" type="hidden" value="' + d.id + '"></tr>');
                     //++i;
                     //var sele=$("Total Childs=+'i'+") ;
-                    $(".list-group .list-group-item #selectedstd").text(function () { return "Total Childs="+ ++i});
+                    $(".list-group .list-group-item #selectedstd").text(function () { return "Total Children="+ ++i});
                 }
             }
         });
