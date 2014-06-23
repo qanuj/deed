@@ -36,7 +36,10 @@ namespace Deed.Web
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication();
+            app.UseGoogleAuthentication(
+                clientId: "1011534679992-3vsuju4prg5u6hd8fgr7nekb57do2e8g.apps.googleusercontent.com",
+                clientSecret:"lo8NJYBMjzc5z72zLB9u9szv"
+                );
         }
     }
 }

@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 using Deed.Web.Models;
+using Deed.Data.Legacy;
 using Deed.Web.Providers;
 using Deed.Web.Results;
 

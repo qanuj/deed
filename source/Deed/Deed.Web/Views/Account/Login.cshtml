@@ -14,15 +14,18 @@
 </div>
 <div class="container contents single login-register" style="margin-top:3px">
     <div class="row">
-        <div class="span12 main-wrap">
+        
+        <div class="col-md-8 main-wrap">
             <section id="loginForm">
                 <h3><span>Log In</span></h3>
                 <div class="main">
-                    <div class="inner-wrapper">
+                    <div class="">
                         @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "container contents single login-register", role = "form" }))
                         {
                             @Html.AntiForgeryToken()
                             @Html.ValidationSummary(true)
+                           
+                           
                             <div class="form-group">
                                 @Html.LabelFor(m => m.UserName)
                                 <div>
@@ -58,8 +61,13 @@
                 </div>
             </section>
         </div>
+        <div class="col-md-4">
+            <section id="socialLoginForm">
+                @Html.Partial("_ExternalLoginsListPartial", new { Action = "ExternalLogin", ReturnUrl = ViewBag.ReturnUrl })
+            </section>
+        </div>
     </div>
-</div>
+    </div>
 @*@section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }*@
