@@ -398,6 +398,15 @@
 
                                     </label>
                                     <div>&nbsp;</div>
+                                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                                        <input type="hidden" name="cmd" value="_xclick" />
+                                        <input type="hidden" name="business" value="me@mybusiness.com" />
+                                        <input type="hidden" name="currency_code" value="USD" />
+                                        <input type="hidden" name="item_name" value="Teddy Bear" />
+                                        <input type="hidden" name="amount" value="12.99" />
+                                        <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!" />
+                                    </form>
+                                    @*<div><a><img id="checkout"  src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif"></a></div>*@
                                     <div>Would you like to share your personal details on our Network ? <input type="radio" name="data[Client_temp][pdaccept]" value="Yes" checked="checked">Yes <input type="radio" name="data[Client_temp][pdaccept]" value="No">No</div>
                                     <div>&nbsp;</div>
                                     <input type="radio"><span>CC Avenue (International Payment Gateway with High Reputation)</span><div class="cl">&nbsp;</div><span class="amount_he">HDFC Bank Payment Gateway</span><div class="cl">&nbsp;</div><input type="radio" name="data[Client_temp][pay_mod]" value="1" checked="checked"> <span class="credit_card">UK Donors</span> <input type="radio" name="data[Client_temp][pay_mod]" value="2"> <span class="credit_card">International Donors</span> <!--<input type="radio" value="3" name="data[Client_temp][pay_mod]"><span class="credit_card">Overseas passport holders with Indian cards</span> <div class="cl">&nbsp;</div> --><span class="credit_card"><a href="/clients/payment_fails">Manual Payment / Transfer</a></span><div class="cl">&nbsp;</div><input name="submit" type="submit" value="Proceed To Pay">
@@ -525,5 +534,28 @@
                 closeButton.closest("tr").remove();
             };
         });
+
+
+        $("#checkout").on('click', function (e) {
+            e.preventDefault();
+            $(this).text("Loading.....");
+            var closeButton = $(this);
+            $.ajax({
+                type: "POST",
+                url: '/Checkout/GetCheckout',
+                contentType: 'application/json; charset=utf-8',
+                //data: JSON.stringify({
+                //    PayAmount: "3456"
+
+                //}),
+                success: function (d) {
+                    if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(true); closeButton.text("Sponsor Selected Student"); }
+                }
+            });
+
+        });
     });
 </script>
+
+
+
