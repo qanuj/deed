@@ -78,7 +78,7 @@ namespace Deed.Web.Controllers
                         select new CardViewModel
                         {
                             ID = r.id,
-                            Name = r.first_name,
+                            Name = r.first_name + "   " + r.father_first_name + "   "  + r.mother_first_name,
                             Father = r.father_first_name,
                             Mother = r.mother_first_name,
                             District = r.district,
@@ -170,7 +170,7 @@ namespace Deed.Web.Controllers
                                               StudentDOB = std.date_of_birth,
                                               StudentImage = std.image,
                                               StudentClass = c.name,
-                                              StudentFee = fee.school_fees / 90
+                                              StudentFee = fee.school_fees/90
                                               
 
 
@@ -186,13 +186,14 @@ namespace Deed.Web.Controllers
                 total = total + m.StudentFee;
 
             }
+            total = total + total * 5 / 100;
             var r = new SponsorPaymentViewModel
             {
 
                Students=Std,
                CartItems=cartlist,
                count=count,
-               total_amount=Math.Round(total,2)
+               total_amount=total
 
             };
             return View(r);
