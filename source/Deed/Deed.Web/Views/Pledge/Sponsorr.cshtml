@@ -32,9 +32,9 @@
                                     </thead>
                                     <tbody class="trr" id="sprcarttbody">
 
-                                        @foreach (var m in Model.Students)
+                                        @foreach (var m in Model.CartItems)
                                         {
-                                            <tr class="tr"> <td align="center" valign="top"><img id="img" style="height:100px; width:100px" src="http://deedaday.in/img/upload/students/@m.image"></td><td><b>Name:</b>@m.first_name<br><br><b>Religion:</b>@m.religion<br><br><b>Class:</b> @m.clas_id</td><td>&#163;3,600</td><td class="clsparent"><div data-name="@m.first_name" id="cls" class="close clos" style="float:left">X</div></td></tr>
+                                            <tr class="tr"> <td align="center" valign="top"><img id="img" style="height:100px; width:100px" src="http://deedaday.in/img/upload/students/@m.StudentImage"></td><td><b>Name:</b>@m.StudentName<br><br><b>Class:</b>@m.StudentClass<br><br><b>Age:</b> @m.StudentDOB</td><td>&#163;@m.StudentFee</td><td class="clsparent"><div data-name="@m.StudentName" id="cls" class="close clos" style="float:left">X</div></td></tr>
                                         }
 
 
@@ -48,7 +48,7 @@
                                     @*<div class="panel-heading">Total Expenses</div>*@
                                     <ul class="list-group">
                                         <li class="list-group-item">Total Selected Students=@Model.count</li>
-                                        <li class="list-group-item">Total Amount=</li>
+                                        <li class="list-group-item">Total Amount=@Model.total_amount  </li>
 
 
                                     </ul>
@@ -392,8 +392,8 @@
 
 
                                     <label style="margin-left:40px">
-                                        <span>Total Amount : <span>&#163;&nbsp;2000.63</span></span>
-                                        <span class="amount_he" style="display:none" id="p2">Total Amount : <span>&#163;2000.63</span></span>
+                                        <span>Total Amount : <span>&#163;&nbsp;@Model.total_amount</span></span>
+                                        <span class="amount_he" style="display:none" id="p2">Total Amount : <span>&#163;@Model.total_amount</span></span>
 
 
                                     </label>

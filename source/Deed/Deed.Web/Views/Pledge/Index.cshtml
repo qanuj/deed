@@ -95,9 +95,9 @@
                 <div class="panel panel-info">
                     @*<div class="panel-heading">Total Expenses</div>*@
                     <ul class="list-group">
-                        <li class="list-group-item"><div id="selectedstd"></div></li>
+                        <li class="list-group-item"><div><span id="selectedstd">Total Children=0</span></div></li>
                         @*<li class="list-group-item">Add 5% Admin Charges=</li>*@
-                        <li class="list-group-item">Total Amount=</li>
+                        <li class="list-group-item"><div >Total Amount=&#163;<span id="ttlamount"></span></div></li>
 
 
                     </ul>
@@ -111,6 +111,7 @@
         </div>
                     }
     </div>
+    
 </div>
 
 
@@ -124,6 +125,7 @@
 
     var slectedItems = [];
     var i = 0;
+    var total = 0;
     $("#divstudent #select").on('click', function (e) {
 
         //$(".panel-success #stdimg").append('<li class="list-group-item"><img id="img" style="height:150px; width:150px" src=' + $(this).attr('data-src') + ' ><div id="cls" class="close">X</div></li>');
@@ -144,10 +146,12 @@
             success: function (d) {
                 if (!!d) {
                     
-                    $(" #sprcarttbody").append('<tr> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.image + '"></td><td><b>Name:</br></b>' + d.first_name + '</br><b>Religion:</br></b>' + d.religion + '</br><b>Class:</br></b>' + d.clas_id + '</td><td>&#163;3,600</td><td class="clsparent"><div data-name="' + d.first_name + '" data-stdid="' + d.id + '" id="cls"class="close clos" style="float:left">X</div></td><input id="StudentId" name="StudentId" type="hidden" value="' + d.id + '"></tr>');
+                    $(" #sprcarttbody").append('<tr> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.StudentImage + '"></td><td><b>Name:</br></b>' + d.StudentName + '</br><b>Class:</br></b>' + d.StudentClass + '</br><b>Age:</br></b>' + d.StudentDOB + '</td><td>&#163;' + d.StudentFee.toFixed(2) + '</td><td class="clsparent"><div data-name="' + d.StudentName + '" data-stdid="' + d.StudentId + '" id="cls"class="close clos" style="float:left">X</div></td><input id="StudentId" name="StudentId" type="hidden" value="' + d.StudentId + '"></tr>');
                     //++i;
                     //var sele=$("Total Childs=+'i'+") ;
-                    $(".list-group .list-group-item #selectedstd").text(function () { return "Total Children="+ ++i});
+                    total = parseFloat(total )+ parseFloat(d.StudentFee.toFixed(2));
+                    $(".list-group .list-group-item #selectedstd").text(function () { return "Total Children=" + ++i });
+                    $(".list-group .list-group-item #ttlamount").text(function () { return total });
                 }
             }
         });
@@ -171,7 +175,7 @@
         
 
     });
-    
+
     $(".listing-layout .title-heading").on('click', function (e) {
         e.preventDefault();
         $(this).text("Loading.....");

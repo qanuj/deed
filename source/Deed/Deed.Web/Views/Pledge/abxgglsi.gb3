@@ -1,7 +1,4 @@
-﻿
-
-
-@model Deed.Web.ViewModels.SponsorPaymentViewModel
+﻿@model Deed.Web.ViewModels.SponsorPaymentViewModel
 <div class="page-head" style="background-repeat: no-repeat; background-position: center top; background-image: url('/Content/images/SliderImg/13772.jpg'); background-size: cover; ">
     <div class="container">
         <div class="wrap clearfix">
@@ -35,7 +32,7 @@
                                     </thead>
                                     <tbody class="trr" id="sprcarttbody">
 
-                                        @foreach (var m in Model.Students)
+                                        @foreach (var m in Model.CartItems)
                                         {
                                             <tr class="tr"> <td align="center" valign="top"><img id="img" style="height:100px; width:100px" src="http://deedaday.in/img/upload/students/@m.image"></td><td><b>Name:</b>@m.first_name<br><br><b>Religion:</b>@m.religion<br><br><b>Class:</b> @m.clas_id</td><td>&#163;3,600</td><td class="clsparent"><div data-name="@m.first_name" id="cls" class="close clos" style="float:left">X</div></td></tr>
                                         }

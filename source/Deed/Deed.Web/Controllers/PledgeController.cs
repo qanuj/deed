@@ -32,7 +32,25 @@ namespace Deed.Web.Controllers
             if (Request.IsAjaxRequest())
             {
 
-                return Json(s, JsonRequestBehavior.AllowGet);
+               Session["CartStudent"] = (from std in db.Students
+                                  join fee in db.Fees on std.id equals fee.student_id
+
+                                  join c in db.Clas on std.clas_id equals c.id
+
+                                  select new CartViewModel
+                                  {
+                                      StudentId = std.id,
+                                      StudentName = std.first_name,
+                                      StudentDOB = std.date_of_birth,
+                                      StudentImage = std.image,
+                                      StudentClass = c.name,
+                                      StudentFee= fee.school_fees/90
+
+
+                                  }).FirstOrDefault(x=>x.StudentId==id);
+
+
+               return Json(Session["CartStudent"], JsonRequestBehavior.AllowGet);
             }
             
             return View(s);
@@ -41,8 +59,15 @@ namespace Deed.Web.Controllers
 
         public ActionResult slid()
         {
+            var model = Session["CartStudent"];
             
-            return View();
+            return View(model);
+
+        }
+        public ActionResult Spr()
+        {
+
+            return Json(Session["CartStudent"], JsonRequestBehavior.AllowGet);
 
         }
 
@@ -108,7 +133,9 @@ namespace Deed.Web.Controllers
         {
             List<string> listImage = new List<string>();
             List<Student> Std = new List<Student>();
+            List<CartViewModel>cartlist=new List<CartViewModel>();
             int count = 0;
+            double total = 0;
             //if (ModelState.IsValid)
             //{
             //    var clientProfile = new ClientProfile { 
@@ -126,16 +153,44 @@ namespace Deed.Web.Controllers
             {
 
                 var s = db.Students.FirstOrDefault(g => g.id == i);
-                Std.Add(s);
+                //Std.Add(s);
+                //++count;
+                
+                var cart = (from std in db.Students
+                                          join fee in db.Fees on std.id equals fee.student_id
+
+                                          join c in db.Clas on std.clas_id equals c.id
+
+                                          select new CartViewModel
+                                          {
+                                              StudentId = std.id,
+                                              StudentName = std.first_name,
+                                              StudentDOB = std.date_of_birth,
+                                              StudentImage = std.image,
+                                              StudentClass = c.name,
+                                              StudentFee = fee.school_fees / 90,
+                                              TotalFee = total + fee.school_fees / 90
+
+
+                                          }).FirstOrDefault(x => x.StudentId == i);
+
+                cartlist.Add(cart);
                 ++count;
+                
+
+            }
+            foreach(var m in cartlist)
+            {
+                total = total + m.StudentFee;
 
             }
             var r = new SponsorPaymentViewModel
             {
 
                Students=Std,
-               count=count
-               
+               CartItems=cartlist,
+               count=count,
+               total_amount=total
 
             };
             return View(r);
