@@ -93,7 +93,9 @@ namespace Deed.Web.Controllers
                             DOB = DateTime.Now,
                             PostOffice = r.post_office,
                             Picture = r.image,
-                            PoliceStation = r.police_station
+                            PoliceStation = r.police_station,
+                            FamilyHistory=r.family_history
+                            
 
                         };
             query = query.OrderBy(x => x.Name);
@@ -168,8 +170,8 @@ namespace Deed.Web.Controllers
                                               StudentDOB = std.date_of_birth,
                                               StudentImage = std.image,
                                               StudentClass = c.name,
-                                              StudentFee = fee.school_fees / 90,
-                                              TotalFee = total + fee.school_fees / 90
+                                              StudentFee = fee.school_fees / 90
+                                              
 
 
                                           }).FirstOrDefault(x => x.StudentId == i);
@@ -190,7 +192,7 @@ namespace Deed.Web.Controllers
                Students=Std,
                CartItems=cartlist,
                count=count,
-               total_amount=total
+               total_amount=Math.Round(total,2)
 
             };
             return View(r);

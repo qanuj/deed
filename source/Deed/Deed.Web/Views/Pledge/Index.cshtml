@@ -31,6 +31,7 @@
                     <div class="list-container clearfix">
                         @foreach (var m in Model)
                         {
+                            var Yearlyfee = Math.Round(m.YearlyFee, 2);
                             <div class="span6 ">
                                 <article class="property-item clearfix">
 
@@ -44,9 +45,10 @@
 
                                     <div class="detail" id="divstudent">
                                         <h5 class="price">
-                                            &#163; 3,850 Per Year
+                                            &#163; @Yearlyfee Per Year
                                         </h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>
+                                        @*<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>*@
+                                        <p>@m.FamilyHistory</p>
                                         @*<a class="more-details" href="@Url.Action("Details", "Pledge", new {id=m.ID })">More Details <i class="fa fa-caret-right"></i></a>*@
                                         <a class="more-details" href="@Url.Action("Details", "Pledge", new { id=@m.ID})">More Details <i class="fa fa-caret-right"></i></a>
 
