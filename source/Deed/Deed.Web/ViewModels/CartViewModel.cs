@@ -11,7 +11,7 @@ namespace Deed.Web.ViewModels
         public string  StudentName  { get; set; }
         public string  StudentImage { get; set; }
         public double StudentFee { get; set; }
-        public DateTime StudentDOB { get; set; }
+        public int StudentDOB { get; set; }
         public string StudentClass { get; set; }
         public double TotalFee{get;set;}
         

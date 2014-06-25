@@ -31,7 +31,10 @@ namespace Deed.Web.Controllers
             var s = db.Students.FirstOrDefault(x => x.id == id);
             if (Request.IsAjaxRequest())
             {
-
+                var bday = s.date_of_birth;
+                DateTime today = DateTime.Today;
+                int age = today.Year - bday.Year;
+                if (bday > today.AddYears(-age)) age--;
                Session["CartStudent"] = (from std in db.Students
                                   join fee in db.Fees on std.id equals fee.student_id
 
@@ -41,7 +44,7 @@ namespace Deed.Web.Controllers
                                   {
                                       StudentId = std.id,
                                       StudentName = std.first_name,
-                                      StudentDOB = std.date_of_birth,
+                                      StudentDOB = age,
                                       StudentImage = std.image,
                                       StudentClass = c.name,
                                       StudentFee= fee.school_fees/90
@@ -155,8 +158,12 @@ namespace Deed.Web.Controllers
             {
 
                 var s = db.Students.FirstOrDefault(g => g.id == i);
-                //Std.Add(s);
-                //++count;
+                
+
+                var bday = s.date_of_birth;
+                DateTime today = DateTime.Today;
+                int age = today.Year - bday.Year;
+                if (bday > today.AddYears(-age)) age--;
                 
                 var cart = (from std in db.Students
                                           join fee in db.Fees on std.id equals fee.student_id
@@ -167,7 +174,7 @@ namespace Deed.Web.Controllers
                                           {
                                               StudentId = std.id,
                                               StudentName = std.first_name,
-                                              StudentDOB = std.date_of_birth,
+                                              StudentDOB = age,
                                               StudentImage = std.image,
                                               StudentClass = c.name,
                                               StudentFee = fee.school_fees/90

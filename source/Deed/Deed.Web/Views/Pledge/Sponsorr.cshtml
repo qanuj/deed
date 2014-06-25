@@ -35,7 +35,7 @@
                                         @foreach (var m in Model.CartItems)
                                         {
                                             var fee=Math.Round(m.StudentFee, 2);
-                                            <tr class="tr"> <td align="center" valign="top"><img id="img" style="height:100px; width:100px" src="http://deedaday.in/img/upload/students/@m.StudentImage"></td><td><b>Name:</b>@m.StudentName<br><br><b>Class:</b>@m.StudentClass<br><br><b>Age:</b> @m.StudentDOB</td><td>&#163;@fee</td><td class="clsparent"><div data-name="@m.StudentName" id="cls" class="close clos" style="float:left">X</div></td></tr>
+                                            <tr class="tr"> <td align="center" valign="top"><img id="img" style="height:100px; width:100px" src="http://deedaday.in/img/upload/students/@m.StudentImage"></td><td><b>Name:</b>@m.StudentName<br><br><b>Class:</b>@m.StudentClass<br><br><b>Age:</b> @m.StudentDOB &nbsp;Yr</td><td>&#163;@fee</td><td class="clsparent"><div data-name="@m.StudentName" id="cls" class="close clos" style="float:left">X</div></td></tr>
                                         }
 
 
