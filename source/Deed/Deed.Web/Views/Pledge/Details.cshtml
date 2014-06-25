@@ -403,9 +403,9 @@
                 <div class="panel panel-info">
                     @*<div class="panel-heading">Total Expenses</div>*@
                     <ul class="list-group">
-                        <li class="list-group-item"><div id="selectedstd"></div></li>
-                        @*<li class="list-group-item">Add 5% Admin Charges=</li>*@
-                        <li class="list-group-item">Total Amount=</li>
+                        <li class="list-group-item"><div><span id="detailselectedstd">Total Children=0</span></div></li>
+                        
+                        <li class="list-group-item"><div>Total Amount=&#163;<span id="detailttlamount"></span></div></li>
 
 
                     </ul>
@@ -423,6 +423,7 @@
 
     $(window).load(function () {
         var i = 0;
+        var total = 0;
         $("#simdivstudent #select").on('click', function () {
 
             $.ajax({
@@ -436,10 +437,11 @@
                 success: function (d) {
                     if (!!d) {
 
-                        $(" #studentli").append('<li class="list-group-item"><img id ="imgg" data-container="body" data-toggle="popover" data-placement="top" data-original-title="' + d.first_name + '" data-content="Village:' + d.village + ', Religion:' + d.religion + '" style="width:150px;height:150px" src="http://deedaday.in/img/upload/students/' + d.image + '"><div data-name="'+d.first_name+'" class="close" id="cls">X</div><input id="StudentId" name="StudentId" type="hidden" value="' + d.id + '"></li>');
+                        $(" #studentli").append('<li class="list-group-item"><img id ="imgg" data-container="body" data-toggle="popover" data-placement="top" data-original-title="' + d.StudentName + '" data-content="Class:' + d.StudentClass + ', Age:' + d.StudentDOB + '&nbsp;Yr" style="width:150px;height:150px" src="http://deedaday.in/img/upload/students/' + d.StudentImage + '"><div data-name="' + d.StudentName + '" class="close" id="cls">X</div><input id="StudentId" name="StudentId" type="hidden" value="' + d.StudentId + '"></li>');
                         //++i;
-                        //var sele=$("Total Childs=+'i'+") ;
-                        $(".list-group .list-group-item #selectedstd").text(function () { return "Total Children=" + ++i });
+                        total = parseFloat(total) + parseFloat(d.StudentFee.toFixed(2));
+                        $(".list-group .list-group-item #detailselectedstd").text(function () { return "Total Children=" + ++i });
+                        $(".list-group .list-group-item #detailttlamount").text(function () { return total.toFixed(2) });
                     }
                 }
             });
