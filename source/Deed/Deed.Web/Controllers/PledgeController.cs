@@ -193,7 +193,7 @@ namespace Deed.Web.Controllers
                Students=Std,
                CartItems=cartlist,
                count=count,
-               total_amount=total
+               total_amount=Math.Round(total,2)
 
             };
             return View(r);
