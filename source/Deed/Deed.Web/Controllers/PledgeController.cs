@@ -29,12 +29,50 @@ namespace Deed.Web.Controllers
 
         {
             var s = db.Students.FirstOrDefault(x => x.id == id);
+            var bday = s.date_of_birth;
+            DateTime today = DateTime.Today;
+            int age = today.Year - bday.Year;
+            if (bday > today.AddYears(-age)) age--;
+            var detailresult = (from std in db.Students 
+                                join cast in db.Casts on std.cast_id equals cast.id
+                                join c in db.Clas on std.clas_id equals c.id
+                                join f in db.Fees on std.id equals f.student_id
+
+                                
+
+                                select new DetailViewModel
+                                {
+                                    StudentId=std.id,
+                                    StudentName=std.first_name,
+                                    Mother=std.mother_first_name,
+                                    Father=std.father_first_name,
+                                    Religion=std.religion,
+                                    Adress1=std.address_line1,
+                                    Adress2=std.address_line2,
+                                    PostOffice=std.post_office,
+                                    PoliceStation=std.police_station,
+                                    District=std.district,
+                                    City=std.city,
+                                    State=std.state,
+                                    StudentImage=std.image,
+                                    FamilyHistory=std.family_history,
+                                    Class=c.name,
+                                    Caste=cast.name,
+                                    Country=std.country,
+                                    Tehsil=std.tehsil,
+                                    Village=std.village,
+                                    DOB=age,
+                                    TotalFee=f.total_per_year/90
+                                    
+
+                                }).FirstOrDefault(x => x.StudentId == id);
+
+            
+
             if (Request.IsAjaxRequest())
             {
-                var bday = s.date_of_birth;
-                DateTime today = DateTime.Today;
-                int age = today.Year - bday.Year;
-                if (bday > today.AddYears(-age)) age--;
+                
+               
                Session["CartStudent"] = (from std in db.Students
                                   join fee in db.Fees on std.id equals fee.student_id
 
@@ -56,7 +94,7 @@ namespace Deed.Web.Controllers
                return Json(Session["CartStudent"], JsonRequestBehavior.AllowGet);
             }
             
-            return View(s);
+            return View(detailresult);
 
         }
 
