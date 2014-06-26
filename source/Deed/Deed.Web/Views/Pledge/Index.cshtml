@@ -1,5 +1,4 @@
-﻿
-@*@model IEnumerable<Deed.Web.ViewModels.CardViewModel>*@
+﻿@*@model IEnumerable<Deed.Web.ViewModels.CardViewModel>*@
 @model PagedList.IPagedList<Deed.Web.ViewModels.CardViewModel>
 @using PagedList
 @{
@@ -9,9 +8,9 @@
 <div class="page-head" style="background-repeat: no-repeat; background-position: center top; background-image: url('/Content/images/SliderImg/hands_raised_0.png'); background-size: cover; ">
     <div class="container">
         @*<div class="wrap clearfix">
-            <h1 class="page-title"><span>Pledge/Support Us</span></h1>
-            <p></p>
-        </div>*@
+                <h1 class="page-title"><span>Pledge/Support Us</span></h1>
+                <p></p>
+            </div>*@
     </div>
 </div>
 <div class="container contents lisitng-grid-layout">
@@ -77,43 +76,44 @@
             </div>
         </div>
         @*@Html.Partial("_works")*@
-@using (Html.BeginForm("Sponsorr", "Pledge", FormMethod.Post, new { @class = "", role = "form" }))
-                    {
-        <div class="panel panel-success pull-right">
-            <div class="panel-heading">Selected Students</div>
-            <div class="panel-body">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr><th>Child</th><th>About Child</th><th>Required</th><th>Remove</th>
+        @using (Html.BeginForm("Sponsorr", "Pledge", FormMethod.Post, new { @class = "", role = "form" }))
+        {
+            <div class="panel panel-success pull-right">
+                <div class="panel-heading">Selected Students</div>
+                <div class="panel-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Child</th>
+                                <th>About Child</th>
+                                <th>Required</th>
+                                <th>Remove</th>
                             </tr>
-                    </thead>
-                    <tbody class="trr" id="sprcarttbody">
-                       
-                        
-                    </tbody>
-                </table>
-            </div>
-            <div class="panel-body">
-                <div class="panel panel-info">
-                    @*<div class="panel-heading">Total Expenses</div>*@
-                    <ul class="list-group">
-                        <li class="list-group-item"><div><span>Total Children=<span id="selectedstd"></span></span></div></li>
-                        @*<li class="list-group-item">Add 5% Admin Charges=</li>*@
-                        <li class="list-group-item"><div >Total Amount=&#163;<span id="ttlamount"></span></div></li>
+                        </thead>
+                        <tbody class="trr" id="sprcarttbody"></tbody>
+                    </table>
+                </div>
+                <div class="panel-body">
+                    <div class="panel panel-info">
+                        @*<div class="panel-heading">Total Expenses</div>*@
+                        <ul class="list-group">
+                            <li class="list-group-item"><div><span>Total Children=<span id="selectedstd"></span></span></div></li>
+                            @*<li class="list-group-item">Add 5% Admin Charges=</li>*@
+                            <li class="list-group-item"><div>Total Amount=&#163;<span id="ttlamount"></span></div></li>
 
 
-                    </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div id="sprbtn">
+
+                    <button id="submit" type="submit" class="btn btn-xs btn-danger pull-right">Sponsor</button>
+
                 </div>
             </div>
-            <div id="sprbtn">
-
-            <button id="submit" type="submit" class="btn btn-xs btn-danger pull-right">Sponsor</button>
-            
-            </div>
-        </div>
-                    }
+        }
     </div>
-    
+
 </div>
 
 
@@ -147,62 +147,62 @@
             }),
             success: function (d) {
                 if (!!d) {
-                    
-                    $(" #sprcarttbody").append('<tr> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.StudentImage + '"></td><td><b>Name:</br></b>' + d.StudentName + '</br><b>Class:</br></b>' + d.StudentClass + '</br><b>Age:</br></b>' + d.StudentDOB + '&nbsp;Yr</td><td>&#163;' + d.StudentFee.toFixed(2) + '</td><td class="clsparent"><div data-name="'+d.StudentName+'" data-fee="' + d.StudentFee.toFixed(2) + '" data-stdid="' + d.StudentId + '" id="cls" class="close clos" style="float:left">X</div></td><input id="StudentId" name="StudentId" type="hidden" value="' + d.StudentId + '"></tr>');
+
+                    $(" #sprcarttbody").append('<tr> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.StudentImage + '"></td><td><b>Name:</br></b>' + d.StudentName + '</br><b>Class:</br></b>' + d.StudentClass + '</br><b>Age:</br></b>' + d.StudentDOB + '&nbsp;Yr</td><td>&#163;' + d.StudentFee.toFixed(2) + '</td><td class="clsparent"><div data-name="' + d.StudentName + '" data-fee="' + d.StudentFee.toFixed(2) + '" data-stdid="' + d.StudentId + '" id="cls" class="close clos" style="float:left">X</div></td><input id="StudentId" name="StudentId" type="hidden" value="' + d.StudentId + '"></tr>');
                     //++i;
                     //var sele=$("Total Childs=+'i'+") ;
                     total = parseFloat(total) + parseFloat(d.StudentFee.toFixed(2));
-                    
-                    $(".list-group .list-group-item #selectedstd").text(function () { return  ++i });
+
+                    $(".list-group .list-group-item #selectedstd").text(function () { return ++i });
                     $(".list-group .list-group-item #ttlamount").text(function () { return total.toFixed(2) });
                 }
             }
         });
-       
-
-                
-        $(document).on('click', 'td #cls', function (e) {
-                    //alert("showw");
-                    var closeButton = $(this);
-                    if (confirm("Are you sure you want to remove '" + closeButton.attr("data-name") + "' ?")) {
-                        $.ajax({
-                            type: "POST",
-                            url: '/Pledge/Remove',
-                            contentType: 'application/json; charset=utf-8',
-                            data: JSON.stringify({
-
-                                id: $("#cls").attr("data-stdid"),
 
 
-                                removeAmount: $("#cls").attr("data-fee"),
-
-                                totalamount: $("#ttlamount").text(),
-
-                                count: $("#selectedstd").text()
 
 
-                            }),
-                            success: function (d) {
 
-                                if (!!d) {
-                                    closeButton.closest("tr").remove();
-                                    var ttl = d.removeamount;
-                                    var cnt = d.count
-                                    $(".list-group .list-group-item  #ttlamount").text(function () { return ttl.toFixed(2) });
-                                    $(".list-group .list-group-item  #selectedstd").text(function () { return cnt });
-                                    $("#lblttlamount").text(function () { return ttl.toFixed(2) });
-                                    $("#inputamount").val(ttl.toFixed(2));
 
-                                }
-                            }
-                        });
 
-                        
-                    };
-                });
-           
-        
+    });
+    $(document).on('click', 'td > div', function (e) {
+        alert($(this).attr("data-fee"));
+        var closeButton = $(this);
+        if (confirm("Are you sure you want to remove '" + closeButton.attr("data-name") + "' ?")) {
+            $.ajax({
+                type: "POST",
+                url: '/Pledge/Remove',
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify({
 
+                    id: $(this).attr("data-stdid"),
+
+                    removeAmount: $(this).attr("data-fee"),
+
+                    totalamount: $("#ttlamount").text(),
+
+                    count: $("#selectedstd").text()
+
+
+                }),
+                success: function (d) {
+
+                    if (!!d) {
+                        closeButton.closest("tr").remove();
+                        var ttl = d.removeamount;
+                        var cnt = d.count
+                        $(".list-group .list-group-item  #ttlamount").text(function () { return ttl.toFixed(2) });
+                        $(".list-group .list-group-item  #selectedstd").text(function () { return cnt });
+                        $("#lblttlamount").text(function () { return ttl.toFixed(2) });
+                        $("#inputamount").val(ttl.toFixed(2));
+
+                    }
+                }
+            });
+
+
+        };
     });
 
     $(".listing-layout .title-heading").on('click', function (e) {
@@ -244,10 +244,10 @@
     //});
 
 
-    
+
 
     //$(".list-group .list-group-item").popover('show');
-    
+
 
 
     //});
