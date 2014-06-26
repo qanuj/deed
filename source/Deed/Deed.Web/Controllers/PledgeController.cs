@@ -119,7 +119,7 @@ namespace Deed.Web.Controllers
                         select new CardViewModel
                         {
                             ID = r.id,
-                            Name = r.first_name + "   " + r.father_first_name + "   "  + r.mother_first_name,
+                            Name = r.first_name + "   " + r.last_name ,
                             Father = r.father_first_name,
                             Mother = r.mother_first_name,
                             District = r.district,
@@ -268,7 +268,7 @@ namespace Deed.Web.Controllers
 
             if (objUpdate.count==0)
             {
-                objUpdate.removeamount = 0.00;
+                objUpdate.totalamount = 0.00;
 
                 objUpdate.count = 0;
 

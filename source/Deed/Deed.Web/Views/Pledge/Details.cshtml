@@ -402,23 +402,39 @@
         </div>
 @using (Html.BeginForm("Sponsorr", "Pledge", FormMethod.Post, new { @class = "", role = "form" }))
 { 
-        <div class="panel panel-success pull-right">
-            <div class="panel-heading">Selected Students</div>
-            <ul class="list-group" id="studentli"></ul>
-            <div class="panel-body">
-                <div class="panel panel-info">
-                    @*<div class="panel-heading">Total Expenses</div>*@
-                    <ul class="list-group">
-                        <li class="list-group-item"><div><span id="detailselectedstd">Total Children=0</span></div></li>
-                        
-                        <li class="list-group-item"><div>Total Amount=&#163;<span id="detailttlamount"></span></div></li>
+         <div class="panel panel-success pull-right">
+                <div class="panel-heading">Selected Students</div>
+                <div class="panel-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Child</th>
+                                <th>About Child</th>
+                                <th>Required</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody class="trr" id="sprcarttbody"></tbody>
+                    </table>
+                </div>
+                <div class="panel-body">
+                    <div class="panel panel-info">
+                        @*<div class="panel-heading">Total Expenses</div>*@
+                        <ul class="list-group">
+                            <li class="list-group-item"><div><span>Total Children=<span id="selectedstd"></span></span></div></li>
+                            @*<li class="list-group-item">Add 5% Admin Charges=</li>*@
+                            <li class="list-group-item"><div>Total Amount=&#163;<span id="ttlamount"></span></div></li>
 
 
-                    </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div id="sprbtn">
+
+                    <button id="submit" type="submit" class="btn btn-xs btn-danger pull-right">Sponsor</button>
+
                 </div>
             </div>
-            <button id="submit" type="submit" class="btn btn-xs btn-danger pull-right">Sponsor</button>
-        </div>
 
 }
     </div>
@@ -443,31 +459,59 @@
                 success: function (d) {
                     if (!!d) {
 
-                        $(" #studentli").append('<li class="list-group-item"><img id ="imgg" data-container="body" data-toggle="popover" data-placement="top" data-original-title="' + d.StudentName + '" data-content="Class:' + d.StudentClass + ', Age:' + d.StudentDOB + '&nbsp;Yr,Required:&#163;' + d.StudentFee.toFixed(2) + '" style="width:150px;height:150px" src="http://deedaday.in/img/upload/students/' + d.StudentImage + '"><div data-name="' + d.StudentName + '" class="close" id="cls">X</div><input id="StudentId" name="StudentId" type="hidden" value="' + d.StudentId + '"></li>');
+                       // $(" #studentli").append('<li class="list-group-item"><img id ="imgg" data-container="body" data-toggle="popover" data-placement="top" data-original-title="' + d.StudentName + '" data-content="Class:' + d.StudentClass + ', Age:' + d.StudentDOB + '&nbsp;Yr,Required:&#163;' + d.StudentFee.toFixed(2) + '" style="width:150px;height:150px" src="http://deedaday.in/img/upload/students/' + d.StudentImage + '"><div data-name="' + d.StudentName + '" class="close" id="cls">X</div><input id="StudentId" name="StudentId" type="hidden" value="' + d.StudentId + '"></li>');
                         //++i;
+                        $(" #sprcarttbody").append('<tr> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.StudentImage + '"></td><td><b>Name:</br></b>' + d.StudentName + '</br><b>Class:</br></b>' + d.StudentClass + '</br><b>Age:</br></b>' + d.StudentDOB + '&nbsp;Yr</td><td>&#163;' + d.StudentFee.toFixed(2) + '</td><td class="clsparent"><div data-name="' + d.StudentName + '" data-fee="' + d.StudentFee.toFixed(2) + '" data-stdid="' + d.StudentId + '" id="cls" class="close clos" style="float:left">X</div></td><input id="StudentId" name="StudentId" type="hidden" value="' + d.StudentId + '"></tr>');
                         total = parseFloat(total) + parseFloat(d.StudentFee.toFixed(2));
-                        $(".list-group .list-group-item #detailselectedstd").text(function () { return "Total Children=" + ++i });
-                        $(".list-group .list-group-item #detailttlamount").text(function () { return total.toFixed(2) });
+
+                        $(".list-group .list-group-item #selectedstd").text(function () { return ++i });
+                        $(".list-group .list-group-item #ttlamount").text(function () { return total.toFixed(2) });
                     }
                 }
             });
-            $(".list-group .list-group-item #imgg").popover();
-            $("li > div ").on('click',function (e) {
-                //alert("showw");
-                var closeButton = $(this);
-                if (confirm("Are you sure you want to remove '" + closeButton.attr("data-name") + "' ?")) {
-                    @*$.post("@Url.Action("Remove")", { id: closeButton.attr("data-id")}, function (d) {
-                        if (!!d.success) {
-                            closeButton.parent().remove();
-                        }
-                    });*@
-
-                    closeButton.closest("li").remove();
-                };
-            });    
+           
+               
             
         });
+        $(document).on('click', 'td > div', function (e) {
 
+            var closeButton = $(this);
+            if (confirm("Are you sure you want to remove '" + closeButton.attr("data-name") + "' ?")) {
+                $.ajax({
+                    type: "POST",
+                    url: '/Pledge/Remove',
+                    contentType: 'application/json; charset=utf-8',
+                    data: JSON.stringify({
+
+                        id: $(this).attr("data-stdid"),
+
+                        removeAmount: $(this).attr("data-fee"),
+
+                        simpleamount: $("#ttlamount").text(),
+
+                        count: $("#selectedstd").text()
+
+
+                    }),
+                    success: function (d) {
+
+                        if (!!d) {
+                            closeButton.closest("tr").remove();
+                            var ttl = d.simpleamount;
+                            var cnt = d.count
+                            $(".list-group .list-group-item  #ttlamount").text(function () { return ttl.toFixed(2) });
+                            $(".list-group .list-group-item  #selectedstd").text(function () { return cnt });
+                            $("#lblttlamount").text(function () { return ttl.toFixed(2) });
+                            $("#inputamount").val(ttl.toFixed(2));
+                            
+
+                        }
+                    }
+                });
+
+
+            };
+        });
 
 
 
