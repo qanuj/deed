@@ -161,7 +161,7 @@
        
 
                 
-                $("td > div").on('click',function (e) {
+        $(document).on('click', 'td > div', function (e) {
                     //alert("showw");
                     var closeButton = $(this);
                     if (confirm("Are you sure you want to remove '" + closeButton.attr("data-name") + "' ?")) {
