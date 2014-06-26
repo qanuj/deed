@@ -35,7 +35,7 @@
                                         @foreach (var m in Model.CartItems)
                                         {
                                             var fee=Math.Round(m.StudentFee, 2);
-                                            <tr class="tr"> <td align="center" valign="top"><img id="img" style="height:100px; width:100px" src="http://deedaday.in/img/upload/students/@m.StudentImage"></td><td><b>Name:</b>@m.StudentName<br><br><b>Class:</b>@m.StudentClass<br><br><b>Age:</b> @m.StudentDOB &nbsp;Yr</td><td>&#163;@fee</td><td class="clsparent"><div data-name="@m.StudentName" id="cls" class="close clos" style="float:left">X</div></td></tr>
+                                            <tr class="tr"> <td align="center" valign="top"><img id="img" style="height:100px; width:100px" src="http://deedaday.in/img/upload/students/@m.StudentImage"></td><td><b>Name:</b>@m.StudentName<br><br><b>Class:</b>@m.StudentClass<br><br><b>Age:</b> @m.StudentDOB &nbsp;Yr</td><td>&#163;@fee</td><td class="clsparent"><div data-name="@m.StudentName" data-studentid="@m.StudentId" data-studentname="@m.StudentName" data-studentimage="@m.StudentImage"  data-studentfee="@m.StudentFee"   data-studentclass="@m.StudentClass" id="cls" class="close clos" style="float:left">X</div></td></tr>
                                         }
 
 
@@ -48,8 +48,8 @@
                                 <div class="panel panel-info">
                                     @*<div class="panel-heading">Total Expenses</div>*@
                                     <ul class="list-group">
-                                        <li class="list-group-item">Total Selected Students=@Model.count</li>
-                                        <li data-total ="@Model.total_amount" class="list-group-item"><span id="totalamount">Total Amount= &#163;&nbsp;@Model.total_amount </span> </li>
+                                        <li class="list-group-item"><span id="totalcount">Total Selected Students=<span id="cnt">@Model.count</span></span></li>
+                                        <li data-total ="@Model.total_amount" class="list-group-item"><span id="totalamount" data-total="@Model.total_amount">Total Amount= &#163;&nbsp;<span id="ttl">@Model.total_amount</span> </span> </li>
 
 
                                     </ul>
@@ -393,7 +393,7 @@
 
 
                                     <label style="margin-left:40px">
-                                        <span>Total Amount : <span>&#163;&nbsp;@Model.total_amount</span></span>
+                                        <span>Total Amount : <span>&#163;&nbsp;<span id="lblttlamount">@Model.total_amount</span></span></span>
                                         <span class="amount_he" style="display:none" id="p2">Total Amount : <span>&#163;@Model.total_amount</span></span>
 
 
@@ -404,7 +404,7 @@
                                         <input type="hidden" name="business" value="me@mybusiness.com" />
                                         <input type="hidden" name="currency_code" value="USD" />
                                         <input type="hidden" name="item_name" value="Total Amount" />
-                                        <input type="hidden" name="amount" value="@Model.total_amount"/>
+                                        <input id="inputamount" type="hidden" name="amount" value="@Model.total_amount"/>
                                         <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!" />
                                     </form>
                                     
@@ -527,13 +527,39 @@
             //alert("showw");
             var closeButton = $(this);
             if (confirm("Are you sure you want to remove '" + closeButton.attr("data-name") + "' ?")) {
-                @*$.post("@Url.Action("Remove")", { id: closeButton.attr("data-id")}, function (d) {
-                    if (!!d.success) {
-                        closeButton.parent().remove();
-                    }
-                });*@
+                $.ajax({
+                    type: "POST",
+                    url: '/Pledge/Remove',
+                    contentType: 'application/json; charset=utf-8',
+                    data: JSON.stringify({
 
-                closeButton.closest("tr").remove();
+                        id: $("#cls").attr("data-studentid"),
+                        
+                       
+                        removeAmount: $("#cls").attr("data-studentfee"),
+                        
+                        totalamount: $("#ttl").text(),
+
+                        count:$("#cnt").text()
+
+
+                    }),
+                    success: function (d) {
+                        
+                        if (!!d) {
+                            closeButton.closest("tr").remove();
+                            var ttl = d.removeamount;
+                            var cnt = d.count
+                            $(".list-group .list-group-item  #totalamount #ttl").text(function () { return ttl.toFixed(2) });
+                            $(".list-group .list-group-item  #totalcount #cnt").text(function () { return cnt });
+                            $("#lblttlamount").text(function () { return ttl.toFixed(2) });
+                            $("#inputamount").val(ttl.toFixed(2));
+
+                        }
+                    }
+                });
+
+               
             };
         });
 

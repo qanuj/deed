@@ -179,19 +179,7 @@ namespace Deed.Web.Controllers
             List<CartViewModel>cartlist=new List<CartViewModel>();
             int count = 0;
             double total = 0;
-            //if (ModelState.IsValid)
-            //{
-            //    var clientProfile = new ClientProfile { 
-                
-            //    address_line1=objSprPayViewModel.AddressLine1,
-            //    address_line2=objSprPayViewModel.addessLine2,
-            //    city=objSprPayViewModel.City,
-            //    state=objSprPayViewModel.State,
-            //    country=objSprPayViewModel.CardIssuingCountry
-
-            //    };
-            //    db.ClientProfiles.Add(clientProfile);
-            //}
+            
             foreach (var i in objSprPayViewModel.StudentId)
             {
 
@@ -222,10 +210,13 @@ namespace Deed.Web.Controllers
                                           }).FirstOrDefault(x => x.StudentId == i);
 
                 cartlist.Add(cart);
+
+                Session.Add("Carts", cartlist);
                 ++count;
                 
 
             }
+            cartlist = (List<CartViewModel>)Session["Carts"];
             foreach(var m in cartlist)
             {
                 total = total + m.StudentFee;
@@ -267,6 +258,23 @@ namespace Deed.Web.Controllers
             return View("Sponsorr",r);
         }
 
+        public ActionResult Remove(UpdateViewmodel objUpdate)
+        {
+            objUpdate.removeamount = objUpdate.totalamount - objUpdate.removeamount;
+
+            objUpdate.count = objUpdate.count-1;
+
+            if (objUpdate.count==0)
+            {
+                objUpdate.removeamount = 0.00;
+
+                objUpdate.count = 0;
+
+            }
+            
+
+            return Json(objUpdate,JsonRequestBehavior.AllowGet);
+        }
 
 
 	}

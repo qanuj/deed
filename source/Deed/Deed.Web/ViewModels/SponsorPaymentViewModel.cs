@@ -11,6 +11,7 @@ namespace Deed.Web.ViewModels
 {
     public class SponsorPaymentViewModel
     {
+        public  List<CartViewModel> cartviewmodel { get; set; }
         public List<long> StudentId { get; set; }
         public List<string> Picture { get; set; }
         public List<Student> Students { get; set; }
