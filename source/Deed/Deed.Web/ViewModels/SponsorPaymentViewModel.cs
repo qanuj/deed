@@ -18,6 +18,8 @@ namespace Deed.Web.ViewModels
         public List<CartViewModel> CartItems { get; set; }
         public string Name { get; set; }
         public int count { get; set; }
+        public double SimpleTotal { get; set; }
+        public double total_amount { get; set; }
 
         //[Required]
         //public string ClientFirstName { get; set; }
@@ -63,7 +65,7 @@ namespace Deed.Web.ViewModels
 
         public double amount { get; set; }
 
-        public double total_amount { get; set; }
+        
 
         
         public string payment_mode { get; set; }

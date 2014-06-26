@@ -11,5 +11,6 @@ namespace Deed.Web.ViewModels
         public double  removeamount { get; set; }
         public double totalamount { get; set; }
         public int count { get; set; }
+        public double simpleamount { get; set; }
     }
 }

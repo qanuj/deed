@@ -167,7 +167,7 @@
 
     });
     $(document).on('click', 'td > div', function (e) {
-        alert($(this).attr("data-fee"));
+        
         var closeButton = $(this);
         if (confirm("Are you sure you want to remove '" + closeButton.attr("data-name") + "' ?")) {
             $.ajax({
@@ -180,7 +180,7 @@
 
                     removeAmount: $(this).attr("data-fee"),
 
-                    totalamount: $("#ttlamount").text(),
+                    simpleamount: $("#ttlamount").text(),
 
                     count: $("#selectedstd").text()
 
@@ -190,7 +190,7 @@
 
                     if (!!d) {
                         closeButton.closest("tr").remove();
-                        var ttl = d.removeamount;
+                        var ttl = d.simpleamount;
                         var cnt = d.count
                         $(".list-group .list-group-item  #ttlamount").text(function () { return ttl.toFixed(2) });
                         $(".list-group .list-group-item  #selectedstd").text(function () { return cnt });

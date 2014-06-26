@@ -179,6 +179,7 @@ namespace Deed.Web.Controllers
             List<CartViewModel>cartlist=new List<CartViewModel>();
             int count = 0;
             double total = 0;
+            double simpletotal = 0;
             
             foreach (var i in objSprPayViewModel.StudentId)
             {
@@ -222,6 +223,7 @@ namespace Deed.Web.Controllers
                 total = total + m.StudentFee;
 
             }
+            simpletotal = total;
             total = total + total * 5 / 100;
             var r = new SponsorPaymentViewModel
             {
@@ -229,8 +231,8 @@ namespace Deed.Web.Controllers
                Students=Std,
                CartItems=cartlist,
                count=count,
-               total_amount=Math.Round(total,2)
-
+               total_amount=Math.Round(total,2),
+               SimpleTotal=simpletotal
             };
             return View(r);
         }
@@ -260,8 +262,8 @@ namespace Deed.Web.Controllers
 
         public ActionResult Remove(UpdateViewmodel objUpdate)
         {
-            objUpdate.removeamount = objUpdate.totalamount - objUpdate.removeamount;
-
+            objUpdate.simpleamount = objUpdate.simpleamount - objUpdate.removeamount;
+            objUpdate.totalamount = objUpdate.simpleamount + objUpdate.simpleamount * 5 / 100;
             objUpdate.count = objUpdate.count-1;
 
             if (objUpdate.count==0)

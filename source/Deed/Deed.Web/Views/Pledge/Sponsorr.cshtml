@@ -1,4 +1,10 @@
 ﻿@model Deed.Web.ViewModels.SponsorPaymentViewModel
+
+@{
+
+    var simtotal = Model.SimpleTotal;
+}
+@Html.HiddenFor(x => x.SimpleTotal)
 <div class="page-head" style="background-repeat: no-repeat; background-position: center top; background-image: url('/Content/images/SliderImg/13772.jpg'); background-size: cover; ">
     <div class="container">
         <div class="wrap clearfix">
@@ -34,8 +40,8 @@
 
                                         @foreach (var m in Model.CartItems)
                                         {
-                                            var fee=Math.Round(m.StudentFee, 2);
-                                            <tr class="tr"> <td align="center" valign="top"><img id="img" style="height:100px; width:100px" src="http://deedaday.in/img/upload/students/@m.StudentImage"></td><td><b>Name:</b>@m.StudentName<br><br><b>Class:</b>@m.StudentClass<br><br><b>Age:</b> @m.StudentDOB &nbsp;Yr</td><td>&#163;@fee</td><td class="clsparent"><div data-name="@m.StudentName" data-studentid="@m.StudentId" data-studentname="@m.StudentName" data-studentimage="@m.StudentImage"  data-studentfee="@m.StudentFee"   data-studentclass="@m.StudentClass" id="cls" class="close clos" style="float:left">X</div></td></tr>
+                                            var fee = Math.Round(m.StudentFee, 2);
+                                            <tr class="tr"> <td align="center" valign="top"><img id="img" style="height:100px; width:100px" src="http://deedaday.in/img/upload/students/@m.StudentImage"></td><td><b>Name:</b>@m.StudentName<br><br><b>Class:</b>@m.StudentClass<br><br><b>Age:</b> @m.StudentDOB &nbsp;Yr</td><td>&#163;@fee</td><td class="clsparent"><div data-name="@m.StudentName" data-studentid="@m.StudentId" data-studentname="@m.StudentName" data-studentimage="@m.StudentImage" data-studentfee="@m.StudentFee" data-studentclass="@m.StudentClass" id="cls" class="close clos" style="float:left">X</div></td></tr>
                                         }
 
 
@@ -49,7 +55,7 @@
                                     @*<div class="panel-heading">Total Expenses</div>*@
                                     <ul class="list-group">
                                         <li class="list-group-item"><span id="totalcount">Total Selected Students=<span id="cnt">@Model.count</span></span></li>
-                                        <li data-total ="@Model.total_amount" class="list-group-item"><span id="totalamount" data-total="@Model.total_amount">Total Amount= &#163;&nbsp;<span id="ttl">@Model.total_amount</span> </span> </li>
+                                        <li data-total="@Model.total_amount" class="list-group-item"><span id="totalamount" data-total="@Model.total_amount">Total Amount= &#163;&nbsp;<span id="ttl">@Model.total_amount</span> </span> </li>
 
 
                                     </ul>
@@ -404,10 +410,10 @@
                                         <input type="hidden" name="business" value="me@mybusiness.com" />
                                         <input type="hidden" name="currency_code" value="USD" />
                                         <input type="hidden" name="item_name" value="Total Amount" />
-                                        <input id="inputamount" type="hidden" name="amount" value="@Model.total_amount"/>
+                                        <input id="inputamount" type="hidden" name="amount" value="@Model.total_amount" />
                                         <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!" />
                                     </form>
-                                    
+
                                     @*<div><a><img id="checkout"  src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif"></a></div>*@
                                     <div>Would you like to share your personal details on our Network ? <input type="radio" name="data[Client_temp][pdaccept]" value="Yes" checked="checked">Yes <input type="radio" name="data[Client_temp][pdaccept]" value="No">No</div>
                                     <div>&nbsp;</div>
@@ -523,7 +529,7 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $("td > div").on('click',function (e) {
+        $("td > div").on('click', function (e) {
             //alert("showw");
             var closeButton = $(this);
             if (confirm("Are you sure you want to remove '" + closeButton.attr("data-name") + "' ?")) {
@@ -533,25 +539,26 @@
                     contentType: 'application/json; charset=utf-8',
                     data: JSON.stringify({
 
-                        id: $("#cls").attr("data-studentid"),
-                        
-                       
-                        removeAmount: $("#cls").attr("data-studentfee"),
-                        
-                        totalamount: $("#ttl").text(),
+                        id: $(this).attr("data-studentid"),
 
-                        count:$("#cnt").text()
+
+                        removeAmount: $(this).attr("data-studentfee"),
+                        simpleamount:$("#SimpleTotal").val(),
+                        totalamount: '@simtotal',
+
+                        count: $("#cnt").text()
 
 
                     }),
                     success: function (d) {
-                        
+
                         if (!!d) {
                             closeButton.closest("tr").remove();
-                            var ttl = d.removeamount;
+                            var ttl = d.totalamount;
                             var cnt = d.count
                             $(".list-group .list-group-item  #totalamount #ttl").text(function () { return ttl.toFixed(2) });
                             $(".list-group .list-group-item  #totalcount #cnt").text(function () { return cnt });
+                            $("#SimpleTotal").val(d.simpleamount);
                             $("#lblttlamount").text(function () { return ttl.toFixed(2) });
                             $("#inputamount").val(ttl.toFixed(2));
 
@@ -559,7 +566,7 @@
                     }
                 });
 
-               
+
             };
         });
 
