@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Deed.Web.ViewModels;
 
 namespace Deed.Web.Controllers
 {
@@ -31,9 +32,10 @@ namespace Deed.Web.Controllers
         {
             return View();
         }
-        public ActionResult NewsDetail()
+        public ActionResult NewsDetail(NewsDetail objNewsDetail)
         {
-            return View();
+
+            return View(objNewsDetail);
         }
 
         public ActionResult AnnualEvents()

@@ -289,6 +289,7 @@
     <Compile Include="ViewModels\CardViewModel.cs" />
     <Compile Include="ViewModels\CartViewModel.cs" />
     <Compile Include="ViewModels\DetailViewModel.cs" />
+    <Compile Include="ViewModels\NewsDetail.cs" />
     <Compile Include="ViewModels\SponsorPaymentViewModel.cs" />
     <Compile Include="ViewModels\UpdateViewmodel.cs" />
   </ItemGroup>
