@@ -18,20 +18,25 @@
         <div class="span9 main-wrap" style="margin-left:-70px;" >
             <div class="main ">
 
-                <section class="listing-layout">
+                <section id="sec" class="listing-layout">
 
                     <h3 class="title-heading"><a class="">Sponsor Students</a> </h3>
 
+                    
                     <div class="view-type clearfix">
-                        <a class="list active" href="http://alt-realhomes.inspirythemes.com/listing/?view=list"></a>
-                        <a class="grid" href="http://alt-realhomes.inspirythemes.com/listing/?view=grid"></a>
+                        <a id="list" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-th-list">
+                            </span>
+                        </a> <a id="grid" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </a>
                     </div>
 
                     <div class="list-container clearfix">
                         @foreach (var m in Model)
                         {
                             var Yearlyfee = Math.Round(m.YearlyFee, 2);
-                            <div class="span6 ">
+                            <div class="span6 " id="articleparent">
                                 <article class="property-item clearfix">
 
                                     <h4><a href="http://deedaday.in/img/upload/students/@m.Picture" title="">@m.Name</a></h4>
@@ -117,11 +122,6 @@
 </div>
 
 
-
-
-
-
-
 <script type="text/javascript" async>
     //$(document).ready(function () {
 
@@ -158,11 +158,6 @@
                 }
             }
         });
-
-
-
-
-
 
 
     });
@@ -226,33 +221,33 @@
 
     });
 
-    //$("#sprbtn #submit").on('click', function (e) {
-    //    e.preventDefault();
-    //    $(this).text("Loading.....");
-    //    var closeButton = $(this);
-    //    $.ajax({
-    //        type: "POST",
-    //        url: '/Pledge/Cart',
-    //        contentType: 'application/json; charset=utf-8',
-    //        data: JSON.stringify({
-    //            Selected: $.unique(slectedItems)
+    //Grid and list view function
+    
+    $(" .view-type #list").on('click', function (event) {
+        event.preventDefault();
 
-    //        }),
-    //        success: function (d) {
-    //            if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(true);}
-    //        }
-    //    });
+        $('#sec').removeClass('property-grid');
+        $("h5").addClass("price");
+        $("div.property-meta").show();
+        //$("#divstudent #select").show();
+        $(".property-item #divstudent").addClass('detail');
+        $(".list-container #articleparent").addClass('span6');
+        $("p").css('font-size', '13px');
+        $("p").css('line-height', '23px');
 
-    //});
+    });
+    $(".view-type  #grid").on('click', function (event) {
+        //event.preventDefault();
+        $('#sec').addClass('property-grid ');
+        $("h5").removeClass("price");
+        $("div.property-meta").remove();
+        //$("#divstudent #select").remove();
+        $(".property-item #divstudent").removeClass('detail');
+        $(".list-container #articleparent").removeClass('span6');
+        $("p").css('font-size', '12px');
+        $("p").css('line-height', '14px');
 
-
-
-
-    //$(".list-group .list-group-item").popover('show');
-
-
-
-    //});
+    });
 </script>
 
 @*'<li class="list-group-item" data-container="body" data-toggle="popover" data-placement="top" data-original-title="' + d.first_name + '" data-content="Village:' + d.village + ', Religion:' + d.religion + '"><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.image + '"><div>Name:' + d.first_name + '</div><div id="cls" class="close">X</div></li>'*@
