@@ -447,7 +447,7 @@
         var i = 0;
         var total = 0;
         $("#simdivstudent #select").on('click', function () {
-
+            $(this).replaceWith("<a class='btn btn-warning' disabled='disabled' id='e' >Selected</a>");
             $.ajax({
                 type: "POST",
                 url: '/Pledge/Details',
