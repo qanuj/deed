@@ -332,6 +332,8 @@
     <Content Include="Content\images\ajax-loader.gif" />
     <Content Include="Content\images\arrow-black.png" />
     <Content Include="Content\images\arrow-left.png" />
+    <Content Include="Content\images\arrowd.jpg" />
+    <Content Include="Content\images\arrowdr.jpg" />
     <Content Include="Content\images\background-outer-wrapper.png" />
     <Content Include="Content\images\banner.jpg" />
     <Content Include="Content\images\carousel-nav-left.png" />
@@ -339,6 +341,7 @@
     <Content Include="Content\images\comment-detail-wrap-arrow.png" />
     <Content Include="Content\images\container-gradient.png" />
     <Content Include="Content\images\controls_play_32.png" />
+    <Content Include="Content\images\download.jpg" />
     <Content Include="Content\images\DScool.jpg" />
     <Content Include="Content\images\dropdown-arrow.png" />
     <Content Include="Content\images\dropdown-interest.png" />
@@ -391,6 +394,9 @@
     <Content Include="Content\images\loading.gif" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\media_controls_play_small.png" />
+    <Content Include="Content\images\old_edit_undo.png" />
+    <Content Include="Content\images\old_edit_undo1.png" />
+    <Content Include="Content\images\old_edit_undo2.png" />
     <Content Include="Content\images\Parminder Singh Rural.jpg" />
     <Content Include="Content\images\paypal.png" />
     <Content Include="Content\images\play-btn.png" />
@@ -448,6 +454,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\download.jpg" />
     <Content Include="Scripts\jquery-1.10.1.min.js" />
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Content\carouselLess.less" />
