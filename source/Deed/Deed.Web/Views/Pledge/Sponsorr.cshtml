@@ -25,8 +25,8 @@
                     <div class="">
                         <h1>Sponsorship Basket </h1>
                         <div class="panel panel-success">
-                            <div class="panel-heading">Selected Students</div>
-                            <div class="panel-body">
+                            <div id ="sponsorbasket" class="panel-heading">Selected Students</div>
+                            <div id="sponsorbasketbody" class="panel-body">
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
@@ -64,8 +64,8 @@
                         </div>
 
                         <div class="panel panel-info">
-                            <div class="panel-heading">Create Your Profile</div>
-                            <div class="panel-body">
+                            <div id ="createprofile" class="panel-heading">Create Your Profile</div>
+                            <div id ="profilebody" class="panel-body">
                                 <form class="form-horizontal" role="form">
                                     <div class="form-group">
                                         <label class="col-sm-2 control-label">Title:</label>
@@ -385,8 +385,8 @@
                         </div>
 
                         <div class="panel panel-info">
-                            <div class="panel-heading">Choose Payment Mode</div>
-                            <div class="panel-body">
+                            <div id="choosepaymentmode" class="panel-heading">Choose Payment Mode</div>
+                            <div id="choosepaymentmodebody" class="panel-body">
                                 <div>
 
 
@@ -570,25 +570,23 @@
             };
         });
 
+        //sponsor profile toggle
 
-        $("#checkout").on('click', function (e) {
-            e.preventDefault();
-            $(this).text("Loading.....");
-            var closeButton = $(this);
-            $.ajax({
-                type: "POST",
-                url: '/Checkout/GetCheckout',
-                contentType: 'application/json; charset=utf-8',
-                //data: JSON.stringify({
-                //    PayAmount: "3456"
-
-                //}),
-                success: function (d) {
-                    if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(true); closeButton.text("Sponsor Selected Student"); }
-                }
-            });
-
+        $("#choosepaymentmodebody").show();
+        $("#choosepaymentmode").click(function () {
+            $("#choosepaymentmodebody").toggle(1000);
         });
+
+        $("#sponsorbasketbody").show();
+        $("#sponsorbasket").click(function () {
+            $("#sponsorbasketbody").toggle(1000);
+        });
+
+        $("#profilebody").hide();
+        $("#createprofile").click(function () {
+            $("#profilebody").toggle(1000);
+        });
+        
 
     });
 </script>
