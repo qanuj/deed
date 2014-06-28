@@ -85,7 +85,7 @@ namespace Deed.Web.Controllers
                                       StudentDOB = age,
                                       StudentImage = std.image,
                                       StudentClass = c.name,
-                                      StudentFee= fee.school_fees/90
+                                      StudentFee= fee.total_per_year/90
 
 
                                   }).FirstOrDefault(x=>x.StudentId==id);
@@ -204,7 +204,7 @@ namespace Deed.Web.Controllers
                                               StudentDOB = age,
                                               StudentImage = std.image,
                                               StudentClass = c.name,
-                                              StudentFee = fee.school_fees/90
+                                              StudentFee = fee.total_per_year/90
                                               
 
 

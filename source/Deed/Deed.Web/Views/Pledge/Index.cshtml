@@ -136,7 +136,7 @@
         var closeButton = $(this);
         slectedItems.push($(this).attr("data-id"));
         //$(this).text("Selected");
-        $(this).replaceWith("<a class='btn btn-warning' disabled='disabled' id='e' >Student has been selected</a>");
+        $(this).replaceWith("<a class='btn btn-warning' disabled='disabled' id='e' >Selected</a>");
         $.ajax({
             type: "POST",
             url: '/Pledge/Details',
