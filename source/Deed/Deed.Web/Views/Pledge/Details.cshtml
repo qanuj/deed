@@ -448,6 +448,7 @@
         var total = 0;
         $("#simdivstudent #select").on('click', function () {
             $(this).replaceWith("<a class='btn btn-warning' disabled='disabled' id='e' >Selected</a>");
+            $("#sprcarttbody").append('<tr id="loadersuccess" ><td align="center" colspan="4"><img src="Content/images/ajax-loader.gif" style="width:50px;height: 50px; alt="" /></td></tr>');
             $.ajax({
                 type: "POST",
                 url: '/Pledge/Details',
@@ -459,8 +460,13 @@
                 success: function (d) {
                     if (!!d) {
 
-                       // $(" #studentli").append('<li class="list-group-item"><img id ="imgg" data-container="body" data-toggle="popover" data-placement="top" data-original-title="' + d.StudentName + '" data-content="Class:' + d.StudentClass + ', Age:' + d.StudentDOB + '&nbsp;Yr,Required:&#163;' + d.StudentFee.toFixed(2) + '" style="width:150px;height:150px" src="http://deedaday.in/img/upload/students/' + d.StudentImage + '"><div data-name="' + d.StudentName + '" class="close" id="cls">X</div><input id="StudentId" name="StudentId" type="hidden" value="' + d.StudentId + '"></li>');
-                        //++i;
+                        $("#loadersuccess").remove();
+                        var stdname = d.StudentName;
+
+                        if (stdname.length > 12) {
+                            var res = stdname.substring(0, 12);
+                            d.StudentName = res;
+                        }
                         $(" #sprcarttbody").append('<tr> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.StudentImage + '"></td><td><b>Name:</br></b>' + d.StudentName + '</br><b>Class:</br></b>' + d.StudentClass + '</br><b>Age:</br></b>' + d.StudentDOB + '&nbsp;Yr</td><td>&#163;' + d.StudentFee.toFixed(2) + '</td><td class="clsparent"><div data-name="' + d.StudentName + '" data-fee="' + d.StudentFee.toFixed(2) + '" data-stdid="' + d.StudentId + '" id="cls" class="close clos" style="float:left">X</div></td><input id="StudentId" name="StudentId" type="hidden" value="' + d.StudentId + '"></tr>');
                         total = parseFloat(total) + parseFloat(d.StudentFee.toFixed(2));
 
