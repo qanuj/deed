@@ -1,0 +1,525 @@
+﻿@model Deed.Web.ViewModels.DetailViewModel
+
+@{
+    var totalper = Math.Round(@Model.TotalFee, 2);
+}
+<div class="page-head" style="background-repeat: no-repeat; background-position: center top; background-image: url('/Content/images/SliderImg/13772.jpg'); background-size: cover; ">
+    <div class="container">
+        <div class="wrap clearfix">
+            <h1 class="page-title"><span>@Model.StudentName</span></h1>
+            <p>@Model.FamilyHistory</p>
+        </div>
+    </div>
+</div>
+<div class="container contents detail">
+    <div class="row">
+        <div class="span9 main-wrap" style="margin-left:-70px;">
+
+            <!-- Main Content -->
+            <div class="main">
+
+                <section id="overview">
+                    <div id="property-detail-flexslider" class="clearfix">
+                        <div class="flexslider">
+
+                            <div>
+                                <ul class="slides">
+                                    <li data-thumb="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        <a href="http://deedaday.in/img/upload/students/@Model.StudentImage" class="swipebox">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage" style="width:770px;height:395px;" alt="property 10">
+                                        </a>
+                                    </li>
+                                    <li data-thumb="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        <a href="http://deedaday.in/img/upload/students/@Model.StudentImage" class="swipebox">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage" style="width: 770px; height: 395px;" alt="interior one">
+                                        </a>
+                                    </li>
+                                    <li data-thumb="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        <a href="http://deedaday.in/img/upload/students/@Model.StudentImage" class="swipebox">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage" style="width: 770px; height: 395px;" alt="drawing-room">
+                                        </a>
+                                    </li>
+                                    <li data-thumb="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        <a href="http://deedaday.in/img/upload/students/@Model.StudentImage" class="swipebox">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage" style="width: 770px; height: 395px;" alt="guest-room">
+                                        </a>
+                                    </li>
+                                    <li data-thumb="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        <a href="http://deedaday.in/img/upload/students/@Model.StudentImage" class="swipebox">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage" style="width: 770px; height: 395px;" alt="kitchen">
+                                        </a>
+                                    </li>
+                                    <li data-thumb="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        <a href="http://deedaday.in/img/upload/students/@Model.StudentImage" class="swipebox">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage" style="width: 770px; height: 395px;" alt="living room">
+                                        </a>
+                                    </li>
+                                    <li data-thumb="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        <a href="http://deedaday.in/img/upload/students/@Model.StudentImage" class="swipebox">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage" style="width: 770px; height: 395px;" alt="interior two">
+                                        </a>
+                                    </li>
+                                    <li data-thumb="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        <a href="http://deedaday.in/img/upload/students/@Model.StudentImage" class="swipebox">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage" style="width: 770px; height: 395px;" alt="kids room">
+                                        </a>
+                                    </li>
+                                    <li data-thumb="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        <a href="http://deedaday.in/img/upload/students/@Model.StudentImage" class="swipebox">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage" style="width: 770px; height: 395px;" alt="property 10">
+                                        </a>
+                                    </li>
+                                    <li data-thumb="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        <a href="http://deedaday.in/img/upload/students/@Model.StudentImage" class="swipebox">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage" style="width: 770px; height: 395px;" alt="interior one">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="jcarousel-container jcarousel-container-vertical">
+                                <div class="jcarousel-clip jcarousel-clip-vertical">
+                                    <ol class="flex-control-nav flex-control-thumbs">
+                                        <li class="jcarousel-item jcarousel-item-vertical">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage" class="">
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-vertical">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-vertical">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-vertical">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-vertical">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-vertical">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-vertical">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        </li>
+                                        <li class="jcarousel-item jcarousel-item-vertical">
+                                            <img src="http://deedaday.in/img/upload/students/@Model.StudentImage">
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="jcarousel-prev jcarousel-prev-vertical"></div>
+                                <div class="jcarousel-next jcarousel-next-vertical"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="property-featured-image" class="clearfix only-for-print">
+                        <a href="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/property-10.jpg" class="swipebox">
+                            <img src="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/property-10.jpg" alt="15421 Southwest 39th Terrace">
+                        </a>
+                    </div>
+                    <article class="property-item clearfix">
+                        <div class="wrap clearfix">
+                            <h4 class="title">
+                                Student ID :@Model.StudentId
+                            </h4>
+                            <h5 class="price">
+                                <span class="status-label">
+                                    Need
+                                </span>
+                                <span>
+                                    &#163; @totalper per Year
+                                </span>
+                            </h5>
+                        </div>
+
+                        <div class="property-meta clearfix">
+                            @*<span><i class="icon-area"></i>2800&nbsp;Sq Ft</span><span><i class="icon-bed"></i>2&nbsp;Bedrooms</span><span><i class="icon-bath"></i>3&nbsp;Bathrooms</span><span><i class="icon-garage"></i>2&nbsp;Garages</span>*@
+                            <!-- Print Icon -->
+                            <span class="printer-icon"><a href="javascript:window.print()">Print this page</a></span>
+                        </div>
+
+                        <div class="content clearfix">
+                            <p>@Model.FamilyHistory</p>
+                            @*<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>*@
+                            <h4 class="additional-title">Additional Details</h4>
+                            <ul class=" col-md-4 additional-details clearfix">
+                                <li>
+                                    <strong>Name:</strong>
+                                    <span class="pull-right">@Model.StudentName</span>
+                                </li>
+                                <li>
+                                    <strong>Father:</strong>
+                                    <span class="pull-right">@Model.Father</span>
+                                </li>
+                                <li>
+                                    <strong>Mother:</strong>
+                                    <span class="pull-right">@Model.Mother</span>
+                                </li>
+                                <li>
+                                    <strong>Age:</strong>
+                                    <span class="pull-right">@Model.DOB &nbsp; Yr</span>
+                                </li>
+                                <li>
+                                    <strong>Post Office:</strong>
+                                    <span class="pull-right">@Model.PostOffice</span>
+                                </li>
+                                <li>
+                                    <strong>Police Station:</strong>
+                                    <span class="pull-right">@Model.PoliceStation</span>
+                                </li>
+                                <li>
+                                    <strong>Address:</strong>
+                                    <span class="pull-right">@Model.Adress1,@Model.Adress2</span>
+                                </li>
+                                <li>
+                                    <strong>Country:</strong>
+                                    <span class="pull-right">@Model.Country</span>
+                                </li>
+                                <li>
+                                    <strong>City:</strong>
+                                    <span class="pull-right">@Model.City</span>
+                                </li>
+
+                                <li>
+                                    <strong>Tehsil:</strong>
+                                    <span class="pull-right">@Model.Tehsil</span>
+                                </li>
+                                <li>
+                                    <strong>Village:</strong>
+                                    <span class="pull-right">@Model.Village</span>
+                                </li>
+                                <li>
+                                    <strong>District:</strong>
+                                    <span class="pull-right">@Model.District</span>
+                                </li>
+                                <li>
+                                    <strong>Religion:</strong>
+                                    <span class="pull-right">@Model.Religion</span>
+                                </li>
+                                <li>
+                                    <strong>Caste:</strong>
+                                    <span class="pull-right">@Model.Caste</span>
+                                </li>
+                                <li>
+                                    <strong>Class:</strong>
+                                    <span class="pull-right">@Model.Class</span>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </article>
+                    <div class="property-video">
+                        <span class="video-label">Personal Request Video</span>
+                        <a href="http://vimeo.com/70301553" class="pretty-photo" title="Video">
+                            <div class="play-btn"></div>
+                            <img src="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/property-10-818x417.jpg" alt="15421 Southwest 39th Terrace">
+                        </a>
+                    </div>
+                    <div class="map-wrap clearfix">
+                        <div id="map_canvas" style="width: 800px; height :347px; margin-left:0;margin-bottom:20px;"></div>
+
+
+                    </div>
+
+                    <div class="agent-detail clearfix">
+
+                        <div class="left-box">
+                            <h3>Logo</h3>
+                            <figure>
+                                <a href="http://inspirythemesdemo.com/realhomes/agent/julia-robert/">
+                                    <img width="210" height="210" src="http://inspirythemesdemo.com/realhomes/wp-content/uploads/2013/08/agent.jpg" class="attachment-agent-image wp-post-image" alt="Julia Robert">
+                                </a>
+                            </figure>
+                            <ul class="contacts-list">
+                                <li class="office">Office : 041-456-3692</li>
+                                <li class="mobile">Mobile : 0200-123-4567</li>
+                                <li class="fax">Fax : 041-789-4561</li>
+                            </ul>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna…
+                                <br>
+                                <a class="real-btn" href="http://inspirythemesdemo.com/realhomes/agent/julia-robert/">Know More</a>
+                            </p>
+                        </div>
+
+                        <div class="contact-form">
+
+                            <h3>Contact</h3>
+
+                            <form id="agent-contact-form" class="contact-form-small" method="post" action="http://inspirythemesdemo.com/realhomes/wp-admin/admin-ajax.php" novalidate="novalidate">
+
+                                <input type="text" name="name" id="name" placeholder="Name" class="required" title="* Please provide your name">
+
+                                <input type="text" name="email" id="email" placeholder="Email" class="email required" title="* Please provide valid email address">
+
+                                <textarea name="message" id="comment" class="required" placeholder="Message" title="* Please provide your message"></textarea>
+
+                                <script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6Ldf7fQSAAAAAD52MkF0ZMwi09JoycTSGBLe2RW5"></script>
+                                <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha.js"></script>
+                                <div id="recaptcha_widget_div" class=" recaptcha_nothad_incorrect_sol recaptcha_isnot_showing_audio">
+                                    <div id="recaptcha_area">
+                                        <table id="recaptcha_table" class="recaptchatable recaptcha_theme_red">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="6" class="recaptcha_r1_c1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="recaptcha_r2_c1"></td>
+                                                    <td colspan="4" class="recaptcha_image_cell">
+                                                        <center>
+                                                            <div id="recaptcha_image" style="width: 300px; height: 57px;">
+                                                                <img id="recaptcha_challenge_image" alt="reCAPTCHA challenge image" height="57" width="300" src="http://www.google.com/recaptcha/api/image?c=03AHJ_VutxM_LNsaf_V_XeLRixEGN19kSa_hPVxHNeCMwxl1dELSzc0oi2J084C58j8w2hbFY0ZfXLAd167pFDw_uBIHqRzapg-7H3ibQufDNfTq6QHkeOywY1nobCRvDzUdjLvLuuxzdw_was5nb6U6tRJeIVSs68YKker1mAp9LTdrFNXZjqT_O1bsnIR579_19itHH2J-E6UvK6l2ZCn8OSoxrc2jypMJ-QT7y4NFgXl81GqmQHWK__sXmEmE-d8m-odAGNhpSbv9DTPEqD5aa0gBJY7dPESCC_noGguaTdvsHev2pPq_U&amp;th=,8bD6vYjOWJ8XKba2jG2FHd4gHfAAAAA0oAAAABDYAMljJ5hwHEEc88Gymp422rNgqEnGpCTsU2b--oHfyrFHv-Z0IIAOVcRYOyllKYCsSJnQv2s2QtUZgxaqGEEY5DP9p-e6FDWKo8zCoWYRznzdKFVrPDlVOkMIesnsyQooS5d739SSQZjRlVw61Xn_HJJ1C874QR7a4VLw3_fkKreHra2CK7tIkMYLgJ9PqNy5G3Vzrs_R8-HC8YIV5Gy9r5v8Vjk4-eRTlkoS0yQ9g19m9xTGvTiMoxEFB1666hYdlQ9SZl70biNVTok">
+                                                            </div>
+                                                        </center>
+                                                    </td>
+                                                    <td class="recaptcha_r2_c2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="6" class="recaptcha_r3_c1"></td>
+                                                    <td colspan="4" class="recaptcha_r3_c2"></td>
+                                                    <td rowspan="6" class="recaptcha_r3_c3"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="3" class="recaptcha_r4_c1" height="49">
+                                                        <div class="recaptcha_input_area">
+                                                            <span id="recaptcha_challenge_field_holder" style="display: none;"><input type="hidden" name="recaptcha_challenge_field" id="recaptcha_challenge_field" value="03AHJ_VutxM_LNsaf_V_XeLRixEGN19kSa_hPVxHNeCMwxl1dELSzc0oi2J084C58j8w2hbFY0ZfXLAd167pFDw_uBIHqRzapg-7H3ibQufDNfTq6QHkeOywY1nobCRvDzUdjLvLuuxzdw_was5nb6U6tRJeIVSs68YKker1mAp9LTdrFNXZjqT_O1bsnIR579_19itHH2J-E6UvK6l2ZCn8OSoxrc2jypMJ-QT7y4NFgXl81GqmQHWK__sXmEmE-d8m-odAGNhpSbv9DTPEqD5aa0gBJY7dPESCC_noGguaTdvsHev2pPq_U"></span>
+                                                            <input name="recaptcha_response_field" id="recaptcha_response_field" type="text" autocorrect="off" autocapitalize="off" placeholder="Type the text" autocomplete="off"> <span id="recaptcha_privacy" class="recaptcha_only_if_privacy"><a href="http://www.google.com/intl/en/policies/" target="_blank">Privacy &amp; Terms</a></span>
+                                                        </div>
+                                                    </td>
+                                                    <td rowspan="4" class="recaptcha_r4_c2"></td>
+                                                    <td>
+                                                        <a id="recaptcha_reload_btn" title="Get a new challenge">
+                                                            <img id="recaptcha_reload" width="25" height="17" src="http://www.google.com/recaptcha/api/img/red/refresh.gif" alt="Get a new challenge">
+                                                        </a>
+                                                    </td>
+                                                    <td rowspan="4" class="recaptcha_r4_c4"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a id="recaptcha_switch_audio_btn" class="recaptcha_only_if_image" title="Get an audio challenge">
+                                                            <img id="recaptcha_switch_audio" width="25" height="16" alt="Get an audio challenge" src="http://www.google.com/recaptcha/api/img/red/audio.gif">
+                                                        </a>
+                                                        <a id="recaptcha_switch_img_btn" class="recaptcha_only_if_audio" title="Get a visual challenge">
+                                                            <img id="recaptcha_switch_img" width="25" height="16" alt="Get a visual challenge" src="http://www.google.com/recaptcha/api/img/red/text.gif">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a id="recaptcha_whatsthis_btn" title="Help">
+                                                            <img id="recaptcha_whatsthis" width="25" height="16" src="http://www.google.com/recaptcha/api/img/red/help.gif" alt="Help">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="recaptcha_r7_c1"></td>
+                                                    <td class="recaptcha_r8_c1"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <noscript>
+                                    &lt;iframe src="http://www.google.com/recaptcha/api/noscript?k=6Ldf7fQSAAAAAD52MkF0ZMwi09JoycTSGBLe2RW5" height="300" width="500" frameborder="0"&gt;&lt;/iframe&gt;&lt;br/&gt; &lt;textarea name="recaptcha_challenge_field" rows="3" cols="40"&gt;&lt;/textarea&gt; &lt;input type="hidden" name="recaptcha_response_field" value="manual_challenge"/&gt;
+                                </noscript>
+                                <input type="hidden" name="target" value="robot@inspirythemes.com">
+                                <input type="hidden" name="action" value="send_message_to_agent">
+                                <input type="hidden" name="property_title" value="15421 Southwest 39th Terrace">
+                                <input type="hidden" name="property_permalink" value="http://inspirythemesdemo.com/realhomes/property/15421-southwest-39th-terrace/">
+
+                                <input type="submit" value="Send Message" name="submit" class="real-btn">
+                                <img src="http://inspirythemesdemo.com/realhomes/wp-content/themes/realhomes/images/ajax-loader.gif" id="contact-loader" alt="Loading...">
+
+                            </form>
+
+                            <div class="error-container"></div>
+                            <div id="message-sent">&nbsp;</div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+            <!-- End Main Content -->
+
+            <section class="listing-layout property-grid">
+                <div class="list-container clearfix" id="simdivstudent">
+                    <h3>Similar Students</h3>
+                    <article class="property-item clearfix">
+                        <figure>
+                            <a href="http://inspirythemesdemo.com/realhomes/property/apartment-building-having-35-apartments/15-apartments-of-type-b/" title="15 Apartments of Type B">
+                                <img width="246" height="162" src="http://deedaday.in/img/upload/students/c24ffb6a090b18721635ce14ab574c73.jpg" class="attachment-grid-view-image wp-post-image" alt="15 Apartments of Type B" title="15 Apartments of Type B">
+                            </a>
+
+                            <figcaption>
+                                @*For Rent*@
+                            </figcaption>
+                        </figure>
+
+                        <h4><a href="http://inspirythemesdemo.com/realhomes/property/apartment-building-having-35-apartments/15-apartments-of-type-b/" title="15 Apartments of Type B">15 Apartments of Type B</a></h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam… <a class="more-details" href="http://inspirythemesdemo.com/realhomes/property/apartment-building-having-35-apartments/15-apartments-of-type-b/">More Details <i class="fa fa-caret-right"></i></a>
+                        </p>
+                        <span>&#163; 220 per Year</span><span><button id="select" data-src="http://deedaday.in/img/upload/students/" class="btn btn-xs btn-danger pull-right" data-id="520">Select</button></span>
+                    </article>
+                    <article class="property-item clearfix">
+                        <figure>
+                            <a href="http://inspirythemesdemo.com/realhomes/property/apartment-building-having-35-apartments/20-apartments-of-type-a/" title="20 Apartments of Type A">
+                                <img width="246" height="162" src="http://deedaday.in/img/upload/students/8968e6316ce2fb8c88fc49ab4096ddbf.jpg" class="attachment-grid-view-image wp-post-image" alt="20 Apartments of Type A" title="20 Apartments of Type A">
+                            </a>
+
+                            <figcaption>
+                                @*For Rent*@
+                            </figcaption>
+                        </figure>
+
+                        <h4><a href="http://inspirythemesdemo.com/realhomes/property/apartment-building-having-35-apartments/20-apartments-of-type-a/" title="20 Apartments of Type A">20 Apartments of Type A</a></h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam… <a class="more-details" href="http://inspirythemesdemo.com/realhomes/property/apartment-building-having-35-apartments/20-apartments-of-type-a/">More Details <i class="fa fa-caret-right"></i></a>
+                        </p>
+                        <span>&#163; 250 per Year</span><span><button id="select" data-src="http://deedaday.in/img/upload/students/" class="btn btn-xs btn-danger pull-right" data-id="521">Select</button></span>
+                    </article>
+                    <article class="property-item clearfix">
+                        <figure>
+                            <a href="http://inspirythemesdemo.com/realhomes/property/401-biscayne-boulevard-miami/" title="401 Biscayne Boulevard, Miami">
+                                <img width="246" height="162" src="http://deedaday.in/img/upload/students/d3cf5f92b8478e88ff591d7f24bdcf5b.jpg" class="attachment-grid-view-image wp-post-image" alt="401 Biscayne Boulevard, Miami" title="401 Biscayne Boulevard, Miami">
+                            </a>
+
+                            <figcaption>
+                                @*For Rent*@
+                            </figcaption>
+                        </figure>
+
+                        <h4><a href="http://inspirythemesdemo.com/realhomes/property/401-biscayne-boulevard-miami/" title="401 Biscayne Boulevard, Miami">401 Biscayne Boulevard, Miami</a></h4>
+                        <p>
+                            Nam liber tempor cum soluta nobis eleifend option congue nihil… <a class="more-details" href="http://inspirythemesdemo.com/realhomes/property/401-biscayne-boulevard-miami/">More Details <i class="fa fa-caret-right"></i></a>
+                        </p>
+                        <span>&#163; 325 per Year</span><span><button id="select" data-src="http://deedaday.in/img/upload/students/" class="btn btn-xs btn-danger pull-right" data-id="522">Select</button></span>
+                    </article>
+                </div>
+            </section>
+
+        </div>
+        @using (Html.BeginForm("Sponsorr", "Pledge", FormMethod.Post, new { @class = "", role = "form" }))
+        {
+            <div class="panel panel-success pull-right">
+                <div class="panel-heading">Selected Students</div>
+                <div class="panel-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Child</th>
+                                <th>About Child</th>
+                                <th>Required</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody class="trr" id="sprcarttbody"></tbody>
+                    </table>
+                </div>
+                <div class="panel-body">
+                    <div class="panel panel-info">
+                        <ul class="list-group">
+                            <li class="list-group-item"><div><span>Total Children=<span id="selectedstd">0</span></span></div></li>
+                            <li class="list-group-item"><div>Total Amount=&#163;&nbsp;<span id="ttlamount">0.00</span></div></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div id="sprbtn">
+
+                    <button id="submit" type="submit" class="btn  btn-danger pull-right">Sponsor Now</button>
+
+                </div>
+            </div>
+
+        }
+    </div>
+    <!-- End contents row -->
+</div>
+
+<script type="text/javascript">
+
+    $(window).load(function () {
+        var i = 0;
+        var total = 0;
+        $("#simdivstudent #select").on('click', function () {
+            $(this).replaceWith("<a class='btn btn-warning' disabled='disabled' id='e' >Selected</a>");
+            $("#sprcarttbody").append('<tr id="loadersuccess" ><td align="center" colspan="4"><img src="Content/images/ajax-loader.gif" style="width:50px;height: 50px; alt="" /></td></tr>');
+            $.ajax({
+                type: "POST",
+                url: '/Pledge/Details',
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify({
+                    id: $(this).attr("data-id")
+
+                }),
+                success: function (d) {
+                    if (!!d) {
+
+                        $("#loadersuccess").remove();
+                        var stdname = d.StudentName;
+
+                        if (stdname.length > 12) {
+                            var res = stdname.substring(0, 12);
+                            d.StudentName = res;
+                        }
+                        $(" #sprcarttbody").append('<tr> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.StudentImage + '"></td><td><b>Name:</br></b>' + d.StudentName + '</br><b>Class:</br></b>' + d.StudentClass + '</br><b>Age:</br></b>' + d.StudentDOB + '&nbsp;Yr</td><td>&#163;' + d.StudentFee.toFixed(2) + '</td><td class="clsparent"><div data-name="' + d.StudentName + '" data-fee="' + d.StudentFee.toFixed(2) + '" data-stdid="' + d.StudentId + '" id="cls" class="close clos" style="float:left">X</div></td><input id="StudentId" name="StudentId" type="hidden" value="' + d.StudentId + '"></tr>');
+                        total = parseFloat(total) + parseFloat(d.StudentFee.toFixed(2));
+
+                        $(".list-group .list-group-item #selectedstd").text(function () { return ++i });
+                        $(".list-group .list-group-item #ttlamount").text(function () { return total.toFixed(2) });
+                    }
+                }
+            });
+
+
+
+        });
+        $(document).on('click', 'td > div', function (e) {
+
+            var closeButton = $(this);
+            if (confirm("Are you sure you want to remove '" + closeButton.attr("data-name") + "' ?")) {
+                $.ajax({
+                    type: "POST",
+                    url: '/Pledge/Remove',
+                    contentType: 'application/json; charset=utf-8',
+                    data: JSON.stringify({
+
+                        id: $(this).attr("data-stdid"),
+
+                        removeAmount: $(this).attr("data-fee"),
+
+                        simpleamount: $("#ttlamount").text(),
+
+                        count: $("#selectedstd").text()
+
+
+                    }),
+                    success: function (d) {
+
+                        if (!!d) {
+                            closeButton.closest("tr").remove();
+                            var ttl = d.simpleamount;
+                            var cnt = d.count
+                            $(".list-group .list-group-item  #ttlamount").text(function () { return ttl.toFixed(2) });
+                            $(".list-group .list-group-item  #selectedstd").text(function () { return cnt });
+                            $("#lblttlamount").text(function () { return ttl.toFixed(2) });
+                            total = d.simpleamount;
+                            i = d.count
+                            $("#inputamount").val(ttl.toFixed(2));
+
+
+                        }
+                    }
+                });
+
+
+            };
+        });
+
+
+
+    });
+</script>

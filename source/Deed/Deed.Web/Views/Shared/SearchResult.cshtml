@@ -1,58 +1,106 @@
-﻿@*@model Deed.Data.Objects.Student*@
-@model IEnumerable<Deed.Data.Objects.Student>
+﻿
+@model PagedList.IPagedList<Deed.Web.ViewModels.SearchViewModel>
 
 <div class="container contents lisitng-grid-layout">
+    <div class="row">
 
-    <div>
-        @foreach (var m in Model)
-        {
-            <div class="span6" style="margin-top:5px">
-                <article class="property-item clearfix">
-                    <h4>
-                        <a href="@Url.Action("StudentDetails", "Home", new {id=m.ID })" title="15421 Southwest 39th Terrace">
-                            @m.Name
+        
+        <div class="span9 main-wrap" style="margin-left:-70px;">
+            <div class="main ">
+
+                <section id="sec" class="listing-layout">
+
+                    <h3 class="title-heading"><a class="">Search Result </a> </h3>
+
+
+                    <div class="view-type clearfix">
+                        <a id="list" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-th-list">
+                            </span>
+                        </a> <a id="grid" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-th"></span>
                         </a>
-                    </h4>
-
-                    <figure>
-                        <a href="@Url.Action("StudentDetails", "Home", new {id=m.ID })" title="@m.Name">
-                            <img width="244" height="163" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-10-244x163.jpg" class="attachment-property-thumb-image wp-post-image" alt="15421 Southwest 39th Terrace" title="15421 Southwest 39th Terrace">
-
-                        </a>
-                        @*"http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-10-244x163.jpg"  @m.Picture *@
-                        @*<figcaption class="cap">
-                                For Rent
-
-                            </figcaption>*@
-
-                    </figure>
-
-                    <div class="detail">
-
-                        <h5 class="price">
-                            @m.Caste
-
-                        </h5>
-
-                        @*<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh…</p>*@
-                        <a class="more-details" href="@Url.Action("StudentDetails", "Home", new {id=m.ID })">More Details <i class="fa fa-caret-right"></i></a>
-
-                        @*"http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/"*@
-
                     </div>
 
-                    @*<div class="property-meta">
-                            <span><i class="icon-area"></i>2800&nbsp;Sq Ft</span><span><i class="icon-bed"></i>2&nbsp;Bedrooms</span><span><i class="icon-bath"></i>3&nbsp;Bathrooms</span><span><i class="icon-garage"></i>2&nbsp;Garages</span>
+                    <div class="list-container clearfix">
+                        @foreach (var m in Model)
+                        {
+                           
+                            <div class="span6 " id="articleparent">
+                                <article class="property-item clearfix">
 
-                        </div>*@
+                                    <h4><a href="http://deedaday.in/img/upload/students/@m.StudentPic" title="">@m.StudentName</a></h4>
 
-                </article>
+                                    <figure>
+                                        <a href="" title="15421 Southwest 39th Terrace">
+                                            <img width="244" height="163" src="http://deedaday.in/img/upload/students/@m.StudentPic" class="attachment-property-thumb-image wp-post-image" alt="@m.StudentFather" title="@m.StudentName">
+                                        </a>
+                                    </figure>
+
+                                    <div class="detail" id="divstudent">
+                                        <h5 class="price">
+                                            @*&#163; @Yearlyfee Per Year*@
+                                        </h5>
+                                        @*<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>*@
+                                        <p>@m.StudentFamilyHistory</p>
+                                        @*<a class="more-details" href="@Url.Action("Details", "Pledge", new {id=m.ID })">More Details <i class="fa fa-caret-right"></i></a>*@
+                                        <a class="more-details" href="@Url.Action("Details", "Pledge", new { id=@m.StudentID})">More Details <i class="fa fa-caret-right"></i></a>
+
+                                        @*<span class="pull-right"><input type="submit" value="Select" class="real-btn login-btn" /></span>*@
+                                        @*<span class="pull-right"><a id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</a></span>*@
+                                        <button id="select" data-src="http://deedaday.in/img/upload/students/@m.StudentPic" class="btn btn-xs btn-danger pull-right" data-id="@m.StudentID">Select</button>
+
+
+                                    </div>
+
+                                    <div class="property-meta">
+                                        <span><b>Father:</b></span><span>@m.StudentFather</span><span><b>Mother:</b></span><span>@m.StudentMother</span>
+                                    </div>
+
+                                </article>
+                            </div>
+                        }
+                    </div>
+                    <div>
+                        @*<span class="sponsor-btn"><input type="submit" id="sponsor" value="Sponsor" class="real-btn login-btn" /></span>*@
+                    </div>
+
+                    <div class="pagination"><a href="@Url.Action("Get", new { page=1 })" class="real-btn current" style="margin-left: 323px;">1</a> <a href="@Url.Action("Get", new { page=2 })" class="real-btn">2</a> <a href="@Url.Action("Get", new { page=3 })" class="real-btn">3</a></div>
+                </section>
 
             </div>
-
-
-
-        }
+        </div>
+        
     </div>
 
-</div><!-- End contents row -->
+</div>
+
+<script type="text/javascript">
+
+$(".view-type #list").on('click', function (event) {
+        event.preventDefault();
+
+        $('#sec').removeClass('property-grid');
+        $("h5").addClass("price");
+        $("div.property-meta").show();
+        //$("#divstudent #select").show();
+        $(".property-item #divstudent").addClass('detail');
+        $(".list-container #articleparent").addClass('span6');
+        $("p").css('font-size', '13px');
+        $("p").css('line-height', '23px');
+
+    });
+    $(".view-type  #grid").on('click', function (event) {
+        //event.preventDefault();
+        $('#sec').addClass('property-grid ');
+        $("h5").removeClass("price");
+        $("div.property-meta").hide();
+        //$("#divstudent #select").remove();
+        $(".property-item #divstudent").removeClass('detail');
+        $(".list-container #articleparent").removeClass('span6');
+        $("p").css('font-size', '12px');
+        $("p").css('line-height', '14px');
+
+    });
+
+    </script>

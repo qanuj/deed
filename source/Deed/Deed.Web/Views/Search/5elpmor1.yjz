@@ -1,0 +1,586 @@
+﻿<div class="container contents detail">
+    <div class="row">
+        <div class="span9 main-wrap">
+
+            <!-- Main Content -->
+            <div class="main">
+
+                <section id="overview">
+                    <div id="property-slider-two-wrapper" class="clearfix">
+                        <div id="property-slider-two" class="flexslider">
+
+                            <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                                <ul class="slides" style="width: 1600%; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(0px, 0px, 0px);">
+                                    <li class="flex-active-slide" style="float: left; display: block; width: 830px;"><a href="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/interior-one.jpg" class="swipebox"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/interior-one.jpg" alt="interior one"></a></li>
+                                    <li style="float: left; display: block; width: 830px;"><a href="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/drawing-room.jpg" class="swipebox"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/drawing-room.jpg" alt="drawing-room"></a></li>
+                                    <li style="float: left; display: block; width: 830px;"><a href="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/guest-room.jpg" class="swipebox"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/guest-room.jpg" alt="guest-room"></a></li>
+                                    <li style="float: left; display: block; width: 830px;"><a href="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/kitchen.jpg" class="swipebox"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/kitchen.jpg" alt="kitchen"></a></li>
+                                    <li style="float: left; display: block; width: 830px;"><a href="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/living-room-02.jpg" class="swipebox"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/living-room-02.jpg" alt="living room"></a></li>
+                                    <li style="float: left; display: block; width: 830px;"><a href="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/interior-two.jpg" class="swipebox"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/interior-two.jpg" alt="interior two"></a></li>
+                                    <li style="float: left; display: block; width: 830px;"><a href="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/kids-room.jpg" class="swipebox"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/kids-room.jpg" alt="kids room"></a></li>
+                                    <li style="float: left; display: block; width: 830px;"><a href="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-10.jpg" class="swipebox"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-10.jpg" alt="property 10"></a></li>
+                                </ul>
+                            </div><ul class="flex-direction-nav"><li><a class="flex-prev flex-disabled" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul>
+                        </div>
+                        <div id="property-carousel-two" class="flexslider">
+
+                            <div class="flex-viewport">
+                                <ul class="slides" style="width: 1600%; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(0px, 0px, 0px);">
+                                    <li class="flex-active-slide" style="float: left; display: block; width: 113px;"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/interior-one-244x163.jpg" alt="interior one"></li>
+                                    <li style="float: left; display: block; width: 113px;"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/drawing-room-244x163.jpg" alt="drawing-room"></li>
+                                    <li style="float: left; display: block; width: 113px;"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/guest-room-244x163.jpg" alt="guest-room"></li>
+                                    <li style="float: left; display: block; width: 113px;"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/kitchen-244x163.jpg" alt="kitchen"></li>
+                                    <li style="float: left; display: block; width: 113px;"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/living-room-02-244x163.jpg" alt="living room"></li>
+                                    <li style="float: left; display: block; width: 113px;"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/interior-two-244x163.jpg" alt="interior two"></li>
+                                    <li style="float: left; display: block; width: 113px;"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/kids-room-244x163.jpg" alt="kids room"></li>
+                                    <li style="float: left; display: block; width: 113px;"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-10-244x163.jpg" alt="property 10"></li>
+                                </ul>
+                            </div><ul class="flex-direction-nav"><li><a class="flex-prev flex-disabled" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul>
+                        </div>
+                    </div>
+                    <div id="property-featured-image" class="clearfix only-for-print">
+                        <a href="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-10.jpg" class="swipebox"><img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-10.jpg" alt="15421 Southwest 39th Terrace"></a>
+                    </div>
+                    <article class="property-item clearfix">
+                        <div class="wrap clearfix">
+                            <h4 class="title">
+                                Property ID : RH1001
+                            </h4>
+                            <h5 class="price">
+                                <span class="status-label">
+                                    For Rent
+                                </span>
+                                <span>
+                                    $3,850 Per Month<small> - Villa</small>
+                                </span>
+                            </h5>
+                        </div>
+
+                        <div class="property-meta clearfix">
+                            <span><i class="icon-area"></i>2800&nbsp;Sq Ft</span><span><i class="icon-bed"></i>2&nbsp;Bedrooms</span><span><i class="icon-bath"></i>3&nbsp;Bathrooms</span><span><i class="icon-garage"></i>2&nbsp;Garages</span>
+                            <!-- Add to favorite -->
+                            <span class="add-to-fav">
+                                <a href="#login-modal" data-toggle="modal"><i class="fa fa-star"></i>&nbsp;Add to Favorites</a>
+                            </span>
+
+                            <!-- Print link -->
+                            <span class="printer-icon"><a href="javascript:window.print()">Print</a></span>
+                        </div>
+
+                        <div class="content clearfix">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                            <h4 class="additional-title">Additional Details</h4><ul class="additional-details clearfix">
+                                <li>
+                                    <strong>AC:</strong>
+                                    <span>Ceiling Fan(s), Central</span>
+                                </li>
+                                <li>
+                                    <strong>ACRES:</strong>
+                                    <span>0.16</span>
+                                </li>
+                                <li>
+                                    <strong>ACRES SOURCE:</strong>
+                                    <span>Assessor</span>
+                                </li>
+                                <li>
+                                    <strong>AP #:</strong>
+                                    <span>374-493-13</span>
+                                </li>
+                                <li>
+                                    <strong>APPLIANCES:</strong>
+                                    <span>Dishwasher, Freestanding Gas Range, Garbage Disposal, Microwave</span>
+                                </li>
+                                <li>
+                                    <strong>BATHROOM DESCRIPTION:</strong>
+                                    <span>Stall Shower</span>
+                                </li>
+                                <li>
+                                    <strong>BEDROOM FEATURES:</strong>
+                                    <span>Main Floor Master Bedroom</span>
+                                </li>
+                                <li>
+                                    <strong>CROSS STREETS:</strong>
+                                    <span>Lincoln and Anchor</span>
+                                </li>
+                                <li>
+                                    <strong>DINING AREA:</strong>
+                                    <span>Family Kitchen</span>
+                                </li>
+                                <li>
+                                    <strong>DISABILITY ACCESS:</strong>
+                                    <span>36 inch or more wide halls, Doors - Swing in, Entry Slope less than 1 foot, Grab Bars in Bathroom(s), Wheelchair Accessible, Wheelchair Adaptable, Wheelchair Modifications</span>
+                                </li>
+                                <li>
+                                    <strong>ENCLOSED YARD:</strong>
+                                    <span>Wood</span>
+                                </li>
+                                <li>
+                                    <strong>ENTRY LOCATION:</strong>
+                                    <span>Ground Level - no steps</span>
+                                </li>
+                                <li>
+                                    <strong>EXTERIOR CONSTRUCTION:</strong>
+                                    <span>Stucco</span>
+                                </li>
+                                <li>
+                                    <strong>FLOORS:</strong>
+                                    <span>Ceramic Tile, Wall-to-Wall Carpet</span>
+                                </li>
+                                <li>
+                                    <strong>HEAT:</strong>
+                                    <span>Forced Air</span>
+                                </li>
+                                <li>
+                                    <strong>LOT DESCRIPTION:</strong>
+                                    <span>Curbs-Walks</span>
+                                </li>
+                                <li>
+                                    <strong>LOT DIMENSIONS:</strong>
+                                    <span>70x100</span>
+                                </li>
+                                <li>
+                                    <strong>LOT SIZE SOURCE:</strong>
+                                    <span>Assessor</span>
+                                </li>
+                                <li>
+                                    <strong>MELLO ROOS:</strong>
+                                    <span>No</span>
+                                </li>
+                                <li>
+                                    <strong>MISC INTERIOR:</strong>
+                                    <span>Recessed Lighting</span>
+                                </li>
+                                <li>
+                                    <strong>PARKING TYPE:</strong>
+                                    <span>Direct Garage Access, Driveway, Garage Door Opener</span>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="features">
+                            <h4 class="title">Features</h4>            <ul class="arrow-bullet-list clearfix">
+                                <li><a href="http://alt-realhomes.inspirythemes.com/property-feature/2-stories/">2 Stories</a></li>
+                                <li><a href="http://alt-realhomes.inspirythemes.com/property-feature/central-heating/">Central Heating</a></li>
+                                <li><a href="http://alt-realhomes.inspirythemes.com/property-feature/electric-range/">Electric Range</a></li>
+                                <li><a href="http://alt-realhomes.inspirythemes.com/property-feature/fire-place/">Fire Place</a></li>
+                                <li><a href="http://alt-realhomes.inspirythemes.com/property-feature/home-theater/">Home Theater</a></li>
+                                <li><a href="http://alt-realhomes.inspirythemes.com/property-feature/laundry-room/">Laundry Room</a></li>
+                                <li><a href="http://alt-realhomes.inspirythemes.com/property-feature/lawn/">Lawn</a></li>
+                                <li><a href="http://alt-realhomes.inspirythemes.com/property-feature/marble-floors/">Marble Floors</a></li>
+                            </ul>
+                        </div>
+                    </article>        <div class="property-video">
+                        <span class="video-label">Property Video</span>            <a href="http://vimeo.com/70301553" class="pretty-photo" title="Video">
+                            <div class="play-btn"></div>
+                            <img src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-10-818x417.jpg" alt="15421 Southwest 39th Terrace">
+                        </a>
+                    </div>
+                    <div class="map-wrap clearfix">
+                        <span class="map-label">Property Map</span>                <div id="property_map" style="position: relative; overflow: hidden; -webkit-transform: translateZ(0px); background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default; -webkit-transform-origin: 0px 0px; -webkit-transform: matrix(1, 0, 0, 1, 0, 0);"><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; width: 100%; z-index: 200;"><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div></div><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; width: 100%; z-index: 201;"><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: 206px; top: -101px;"><canvas draggable="false" height="256" width="256" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: 206px; top: 155px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: -50px; top: -101px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: -50px; top: 155px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: 462px; top: -101px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: 462px; top: 155px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: -306px; top: -101px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: -306px; top: 155px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: 718px; top: -101px;"></div><div style="width: 256px; height: 256px; overflow: hidden; -webkit-transform: translateZ(0px); position: absolute; left: 718px; top: 155px;"></div></div></div></div></div><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; width: 100%; z-index: 202;"><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div></div><div style="-webkit-transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 206px; top: -101px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 206px; top: 155px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: -50px; top: -101px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: -50px; top: 155px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 462px; top: -101px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 462px; top: 155px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: -306px; top: -101px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: -306px; top: 155px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 718px; top: -101px;"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 718px; top: 155px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 206px; top: 155px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@266000000&amp;src=apiv3&amp;hl=en-US&amp;x=9061&amp;y=13959&amp;z=15&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: -50px; top: -101px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@266000000&amp;src=apiv3&amp;hl=en-US&amp;x=9060&amp;y=13958&amp;z=15&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 462px; top: -101px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@266000000&amp;src=apiv3&amp;hl=en-US&amp;x=9062&amp;y=13958&amp;z=15&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: -50px; top: 155px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@266000000&amp;src=apiv3&amp;hl=en-US&amp;x=9060&amp;y=13959&amp;z=15&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 206px; top: -101px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@266122664&amp;src=apiv3&amp;hl=en-US&amp;x=9061&amp;y=13958&amp;z=15&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 462px; top: 155px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt0.googleapis.com/vt?lyrs=m@266000000&amp;src=apiv3&amp;hl=en-US&amp;x=9062&amp;y=13959&amp;z=15&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: -306px; top: 155px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@266000000&amp;src=apiv3&amp;hl=en-US&amp;x=9059&amp;y=13959&amp;z=15&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 718px; top: 155px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@266000000&amp;src=apiv3&amp;hl=en-US&amp;x=9063&amp;y=13959&amp;z=15&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: 718px; top: -101px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@266000000&amp;src=apiv3&amp;hl=en-US&amp;x=9063&amp;y=13958&amp;z=15&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div><div style="width: 256px; height: 256px; -webkit-transform: translateZ(0px); position: absolute; left: -306px; top: -101px; opacity: 1; transition: opacity 200ms ease-out; -webkit-transition: opacity 200ms ease-out;"><img src="http://mt1.googleapis.com/vt?lyrs=m@266000000&amp;src=apiv3&amp;hl=en-US&amp;x=9059&amp;y=13958&amp;z=15&amp;style=47,37%7Csmartmaps" draggable="false" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; -webkit-transform: translateZ(0px);"></div></div></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="http://maps.google.com/maps?ll=25.730831,-80.444149&amp;z=15&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 62px; height: 26px; cursor: pointer;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 62px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 165px; bottom: 0px; width: 125px;"><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span style="">Map data ©2014 Google</span></div></div></div><div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 259px; top: 60px; background-color: white;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Map data ©2014 Google</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2014 Google</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; position: absolute; -webkit-user-select: none; right: 95px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;"><a href="http://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;"><a target="_new" title="Report errors in the road map or imagery to Google" href="http://maps.google.com/maps?ll=25.730831,-80.444149&amp;z=15&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3&amp;skstate=action:mps_dialog$apiref:1&amp;output=classic" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint" draggable="false" controlwidth="32" controlheight="84" style="margin: 5px; -webkit-user-select: none; position: absolute; left: 0px; top: 0px;"><div controlwidth="32" controlheight="40" style="cursor: url(http://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default; position: absolute; left: 0px; top: 0px;"><div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" draggable="false" style="position: absolute; left: -9px; top: -102px; width: 1028px; height: 214px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" draggable="false" style="position: absolute; left: -107px; top: -102px; width: 1028px; height: 214px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" draggable="false" style="position: absolute; left: -58px; top: -102px; width: 1028px; height: 214px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/cb_scout2.png" draggable="false" style="position: absolute; left: -205px; top: -102px; width: 1028px; height: 214px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div class="gmnoprint" controlwidth="0" controlheight="0" style="opacity: 0.6; display: none; position: absolute;"><div title="Rotate map 90 degrees" style="width: 22px; height: 22px; overflow: hidden; position: absolute; cursor: pointer;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" draggable="false" style="position: absolute; left: -38px; top: -360px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></div><div class="gmnoprint" controlwidth="20" controlheight="39" style="position: absolute; left: 6px; top: 45px;"><div style="width: 20px; height: 39px; overflow: hidden; position: absolute;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png" draggable="false" style="position: absolute; left: -39px; top: -401px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div title="Zoom in" style="position: absolute; left: 0px; top: 2px; width: 20px; height: 17px; cursor: pointer;"></div><div title="Zoom out" style="position: absolute; left: 0px; top: 19px; width: 20px; height: 17px; cursor: pointer;"></div></div></div><div class="gmnoprint" style="margin: 5px; z-index: 0; position: absolute; cursor: pointer; right: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show street map" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 1px 6px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; border: 1px solid rgba(0, 0, 0, 0.14902); -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; min-width: 24px; font-weight: 500; background-color: rgb(255, 255, 255); background-clip: padding-box;">Map</div><div style="z-index: -1; padding-top: 2px; -webkit-background-clip: padding-box; border-width: 0px 1px 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-color: rgba(0, 0, 0, 0.14902); border-bottom-color: rgba(0, 0, 0, 0.14902); border-left-color: rgba(0, 0, 0, 0.14902); -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; left: 0px; top: 24px; text-align: left; display: none; background-color: white; background-clip: padding-box;"><div draggable="false" title="Show street map with terrain" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 3px 8px 3px 3px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show satellite imagery" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 1px 6px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; border-width: 1px 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-top-color: rgba(0, 0, 0, 0.14902); border-right-color: rgba(0, 0, 0, 0.14902); border-bottom-color: rgba(0, 0, 0, 0.14902); -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; min-width: 43px; background-color: rgb(255, 255, 255); background-clip: padding-box;">Satellite</div><div style="z-index: -1; padding-top: 2px; -webkit-background-clip: padding-box; border-width: 0px 1px 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-color: rgba(0, 0, 0, 0.14902); border-bottom-color: rgba(0, 0, 0, 0.14902); border-left-color: rgba(0, 0, 0, 0.14902); -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; right: 0px; top: 24px; text-align: left; display: none; background-color: white; background-clip: padding-box;"><div draggable="false" title="Zoom in to show 45 degree view" style="color: rgb(184, 184, 184); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 3px 8px 3px 3px; direction: ltr; text-align: left; white-space: nowrap; display: none; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(241, 241, 241); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">45°</label></div><div draggable="false" title="Show imagery with street names" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 3px 8px 3px 3px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div></div></div>
+                        <script>
+                            /* Property Detail Page - Google Map for Property Location */
+
+                            function initialize_property_map() {
+                                var propertyLocation = new google.maps.LatLng(25.7308309, -80.44414899999998);
+                                var propertyMapOptions = {
+                                    center: propertyLocation,
+                                    zoom: 15,
+                                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                                    scrollwheel: false
+                                };
+                                var propertyMap = new google.maps.Map(document.getElementById("property_map"), propertyMapOptions);
+                                var propertyMarker = new google.maps.Marker({
+                                    position: propertyLocation,
+                                    map: propertyMap,
+                                    icon: "http://alt-realhomes.inspirythemes.com/wp-content/themes/realhomes/images/map/villa-map-icon.png"
+                                });
+                            }
+
+                            window.onload = initialize_property_map();
+                        </script>
+
+                        <div class="share-networks clearfix">
+                            <span class="share-label">Share this</span>
+                            <span><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/"><i class="fa fa-facebook fa-lg"></i>Facebook</a></span>
+                            <span><a target="_blank" href="https://twitter.com/share?url=http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/"><i class="fa fa-twitter fa-lg"></i>Twitter</a></span>
+                            <span><a target="_blank" href="https://plus.google.com/share?url={http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/}" onclick="javascript:window.open(this.href,  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes')"><i class="fa fa-google-plus fa-lg"></i>Google</a></span>
+                        </div>
+
+                    </div>
+
+                    <div class="attachments-wrap clearfix">
+                        <span class="attachments-label">Property Attachments</span>            <div class="attachments-inner clearfix">
+                            <ul class="attachments-list clearfix"><li class="jpg"><a target="_blank" href="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/news-03.jpg"><i class="fa fa-file-image-o"></i>Chair One</a></li><li class="pdf"><a target="_blank" href="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/Evernote_RealEstate_Tips.pdf"><i class="fa fa-file-pdf-o"></i>RealEstate Tips</a></li></ul>
+                        </div>
+                    </div>
+                    <div class="agent-detail clearfix">
+
+                        <div class="left-box">
+                            <h3>Agent Julia Robert</h3>
+                            <figure><a href="http://alt-realhomes.inspirythemes.com/agent/julia-robert/"><img width="210" height="210" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/agent.jpg" class="attachment-agent-image wp-post-image" alt="Julia Robert"></a></figure>                <ul class="contacts-list">
+                                <li class="office">Office : 041-456-3692</li>
+                                <li class="mobile">Mobile : 0200-123-4567</li>
+                                <li class="fax">Fax  : 041-789-4561</li>
+                            </ul>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna…                        <br>
+                                <a class="real-btn" href="http://alt-realhomes.inspirythemes.com/agent/julia-robert/">Know More</a>
+                            </p>
+                        </div>
+
+                        <div class="contact-form">
+
+                            <h3>Contact</h3>
+
+                            <form id="agent-contact-form" class="contact-form-small" method="post" action="http://alt-realhomes.inspirythemes.com/wp-admin/admin-ajax.php" novalidate="novalidate">
+
+                                <input type="text" name="name" id="name" placeholder="Name" class="required" title="* Please provide your name">
+
+                                <input type="text" name="email" id="email" placeholder="Email" class="email required" title="* Please provide valid email address">
+
+                                <textarea name="message" id="comment" class="required" placeholder="Message" title="* Please provide your message"></textarea>
+
+                                <div id="recaptcha_widget" class="recaptcha_widget recaptcha_nothad_incorrect_sol recaptcha_isnot_showing_audio">
+                                    <div id="recaptcha_image" style="width: 300px; height: 57px;"><img id="recaptcha_challenge_image" alt="reCAPTCHA challenge image" height="57" width="300" src="http://www.google.com/recaptcha/api/image?c=03AHJ_VuuXKD_fPWAC4nHVvYxsyp2LAAYHeHAQri01b-Pj6FpkBfks4izuT4n3qVuA3tQQW_4XCykURKliAbBlzTbqusQ8NbWNyCmC9EiHEVmBbC0pJtl7bpuSLpygKn8qYunfm6_pfdFzplDxQa4sXUSlkJkQvv7Yju1UW7OPBLu7anog6OhUWloZq08ZzJ5QoWcRylzrhPV6vkxXZb1qpHqKW44NFBBU6gIRUgzl0y4AHafMUaHO9ts9E1EOPsgWrtD3n2KBuMuCpcXLTS5rK17IUCkSEXTimn7apxGspQycxIGqy9kr8Y0&amp;th=,8bB9dh7ZBIlPc7ab7AvHgwGayPAAAAAhoAAAAATYAMlrfjYl9byEqGtVrudKc7hYqGtfzB1QTkGXqK-VBA0v-0-QX5awFMRSDmTKlxXBN097NJrOXuVthYCJGM6Bn4QQjBudJxBCHo7ZPZxpEBgZ7jpgLkx-N3WBkzDkRbGRrWAgMdyw_9km4YEQ2_qWY3ZwZGk6Sl-YA4uQVm8bB4q7KR6_M8W0zO1H4UHBS59nj5fZvTqzTpRf6anSsiSbx_7QApi-VUOo6OS5CedYyER9XDIdWNHXYhHKprUOTakO_E-vbMz1jTfoOWg"></div>
+                                    <div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect. Please try again.</div>
+
+                                    <div class="recaptcha_input">
+                                        <label class="recaptcha_only_if_image" for="recaptcha_response_field">Enter the words above:</label>
+                                        <label class="recaptcha_only_if_audio" for="recaptcha_response_field">Enter the numbers you hear:</label>
+
+                                        <span id="recaptcha_challenge_field_holder" style="display: none;"><input type="hidden" name="recaptcha_challenge_field" id="recaptcha_challenge_field" value="03AHJ_VuuXKD_fPWAC4nHVvYxsyp2LAAYHeHAQri01b-Pj6FpkBfks4izuT4n3qVuA3tQQW_4XCykURKliAbBlzTbqusQ8NbWNyCmC9EiHEVmBbC0pJtl7bpuSLpygKn8qYunfm6_pfdFzplDxQa4sXUSlkJkQvv7Yju1UW7OPBLu7anog6OhUWloZq08ZzJ5QoWcRylzrhPV6vkxXZb1qpHqKW44NFBBU6gIRUgzl0y4AHafMUaHO9ts9E1EOPsgWrtD3n2KBuMuCpcXLTS5rK17IUCkSEXTimn7apxGspQycxIGqy9kr8Y0"></span><input type="text" id="recaptcha_response_field" name="recaptcha_response_field" autocomplete="off">
+                                    </div>
+
+                                    <ul class="recaptcha_options">
+                                        <li>
+                                            <a href="javascript:Recaptcha.reload()">
+                                                <i class="icon-refresh"></i>
+                                                <span class="captcha_hide">Get another CAPTCHA</span>
+                                            </a>
+                                        </li>
+                                        <li class="recaptcha_only_if_image">
+                                            <a href="javascript:Recaptcha.switch_type('audio')">
+                                                <i class="icon-volume-up"></i><span class="captcha_hide"> Get an audio CAPTCHA</span>
+                                            </a>
+                                        </li>
+                                        <li class="recaptcha_only_if_audio">
+                                            <a href="javascript:Recaptcha.switch_type('image')">
+                                                <i class="icon-picture"></i><span class="captcha_hide"> Get an image CAPTCHA</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:Recaptcha.showhelp()">
+                                                <i class="icon-question-sign"></i><span class="captcha_hide"> Help</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LftkOsSAAAAAKpqpFkStQ1gCMciwAng4jmYKDVY"></script>
+                                <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha.js"></script>
+                                <noscript>
+                                    &lt;iframe src="http://www.google.com/recaptcha/api/noscript?k=6LftkOsSAAAAAKpqpFkStQ1gCMciwAng4jmYKDVY" height="300" width="220" frameborder="0"&gt;&lt;/iframe&gt;&lt;br&gt;
+                                    &lt;textarea name="recaptcha_challenge_field"&gt;&lt;/textarea&gt;
+                                    &lt;input type="hidden" name="recaptcha_response_field" value="manual_challenge"&gt;
+                                </noscript>
+
+                                <input type="hidden" name="target" value="robot@inspirythemes.com">
+                                <input type="hidden" name="action" value="send_message_to_agent">
+                                <input type="hidden" name="property_title" value="15421 Southwest 39th Terrace">
+                                <input type="hidden" name="property_permalink" value="http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/">
+
+                                <input type="submit" value="Send Message" name="submit" class="real-btn">
+                                <img src="http://alt-realhomes.inspirythemes.com/wp-content/themes/realhomes/images/ajax-loader.gif" id="contact-loader" alt="Loading...">
+
+                            </form>
+
+                            <div class="error-container"></div>
+                            <div id="message-sent">&nbsp;</div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div><!-- End Main Content -->
+
+            <section class="listing-layout property-grid">
+                <div class="list-container clearfix">
+                    <h3>Similar Properties</h3><article class="property-item clearfix">
+                        <figure>
+                            <a href="http://alt-realhomes.inspirythemes.com/property/401-biscayne-boulevard-miami/" title="401 Biscayne Boulevard, Miami">
+                                <img width="246" height="162" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-02-246x162.jpg" class="attachment-grid-view-image wp-post-image" alt="401 Biscayne Boulevard, Miami" title="401 Biscayne Boulevard, Miami">
+                            </a>
+
+                            <figcaption>
+                                For Rent
+                            </figcaption>
+                        </figure>
+
+                        <h4><a href="http://alt-realhomes.inspirythemes.com/property/401-biscayne-boulevard-miami/" title="401 Biscayne Boulevard, Miami">401 Biscayne Boulevard, Miami</a></h4>
+                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil… <a class="more-details" href="http://alt-realhomes.inspirythemes.com/property/401-biscayne-boulevard-miami/">More Details <i class="fa fa-caret-right"></i></a></p>
+                        <span>$3,250 Per Month</span>
+                    </article><article class="property-item clearfix">
+                        <figure>
+                            <a href="http://alt-realhomes.inspirythemes.com/property/3015-grand-avenue-cocowalk/" title="3015 Grand Avenue, CocoWalk">
+                                <img width="246" height="162" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-06-246x162.jpg" class="attachment-grid-view-image wp-post-image" alt="3015 Grand Avenue, CocoWalk" title="3015 Grand Avenue, CocoWalk">
+                            </a>
+
+                            <figcaption>
+                                For Rent
+                            </figcaption>
+                        </figure>
+
+                        <h4><a href="http://alt-realhomes.inspirythemes.com/property/3015-grand-avenue-cocowalk/" title="3015 Grand Avenue, CocoWalk">3015 Grand Avenue, CocoWalk</a></h4>
+                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation… <a class="more-details" href="http://alt-realhomes.inspirythemes.com/property/3015-grand-avenue-cocowalk/">More Details <i class="fa fa-caret-right"></i></a></p>
+                        <span>$4,350 Per Month</span>
+                    </article><article class="property-item clearfix">
+                        <figure>
+                            <a href="http://alt-realhomes.inspirythemes.com/property/1200-anastasia-avenue-coral-gables/" title="1200 Anastasia Avenue, Coral Gables">
+                                <img width="246" height="162" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-04-246x162.jpg" class="attachment-grid-view-image wp-post-image" alt="1200 Anastasia Avenue, Coral Gables" title="1200 Anastasia Avenue, Coral Gables">
+                            </a>
+
+                            <figcaption>
+                                For Sale
+                            </figcaption>
+                        </figure>
+
+                        <h4><a href="http://alt-realhomes.inspirythemes.com/property/1200-anastasia-avenue-coral-gables/" title="1200 Anastasia Avenue, Coral Gables">1200 Anastasia Avenue, Coral Gables</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam… <a class="more-details" href="http://alt-realhomes.inspirythemes.com/property/1200-anastasia-avenue-coral-gables/">More Details <i class="fa fa-caret-right"></i></a></p>
+                        <span>$625,000 </span>
+                    </article>
+                </div>
+            </section>
+
+        </div> <!-- End span9 -->
+
+        <div class="span3 sidebar-wrap">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <section class="widget advance-search">
+                    <h4 class="title search-heading">Find Your Home<i class="fa fa-search"></i></h4><div class="as-form-wrap">
+                        <form class="advance-search-form clearfix" action="http://alt-realhomes.inspirythemes.com/property-search/" method="get">
+                            <div class="option-bar large">
+                                <label for="property-id-txt">Property ID</label>
+                                <input type="text" name="property-id" id="property-id-txt" value="" placeholder="Any">
+                            </div>
+                            <div class="option-bar large">
+                                <label for="select-location">Property Location</label>
+                                <span class="selectwrap">
+                                    <input id="select-location_input" type="text" class="selectbox" autocomplete="off" readonly="readonly"><div id="select-location_container" class="selectbox-wrapper" style="display: none;"><ul><li id="select-location_input_miami"> Miami</li><li id="select-location_input_any" class="selected">Any</li></ul></div><select name="location" id="select-location" class="search-select" style="display: none;">
+                                        <option value="miami"> Miami</option>
+                                        <option value="any" selected="selected">Any</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="option-bar large">
+                                <label for="select-status">Property Status</label>
+                                <span class="selectwrap">
+                                    <input id="select-status_input" type="text" class="selectbox" autocomplete="off" readonly="readonly"><div id="select-status_container" class="selectbox-wrapper" style="display: none;"><ul><li id="select-status_input_for-rent">For Rent</li><li id="select-status_input_for-sale">For Sale</li><li id="select-status_input_any" class="selected">Any</li></ul></div><select name="status" id="select-status" class="search-select" style="display: none;">
+                                        <option value="for-rent">For Rent</option>
+                                        <option value="for-sale">For Sale</option>
+                                        <option value="any" selected="selected">Any</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="option-bar large">
+                                <label for="select-property-type">Property Type</label>
+                                <span class="selectwrap">
+                                    <input id="select-property-type_input" type="text" class="selectbox" autocomplete="off" readonly="readonly"><div id="select-property-type_container" class="selectbox-wrapper" style="display: none;"><ul><li id="select-property-type_input_condominium"> Condominium</li><li id="select-property-type_input_single-family-home"> Single Family Home</li><li id="select-property-type_input_villa"> Villa</li><li id="select-property-type_input_any" class="selected">Any</li></ul></div><select name="type" id="select-property-type" class="search-select" style="display: none;">
+                                        <option value="condominium"> Condominium</option>
+                                        <option value="single-family-home"> Single Family Home</option>
+                                        <option value="villa"> Villa</option>
+                                        <option value="any" selected="selected">Any</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="option-bar small">
+                                <label for="select-bedrooms">Min Beds</label>
+                                <span class="selectwrap">
+                                    <input id="select-bedrooms_input" type="text" class="selectbox" autocomplete="off" readonly="readonly"><div id="select-bedrooms_container" class="selectbox-wrapper" style="display: none; height: 200px;"><ul><li id="select-bedrooms_input_1">1</li><li id="select-bedrooms_input_2">2</li><li id="select-bedrooms_input_3">3</li><li id="select-bedrooms_input_4">4</li><li id="select-bedrooms_input_5">5</li><li id="select-bedrooms_input_6">6</li><li id="select-bedrooms_input_7">7</li><li id="select-bedrooms_input_8">8</li><li id="select-bedrooms_input_9">9</li><li id="select-bedrooms_input_10">10</li><li id="select-bedrooms_input_any" class="selected">Any</li></ul></div><select name="bedrooms" id="select-bedrooms" class="search-select" style="display: none;">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="any" selected="selected">Any</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="option-bar small">
+                                <label for="select-bathrooms">Min Baths</label>
+                                <span class="selectwrap">
+                                    <input id="select-bathrooms_input" type="text" class="selectbox" autocomplete="off" readonly="readonly"><div id="select-bathrooms_container" class="selectbox-wrapper" style="display: none; height: 200px;"><ul><li id="select-bathrooms_input_1">1</li><li id="select-bathrooms_input_2">2</li><li id="select-bathrooms_input_3">3</li><li id="select-bathrooms_input_4">4</li><li id="select-bathrooms_input_5">5</li><li id="select-bathrooms_input_6">6</li><li id="select-bathrooms_input_7">7</li><li id="select-bathrooms_input_8">8</li><li id="select-bathrooms_input_9">9</li><li id="select-bathrooms_input_10">10</li><li id="select-bathrooms_input_any" class="selected">Any</li></ul></div><select name="bathrooms" id="select-bathrooms" class="search-select" style="display: none;">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="any" selected="selected">Any</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="option-bar small price-for-others">
+                                <label for="select-min-price">Min Price</label>
+                                <span class="selectwrap">
+                                    <input id="select-min-price_input" type="text" class="selectbox" autocomplete="off" readonly="readonly"><div id="select-min-price_container" class="selectbox-wrapper" style="display: none; height: 200px;"><ul><li id="select-min-price_input_1000">$1,000</li><li id="select-min-price_input_5000">$5,000</li><li id="select-min-price_input_10000">$10,000</li><li id="select-min-price_input_50000">$50,000</li><li id="select-min-price_input_100000">$100,000</li><li id="select-min-price_input_200000">$200,000</li><li id="select-min-price_input_300000">$300,000</li><li id="select-min-price_input_400000">$400,000</li><li id="select-min-price_input_500000">$500,000</li><li id="select-min-price_input_600000">$600,000</li><li id="select-min-price_input_700000">$700,000</li><li id="select-min-price_input_800000">$800,000</li><li id="select-min-price_input_900000">$900,000</li><li id="select-min-price_input_1000000">$1,000,000</li><li id="select-min-price_input_1500000">$1,500,000</li><li id="select-min-price_input_2000000">$2,000,000</li><li id="select-min-price_input_2500000">$2,500,000</li><li id="select-min-price_input_5000000">$5,000,000</li><li id="select-min-price_input_any" class="selected">Any</li></ul></div><select name="min-price" id="select-min-price" class="search-select" style="display: none;">
+                                        <option value="1000">$1,000</option>
+                                        <option value="5000">$5,000</option>
+                                        <option value="10000">$10,000</option>
+                                        <option value="50000">$50,000</option>
+                                        <option value="100000">$100,000</option>
+                                        <option value="200000">$200,000</option>
+                                        <option value="300000">$300,000</option>
+                                        <option value="400000">$400,000</option>
+                                        <option value="500000">$500,000</option>
+                                        <option value="600000">$600,000</option>
+                                        <option value="700000">$700,000</option>
+                                        <option value="800000">$800,000</option>
+                                        <option value="900000">$900,000</option>
+                                        <option value="1000000">$1,000,000</option>
+                                        <option value="1500000">$1,500,000</option>
+                                        <option value="2000000">$2,000,000</option>
+                                        <option value="2500000">$2,500,000</option>
+                                        <option value="5000000">$5,000,000</option>
+                                        <option value="any" selected="selected">Any</option>
+                                    </select>
+                                </span>
+                            </div>
+
+                            <div class="option-bar small price-for-others">
+                                <label for="select-max-price">Max Price</label>
+                                <span class="selectwrap">
+                                    <input id="select-max-price_input" type="text" class="selectbox" autocomplete="off" readonly="readonly"><div id="select-max-price_container" class="selectbox-wrapper" style="display: none; height: 200px;"><ul><li id="select-max-price_input_5000">$5,000</li><li id="select-max-price_input_10000">$10,000</li><li id="select-max-price_input_50000">$50,000</li><li id="select-max-price_input_100000">$100,000</li><li id="select-max-price_input_200000">$200,000</li><li id="select-max-price_input_300000">$300,000</li><li id="select-max-price_input_400000">$400,000</li><li id="select-max-price_input_500000">$500,000</li><li id="select-max-price_input_600000">$600,000</li><li id="select-max-price_input_700000">$700,000</li><li id="select-max-price_input_800000">$800,000</li><li id="select-max-price_input_900000">$900,000</li><li id="select-max-price_input_1000000">$1,000,000</li><li id="select-max-price_input_1500000">$1,500,000</li><li id="select-max-price_input_2000000">$2,000,000</li><li id="select-max-price_input_2500000">$2,500,000</li><li id="select-max-price_input_5000000">$5,000,000</li><li id="select-max-price_input_10000000">$10,000,000</li><li id="select-max-price_input_any" class="selected">Any</li></ul></div><select name="max-price" id="select-max-price" class="search-select" style="display: none;">
+                                        <option value="5000">$5,000</option>
+                                        <option value="10000">$10,000</option>
+                                        <option value="50000">$50,000</option>
+                                        <option value="100000">$100,000</option>
+                                        <option value="200000">$200,000</option>
+                                        <option value="300000">$300,000</option>
+                                        <option value="400000">$400,000</option>
+                                        <option value="500000">$500,000</option>
+                                        <option value="600000">$600,000</option>
+                                        <option value="700000">$700,000</option>
+                                        <option value="800000">$800,000</option>
+                                        <option value="900000">$900,000</option>
+                                        <option value="1000000">$1,000,000</option>
+                                        <option value="1500000">$1,500,000</option>
+                                        <option value="2000000">$2,000,000</option>
+                                        <option value="2500000">$2,500,000</option>
+                                        <option value="5000000">$5,000,000</option>
+                                        <option value="10000000">$10,000,000</option>
+                                        <option value="any" selected="selected">Any</option>
+                                    </select>
+                                </span>
+                            </div>
+
+                            <div class="option-bar small price-for-rent hide-fields">
+                                <label for="select-min-price">Min Price</label>
+                                <span class="selectwrap">
+                                    <input id="select-min-price-for-rent_input" type="text" class="selectbox" autocomplete="off" readonly="readonly"><div id="select-min-price-for-rent_container" class="selectbox-wrapper" style="display: none;"><ul><li id="select-min-price-for-rent_input_500">$500</li><li id="select-min-price-for-rent_input_1000">$1,000</li><li id="select-min-price-for-rent_input_2000">$2,000</li><li id="select-min-price-for-rent_input_3000">$3,000</li><li id="select-min-price-for-rent_input_4000">$4,000</li><li id="select-min-price-for-rent_input_5000">$5,000</li><li id="select-min-price-for-rent_input_7500">$7,500</li><li id="select-min-price-for-rent_input_10000">$10,000</li><li id="select-min-price-for-rent_input_15000">$15,000</li><li id="select-min-price-for-rent_input_20000">$20,000</li><li id="select-min-price-for-rent_input_25000">$25,000</li><li id="select-min-price-for-rent_input_30000">$30,000</li><li id="select-min-price-for-rent_input_40000">$40,000</li><li id="select-min-price-for-rent_input_50000">$50,000</li><li id="select-min-price-for-rent_input_75000">$75,000</li><li id="select-min-price-for-rent_input_100000">$100,000</li><li id="select-min-price-for-rent_input_any" class="selected">Any</li></ul></div><select name="min-price" id="select-min-price-for-rent" class="search-select" disabled="disabled" style="display: none;">
+                                        <option value="500">$500</option>
+                                        <option value="1000">$1,000</option>
+                                        <option value="2000">$2,000</option>
+                                        <option value="3000">$3,000</option>
+                                        <option value="4000">$4,000</option>
+                                        <option value="5000">$5,000</option>
+                                        <option value="7500">$7,500</option>
+                                        <option value="10000">$10,000</option>
+                                        <option value="15000">$15,000</option>
+                                        <option value="20000">$20,000</option>
+                                        <option value="25000">$25,000</option>
+                                        <option value="30000">$30,000</option>
+                                        <option value="40000">$40,000</option>
+                                        <option value="50000">$50,000</option>
+                                        <option value="75000">$75,000</option>
+                                        <option value="100000">$100,000</option>
+                                        <option value="any" selected="selected">Any</option>
+                                    </select>
+                                </span>
+                            </div>
+
+                            <div class="option-bar small price-for-rent hide-fields">
+                                <label for="select-max-price">Max Price</label>
+                                <span class="selectwrap">
+                                    <input id="select-max-price-for-rent_input" type="text" class="selectbox" autocomplete="off" readonly="readonly"><div id="select-max-price-for-rent_container" class="selectbox-wrapper" style="display: none;"><ul><li id="select-max-price-for-rent_input_1000">$1,000</li><li id="select-max-price-for-rent_input_2000">$2,000</li><li id="select-max-price-for-rent_input_3000">$3,000</li><li id="select-max-price-for-rent_input_4000">$4,000</li><li id="select-max-price-for-rent_input_5000">$5,000</li><li id="select-max-price-for-rent_input_7500">$7,500</li><li id="select-max-price-for-rent_input_10000">$10,000</li><li id="select-max-price-for-rent_input_15000">$15,000</li><li id="select-max-price-for-rent_input_20000">$20,000</li><li id="select-max-price-for-rent_input_25000">$25,000</li><li id="select-max-price-for-rent_input_30000">$30,000</li><li id="select-max-price-for-rent_input_40000">$40,000</li><li id="select-max-price-for-rent_input_50000">$50,000</li><li id="select-max-price-for-rent_input_75000">$75,000</li><li id="select-max-price-for-rent_input_100000">$100,000</li><li id="select-max-price-for-rent_input_150000">$150,000</li><li id="select-max-price-for-rent_input_any" class="selected">Any</li></ul></div><select name="max-price" id="select-max-price-for-rent" class="search-select" disabled="disabled" style="display: none;">
+                                        <option value="1000">$1,000</option>
+                                        <option value="2000">$2,000</option>
+                                        <option value="3000">$3,000</option>
+                                        <option value="4000">$4,000</option>
+                                        <option value="5000">$5,000</option>
+                                        <option value="7500">$7,500</option>
+                                        <option value="10000">$10,000</option>
+                                        <option value="15000">$15,000</option>
+                                        <option value="20000">$20,000</option>
+                                        <option value="25000">$25,000</option>
+                                        <option value="30000">$30,000</option>
+                                        <option value="40000">$40,000</option>
+                                        <option value="50000">$50,000</option>
+                                        <option value="75000">$75,000</option>
+                                        <option value="100000">$100,000</option>
+                                        <option value="150000">$150,000</option>
+                                        <option value="any" selected="selected">Any</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="option-bar small">
+                                <label for="min-area">Min Area <span>(Sq Ft)</span></label>
+                                <input type="text" name="min-area" id="min-area" pattern="[0-9]+" value="" placeholder="Any" title="Please only provide digits!">
+                            </div>
+
+                            <div class="option-bar small">
+                                <label for="max-area">Max Area <span>(Sq Ft)</span></label>
+                                <input type="text" name="max-area" id="max-area" pattern="[0-9]+" value="" placeholder="Any" title="Please only provide digits!">
+                            </div>
+                            <div class="option-bar">
+                                <input type="submit" value="Search" class=" real-btn btn">
+                            </div>
+                        </form>
+                    </div>
+                </section><section id="property_types_widget-4" class="widget clearfix Property_Types_Widget">
+                    <h3 class="title">Property Types</h3>        <ul>
+                        <li><a href="http://alt-realhomes.inspirythemes.com/property-type/condominium/">Condominium</a></li>
+                        <li><a href="http://alt-realhomes.inspirythemes.com/property-type/single-family-home/">Single Family Home</a></li>
+                        <li><a href="http://alt-realhomes.inspirythemes.com/property-type/villa/">Villa</a></li>
+                    </ul>
+                </section><section id="featured_properties_widget-6" class="widget clearfix Featured_Properties_Widget">
+                    <h3 class="title">Featured Properties</h3>            <ul class="featured-properties">
+                        <li>
+                            <figure>
+                                <a href="http://alt-realhomes.inspirythemes.com/property/700-front-street-key-west-fl/">
+                                    <img width="246" height="162" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-08-246x162.jpg" class="attachment-grid-view-image wp-post-image" alt="property 08">
+                                </a>
+                            </figure>
+                            <h4><a href="http://alt-realhomes.inspirythemes.com/property/700-front-street-key-west-fl/" title="700 Front Street, Key West, FL">700 Front Street, Key West, FL</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing… <a href="http://alt-realhomes.inspirythemes.com/property/700-front-street-key-west-fl/">Read More</a></p>
+                            <span class="price">$850,000 </span>
+                        </li>
+                        <li>
+                            <figure>
+                                <a href="http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/">
+                                    <img width="246" height="162" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-10-246x162.jpg" class="attachment-grid-view-image wp-post-image" alt="property 10">
+                                </a>
+                            </figure>
+                            <h4><a href="http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/" title="15421 Southwest 39th Terrace">15421 Southwest 39th Terrace</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing… <a href="http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/">Read More</a></p>
+                            <span class="price">$3,850 Per Month</span>
+                        </li>
+                    </ul>
+                </section>
+            </aside><!-- End Sidebar -->
+
+        </div>
+    </div><!-- End contents row -->
+</div>
