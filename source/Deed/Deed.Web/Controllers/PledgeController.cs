@@ -16,7 +16,7 @@ namespace Deed.Web.Controllers
         public ActionResult Index(int? page)
         {
             var pageNumber = page ?? 1;
-            return View(Query().ToPagedList(pageNumber,10));
+            return View(Query().ToPagedList(pageNumber,15));
         }
 
         public ActionResult PledgeIndex()
