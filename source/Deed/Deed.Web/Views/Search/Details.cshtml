@@ -449,47 +449,18 @@
         <div class="panel span3 panel-info pull-right">
             <div class="panel-heading">Featured Projects</div>
             <div id="sponsorcartpanel" class="panel-body">
-                <ul class="featured-properties">
+                <ul class="featured-properties" data-bind="foreach: image">
                     <li>
                         <figure>
                             <a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/">
-                                <img width="200" height="100" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-09-246x162.jpg" class="attachment-grid-view-image wp-post-image" alt="property-09">
+                                <img data-bind="attr: { src: ima, }"  width=" 200" height="100"  class="attachment-grid-view-image wp-post-image" alt="property-09">
                             </a>
                         </figure>
                         <h4><a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/" title="Florida 5, Pinecrest, FL">Florida 5, Pinecrest, FL</a></h4>
                         <p>Nam liber tempor cum soluta nobis eleifend… <a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/">Read More</a></p>
                         @*<span class="price">$480,000 </span>*@
                     </li>
-                    <li>
-                        <figure>
-                            <a href="http://alt-realhomes.inspirythemes.com/property/3015-grand-avenue-cocowalk/">
-                                <img width="200" height="100" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-06-246x162.jpg" class="attachment-grid-view-image wp-post-image" alt="property 06">
-                            </a>
-                        </figure>
-                        <h4><a href="http://alt-realhomes.inspirythemes.com/property/3015-grand-avenue-cocowalk/" title="3015 Grand Avenue, CocoWalk">3015 Grand Avenue, CocoWalk</a></h4>
-                        <p>Ut wisi enim ad minim veniam, quis… <a href="http://alt-realhomes.inspirythemes.com/property/3015-grand-avenue-cocowalk/">Read More</a></p>
-                        @*<span class="price">$4,350 Per Month</span>*@
-                    </li>
-                    <li>
-                        <figure>
-                            <a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/">
-                                <img width="200" height="100" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-09-246x162.jpg" class="attachment-grid-view-image wp-post-image" alt="property-09">
-                            </a>
-                        </figure>
-                        <h4><a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/" title="Florida 5, Pinecrest, FL">Florida 5, Pinecrest, FL</a></h4>
-                        <p>Nam liber tempor cum soluta nobis eleifend… <a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/">Read More</a></p>
-                        @*<span class="price">$480,000 </span>*@
-                    </li>
-                    <li>
-                        <figure>
-                            <a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/">
-                                <img width="200" height="100" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-09-246x162.jpg" class="attachment-grid-view-image wp-post-image" alt="property-09">
-                            </a>
-                        </figure>
-                        <h4><a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/" title="Florida 5, Pinecrest, FL">Florida 5, Pinecrest, FL</a></h4>
-                        <p>Nam liber tempor cum soluta nobis eleifend… <a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/">Read More</a></p>
-                        @*<span class="price">$480,000 </span>*@
-                    </li>
+                    
                 </ul>
                 
             </div>
@@ -501,85 +472,19 @@
     
     <script type="text/javascript">
 
-            $(window).load(function () {
-                var i = 0;
-                var total = 0;
-                $("#simdivstudent #select").on('click', function () {
-                    $(this).replaceWith("<a class='btn btn-warning' disabled='disabled' id='e' >Selected</a>");
-                    $("#sprcarttbody").append('<tr id="loadersuccess" ><td align="center" colspan="4"><img src="Content/images/ajax-loader.gif" style="width:50px;height: 50px; alt="" /></td></tr>');
-                    $.ajax({
-                        type: "POST",
-                        url: '/Pledge/Details',
-                        contentType: 'application/json; charset=utf-8',
-                        data: JSON.stringify({
-                            id: $(this).attr("data-id")
+        function FeaturedProjectViewModel() {
 
-                        }),
-                        success: function (d) {
-                            if (!!d) {
+            var self = this;
+            self.image = ko.observableArray([
+                { ima: 'http://deedaday.in/img/upload/students/e2580a81183b98fc893048fec4d65456.jpg' },
+                { ima: 'http://deedaday.in/img/upload/students/e2580a81183b98fc893048fec4d65456.jpg' },
+                { ima: 'http://deedaday.in/img/upload/students/d2e63411e557f9aabdc1668c313a0de4.jpg' },
+                { ima: 'http://deedaday.in/img/upload/students/d2e63411e557f9aabdc1668c313a0de4.jpg' }
+            ]);
 
-                                $("#loadersuccess").remove();
-                                var stdname = d.StudentName;
+        }
 
-                                if (stdname.length > 12) {
-                                    var res = stdname.substring(0, 12);
-                                    d.StudentName = res;
-                                }
-                                $(" #sprcarttbody").append('<tr> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.StudentImage + '"></td><td><b>Name:</br></b>' + d.StudentName + '</br><b>Class:</br></b>' + d.StudentClass + '</br><b>Age:</br></b>' + d.StudentDOB + '&nbsp;Yr</td><td>&#163;' + d.StudentFee.toFixed(2) + '</td><td class="clsparent"><div data-name="' + d.StudentName + '" data-fee="' + d.StudentFee.toFixed(2) + '" data-stdid="' + d.StudentId + '" id="cls" class="close clos" style="float:left">X</div></td><input id="StudentId" name="StudentId" type="hidden" value="' + d.StudentId + '"></tr>');
-                                total = parseFloat(total) + parseFloat(d.StudentFee.toFixed(2));
+        ko.applyBindings(new FeaturedProjectViewModel());
 
-                                $(".list-group .list-group-item #selectedstd").text(function () { return ++i });
-                                $(".list-group .list-group-item #ttlamount").text(function () { return total.toFixed(2) });
-                            }
-                        }
-                    });
-
-
-
-                });
-                $(document).on('click', 'td > div', function (e) {
-
-                    var closeButton = $(this);
-                    if (confirm("Are you sure you want to remove '" + closeButton.attr("data-name") + "' ?")) {
-                        $.ajax({
-                            type: "POST",
-                            url: '/Pledge/Remove',
-                            contentType: 'application/json; charset=utf-8',
-                            data: JSON.stringify({
-
-                                id: $(this).attr("data-stdid"),
-
-                                removeAmount: $(this).attr("data-fee"),
-
-                                simpleamount: $("#ttlamount").text(),
-
-                                count: $("#selectedstd").text()
-
-
-                            }),
-                            success: function (d) {
-
-                                if (!!d) {
-                                    closeButton.closest("tr").remove();
-                                    var ttl = d.simpleamount;
-                                    var cnt = d.count
-                                    $(".list-group .list-group-item  #ttlamount").text(function () { return ttl.toFixed(2) });
-                                    $(".list-group .list-group-item  #selectedstd").text(function () { return cnt });
-                                    $("#lblttlamount").text(function () { return ttl.toFixed(2) });
-                                    total = d.simpleamount;
-                                    i = d.count
-                                    $("#inputamount").val(ttl.toFixed(2));
-
-
-                                }
-                            }
-                        });
-
-
-                    };
-                });
-
-
-
-            });
-        </script>
+           
+   </script>
