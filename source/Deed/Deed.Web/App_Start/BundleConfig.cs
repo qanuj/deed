@@ -40,7 +40,7 @@ namespace Deed.Web
                         "~/Scripts/respond.matchmedia.addListener.js",
                         "~/Scripts/respond.matchmedia.addListener.min.js",
                         "~/Scripts/main.js",
-                        "~/Scripts/ProgresBar.js",
+                        "~/Scripts/Bar.js",
                         "~/Scripts/knockout-3.1.0.js",
                         "~/Scripts/js-image-slider.js"
 
