@@ -443,6 +443,7 @@
     <Content Include="Content\images\slideshow-nav-right.png" />
     <Content Include="Content\images\sticky-pin.png" />
     <Content Include="Content\images\widget-list-bullet.png" />
+    <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\js-image-slider.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\Progress.css" />

@@ -80,6 +80,7 @@ namespace Deed.Web
                         "~/Content/js-image-slider.css",
                          "~/Content/site.css",
                          "~/Content/Progress.css",
+                         "~/Content/jquery-ui.css",
                        "~/Content/css/generic.css"
 
                     ));

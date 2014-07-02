@@ -21,19 +21,26 @@
 
         // add progress bar to container
         var progressbar = $("<div></div>");
+        //progressbar.css({
+        //    'height': settings.height,
+        //    'text-align': 'right',
+        //    'vertical-align': 'middle',
+        //    'color': '#fff',
+        //    'width': '0px',
+        //    'border-radius': '3px',
+        //    'background-color': settings.color,
+        //    'transition-duration':'5s',
+        //    'transition-delay':'2s'
+        //});
+
         progressbar.css({
             'height': settings.height,
-            'text-align': 'right',
-            'vertical-align': 'middle',
-            'color': '#fff',
-            'width': '0px',
-            'border-radius': '3px',
-            'background-color': settings.color,
-            'transition-duration':'5s',
-            'transition-delay':'2s'
+            '-webkit-transition': 'width 6s ease-in-out',
+            '-moz-transition': 'width 6s ease-in-out',
+        '-ms-transition': 'width 6s ease-in-out',
+        '-o-transition': 'width 6s ease-in-out',
+        'transition': 'width 6s ease-in-out'
         });
-
-        
 
 
 
