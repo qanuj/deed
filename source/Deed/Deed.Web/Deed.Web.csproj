@@ -624,7 +624,6 @@
     <Content Include="Views\Media\AnnualEvents.cshtml" />
     <Content Include="Views\Media\Player.cshtml" />
     <Content Include="Views\Projects\SprtDeedADay.cshtml" />
-    <Content Include="Views\LendAHand\Index.cshtml" />
     <Content Include="Views\LendAHand\SrtCptr.cshtml" />
     <Content Include="Views\LendAHand\Vtr.cshtml" />
     <Content Include="Views\LendAHand\SprdTheWrd.cshtml" />
@@ -641,6 +640,7 @@
     <Content Include="Views\Media\News.cshtml" />
     <Content Include="Views\Media\NewsDetail.cshtml" />
     <Content Include="Views\Search\Details.cshtml" />
+    <Content Include="Views\LendAHand\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
