@@ -63,6 +63,12 @@
     margin-right:534px;
 }
 
+.thickwhite {
+    font-size:37px;
+    line-height:44px;
+    font-weight: 700;
+    color:white;
+}
 
 /*.progress .progress-bar.six-sec-ease-in-out {
     -webkit-transition: width 6s ease-in-out;
