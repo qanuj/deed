@@ -4809,6 +4809,9 @@ input[type="text"].ui-autocomplete-loading {
 .login-register .inner-wrapper {
   padding: 50px 95px 25px;
 }
+.login-register .inner-wrapperr {
+  padding: 50px 48px 25px;
+}
 .login-register .info-text {
   color: #171717;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
