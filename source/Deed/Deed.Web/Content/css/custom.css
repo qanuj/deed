@@ -69,6 +69,23 @@
     font-weight: 700;
     color:white;
 }
+.circulabox {
+    height:400px;
+    width:400px;
+    border-color:white;
+    border-style:solid;
+    border-radius: 100%;
+}
+.circulabox2 {
+    height:221px;
+    width:221px;
+    border-color:white;
+    border-style:solid;
+    border-radius: 100%;
+}
+
+
+
 
 /*.progress .progress-bar.six-sec-ease-in-out {
     -webkit-transition: width 6s ease-in-out;
