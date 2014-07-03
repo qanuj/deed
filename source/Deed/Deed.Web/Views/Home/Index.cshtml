@@ -415,158 +415,29 @@
             <!-- Main Content -->
             <div class="main">
                 <section id="home-idx-search" class="clearfix dsidx-widget-search">
-                    <h3 class="home-widget-label">Student Search</h3>			<div class="dsidx-search-widget dsidx-widget">
+                    <h3 class="home-widget-label">Student Search</h3><div class="dsidx-search-widget dsidx-widget">
+                    @using (Html.BeginForm("Get", "Home", FormMethod.Post, new { @class = "", role = "form" }))
+                    {
                         <form action="http://alt-realhomes.inspirythemes.com/idx/" method="get" onsubmit="return dsidx_w.searchWidget.validate();">
-                            <select name="idx-q-PropertyTypes" class="dsidx-search-widget-propertyTypes">
-                                <option value="">- All property types -</option>
-                                <option value="1030">Residential / All</option>
-                                <option value="1031">Residential / Condo</option>
-                                <option value="1032">Residential / Single Family</option>
-                            </select>
-                            <label id="idx-search-invalid-msg" style="color:red"></label>				<select id="idx-q-Cities" name="idx-q-Cities" class="idx-q-Location-Filter">
-                                <option value="">- City -</option>
-                                <option value="Irvine">Irvine</option>
-                                <option value="Laguna Beach">Laguna Beach</option>
-                                <option value="Laguna Woods">Laguna Woods</option>
-                                <option value="Lake Forest">Lake Forest</option>
-                                <option value="Mission Viejo">Mission Viejo</option>
-                                <option value="Newport Beach">Newport Beach</option>
-                            </select>				<select id="idx-q-Communities" name="idx-q-Communities" class="idx-q-Location-Filter">
-                                <option value="">- Community -</option>
-                                <option value="Agua Dulce">Agua Dulce</option>
-                                <option value="Anaheim East Of Harbor">Anaheim East Of Harbor</option>
-                                <option value="Anaheim West Of Harbor">Anaheim West Of Harbor</option>
-                                <option value="Artesia">Artesia</option>
-                                <option value="Bellflower South Of 91 Frwy (rf">Bellflower South Of 91 Frwy (rf</option>
-                                <option value="Belmont Shore/Park,Naples,Marin">Belmont Shore/Park,Naples,Marin</option>
-                                <option value="Big Bear Lake">Big Bear Lake</option>
-                                <option value="California City">California City</option>
-                                <option value="Camarillo">Camarillo</option>
-                                <option value="Capistrano Beach">Capistrano Beach</option>
-                                <option value="Catalina">Catalina</option>
-                                <option value="Central Simi">Central Simi</option>
-                                <option value="Central South Sfv">Central South Sfv</option>
-                                <option value="Compton N Of Rosecrans, E Of Ce">Compton N Of Rosecrans, E Of Ce</option>
-                                <option value="Compton S Of Rosecrans, E Of Ce">Compton S Of Rosecrans, E Of Ce</option>
-                                <option value="Corona">Corona</option>
-                                <option value="Coto De Caza">Coto De Caza</option>
-                                <option value="Country Club Park">Country Club Park</option>
-                                <option value="Cuddy Valley">Cuddy Valley</option>
-                                <option value="Del Obispo">Del Obispo</option>
-                                <option value="Desert Hot Springs">Desert Hot Springs</option>
-                                <option value="Downtown Area, Alamitos Beach (">Downtown Area, Alamitos Beach (</option>
-                                <option value="East Bluff - Harbor View">East Bluff - Harbor View</option>
-                                <option value="East North Sfv">East North Sfv</option>
-                                <option value="East Simi">East Simi</option>
-                                <option value="East South Sfv">East South Sfv</option>
-                                <option value="Frazier Park">Frazier Park</option>
-                                <option value="Fullerton">Fullerton</option>
-                                <option value="Garden Grove E Of Euclid, W Of">Garden Grove E Of Euclid, W Of</option>
-                                <option value="Hemet/San Jacinto">Hemet/San Jacinto</option>
-                                <option value="Indio South Of East Valley (314">Indio South Of East Valley (314</option>
-                                <option value="Ladera Ranch">Ladera Ranch</option>
-                                <option value="Laguna Canyon">Laguna Canyon</option>
-                                <option value="Laguna Village">Laguna Village</option>
-                                <option value="Lake Elsinore North">Lake Elsinore North</option>
-                                <option value="Lancaster">Lancaster</option>
-                                <option value="Lennox">Lennox</option>
-                                <option value="Mammoth Lakes">Mammoth Lakes</option>
-                                <option value="N Of Bolsa, S Of Gg, E Of Brook">N Of Bolsa, S Of Gg, E Of Brook</option>
-                                <option value="Newhall 1">Newhall 1</option>
-                                <option value="Newport Coast">Newport Coast</option>
-                                <option value="North Laguna">North Laguna</option>
-                                <option value="North San Diego County">North San Diego County</option>
-                                <option value="Northeast Downey, N Of Fireston">Northeast Downey, N Of Fireston</option>
-                                <option value="Northwest Huntington Beach">Northwest Huntington Beach</option>
-                                <option value="Orange &amp; Garden Grove, E Of Har">Orange &amp; Garden Grove, E Of Har</option>
-                                <option value="Orange, Orange Park Acres E Of">Orange, Orange Park Acres E Of</option>
-                                <option value="Out Of Area">Out Of Area</option>
-                                <option value="Palmdale">Palmdale</option>
-                                <option value="Pasadena Nw">Pasadena Nw</option>
-                                <option value="Perris">Perris</option>
-                                <option value="Pine Mountain Club">Pine Mountain Club</option>
-                                <option value="Pinon Pines">Pinon Pines</option>
-                                <option value="Rancho Santa Margarita Central">Rancho Santa Margarita Central</option>
-                                <option value="Riverside">Riverside</option>
-                                <option value="Santa Fe Springs">Santa Fe Springs</option>
-                                <option value="Seal Beach">Seal Beach</option>
-                                <option value="South Laguna">South Laguna</option>
-                                <option value="South Torrance">South Torrance</option>
-                                <option value="Valencia Northpark">Valencia Northpark</option>
-                                <option value="Ventura">Ventura</option>
-                                <option value="West Covina">West Covina</option>
-                                <option value="West Huntington Beach">West Huntington Beach</option>
-                                <option value="West North Sfv">West North Sfv</option>
-                                <option value="West South Sfv">West South Sfv</option>
-                                <option value="Westside">Westside</option>
-                            </select>				<select id="idx-q-TractIdentifiers" name="idx-q-TractIdentifiers" class="idx-q-Location-Filter">
-                                <option value="">- Tract -</option>
-                                <option value="-ROSSITER RANCH (CUST)">-ROSSITER RANCH (CUST)</option>
-                                <option value="Amarante (AMRN)">Amarante (AMRN)</option>
-                                <option value="Balboa (One Ford Road) (OFBB)">Balboa (One Ford Road) (OFBB)</option>
-                                <option value="Belmont Shore (BSD)">Belmont Shore (BSD)</option>
-                                <option value="Custom ROSSITER RANCH (CUST)">Custom ROSSITER RANCH (CUST)</option>
-                                <option value="Custom (CUST)">Custom (CUST)</option>
-                                <option value="CUSTOM REMODEL (CUST)">CUSTOM REMODEL (CUST)</option>
-                                <option value="DESERT ROSE (OTHR)">DESERT ROSE (OTHR)</option>
-                                <option value="Downtown Area (DOWN)">Downtown Area (DOWN)</option>
-                                <option value="Emerald Bay (EB)">Emerald Bay (EB)</option>
-                                <option value="Fairway Oaks (FO)">Fairway Oaks (FO)</option>
-                                <option value="Happy Valley (HPVY)">Happy Valley (HPVY)</option>
-                                <option value="Heller and Hayes Tract (AB)">Heller and Hayes Tract (AB)</option>
-                                <option value="Hidden Meadows (905)">Hidden Meadows (905)</option>
-                                <option value="Leisure World (OTHR)">Leisure World (OTHR)</option>
-                                <option value="Mobile/Modular/Manufactured (MMM)">Mobile/Modular/Manufactured (MMM)</option>
-                                <option value="Montara (Darrah) (262)">Montara (Darrah) (262)</option>
-                                <option value="Naples (NA)">Naples (NA)</option>
-                                <option value="North Trail Ranch (NOTR)">North Trail Ranch (NOTR)</option>
-                                <option value="Other (OTHR)">Other (OTHR)</option>
-                                <option value="Pelican Point (NCPP)">Pelican Point (NCPP)</option>
-                                <option value="RAMONA SUNRISE (OTHR)">RAMONA SUNRISE (OTHR)</option>
-                                <option value="Sherborne (SHER)">Sherborne (SHER)</option>
-                                <option value="South Laguna Bluffs (SLB)">South Laguna Bluffs (SLB)</option>
-                                <option value="Starlight Estates (OTHR)">Starlight Estates (OTHR)</option>
-                                <option value="Terramonte (TEM)">Terramonte (TEM)</option>
-                                <option value="THE COLLECTION (000000)">THE COLLECTION (000000)</option>
-                                <option value="Unknown (OTHR)">Unknown (OTHR)</option>
-                                <option value="Upper Diamond (UD)">Upper Diamond (UD)</option>
-                                <option value="Village Walk (Copperhill) (VLWK)">Village Walk (Copperhill) (VLWK)</option>
-                                <option value="Westside/North of Willow (WNW)">Westside/North of Willow (WNW)</option>
-                                <option value="Willmore District (WM)">Willmore District (WM)</option>
-                            </select>				<select id="idx-q-ZipCodes" name="idx-q-ZipCodes" class="idx-q-Location-Filter">
-                                <option value="">- Zip -</option>
-                                <option value="92602">92602</option>
-                                <option value="92603">92603</option>
-                                <option value="92604">92604</option>
-                                <option value="92606">92606</option>
-                                <option value="92610">92610</option>
-                                <option value="92612">92612</option>
-                                <option value="92614">92614</option>
-                                <option value="92618">92618</option>
-                                <option value="92620">92620</option>
-                                <option value="92630">92630</option>
-                                <option value="92637">92637</option>
-                                <option value="92651">92651</option>
-                                <option value="92653">92653</option>
-                                <option value="92660">92660</option>
-                                <option value="92661">92661</option>
-                                <option value="92663">92663</option>
-                                <option value="92679">92679</option>
-                                <option value="92691">92691</option>
-                                <option value="92692">92692</option>
-                                <option value="92707">92707</option>
-                            </select>				<label for="idx-q-MlsNumbers">MLS #</label>
-                            <input id="idx-q-MlsNumbers" name="idx-q-MlsNumbers" type="text" class="dsidx-mlsnumber">				<label for="idx-q-PriceMin">Price</label>
-                            <input id="idx-q-PriceMin" name="idx-q-PriceMin" type="text" class="dsidx-price" placeholder="min price">
-                            <input id="idx-q-PriceMax" name="idx-q-PriceMax" type="text" class="dsidx-price" placeholder="max price">						<label for="idx-q-ImprovedSqFtMin">Size</label>
-                            <input id="idx-q-ImprovedSqFtMin" name="idx-q-ImprovedSqFtMin" type="text" class="dsidx-improvedsqft" placeholder="min sqft">				<label for="idx-q-BedsMin">Beds</label>
-                            <input id="idx-q-BedsMin" name="idx-q-BedsMin" type="text" class="dsidx-beds" placeholder="min bedrooms">
-                            <label for="idx-q-BathsMin">Baths</label>
-                            <input id="idx-q-BathsMin" name="idx-q-BathsMin" type="text" class="dsidx-baths" placeholder="min bathrooms">
+                            @*@Html.DropDownList("Country","Any")
+                            @Html.DropDownList("State","Any")
+                            @Html.DropDownList("District","Any")*@
+
+                               			
+                            <input id="" name="FirstName" type="text" class="dsidx-mlsnumber" placeholder="First Name">
+                            <input id="" name="LastName" type="text" class="dsidx-mlsnumber" placeholder="Last Name">
+                            
+                            @Html.DropDownList("Country", "Any")
+                            @Html.DropDownList("State","Any")
+                            @Html.DropDownList("City","Any")
+                            @*<input id="" name="" type="text" class="dsidx-price" placeholder="Min Price">
+                            <input id="" name="" type="text" class="dsidx-price" placeholder="Max Price">*@						
+
                             <div class="dsidx-search-button search-form">
                                 <input type="submit" class="submit real-btn" value="Search for properties">
                             </div>
                         </form>
+                    }   
                     </div>
                 </section>
                 

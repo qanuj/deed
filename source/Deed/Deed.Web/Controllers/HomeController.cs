@@ -11,6 +11,9 @@ namespace Deed.Web.Controllers {
     public class HomeController : DbController {
         public ActionResult Index()
         {
+            ViewBag.Country = new SelectList(GetCountry(), "ID", "Name");
+            ViewBag.State = new SelectList(GetState(), "ID", "Name");
+            ViewBag.City = new SelectList(GetCity(), "ID", "Name");
             return View();
         }
         
@@ -44,6 +47,62 @@ namespace Deed.Web.Controllers {
             result = result.OrderBy(x => x.Name).Take(4);
             return PartialView("_Card", result.ToPagedList(pageNumber, 4));
         }
+
+        public ActionResult Get(int? page,string StudentFirstName,string StudentLastName, long? State,long? Country,string City)
+        {
+           
+            
+            var pageNumber = page ?? 1;
+            var s = from m in db.Students
+                    join st in db.States on m.state equals st.name
+                    
+                    select new SearchViewModel
+                    {
+                        StudentID = m.id,
+                        StudentFirstName = m.first_name,
+                        StudentLastName=m.last_name,
+                        StudentPic = m.image,
+                        StudentLocation = st.id,
+                        StudentFamilyHistory = m.family_history,
+                        StudentFather = m.father_first_name,
+                        StudentMother = m.mother_first_name
+                        
+
+                    };
+
+
+            s = s.Where(c => c.StudentFirstName == StudentFirstName ||c.StudentLastName==StudentLastName|| c.StudentLocation == State);
+            s = s.OrderBy(x => x.StudentFirstName);
+            return View("SearchResult", s.ToPagedList(pageNumber, 15));
+
+        }
+
+        public ICollection<ComboItem> GetCountry(string firstItem = "", long? selected = 0)
+        {
+            var r = from c in db.Countries 
+                    
+                    select new ComboItem { ID = c.id, Name = c.name };
+            var result = r.Distinct().ToList();
+            return result;
+        }
+
+        public ICollection<ComboItem> GetState(string firstItem = "", long? selected = 0)
+        {
+            var r = from s in db.Students 
+                    join sta in db.States on s.state equals sta.name
+                    select new ComboItem {ID = sta.id, Name =sta.name };
+            var result = r.Distinct().ToList();
+            return result;
+        }
+        public ICollection<ComboItem> GetCity(string firstItem = "", long? selected = 0)
+        {
+            var r = from s in db.Students 
+                    
+                    select new ComboItem {  StringID=s.city, Name = s.city};
+            var result = r.Distinct().ToList();
+            return result;
+        }
+
     }
 }
 //        public ActionResult Search(string StudentName, string Religion, string Country, string State)
@@ -113,3 +172,4 @@ namespace Deed.Web.Controllers {
 
 //    }
 //}
+
