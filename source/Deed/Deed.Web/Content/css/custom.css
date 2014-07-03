@@ -73,15 +73,17 @@
     height:400px;
     width:400px;
     border-color:white;
-    border-style:solid;
+   border: 6px solid white;
     border-radius: 100%;
+    box-shadow: 10px 10px 5px #888888;
 }
 .circulabox2 {
     height:221px;
     width:221px;
     border-color:white;
-    border-style:solid;
+   border: 6px solid white;
     border-radius: 100%;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 
