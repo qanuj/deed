@@ -81,6 +81,7 @@ namespace Deed.Web
                          "~/Content/site.css",
                          "~/Content/Progress.css",
                          "~/Content/jquery-ui.css",
+                         "~/Content/css/client1.css",
                        "~/Content/css/generic.css"
 
                     ));

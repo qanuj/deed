@@ -415,7 +415,7 @@
             <!-- Main Content -->
             <div class="main">
                 <section id="home-idx-search" class="clearfix dsidx-widget-search">
-                    <h3 class="home-widget-label">Student Search</h3><div class="dsidx-search-widget dsidx-widget">
+                    @*<h3>Student Search</h3>*@<div class="dsidx-search-widget dsidx-widget">
                     @using (Html.BeginForm("Get", "Home", FormMethod.Post, new { @class = "", role = "form" }))
                     {
                         <form action="http://alt-realhomes.inspirythemes.com/idx/" method="get" onsubmit="return dsidx_w.searchWidget.validate();">
@@ -424,17 +424,17 @@
                             @Html.DropDownList("District","Any")*@
 
                                			
-                            <input id="" name="FirstName" type="text" class="dsidx-mlsnumber" placeholder="First Name">
-                            <input id="" name="LastName" type="text" class="dsidx-mlsnumber" placeholder="Last Name">
+                            <input id="" name="FirstName" type="text" class="dsidx-mlsnumber" placeholder="Enter First Name">
+                            <input id="" name="LastName" type="text" class="dsidx-mlsnumber" placeholder="Enter Last Name">
                             
-                            @Html.DropDownList("Country", "Any")
-                            @Html.DropDownList("State","Any")
-                            @Html.DropDownList("City","Any")
+                            @Html.DropDownList("Country", "Select Any Country")
+                            @Html.DropDownList("State","Select Any State")
+                            @Html.DropDownList("City","Select Any City")
                             @*<input id="" name="" type="text" class="dsidx-price" placeholder="Min Price">
                             <input id="" name="" type="text" class="dsidx-price" placeholder="Max Price">*@						
 
                             <div class="dsidx-search-button search-form">
-                                <input type="submit" class="submit real-btn" value="Search for properties">
+                                <input type="submit" class="submit real-btn" value="Search for Students">
                             </div>
                         </form>
                     }   

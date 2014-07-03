@@ -490,7 +490,7 @@
     <Content Include="Areas\Admin\Views\Student\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Caste\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Caste\Create.cshtml" />
-    <Content Include="Content\css\client1" />
+    <Content Include="Content\css\client1.css" />
     <Content Include="Content\css\css" />
     <Content Include="Content\css\css1" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
