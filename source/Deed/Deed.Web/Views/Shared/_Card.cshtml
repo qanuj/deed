@@ -1,53 +1,53 @@
-﻿@model IEnumerable<Deed.Web.ViewModels.CardViewModel>
+﻿@model PagedList.IPagedList<Deed.Web.ViewModels.CardViewModel>
 
 
-<div>
-    @foreach (var m in Model)
-    {
-        <div class="span6" style="margin-top:5px">
-            <article class="property-item clearfix">
-                <h4>
-                    <a href="@Url.Action("StudentDetails", "Home", new {id=m.ID })" title="15421 Southwest 39th Terrace">
-                        @m.Name
-                    </a>
-                </h4>
+<div class="property-items">
+    <div class="property-items-container clearfix">
+        @foreach (var m in Model)
+        {
+            <div class="span6" style="margin-top:5px">
+                <article class="property-item clearfix">
+                    <h4>
+                        <a href="@Url.Action("StudentDetails", "Home", new {id=m.ID })" title="15421 Southwest 39th Terrace">
+                            @m.Name
+                        </a>
+                    </h4>
 
-                <figure>
-                    <a href="@Url.Action("StudentDetails", "Home", new {id=m.ID })" title="@m.Name">
-                        <img width="244" height="163" src="@m.Picture" class="attachment-property-thumb-image wp-post-image" alt="@m.Name" title="@m.Name">
+                    <figure>
+                        <a href="@Url.Action("Details", "Search", new {id = m.ID })" title="@m.Name">
+                            <img width="244" height="163" src="http://deedaday.in/img/upload/students/@m.Picture" class="attachment-property-thumb-image wp-post-image" alt="@m.Name" title="@m.Name">
 
-                    </a>
-                    @*"http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/property-10-244x163.jpg"  @m.Picture *@ 
-                    @*<figcaption class="cap">
-                        For Rent
+                        </a>
+                       
+                        
 
-                    </figcaption>*@
+                    </figure>
 
-                </figure>
+                    <div class="detail">
 
-                <div class="detail">
+                        <h5 class="price">
+                            &#163; 3,500 per Year
 
-                    <h5 class="price">
-                        &#163; 3,500 per Year
+                        </h5>
 
-                    </h5>
+                        <p>@m.FamilyHistory</p>
+                        <a class="more-details" href="@Url.Action("Details", "Pledge", new { id=@m.ID})">More Details <i class="fa fa-caret-right"></i></a>
 
-                    @*<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh…</p>*@
-                    <a class="more-details" href="@Url.Action("StudentDetails", "Home", new {id=m.ID })">More Details <i class="fa fa-caret-right"></i></a>
+                       
 
-                    @*"http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/"*@
+                    </div>
 
-                </div>
+                    <div class="property-meta">
+                        <span><b>Father:</b></span><span>@m.Father</span><span><b>Mother:</b></span><span>@m.Mother</span>
+                    </div>
 
-                 <div class="property-meta">
-                   <span><b>Father:</b></span><span>@m.Father</span><span><b>Mother:</b></span><span>@m.Mother</span>
-                </div>
+                </article>
 
-            </article>
+            </div>
 
+
+
+        }
         </div>
-
-
-
-    }
-</div>
+    <div class="pagination"><a href="@Url.Action("Index", new { page=1 })" class="real-btn current">1</a> <a href="@Url.Action("Index", new { page=2 })" class="real-btn">2</a> </div>
+    </div>

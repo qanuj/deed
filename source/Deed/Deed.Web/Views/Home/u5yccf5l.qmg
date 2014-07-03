@@ -647,14 +647,13 @@
                                     </figure>
                                     <h4><a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/" title="Florida 5, Pinecrest, FL">Florida 5, Pinecrest, FL</a></h4>
                                     <p>Nam liber tempor cum soluta nobis eleifend option… <a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/"> Know More </a> </p>
-                                    @*<span class="price">$480,000 </span>*@
+                                    <span class="price">$480,000 </span>
                                 </li>
                             </ul>
                         </div>
                         <div class="es-nav"><span class="es-nav-prev"></span><span class="es-nav-next"></span></div>
                     </div>
                 </section>
-
                 <section class="home-recent-posts container-fluid clearfix">
                     <div class="section-title">
                         <h3>Recent Posts</h3>
@@ -665,7 +664,7 @@
                             <figure>
                                 <span class="format-icon image"></span>
                                 <a href="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/news-01.jpg" class="swipebox" title="Lorem Post With Image Format">
-                                    <img width="536" height="269" style="max-width:100%" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/news-01-536x269.jpg" class="attachment-gallery-two-column-image wp-post-image" alt="News Post">
+                                    <img width="536" height="269" src="http://alt-realhomes.inspirythemes.com/wp-content/uploads/2013/08/news-01-536x269.jpg" class="attachment-gallery-two-column-image wp-post-image" alt="News Post">
                                 </a>
                             </figure>
                             <h4 class="post-title"><a href="http://alt-realhomes.inspirythemes.com/lorem-post-with-image-format/">Lorem Post With Image Format</a></h4>

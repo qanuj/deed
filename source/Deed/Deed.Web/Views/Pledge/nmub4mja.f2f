@@ -75,7 +75,7 @@
                         @*<span class="sponsor-btn"><input type="submit" id="sponsor" value="Sponsor" class="real-btn login-btn" /></span>*@
                     </div>
 
-                    <div class="pagination"><a href="@Url.Action("Query", new { page=1 })" class="real-btn current" style="margin-left: 323px;">1</a> <a href="@Url.Action("Query", new { page=2 })" class="real-btn">2</a> <a href="@Url.Action("Index", new { page=3 })" class="real-btn">3</a></div>
+                    <div class="pagination"><a href="@Url.Action("Query", new { page=1 })" class="real-btn current" style="margin-left: 323px;">1</a> <a href="@Url.Action("Index", new { page=2 })" class="real-btn">2</a> <a href="@Url.Action("Index", new { page=3 })" class="real-btn">3</a></div>
                 </section>
 
             </div>
