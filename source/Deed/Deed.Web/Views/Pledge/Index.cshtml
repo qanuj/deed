@@ -118,14 +118,13 @@
     var slectedItems = [];
     var i = 0;
     var total = 0;
-    
     $("#divstudent #dselect").hide();
     $(document).on('click', '#divstudent #select', function (e) {
 
         
         $(".listing-layout .title-heading").text("Sponsor Selected Student");
         e.preventDefault();
-         
+        var closeButton = $(this);
         slectedItems.push($(this).attr("data-id"));
         var dselectid = $(this).attr("data-id");
         $(this).replaceWith('<a id="dselect" class="btn btn-warning" data-id="' + dselectid + '">Selected</a>');
@@ -148,7 +147,7 @@
                         var res = stdname.substring(0, 12);
                         d.StudentName = res;
                     }
-                    $("#sprcarttbody").append('<tr> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.StudentImage + '"></td><td><b>Name:</br></b>' + d.StudentName + '</br><b>Class:</br></b>' + d.StudentClass + '</br><b>Age:</br></b>' + d.StudentDOB + '&nbsp;Yr</td><td>&#163;' + d.StudentFee.toFixed(2) + '</td><td class="clsparent"><div data-name="' + d.StudentName + '" data-fee="' + d.StudentFee.toFixed(2) + '" data-stdid="' + d.StudentId + '" id="cls" class="close clos" style="float:left">X</div></td><input id="StudentId" name="StudentId" type="hidden" value="' + d.StudentId + '"></tr>');
+                    $(" #sprcarttbody").append('<tr> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.StudentImage + '"></td><td><b>Name:</br></b>' + d.StudentName + '</br><b>Class:</br></b>' + d.StudentClass + '</br><b>Age:</br></b>' + d.StudentDOB + '&nbsp;Yr</td><td>&#163;' + d.StudentFee.toFixed(2) + '</td><td class="clsparent"><div data-name="' + d.StudentName + '" data-fee="' + d.StudentFee.toFixed(2) + '" data-stdid="' + d.StudentId + '" id="cls" class="close clos" style="float:left">X</div></td><input id="StudentId" name="StudentId" type="hidden" value="' + d.StudentId + '"></tr>');
                     total = parseFloat(total) + parseFloat(d.StudentFee.toFixed(2));
                     $(".list-group .list-group-item #selectedstd").text(function () { return ++i });
                     $(".list-group .list-group-item #ttlamount").text(function () { return total.toFixed(2) });
@@ -164,9 +163,15 @@
         if (confirm("Are you sure you want to remove '" + closeButton.attr("data-name") + "' ?")) {
 
             $("#divstudent #dselect").each(function () {
-                
+
+                var selectid = $("#divstudent #dselect").attr("data-id");
                 var removeid = closeButton.attr("data-stdid");
-                $(document).find("[data-id='" + removeid + "']").replaceWith('<button id="select"  class="btn btn-xs btn-danger pull-right" data-id="' + removeid + '">Select</button>');});
+                if (selectid == removeid)
+                {
+                    $(this).replaceWith('<button id="select"  class="btn btn-xs btn-danger pull-right" data-id="' + removeid + '">Select</button>');
+                }
+
+            });
             $.ajax({
                 type: "POST",
                 url: '/Pledge/Remove',
