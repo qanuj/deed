@@ -544,7 +544,7 @@
 
                         removeAmount: $(this).attr("data-studentfee"),
                         simpleamount:$("#SimpleTotal").val(),
-                        totalamount: '@simtotal',
+                        //totalamount: '@simtotal',
 
                         count: $("#cnt").text()
 
@@ -554,7 +554,7 @@
 
                         if (!!d) {
                             closeButton.closest("tr").remove();
-                            var ttl = d.totalamount;
+                            var ttl = d.simpleamount;
                             var cnt = d.count
                             $(".list-group .list-group-item  #totalamount #ttl").text(function () { return ttl.toFixed(2) });
                             $(".list-group .list-group-item  #totalcount #cnt").text(function () { return cnt });

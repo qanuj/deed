@@ -85,7 +85,7 @@ namespace Deed.Web.Controllers
                                       StudentDOB = age,
                                       StudentImage = std.image,
                                       StudentClass = c.name,
-                                      StudentFee= fee.total_per_year/90
+                                      StudentFee = fee.total_per_year / 90 + (fee.total_per_year / 90)*0.05
 
 
                                   }).FirstOrDefault(x=>x.StudentId==id);
@@ -204,7 +204,7 @@ namespace Deed.Web.Controllers
                                               StudentDOB = age,
                                               StudentImage = std.image,
                                               StudentClass = c.name,
-                                              StudentFee = fee.total_per_year/90
+                                              StudentFee = fee.total_per_year / 90 + (fee.total_per_year / 90) * 0.05
                                               
 
 
@@ -224,7 +224,7 @@ namespace Deed.Web.Controllers
 
             }
             simpletotal = total;
-            total = total + total * 5 / 100;
+           // total = total + total * 5 / 100;
             var r = new SponsorPaymentViewModel
             {
 
@@ -263,12 +263,12 @@ namespace Deed.Web.Controllers
         public ActionResult Remove(UpdateViewmodel objUpdate)
         {
             objUpdate.simpleamount = objUpdate.simpleamount - objUpdate.removeamount;
-            objUpdate.totalamount = objUpdate.simpleamount + objUpdate.simpleamount * 5 / 100;
+           // objUpdate.totalamount = objUpdate.simpleamount + objUpdate.simpleamount * 5 / 100;
             objUpdate.count = objUpdate.count-1;
 
             if (objUpdate.count==0)
             {
-                objUpdate.totalamount = 0.00;
+                objUpdate.simpleamount = 0.00;
 
                 objUpdate.count = 0;
 
