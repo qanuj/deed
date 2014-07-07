@@ -448,22 +448,7 @@
         }
         <div class="panel span3 panel-info pull-right">
             <div class="panel-heading">Featured Projects</div>
-            <div id="sponsorcartpanel" class="panel-body">
-                <ul class="featured-properties" data-bind="foreach: image">
-                    <li>
-                        <figure>
-                            <a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/">
-                                <img data-bind="attr: { src: ima }"  width=" 200" height="100"  class="attachment-grid-view-image wp-post-image" alt="property-09">
-                            </a>
-                        </figure>
-                        <h4><a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/" title="Florida 5, Pinecrest, FL">Florida 5, Pinecrest, FL</a></h4>
-                        <p>Nam liber tempor cum soluta nobis eleifend… <a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/">Read More</a></p>
-                        @*<span class="price">$480,000 </span>*@
-                    </li>
-                    
-                </ul>
-                
-            </div>
+           @Html.Action("FeaturedProject")
        </div>
             <!-- End contents row -->
         </div>

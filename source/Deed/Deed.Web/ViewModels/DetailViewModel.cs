@@ -30,7 +30,7 @@ namespace Deed.Web.ViewModels
         public string Village { get; set; }
         public string FamilyHistory { get; set; }
         public double YearlyFee { get; set; }
-
+        public double spestatus { get; set; }
 
         
         

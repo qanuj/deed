@@ -90,6 +90,30 @@ namespace Deed.Web.Controllers
           
        }
 
+
+       public ActionResult FeaturedProject()
+       {
+           var projects = from std in db.Students
+                          join f in db.SponsorPaymentHistories on std.id equals f.student_id into gh   
+
+                          from sub in gh.DefaultIfEmpty()
+                          select new DetailViewModel
+
+                          {
+                              StudentId = std.id,
+                              StudentName = std.first_name + " " + std.last_name,
+                              StudentImage=std.image,
+                              FamilyHistory = std.family_history,
+                              spestatus=std.sponsor_status
+                              
+
+                          };
+
+           projects = projects.Where(x=>x.spestatus==1).OrderBy(x => x.StudentId).Take(4);
+           return PartialView("FeaturedProject", projects);
+       
+       }
+
        public ICollection<ComboItem> GetReligion(string firstItem = "", long? selected = 0)
        {
            var r = from c in db.Students
@@ -98,6 +122,10 @@ namespace Deed.Web.Controllers
            var result = r.Distinct().ToList();
            return result;
        }
+
+
+
+
 
 	}
 }

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Deed.Web.ViewModels.DetailViewModel>
+
+
+    <div id="sponsorcartpanel" class="panel-body">
+        <ul class="featured-properties">
+
+            @foreach(var m in Model)
+            { 
+           
+            <li>
+                <article class="property-item clearfix">
+                    <figure>
+                        <a href="">
+                            <img src="http://deedaday.in/img/upload/students/@m.StudentImage" width=" 160" height="100" class="attachment-grid-view-image wp-post-image" alt="property-09">
+                        </a>
+                        <figcaption>
+                            Sponsored
+                        </figcaption>
+                    </figure>
+                    <h4><a href="" title="@m.StudentName">@m.StudentName</a></h4>
+                    <p>@m.FamilyHistory<a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/">Read More</a></p>
+                    @*<span class="price">&#163;@m.spestatus </span>*@
+                </article>
+            </li>
+                
+            }
+        </ul>
+
+    </div>
+
+
