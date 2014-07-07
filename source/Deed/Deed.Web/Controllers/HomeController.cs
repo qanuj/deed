@@ -59,6 +59,7 @@ namespace Deed.Web.Controllers {
                     select new SearchViewModel
                     {
                         StudentID = m.id,
+                        StudentName=m.first_name+" "+m.last_name,
                         StudentFirstName = m.first_name,
                         StudentLastName=m.last_name,
                         StudentPic = m.image,

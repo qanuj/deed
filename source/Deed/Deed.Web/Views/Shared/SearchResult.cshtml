@@ -29,10 +29,10 @@
                             <div class="span6 " id="articleparent">
                                 <article class="property-item clearfix">
 
-                                    <h4><a href="http://deedaday.in/img/upload/students/@m.StudentPic" title="">@m.StudentName</a></h4>
+                                    <h4><a href="@Url.Action("Details", "Search", new {id = m.StudentID})" title="">@m.StudentName</a></h4>
 
                                     <figure>
-                                        <a href="" title="15421 Southwest 39th Terrace">
+                                        <a href="@Url.Action("Details", "Search", new {id = m.StudentID})" title="@m.StudentName">
                                             <img width="244" height="163" src="http://deedaday.in/img/upload/students/@m.StudentPic" class="attachment-property-thumb-image wp-post-image" alt="@m.StudentFather" title="@m.StudentName">
                                         </a>
                                     </figure>
@@ -41,13 +41,12 @@
                                         <h5 class="price">
                                             @*&#163; @Yearlyfee Per Year*@
                                         </h5>
-                                        @*<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>*@
+                                       
                                         <p>@m.StudentFamilyHistory</p>
-                                        @*<a class="more-details" href="@Url.Action("Details", "Pledge", new {id=m.ID })">More Details <i class="fa fa-caret-right"></i></a>*@
+                                        
                                         <a class="more-details" href="@Url.Action("Details", "Pledge", new { id=@m.StudentID})">More Details <i class="fa fa-caret-right"></i></a>
 
-                                        @*<span class="pull-right"><input type="submit" value="Select" class="real-btn login-btn" /></span>*@
-                                        @*<span class="pull-right"><a id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</a></span>*@
+                                       
                                         <button id="select" data-src="http://deedaday.in/img/upload/students/@m.StudentPic" class="btn btn-xs btn-danger pull-right" data-id="@m.StudentID">Select</button>
 
 
