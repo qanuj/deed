@@ -452,6 +452,9 @@
     <Content Include="Content\__MACOSX\SeamlessResponsivePhotoGrid\css\._style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="font\fontawesome-webfont.svg" />
+    <Content Include="font\FranklinGothic-DemiCd-webfont.svg" />
+    <Content Include="font\zocial-regular-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap-carousel.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -464,6 +467,16 @@
     <None Include="BundleTransformer.Configuration.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="font\fontawesome-webfont.eot" />
+    <Content Include="font\fontawesome-webfont.ttf" />
+    <Content Include="font\fontawesome-webfont.woff" />
+    <Content Include="font\FontAwesome.otf" />
+    <Content Include="font\FranklinGothic-DemiCd-webfont.eot" />
+    <Content Include="font\FranklinGothic-DemiCd-webfont.ttf" />
+    <Content Include="font\FranklinGothic-DemiCd-webfont.woff" />
+    <Content Include="font\zocial-regular-webfont.eot" />
+    <Content Include="font\zocial-regular-webfont.ttf" />
+    <Content Include="font\zocial-regular-webfont.woff" />
     <None Include="Scripts\jquery-2.1.0.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
