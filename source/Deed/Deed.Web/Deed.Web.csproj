@@ -464,9 +464,6 @@
     <Content Include="Scripts\jquery-1.10.1.min.js" />
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Content\carouselLess.less" />
-    <None Include="BundleTransformer.Configuration.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <Content Include="font\fontawesome-webfont.eot" />
     <Content Include="font\fontawesome-webfont.ttf" />
     <Content Include="font\fontawesome-webfont.woff" />
@@ -668,10 +665,6 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Deed.Business\Deed.Business.csproj">
-      <Project>{e3f56d50-61a4-4ffa-b5a6-82355d17e43f}</Project>
-      <Name>Deed.Business</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Deed.Data\Deed.Data.csproj">
       <Project>{32be3090-f105-417f-b6d8-147152b69d92}</Project>
       <Name>Deed.Data</Name>
