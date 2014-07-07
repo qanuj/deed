@@ -32,5 +32,7 @@ namespace Deed.Web.ViewModels
 
 
 
+
+        public int Fee { get; set; }
     }
 }

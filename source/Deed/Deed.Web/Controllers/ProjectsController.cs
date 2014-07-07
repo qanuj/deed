@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -13,8 +14,7 @@ namespace Deed.Web.Controllers {
         // GET: /Projects/
 
         public ActionResult PartSponsor(int? page) {
-            var pageNumber = page ?? 1;
-            return View(Query().ToPagedList(pageNumber, 15));
+            return View();
         }
 
         protected IQueryable<CardViewModel> Query() {
@@ -37,6 +37,7 @@ namespace Deed.Web.Controllers {
                             DOB = DateTime.Now,
                             PostOffice = r.post_office,
                             Picture = r.image,
+                            Fee=0,
                             PoliceStation = r.police_station,
                             FamilyHistory = r.family_history
                         };
@@ -64,9 +65,8 @@ namespace Deed.Web.Controllers {
 
         }
 
-        public ActionResult Get() {
-            var s = db.Students.OrderByDescending(x => x.id).Take(15);
-            return Json(s, JsonRequestBehavior.AllowGet);
+        public ActionResult Get(int page=1) {
+            return Json(Query().Take(20).Skip((page-1)*20).ToList(), JsonRequestBehavior.AllowGet);
         }
     }
 }
