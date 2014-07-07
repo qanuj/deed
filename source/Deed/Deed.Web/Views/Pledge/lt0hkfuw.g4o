@@ -1,0 +1,253 @@
+﻿@*@model IEnumerable<Deed.Web.ViewModels.CardViewModel>*@
+@model PagedList.IPagedList<Deed.Web.ViewModels.CardViewModel>
+@using PagedList
+@{
+    ViewBag.Title = "Support Us";
+}
+
+<div class="page-head" style="background-repeat: no-repeat; background-position: center top; background-image: url('https://scontent-a-ams.xx.fbcdn.net/hphotos-xfa1/t1.0-9/s526x296/1507574_249723848529973_1170124006_n.jpg'); background-size: cover; ">
+    <div class="container"></div>
+</div>
+<div class="container contents lisitng-grid-layout">
+    <div class="row">
+        <div class="span9 main-wrap" style="margin-left:-70px;">
+            <div class="main ">
+
+                <section id="sec" class="listing-layout">
+
+                    <h3 class="title-heading"><a class="">Sponsor Students</a> </h3>
+
+
+                    <div class="view-type clearfix">
+                        <a id="list" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-th-list">
+                            </span>
+                        </a> <a id="grid" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </a>
+                    </div>
+
+                    <div class="list-container clearfix">
+                        @foreach (var m in Model)
+                        {
+                            var Yearlyfee = Math.Round(m.YearlyFee, 2);
+                            <div class="span6" id="articleparent">
+                                <article class="property-item clearfix">
+
+                                    <h4><a href="@Url.Action("Details", "Search", new {id = m.ID })" title="">@m.Name</a></h4>
+
+                                    <figure>
+                                        <a href="@Url.Action("Details", "Search", new {id = m.ID })" title="@m.Name">
+                                            <img width="244" height="163" src="http://deedaday.in/img/upload/students/@m.Picture" class="attachment-property-thumb-image wp-post-image" alt="@m.Name" title="@m.Name">
+                                        </a>
+                                    </figure>
+
+                                    <div class="detail" id="divstudent">
+                                        <h5 class="price">
+                                            &#163; @Yearlyfee Per Year
+                                        </h5>
+                                        <p>@m.FamilyHistory</p>
+                                        <a class="more-details" href="@Url.Action("Details", "Pledge", new { id=@m.ID})">More Details <i class="fa fa-caret-right"></i></a>
+                                        <button id="select" data-src="http://deedaday.in/img/upload/students/@m.Picture" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</button>
+
+
+                                    </div>
+
+                                    <div class="property-meta">
+                                        <span><b>Father:</b></span><span>@m.Father</span><span><b>Mother:</b></span><span>@m.Mother</span>
+                                    </div>
+
+                                </article>
+                            </div>
+                        }
+                    </div>
+                    <div>
+
+                    </div>
+
+                    <div class="pagination"><a href="@Url.Action("Query", new { page=1 })" class="real-btn current" style="margin-left: 323px;">1</a> <a href="@Url.Action("Query", new { page=2 })" class="real-btn">2</a> <a href="@Url.Action("Index", new { page=3 })" class="real-btn">3</a></div>
+                </section>
+
+            </div>
+        </div>
+
+        @using (Html.BeginForm("Sponsorr", "Pledge", FormMethod.Post, new { @class = "", role = "form" }))
+        {
+            <div class="panel panel-success pull-right">
+                <div class="panel-heading">Selected Students</div>
+                <div id="sponsorcartpanel" class="panel-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Child</th>
+                                <th>About Child</th>
+                                <th>Required</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody class="trr" id="sprcarttbody"></tbody>
+                    </table>
+                </div>
+                <div class="panel-body">
+                    <div class="panel panel-info">
+
+                        <ul class="list-group">
+                            <li class="list-group-item"><div><span>Total Children=<span id="selectedstd">0</span></span></div></li>
+
+                            <li class="list-group-item"><div>Total Amount=&#163;&nbsp;<span id="ttlamount">0.00</span></div></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div id="sprbtn">
+
+                    <button id="submit" type="submit" class="btn  btn-danger pull-right">Sponsor Now</button>
+
+                </div>
+            </div>
+        }
+    </div>
+
+</div>
+
+
+<script type="text/javascript" async>
+    //$(document).ready(function () {
+
+    var slectedItems = [];
+    var i = 0;
+    var total = 0;
+
+    $("#divstudent #dselect").hide();
+    $(document).on('click', '#divstudent #select', function (e) {
+
+
+        $(".listing-layout .title-heading").text("Sponsor Selected Student");
+        e.preventDefault();
+
+        slectedItems.push($(this).attr("data-id"));
+        var dselectid = $(this).attr("data-id");
+        $(this).replaceWith('<a id="dselect" class="btn btn-warning" data-id="' + dselectid + '">Selected</a>');
+        $("#sprcarttbody").append('<tr id="loadersuccess" ><td align="center" colspan="4"><img src="Content/images/ajax-loader.gif" style="width:50px;height: 50px; alt="" /></td></tr>');
+        $.ajax({
+            type: "POST",
+            url: '/Pledge/Details',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({
+                id: $(this).attr("data-id")
+
+            }),
+            success: function (d) {
+                if (!!d) {
+                    $("#loadersuccess").remove();
+                    var stdname = d.StudentName;
+
+                    if (stdname.length > 12) {
+                        var res = stdname.substring(0, 12);
+                        d.StudentName = res;
+                    }
+                    $("#sprcarttbody").append('<tr> <td><img id="img" style="height:70px; width:70px" src="http://deedaday.in/img/upload/students/' + d.StudentImage + '"></td><td><b>Name:</br></b>' + d.StudentName + '</br><b>Class:</br></b>' + d.StudentClass + '</br><b>Age:</br></b>' + d.StudentDOB + '&nbsp;Yr</td><td>&#163;' + d.StudentFee.toFixed(2) + '</td><td class="clsparent"><div data-name="' + d.StudentName + '" data-fee="' + d.StudentFee.toFixed(2) + '" data-stdid="' + d.StudentId + '" id="cls" class="close clos" style="float:left">X</div></td><input id="StudentId" name="StudentId" type="hidden" value="' + d.StudentId + '"></tr>');
+                    total = parseFloat(total) + parseFloat(d.StudentFee.toFixed(2));
+                    $(".list-group .list-group-item #selectedstd").text(function () { return ++i });
+                    $(".list-group .list-group-item #ttlamount").text(function () { return total.toFixed(2) });
+                }
+            }
+        });
+
+
+    });
+    $(document).on('click', 'td > div', function (e) {
+
+        var closeButton = $(this);
+        if (confirm("Are you sure you want to remove '" + closeButton.attr("data-name") + "' ?")) {
+
+            $("#divstudent #dselect").each(function () {
+
+                var removeid = closeButton.attr("data-stdid");
+                $(document).find("[data-id='" + removeid + "']").replaceWith('<button id="select"  class="btn btn-xs btn-danger pull-right" data-id="' + removeid + '">Select</button>');
+            });
+            $.ajax({
+                type: "POST",
+                url: '/Pledge/Remove',
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify({
+
+                    id: $(this).attr("data-stdid"),
+
+                    removeAmount: $(this).attr("data-fee"),
+
+                    simpleamount: $("#ttlamount").text(),
+
+                    count: $("#selectedstd").text()
+
+
+                }),
+                success: function (d) {
+
+                    if (!!d) {
+                        closeButton.closest("tr").remove();
+                        var ttl = d.simpleamount;
+                        var cnt = d.count
+                        $(".list-group .list-group-item  #ttlamount").text(function () { return ttl.toFixed(2) });
+                        $(".list-group .list-group-item  #selectedstd").text(function () { return cnt });
+                        $("#lblttlamount").text(function () { return ttl.toFixed(2) });
+                        total = d.simpleamount;
+                        i = d.count
+                        $("#inputamount").val(ttl.toFixed(2));
+
+                    }
+                }
+            });
+
+
+        };
+    });
+
+    $(".listing-layout .title-heading").on('click', function (e) {
+        e.preventDefault();
+        $(this).text("Loading.....");
+        var closeButton = $(this);
+        $.ajax({
+            type: "POST",
+            url: '/Pledge/Cart',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({
+                Selected: $.unique(slectedItems)
+
+            }),
+            success: function (d) {
+                if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(true); closeButton.text("Sponsor Selected Student"); }
+            }
+        });
+
+    });
+
+    //Grid and list view function
+
+    $(" .view-type #list").on('click', function (event) {
+        event.preventDefault();
+
+        $('#sec').removeClass('property-grid');
+        $("h5").addClass("price");
+        $("div.property-meta").show();
+        //$("#divstudent #select").show();
+        $(".property-item #divstudent").addClass('detail');
+        $(".list-container #articleparent").addClass('span6');
+        $("p").css('font-size', '13px');
+        $("p").css('line-height', '23px');
+
+    });
+    $(".view-type  #grid").on('click', function (event) {
+        //event.preventDefault();
+        $('#sec').addClass('property-grid ');
+        $("h5").removeClass("price");
+        $("div.property-meta").hide();
+        //$("#divstudent #select").remove();
+        $(".property-item #divstudent").removeClass('detail');
+        $(".list-container #articleparent").removeClass('span6');
+        $("p").css('font-size', '12px');
+        $("p").css('line-height', '14px');
+
+    });
+</script>

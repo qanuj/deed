@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Deed.Web.ViewModels;
+using Deed.Data.Legacy;
+using PagedList;
 
 namespace Deed.Web.Controllers
 {
@@ -12,6 +14,12 @@ namespace Deed.Web.Controllers
         //
         // GET: /Projects/
 
+        public ActionResult PartSponsor(int? page)
+        {
+            var pageNumber = page ?? 1;
+            return View(Query().ToPagedList(pageNumber, 15));
+        }
+
         protected IQueryable<CardViewModel> Query()
         {
             var query = from r in db.Students
@@ -19,7 +27,7 @@ namespace Deed.Web.Controllers
                         select new CardViewModel
                         {
                             ID = r.id,
-                            Name = r.first_name,
+                            Name = r.first_name + "   " + r.last_name,
                             Father = r.father_first_name,
                             Mother = r.mother_first_name,
                             District = r.district,
@@ -34,18 +42,17 @@ namespace Deed.Web.Controllers
                             DOB = DateTime.Now,
                             PostOffice = r.post_office,
                             Picture = r.image,
-                            PoliceStation = r.police_station
+                            PoliceStation = r.police_station,
+                            FamilyHistory = r.family_history
+
 
                         };
-            query = query.OrderBy(x => x.Name).Take(10);
+            query = query.OrderBy(x => x.Name);
             return query;
 
         }
 
-        public ActionResult Index()
-        {
-            return View();
-        }
+        
         public ActionResult SponsorProject()
         {
             return View();
@@ -57,11 +64,7 @@ namespace Deed.Web.Controllers
             return View(Query());
         }
 
-        public ActionResult PartSponsor()
-        {
-            //var std = db.Students.OrderBy(x => x.first_name).Take(10);
-            return View(Query());
-        }
+        
 
 
         public ActionResult SprtDeedADay()

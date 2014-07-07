@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Deed.Web.ViewModels.CardViewModel>
+﻿@model PagedList.IPagedList<Deed.Web.ViewModels.CardViewModel>
+@using PagedList
 @{
     ViewBag.Title = "Part Sponsor";
 }
@@ -16,45 +17,45 @@
         <div class="span9 main-wrap">
             <div class="main ">
 
-                <section class="listing-layout">
+                <section id="sec" class="listing-layout">
 
                     <h3 class="title-heading">Part Sponsor</h3>
-                    @*<div id="map_canvas" style="width: 800px; height :347px; margin-left:29px;margin-top:36px;"></div>*@
+
                     <div class="view-type clearfix">
-                        <a class="list active" href="http://alt-realhomes.inspirythemes.com/listing/?view=list"></a>
-                        <a class="grid" href="http://alt-realhomes.inspirythemes.com/listing/?view=grid"></a>
+                        <a id="list" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-th-list">
+                            </span>
+                        </a> <a id="grid" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </a>
                     </div>
 
                     <div class="list-container clearfix">
                         @foreach (var m in Model)
                         {
-                            <div class="span6 ">
+                            var Yearlyfee = Math.Round(m.YearlyFee, 2);
+                            <div class="span6" id="articleparent">
                                 <article class="property-item clearfix">
 
-                                    <h4><a href="http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/" title="">@m.Name</a></h4>
+                                    <h4><a href="@Url.Action("Details", "Search", new {id = m.ID })" title="">@m.Name</a></h4>
 
                                     <figure>
-                                        <a href="http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/" title="15421 Southwest 39th Terrace">
+                                        <a href="@Url.Action("Details", "Search", new {id = m.ID })" title="@m.Name">
                                             <img width="244" height="163" src="http://deedaday.in/img/upload/students/@m.Picture" class="attachment-property-thumb-image wp-post-image" alt="@m.Name" title="@m.Name">
                                         </a>
                                     </figure>
 
-                                    <div class="detail" id="ProgressParent">
+                                    <div class="detail" id="divstudent">
                                         <h5 class="price">
-                                            &#163; 3,850 Per Year
+                                            &#163; @Yearlyfee Per Year
                                         </h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci…</p>
-                                        @*<a class="more-details" href="@Url.Action("Details", "Pledge", new {id=m.ID })">More Details <i class="fa fa-caret-right"></i></a>*@
-                                        <a class="more-details" href="@Url.Action("ChildDetail", "Projects", new { id=@m.ID})">More Details <i class="fa fa-caret-right"></i></a>
-                                       
-                                        @*<span class="pull-right"><input type="submit" value="Select" class="real-btn login-btn" /></span>*@
-                                        @*<span class="pull-right"><a id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</a></span>*@
-                                        <button id="select" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</button>
-                                        @*<div id="progresss" data-container="body" data-toggle="popover" data-placement="left" data-content="50% Has been sponsored to @m.Name "></div>*@
+                                        <p>@m.FamilyHistory</p>
+                                        <a class="more-details" href="@Url.Action("Details", "Pledge", new { id=@m.ID})">More Details <i class="fa fa-caret-right"></i></a>
+                                        <button id="select" data-src="http://deedaday.in/img/upload/students/@m.Picture" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</button>
+
                                         <div class="progress progress-striped active">
                                             <div class="progress-bar" role="progressbar" aria-valuetransitiongoal="20"></div>
                                         </div>
-                                        
 
                                     </div>
 
@@ -66,11 +67,8 @@
                             </div>
                         }
                     </div>
-                    <div>
-                        <span class="sponsor-btn"><input type="submit" id="sponsor" value="Sponsor" class="real-btn login-btn" /></span>
-                    </div>
 
-                    <div class="pagination"><a href="http://alt-realhomes.inspirythemes.com/listing/" class="real-btn current" style="margin-left: 394px;">1</a> <a href="http://alt-realhomes.inspirythemes.com/listing/page/2/" class="real-btn">2</a> </div>
+                    <div class="pagination"><a href="@Url.Action("PartSponsor", new { page = 1 })" class="real-btn current" style="margin-left: 323px;">1</a> <a href="@Url.Action("PartSponsor", new { page = 2 })" class="real-btn">2</a> <a href="@Url.Action("PartSponsor", new { page = 3 })" class="real-btn">3</a></div>
                 </section>
 
             </div>
@@ -89,6 +87,35 @@
 
         $('.progress-bar').progressbar();
         
+    });
+
+
+
+    $(" .view-type #list").on('click', function (event) {
+        event.preventDefault();
+
+        $('#sec').removeClass('property-grid');
+        $("h5").addClass("price");
+        $("div.property-meta").show();
+        //$("#divstudent #select").show();
+        $(".property-item #divstudent").addClass('detail');
+        $(".list-container #articleparent").addClass('span6');
+        $("p").css('font-size', '13px');
+        $("p").css('line-height', '23px');
+
+    });
+    $(".view-type  #grid").on('click', function (event) {
+        //event.preventDefault();
+        $('#sec').addClass('property-grid ');
+        $("h5").removeClass("price");
+        $("div.property-meta").hide();
+        //$("#divstudent #select").remove();
+        $(".property-item #divstudent").removeClass('detail');
+        $(".list-container #articleparent").removeClass('span6');
+        $("p").css('font-size', '12px');
+        $("p").css('line-height', '14px');
+        $(".progress").hide()
+
     });
 </script>
 
