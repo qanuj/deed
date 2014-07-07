@@ -42,6 +42,7 @@ namespace Deed.Web
                         "~/Scripts/main.js",
                         "~/Scripts/Bar.js",
                         "~/Scripts/knockout-3.1.0.js",
+                        "~/Scripts/knockout.mapping-latest.js",
                         "~/Scripts/js-image-slider.js"
 
                 ));

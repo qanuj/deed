@@ -79,6 +79,14 @@ namespace Deed.Web.Controllers
 
         }
 
+        public ActionResult Get()
+        {
+
+            var s = db.Students.OrderByDescending(x => x.id).Take(15);
+            return Json(s, JsonRequestBehavior.AllowGet);
+
+        }
+
 
 
 	}

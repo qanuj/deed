@@ -80,14 +80,34 @@
 </div>
 
 <script type="text/javascript">
-    $(document).ready(function () {
-        //var bar1 = $("#ProgressParent #progresss").progressbar({value:37});
-        //var bar1 = $("#ProgressParent #progresss").progressbar();
-        //var barrrr = bar1.progress(50);
+    
 
-        $('.progress-bar').progressbar();
-        
-    });
+
+   
+
+    var data = $.ajax({
+            type: "POST",
+            url: '/Projects/Get',
+            contentType: 'application/json; charset=utf-8',
+
+            success: function (d) {
+                if (!!d) {
+
+                    return d;
+
+
+                }
+            }
+        });
+
+
+
+       
+    var viewModel = ko.mapping.fromJS(data);
+    alert("show");
+
+
+
 
 
 
