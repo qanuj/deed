@@ -429,26 +429,20 @@
                             <div class="option-bar large">
                                 <label for="select-location">Country</label>
                                 <span class="selectwrap">
-                                    <select name="Country" id="select-location" class="search-select" style="display: none;">
-                                        
-                                    </select>
+                                    @Html.DropDownList("Country", (IEnumerable<SelectListItem>)ViewBag.Country, new { @class = "search-select" })
                                 </span>
                             </div>
 
                             <div class="option-bar large">
                                 <label for="select-location">State</label>
                                 <span class="selectwrap">
-                                    <select name="State" id="select-location" class="search-select" style="display: none;">
-                                        
-                                    </select>
+                                    @Html.DropDownList("State", (IEnumerable<SelectListItem>)ViewBag.State, new { @class = "search-select" })
                                 </span>
                             </div>
                             <div class="option-bar large">
                                 <label for="select-location">District</label>
                                 <span class="selectwrap">
-                                    <select name="District" id="select-location" class="search-select" style="display: none;">
-                                        
-                                    </select>
+                                    @Html.DropDownList("City", (IEnumerable<SelectListItem>)ViewBag.City, new { @class = "search-select" })
                                 </span>
                             </div>
 
