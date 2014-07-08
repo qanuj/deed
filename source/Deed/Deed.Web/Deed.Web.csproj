@@ -457,6 +457,7 @@
     <Content Include="font\FranklinGothic-DemiCd-webfont.svg" />
     <Content Include="font\zocial-regular-webfont.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Resource\dad.mp4" />
     <Content Include="Scripts\bootstrap-carousel.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
