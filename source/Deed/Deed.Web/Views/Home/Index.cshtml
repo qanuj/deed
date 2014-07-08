@@ -414,30 +414,102 @@
 
             <!-- Main Content -->
             <div class="main">
-                <section id="home-idx-search" class="clearfix dsidx-widget-search">
-                    @*<h3>Student Search</h3>*@<div class="dsidx-search-widget dsidx-widget">
-                        @using (Html.BeginForm("Get", "Home", FormMethod.Post, new { @class = "", role = "form" }))
-                        {
-                            <form action="http://alt-realhomes.inspirythemes.com/idx/" method="get" onsubmit="return dsidx_w.searchWidget.validate();">
-                                @*@Html.DropDownList("Country","Any")
-                                    @Html.DropDownList("State","Any")
-                                    @Html.DropDownList("District","Any")*@
+                <section class="advance-search ">
+                    <h3 class="search-heading"><i class="fa fa-search"></i>Find Student</h3><div class="as-form-wrap">
+                        <form class="advance-search-form clearfix" action="http://inspirythemesdemo.com/realhomes/property-search/" method="get">
+                            <div class="option-bar large">
+                                <label for="property-id-txt">First Name</label><br>
+                                <input type="text" name="FirstName" id="property-id-txt" value="" placeholder="Any">
+                            </div>
+
+                            <div class="option-bar large">
+                                <label for="property-id-txt">Last Name</label><br>
+                                <input type="text" name="LastName" id="property-id-txt" value="" placeholder="Any">
+                            </div>
+                            <div class="option-bar large">
+                                <label for="select-location">Country</label>
+                                <span class="selectwrap">
+                                    <select name="Country" id="select-location" class="search-select" style="display: none;">
+                                        
+                                    </select>
+                                </span>
+                            </div>
+
+                            <div class="option-bar large">
+                                <label for="select-location">State</label>
+                                <span class="selectwrap">
+                                    <select name="State" id="select-location" class="search-select" style="display: none;">
+                                        
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="option-bar large">
+                                <label for="select-location">District</label>
+                                <span class="selectwrap">
+                                    <select name="District" id="select-location" class="search-select" style="display: none;">
+                                        
+                                    </select>
+                                </span>
+                            </div>
 
 
-                                <input id="" name="FirstName" type="text" class="dsidx-mlsnumber" placeholder="Enter First Name">
-                                <input id="" name="LastName" type="text" class="dsidx-mlsnumber" placeholder="Enter Last Name">
+                            <div class="option-bar small price-for-others">
+                                <label for="select-min-price">Min Price</label>
+                                <span class="selectwrap">
+                                    <select name="min-price" id="select-min-price" class="search-select" style="display: none;">
+                                        <option value="1000">$1,000</option>
+                                        <option value="5000">$5,000</option>
+                                        <option value="10000">$10,000</option>
+                                        <option value="50000">$50,000</option>
+                                        <option value="100000">$100,000</option>
+                                        <option value="200000">$200,000</option>
+                                        <option value="300000">$300,000</option>
+                                        <option value="400000">$400,000</option>
+                                        <option value="500000">$500,000</option>
+                                        <option value="600000">$600,000</option>
+                                        <option value="700000">$700,000</option>
+                                        <option value="800000">$800,000</option>
+                                        <option value="900000">$900,000</option>
+                                        <option value="1000000">$1,000,000</option>
+                                        <option value="1500000">$1,500,000</option>
+                                        <option value="2000000">$2,000,000</option>
+                                        <option value="2500000">$2,500,000</option>
+                                        <option value="5000000">$5,000,000</option>
+                                        <option value="any" selected="selected">Any</option>
+                                    </select>
+                                </span>
+                            </div>
 
-                                @Html.DropDownList("Country", "Select Any Country")
-                                @Html.DropDownList("State", "Select Any State")
-                                @Html.DropDownList("City", "Select Any City")
-                                @*<input id="" name="" type="text" class="dsidx-price" placeholder="Min Price">
-                                    <input id="" name="" type="text" class="dsidx-price" placeholder="Max Price">*@
-
-                                <div class="dsidx-search-button search-form">
-                                    <input type="submit" class="submit real-btn" value="Search for Students">
-                                </div>
-                            </form>
-                        }
+                            <div class="option-bar small price-for-others">
+                                <label for="select-max-price">Max Price</label>
+                                <span class="selectwrap" style="height:34px">
+                                    <select name="max-price" id="select-max-price" class="search-select" style="display: none;">
+                                        <option value="5000">$5,000</option>
+                                        <option value="10000">$10,000</option>
+                                        <option value="50000">$50,000</option>
+                                        <option value="100000">$100,000</option>
+                                        <option value="200000">$200,000</option>
+                                        <option value="300000">$300,000</option>
+                                        <option value="400000">$400,000</option>
+                                        <option value="500000">$500,000</option>
+                                        <option value="600000">$600,000</option>
+                                        <option value="700000">$700,000</option>
+                                        <option value="800000">$800,000</option>
+                                        <option value="900000">$900,000</option>
+                                        <option value="1000000">$1,000,000</option>
+                                        <option value="1500000">$1,500,000</option>
+                                        <option value="2000000">$2,000,000</option>
+                                        <option value="2500000">$2,500,000</option>
+                                        <option value="5000000">$5,000,000</option>
+                                        <option value="10000000">$10,000,000</option>
+                                        <option value="any" selected="selected">Any</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="option-bar">
+                                <input type="submit" value="Search" class=" real-btn btn">
+                            </div>
+                        </form>
                     </div>
                 </section>
 
