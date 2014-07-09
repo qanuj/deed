@@ -14,7 +14,8 @@ namespace Deed.Web.Controllers {
         // GET: /Projects/
 
         public ActionResult PartSponsor(int? page) {
-            return View();
+            var pageNumber = page ?? 1;
+            return View(Query().ToPagedList(pageNumber, 15));
         }
 
         protected IQueryable<CardViewModel> Query() {
