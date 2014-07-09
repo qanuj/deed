@@ -455,6 +455,7 @@
     <Content Include="Content\styleRes.css" />
     <Content Include="Content\__MACOSX\SeamlessResponsivePhotoGrid\css\._style.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\button_play_pink.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="font\fontawesome-webfont.svg" />
     <Content Include="font\FranklinGothic-DemiCd-webfont.svg" />
