@@ -48,7 +48,7 @@ namespace Deed.Web.Controllers {
             return PartialView("_Card", result.ToPagedList(pageNumber, 4));
         }
 
-        public ActionResult Get(int? page,string StudentFirstName,string StudentLastName, long? State,long? Country,string City)
+        public ActionResult Get(int? page,long? StudentID,string StudentFirstName,string StudentLastName, long? State,long? Country,string City)
         {
            
             
@@ -72,7 +72,7 @@ namespace Deed.Web.Controllers {
                     };
 
 
-            s = s.Where(c => c.StudentFirstName == StudentFirstName ||c.StudentLastName==StudentLastName|| c.StudentLocation == State);
+            s = s.Where(c => c.StudentFirstName == StudentFirstName ||c.StudentID==StudentID||c.StudentLastName==StudentLastName|| c.StudentLocation == State);
             s = s.OrderBy(x => x.StudentFirstName);
             return View("SearchResult", s.ToPagedList(pageNumber, 15));
 
