@@ -338,6 +338,7 @@
     <Content Include="Content\images\arrowdr.jpg" />
     <Content Include="Content\images\background-outer-wrapper.png" />
     <Content Include="Content\images\banner.jpg" />
+    <Content Include="Content\images\button_play_pink.png" />
     <Content Include="Content\images\carousel-nav-left.png" />
     <Content Include="Content\images\carousel-nav-right.png" />
     <Content Include="Content\images\comment-detail-wrap-arrow.png" />
@@ -419,6 +420,7 @@
     <Content Include="Content\images\slider-nav-left.png" />
     <Content Include="Content\images\slider-nav-right.png" />
     <Content Include="Content\images\SliderImg\13772.jpg" />
+    <Content Include="Content\images\SliderImg\button_play_pink.png" />
     <Content Include="Content\images\SliderImg\cute-sardar.jpg" />
     <Content Include="Content\images\SliderImg\dad.mp4" />
     <Content Include="Content\images\SliderImg\Gaurav Pandey Rural.jpg" />
