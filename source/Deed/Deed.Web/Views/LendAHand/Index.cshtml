@@ -1,20 +1,68 @@
-﻿
-<h6 class="getinvoloved">Get Involved </h6>
+﻿<div class="page-head" style="background-repeat: no-repeat; background-position: center top; background-image: url('/Content/images/SliderImg/13772.jpg'); background-size: cover; ">
+    <div class="container">
+        <div class="wrap clearfix">
+            <h1 class="page-title"><span>Get Involoved</span></h1>
+            <p></p>
+        </div>
+    </div>
+</div>
 
-<p class="gethead">Your small hours can be the great force for change. </p>
+<div class="container contents lisitng-grid-layout">
+    <div class="row">
+        <div class="span8 main-wrap">
+            <div class="main">
+                <section class="listing-layout">
+                    <h3 class="title-heading">Get Involved</h3>
+                    <div class="list-container">
+                        <article class="post-25 post type-post status-publish format-image has-post-thumbnail hentry category-sales tag-custom tag-interior">
+                            <h3>Your small hours can be the great force for change.</h3>
+                            <blockquote>
+                                <p>Key to our impact has been our incredible team. Unlike other volunteer opportunities, joining the<strong> Deed A Day </strong>team gives you hands-on experience and real responsibility in managing projects, thinking creatively, meeting other inspired people, and making a difference. Whether you choose to volunteer, intern, start a <strong>Deed A Day Chapter</strong> in your local community, or go abroad as one of our fellows, your time is one of the most valuable resources you can give.</p>
+                            </blockquote>
+                            <p>It has been instrumental in bringing about silent but sure reforms to uplift the socio-economic status of the rural poor in the areas covered.</p>
+                            <p>The rural areas of Uttar Pradesh, Haryana, Rajasthan, backward hilly areas of Himachal Pradesh and Punjab are being covered with 129 outstanding low cost CBSE Schools, which provide modern value-based education to around 60,000 students.</p>
+                            <p>Our students are mostly from rural deprived sections of the society and our schools admit them regardless of caste, creed, region, religion and social status.</p>
+                            <p>The future outlook is to build these to 500 schools to bring the penetration of value-based education to village cluster levels.</p>
+                            <p>Other than the schools, the Trust runs 24 Colleges, 2 Private Universities, 6 Free Teachers Training Centers to empower 2000 rural girls, 1 (280 bed) Hospital, 3 De-addiction Centers, Orphanage home, Old Age home, Rehabilitation Centers for distressed women other than holding 4 Free Medical/Surgery Camps for rural poor in hilly areas of Sirmaur, Himachal Pradesh.</p>
 
-<p class="getincontent"> Key to our impact has been our incredible team. Unlike other volunteer opportunities, joining the<strong> Deed A Day </strong>team gives you hands-on experience and real responsibility in managing projects, thinking creatively, meeting other inspired people, and making a difference. Whether you choose to volunteer, intern, start a <strong>Deed A Day Chapter</strong> in your local community, or go abroad as one of our fellows, your time is one of the most valuable resources you can give.</p>
+                            </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="span3">
 
-<section class="section advance-search">
-    <div class="row elipse">
+            <div class="post property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-sale">
+                <figure>
+                    <div class="" style="display: none;">
 
-        <a href="@Url.Action("SrtCptr", "LendAHand")"><div class="circleBase type3 col-md-3 offset1"> <p class="elipsecontent">Start A Chapter</p></div></a>
+                        @*<a href ="" id ="link" class="link" data-url="http://youtube.com/v/mjOehs9HMcY?autoplay=1" style="margin-top: -16px; right: 0px;"></a>*@
+                    </div>
+                    <img class="img-border" src="http://img.youtube.com/vi/g6lkZVgYZII/0.jpg?autoplay=1" style="width:247px;height:124px" alt="The Man behind DeedaDay - JS Uppal, CEO CK Morgan Australia "><img data-url="http://youtube.com/v/g6lkZVgYZII?autoplay=1" class="playbt" src="~/fonts/button_play_pink.png">
+                </figure>
 
-        <a href="@Url.Action("Vtr", "LendAHand")"><div class="circleBase type3 col-md-3 offset1"><p class="elipsecontent">Volunteer</p></div></a>
+            </div>
 
-        <a href="@Url.Action("SprdTheWrd", "LendAHand")"><div class="circleBase type3 col-md-3 offset1"><p class="elipsecontent">Spread The Word</p></div></a>
+        </div>
+
 
     </div>
+</div>
 
+<script type="text/javascript">
+    $('.playbt').on('click', function () {
+        $.ajax({
+            type: "POST",
+            url: '/Media/Player',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({
+                linkk: $(this).attr("data-url")
 
-</section>
+            }),
+            success: function (d) {
+                if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(); }
+            }
+
+        });
+    });
+</script>
