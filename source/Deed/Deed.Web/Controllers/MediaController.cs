@@ -47,7 +47,7 @@ namespace Deed.Web.Controllers
         public ActionResult Player(string linkk)
         {
             ViewBag.link = linkk;
-            return View();
+            return PartialView("_lists",ViewBag.link);
 
         }
 

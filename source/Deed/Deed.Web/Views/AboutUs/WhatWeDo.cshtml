@@ -29,6 +29,38 @@
                 </section>
             </div>
         </div>
+        <div class="span3">
+
+            <div class="post property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-sale">
+                <figure>
+                    <div class="" style="display: none;">
+
+                        @*<a href ="" id ="link" class="link" data-url="http://youtube.com/v/mjOehs9HMcY?autoplay=1" style="margin-top: -16px; right: 0px;"></a>*@
+                    </div>
+                    <img  class="img-border" src="http://img.youtube.com/vi/g6lkZVgYZII/0.jpg?autoplay=1" style="width:247px;height:124px" alt="The Man behind DeedaDay - JS Uppal, CEO CK Morgan Australia "><img data-url="http://youtube.com/v/g6lkZVgYZII?autoplay=1" class="playbt" src="~/Content/images/button_play_pink.png">
+                </figure>
+
+            </div>
+
+        </div>
        
     </div>
 </div>
+
+<script type="text/javascript">
+        $('.playbt').on('click',function () {
+         $.ajax({
+                type: "POST",
+                url: '/Media/Player',
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify({
+                    linkk: $(this).attr("data-url")
+
+                }),
+                success: function (d) {
+                    if (!!d) {$('<div class="modal fade">'+ d+ '</div>').modal();}
+                    }
+                
+            });
+         });
+</script>

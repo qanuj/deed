@@ -19,7 +19,7 @@
                 <section class="listing-layout">
                     <h3 class="title-heading">About Us</h3>
                     <div class="list-container">
-                        <figure><img src="http://dummyimage.com/830x323/dedede/fff.jpg&text=Dummy+Image"></figure>
+                        <figure><img style="width:705px;" src="https://scontent-a-cdg.xx.fbcdn.net/hphotos-xpa1/t1.0-9/s526x296/1622161_268972683271756_515007202_n.jpg"></figure>
                         <p>The Kalgidhar Trust – Baru Sahib is an Education focused non-profit charitable organization fighting the cancer of Drugs and Alcohol Abuse by promoting quality Education alongwith Healthcare, Women empowerment and Social welfare, to the deprived people, in far-flung rural areas of North India.</p>
                         <p>It has been instrumental in bringing about silent but sure reforms to uplift the socio-economic status of the rural poor in the areas covered.</p>
                         <p>The rural areas of Uttar Pradesh, Haryana, Rajasthan, backward hilly areas of Himachal Pradesh and Punjab are being covered with 129 outstanding low cost CBSE Schools, which provide modern value-based education to around 60,000 students.</p>
@@ -28,16 +28,16 @@
                         <p>Other than the schools, the Trust runs 24 Colleges, 2 Private Universities, 6 Free Teachers Training Centers to empower 2000 rural girls, 1 (280 bed) Hospital, 3 De-addiction Centers, Orphanage home, Old Age home, Rehabilitation Centers for distressed women other than holding 4 Free Medical/Surgery Camps for rural poor in hilly areas of Sirmaur, Himachal Pradesh.</p>
 
                         <article class="about-agent clearfix">
-                            <h4><a href="#">Any Contact</a></h4>
+                            <h4><a href="#">Contact Us</a></h4>
                             <figure>
                                 <a href="#">
-                                    <img width="150" height="150" src="http://dummyimage.com/100x100/dbd2db/fff" class="attachment-post-thumbnail wp-post-image" alt="agent pic">
+                                    <img width="150" height="150" src="~/Content/images/logo.png" class="attachment-post-thumbnail wp-post-image" alt="agent pic">
                                 </a>
                             </figure>
                             <div class="detail">
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum…</p>
+                                <p>The Kalgidhar Trust UK &amp; 30,  Merrick Road,<br> Southall London ,<br> UB2 4AU</p>
                                 <p class="contact-types">
-                                    <em>Office: 041-456-7890</em><em>Mobile: 0223-123-4567</em><em>Fax: 041-789-1234</em>
+                                    <em>Office: +91-11-42434243</em><em>Mobile:07956 012 900 / 07791041009 / 07711382621</em>
                                 </p>
                             </div>
                         </article>
@@ -45,6 +45,38 @@
                 </section>
             </div>
         </div>
-        @*@Html.Partial("_works")*@
+        <div class="span3">
+
+            <div class="post property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-sale">
+                <figure>
+                    <div class="" style="display: none;">
+
+                        @*<a href ="" id ="link" class="link" data-url="http://youtube.com/v/mjOehs9HMcY?autoplay=1" style="margin-top: -16px; right: 0px;"></a>*@
+                    </div>
+                    <img class="img-border" src="http://img.youtube.com/vi/g6lkZVgYZII/0.jpg?autoplay=1" style="width:247px;height:124px" alt="The Man behind DeedaDay - JS Uppal, CEO CK Morgan Australia "><img data-url="http://youtube.com/v/g6lkZVgYZII?autoplay=1" class="playbt" src="~/Content/images/button_play_pink.png">
+                </figure>
+
+            </div>
+
+        </div>
+
+       
     </div>
 </div>
+<script type="text/javascript">
+    $('.playbt').on('click', function () {
+        $.ajax({
+            type: "POST",
+            url: '/Media/Player',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({
+                linkk: $(this).attr("data-url")
+
+            }),
+            success: function (d) {
+                if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(); }
+            }
+
+        });
+    });
+</script>
