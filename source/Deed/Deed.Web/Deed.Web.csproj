@@ -311,6 +311,7 @@
     <Content Include="Content\css\font-awesome-ie7.min.css" />
     <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\howitslider.css" />
     <Content Include="Content\css\login-style.css" />
     <Content Include="Content\css\main.css" />
     <Content Include="Content\css\prettyPhoto.css" />

@@ -57,7 +57,11 @@ namespace Deed.Web
 
             //        ));
 
+            bundles.Add(new StyleBundle("~/WhatwedoStyles/css").Include(
 
+                      "~/Content/css/howitslider.css"
+                      
+                    ));
 
             bundles.Add(new StyleBundle("~/Styles/css").Include(
 
@@ -83,6 +87,7 @@ namespace Deed.Web
                          "~/Content/Progress.css",
                          "~/Content/jquery-ui.css",
                          "~/Content/css/client1.css",
+
                        "~/Content/css/generic.css"
 
                     ));

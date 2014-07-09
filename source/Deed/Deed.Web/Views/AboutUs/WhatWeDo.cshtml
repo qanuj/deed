@@ -2,7 +2,21 @@
     ViewBag.Title = "What we do";
 }
 
-@*@Html.Partial("_pages")*@
+@Styles.Render("~/WhatwedoStyles/css")
+<style>
+    
+
+    body {
+        
+        min-height: 960px;
+        -webkit-box: inset 0 0 0 5px #f2f2f2,inset 0 0 0 10px #90c0aa,inset 0 0 0 15px #f2f2f2;
+        -mox-box: inset 0 0 0 5px #f2f2f2,inset 0 0 0 10px #90c0aa,inset 0 0 0 15px #f2f2f2;
+        
+        margin: 0;
+    }
+
+    
+</style>
 <div class="page-head" style="background-repeat: no-repeat; background-position: center top; background-image: url('/Content/images/SliderImg/13772.jpg'); background-size: cover; ">
     <div class="container">
         <div class="wrap clearfix">
@@ -19,7 +33,30 @@
                 <section class="listing-layout">
                     <h3 class="title-heading">What We Do</h3>
                     <div class="list-container">
-                        <figure><img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/p240x240/1506550_255296081306083_251387505_n.jpg" style="width:705px;"></figure>
+                        <div class="flex-container">
+                            <div class="flexslider">
+                                <ul class="slides">
+                                    <li>
+                                        <a href="#"><img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfp1/t1.0-9/p240x240/1530576_282838931885131_1673359546381361648_n.jpg" /></a>
+                                    </li>
+
+                                    <li>
+                                        <img src="https://scontent-b-cdg.xx.fbcdn.net/hphotos-xfp1/t1.0-9/p240x240/1922227_276258559209835_2044809660_n.jpg" />
+                                    </li>
+
+                                    <li>
+                                        <img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpa1/t1.0-9/p240x240/1382111_273827452786279_300744618_n.jpg" />
+                                        <p>Designing The Well-Tempered Web</p>
+                                    </li>
+                                   
+                                    <li>
+                                        <img src=" https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/p240x240/1972373_271897146312643_95347140_n.jpg?oh=fc6ef7a90d4f6c6f0d94d6e268790d54&oe=54552D43&__gda__=1413405468_3cb8abfa4338a0eed7678dc9880b7d7d" />
+                                        <p>Designing The Well-Tempered Web</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br><br>
                         <p>Primarily, our focus is to provide cost-effective yet quality oriented holistic schooling to rural & under privileged children in India. </p>
                         <p>For the purpose, we build & run schools in rural backward regions of northern India i.e. UP, Haryana, Punjab, HP & Rajasthan, providing value-based education integrated with stark infrastructure, E-classrooms & other modern facilities/amenities like RO drinking water, sanitary washrooms etc.</p>
                         <p>DeedaDay.in is our ancillary initiative to draw support for children of impoverished families who are deprived of education. Though our trust strives to support several such children to the best possible extent of our capacity, yet our contribution alone remains confined to serving only a small fraction as the expanse of poverty is large in these regions.</p>
@@ -48,6 +85,12 @@
 </div>
 
 <script type="text/javascript">
+    $(document).ready(function () {
+        $('.flexslider').flexslider({
+            animation: 'fade',
+            controlsContainer: '.flexslider'
+        });
+    });
         $('.playbt').on('click',function () {
          $.ajax({
                 type: "POST",
