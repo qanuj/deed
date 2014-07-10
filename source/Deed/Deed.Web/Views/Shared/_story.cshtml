@@ -13,13 +13,13 @@
                 {
                    <li style="margin-right: 30px; width: 245px;">
                     <figure>
-                        <a href="" title="15421 Southwest 39th Terrace">
-                            <img width="244" height="163" src="http://deedaday.in/img/upload/story/@m.StoryImage" class="attachment-property-thumb-image wp-post-image" alt="15421 Southwest 39th Terrace" title="15421 Southwest 39th Terrace">
+                        <a href="" title="@m.StoryTitle">
+                            <img width="244" height="163" src="http://deedaday.in/img/upload/story/@m.StoryImage" class="attachment-property-thumb-image wp-post-image" alt="@m.StoryTitle" title="@m.StoryTitle">
                         </a>
                     </figure>
-                    <h4><a href="" title="15421 Southwest 39th Terrace">@m.StoryTitle</a></h4>
-                    <p>@m.StoryContent<a href="http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/"> Know More </a> </p>
-                    @*<span class="price">$3,850 Per Month</span>*@
+                    <h4><a href="@Url.Action("Gett", "Home", new { id = m.StoryId })" title="@m.StoryTitle">@m.StoryTitle</a></h4>
+                    <p>@m.StoryContent<a href="@Url.Action("Get", "Home", new { id = m.StoryId })"> Know More </a> </p>
+                    
                 </li>
                     
                 }

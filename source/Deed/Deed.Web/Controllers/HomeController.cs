@@ -120,6 +120,11 @@ namespace Deed.Web.Controllers {
             //story = story.OrderBy(x => x.CreatedOn);
             return PartialView("_story", story);
         }
+        public ActionResult Gett(long id)
+        {
+            var s = db.Stories.FirstOrDefault(x => x.id == id);
+            return View("StoryIndex", s);
+        }
 
     }
 }

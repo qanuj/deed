@@ -270,6 +270,7 @@
     <Compile Include="Controllers\PledgeController.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Controllers\StoryController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -663,6 +664,8 @@
     <Content Include="Views\LendAHand\Index.cshtml" />
     <Content Include="Views\Search\FeaturedProject.cshtml" />
     <Content Include="Views\Shared\_story.cshtml" />
+    <Content Include="Views\Story\Index.cshtml" />
+    <Content Include="Views\Shared\StoryIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
