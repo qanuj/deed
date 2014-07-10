@@ -293,6 +293,7 @@
     <Compile Include="ViewModels\NewsDetail.cs" />
     <Compile Include="ViewModels\SearchViewModel.cs" />
     <Compile Include="ViewModels\SponsorPaymentViewModel.cs" />
+    <Compile Include="ViewModels\StoryViewModel.cs" />
     <Compile Include="ViewModels\UpdateViewmodel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -661,6 +662,7 @@
     <Content Include="Views\Search\Details.cshtml" />
     <Content Include="Views\LendAHand\Index.cshtml" />
     <Content Include="Views\Search\FeaturedProject.cshtml" />
+    <Content Include="Views\Shared\_story.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Deed.Web.ViewModels.StoryViewModel>
+
+<section class="featured-properties-carousel clearfix">
+    <div class="narrative">
+        <h3>Success Stories </h3>
+        <p>View a list of Success Stories.</p>
+    </div>
+    <div class="carousel es-carousel-wrapper">
+        <div class="es-carousel">
+            <ul class="clearfix" style="width: 1925px; margin-left: 0px;">
+
+               @foreach(var m in Model  )
+                {
+                   <li style="margin-right: 30px; width: 245px;">
+                    <figure>
+                        <a href="" title="15421 Southwest 39th Terrace">
+                            <img width="244" height="163" src="http://deedaday.in/img/upload/story/@m.StoryImage" class="attachment-property-thumb-image wp-post-image" alt="15421 Southwest 39th Terrace" title="15421 Southwest 39th Terrace">
+                        </a>
+                    </figure>
+                    <h4><a href="" title="15421 Southwest 39th Terrace">@m.StoryTitle</a></h4>
+                    <p>@m.StoryContent<a href="http://alt-realhomes.inspirythemes.com/property/15421-southwest-39th-terrace/"> Know More </a> </p>
+                    @*<span class="price">$3,850 Per Month</span>*@
+                </li>
+                    
+                }
+            </ul>
+        </div>
+        <div class="es-nav"><span class="es-nav-prev"></span><span class="es-nav-next"></span></div>
+    </div>
+</section>
