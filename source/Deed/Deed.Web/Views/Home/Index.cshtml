@@ -420,8 +420,9 @@
             <div class="main">
                 <section class="advance-search ">
                     <h3 class="search-heading"><i class="fa fa-search"></i>Find Student</h3><div class="as-form-wrap">
+                    @using (Html.BeginForm("Get", "Search", FormMethod.Post, new { @class = "advance-search-form clearfix", role = "form" }))
+                    {
                         
-                        <form class="advance-search-form clearfix" >
                             <div class="option-bar large">
                                 <label for="property-id-txt">Student ID</label><br>
                                 <input type="text" name="StudentID" id="property-id-txt" value="" placeholder="Any">
@@ -512,8 +513,8 @@
                             <div class="option-bar">
                                 <input type="submit" value="Search" class=" real-btn btn">
                             </div>
-                        </form>
-                        
+                       
+                    }
                     </div>
                 </section>
 

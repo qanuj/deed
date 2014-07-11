@@ -400,56 +400,123 @@
             </section>
 
         </div>
-        @using (Html.BeginForm("Get", "Search", FormMethod.Post, new { @class = "", role = "form" }))
-        {
-            <div class=" span3 panel panel-info pull-right">
-                <div class="panel-heading">Search Students<div class="pull-right"><i class="fa fa-search"></i></div></div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Student ID</label>
-                            <input type="text" class="form-control" id="Id" name="Id" placeholder="Any">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Student Name</label>
-                            <input type="text" class="form-control" id="StudentName" name="StudentName" placeholder="Any">
-                        </div>
-                        <div class="form-group">
-                            <label for="Location">Location</label>
-                            @Html.DropDownList("Location", "Any")
-                        </div>
-                        @*<div class="form-group">
-                                <label for="exampleInputEmail1">Student Location</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Any">
+        <div class="span3 sidebar-wrap">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <section class="widget advance-search">
+
+        
+                    <h4 class="title search-heading">Find Student<i class="fa fa-search"></i></h4>
+                
+                
+                <div class="as-form-wrap">
+
+
+                    @using (Html.BeginForm("Get", "Search", FormMethod.Post, new { @class = "advance-search-form clearfix", role = "form" }))
+                    {
+                            <div class="option-bar large">
+                                <label for="property-id-txt">Student ID</label><br>
+                                <input type="text" name="StudentID" id="property-id-txt" value="" placeholder="Any">
+                            </div>
+                            <div class="option-bar large">
+                                <label for="property-id-txt">First Name</label><br>
+                                <input type="text" name="FirstName" id="property-id-txt" value="" placeholder="Any">
                             </div>
 
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Student Status</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Any">
+                            <div class="option-bar large">
+                                <label for="property-id-txt">Last Name</label><br>
+                                <input type="text" name="LastName" id="property-id-txt" value="" placeholder="Any">
                             </div>
-                            <div class="form-group">
-                                    <label for="exampleInputEmail1">Min Amount</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Any">
+                            <div class="option-bar large">
+                                <label for="select-location">Country</label>
+                                <span class="selectwrap">
+                                @Html.DropDownList("Country", (IEnumerable<SelectListItem>)ViewBag.Country, new { @class = "search-select" })
+                                </span>
                             </div>
-                            <div class="form-group">
-                                    <label for="exampleInputEmail1">Max Amount</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Any">
-                            </div>*@
-                    </form>
-                </div>
 
-                <div id="sprbtn">
+                            <div class="option-bar large">
+                                <label for="select-location">State</label>
+                                <span class="selectwrap">
+                                 @Html.DropDownList("State", (IEnumerable<SelectListItem>)ViewBag.State, new { @class = "search-select" })
+                                </span>
+                            </div>
+                            <div class="option-bar large">
+                                <label for="select-location">District</label>
+                                <span class="selectwrap">
+                                 @Html.DropDownList("City", (IEnumerable<SelectListItem>)ViewBag.City, new { @class = "search-select" })
+                                </span>
+                            </div>
 
-                    <button id="submit" type="submit" class="btn  btn-danger pull-right">Search</button>
 
-                </div>
-            </div>
+                            <div class="option-bar small price-for-others">
+                                <label for="select-min-price">Min Price</label>
+                                <span class="selectwrap">
+                                    <select name="min-price" id="select-min-price" class="search-select" style="display: none;">
+                                        <option value="1000">$1,000</option>
+                                        <option value="5000">$5,000</option>
+                                        <option value="10000">$10,000</option>
+                                        <option value="50000">$50,000</option>
+                                        <option value="100000">$100,000</option>
+                                        <option value="200000">$200,000</option>
+                                        <option value="300000">$300,000</option>
+                                        <option value="400000">$400,000</option>
+                                        <option value="500000">$500,000</option>
+                                        <option value="600000">$600,000</option>
+                                        <option value="700000">$700,000</option>
+                                        <option value="800000">$800,000</option>
+                                        <option value="900000">$900,000</option>
+                                        <option value="1000000">$1,000,000</option>
+                                        <option value="1500000">$1,500,000</option>
+                                        <option value="2000000">$2,000,000</option>
+                                        <option value="2500000">$2,500,000</option>
+                                        <option value="5000000">$5,000,000</option>
+                                        <option value="any" selected="selected">Any</option>
+                                        
+                                    </select>
+                                </span>
+                            </div>
 
-        }
-        <div class="panel span3 panel-info pull-right">
-            <div class="panel-heading">Featured Projects</div>
-           @Html.Action("FeaturedProject")
-       </div>
+                            <div class="option-bar small price-for-others">
+                                <label for="select-max-price">Max Price</label>
+                                <span class="selectwrap" style="height:34px">
+                                    <select name="max-price" id="select-max-price" class="search-select" style="display: none;">
+                                        <option value="5000">$5,000</option>
+                                        <option value="10000">$10,000</option>
+                                        <option value="50000">$50,000</option>
+                                        <option value="100000">$100,000</option>
+                                        <option value="200000">$200,000</option>
+                                        <option value="300000">$300,000</option>
+                                        <option value="400000">$400,000</option>
+                                        <option value="500000">$500,000</option>
+                                        <option value="600000">$600,000</option>
+                                        <option value="700000">$700,000</option>
+                                        <option value="800000">$800,000</option>
+                                        <option value="900000">$900,000</option>
+                                        <option value="1000000">$1,000,000</option>
+                                        <option value="1500000">$1,500,000</option>
+                                        <option value="2000000">$2,000,000</option>
+                                        <option value="2500000">$2,500,000</option>
+                                        <option value="5000000">$5,000,000</option>
+                                        <option value="10000000">$10,000,000</option>
+                                        <option value="any" selected="selected">Any</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="option-bar">
+                                <input type="submit" value="Search" class=" real-btn btn">
+                            </div>
+
+                       }
+
+                    </div>
+                </section>
+                @Html.Action("FeaturedProject")
+            </aside>
+            <!-- End Sidebar -->
+
+        </div>
+        
             <!-- End contents row -->
         </div>
 

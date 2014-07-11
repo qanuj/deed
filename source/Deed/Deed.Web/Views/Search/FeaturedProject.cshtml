@@ -1,31 +1,25 @@
 ﻿@model IEnumerable<Deed.Web.ViewModels.DetailViewModel>
+<section id="featured_properties_widget-6" class="widget clearfix Featured_Properties_Widget">
+    <h3 class="title">Featured Projects</h3>            
+    <ul class="featured-properties">
 
+    @foreach(var m in Model)
+    {
+        <li>
+            <figure>
+                <a href="">
+                    <img width="246" height="162" src="http://deedaday.in/img/upload/students/@m.StudentImage" class="attachment-grid-view-image wp-post-image" alt="property-09">
+                </a>
+            </figure>
+            <h4><a href="" title="@m.StudentName">@m.StudentName</a></h4>
+            <p>@m.FamilyHistory… <a href="">Read More</a></p>
+            @*<span class="price">$480,000 </span>*@
 
-    <div id="sponsorcartpanel" class="panel-body">
-        <ul class="featured-properties">
+        </li>
+    }
+        
+    </ul>
+</section>
 
-            @foreach(var m in Model)
-            { 
-           
-            <li>
-                <article class="property-item clearfix">
-                    <figure>
-                        <a href="">
-                            <img src="http://deedaday.in/img/upload/students/@m.StudentImage" width=" 160" height="100" class="attachment-grid-view-image wp-post-image" alt="property-09">
-                        </a>
-                        <figcaption>
-                            Sponsored
-                        </figcaption>
-                    </figure>
-                    <h4><a href="" title="@m.StudentName">@m.StudentName</a></h4>
-                    <p>@m.FamilyHistory<a href="http://alt-realhomes.inspirythemes.com/property/florida-5-pinecrest-fl/">Read More</a></p>
-                    @*<span class="price">&#163;@m.spestatus </span>*@
-                </article>
-            </li>
-                
-            }
-        </ul>
-
-    </div>
 
 
