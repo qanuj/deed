@@ -10,7 +10,7 @@
 </div>
 <div class="container contents lisitng-grid-layout">
     <div class="row">
-        <div class="span9 main-wrap" style="margin-left:-70px;">
+        <div class="span9 main-wrap" style="width:773px">
             <div class="main ">
 
                 <section id="sec" class="listing-layout">
@@ -42,9 +42,9 @@
                                         </a>
                                     </figure>
 
-                                    <div class="detail" id="divstudent">
+                                    <div class="detail" id="divstudent" style="width:435px">
                                         <h5 class="price">
-                                            &#163; @Yearlyfee Per Year
+                                            &#163; 281 Per Year
                                         </h5>
                                         <p>@m.FamilyHistory</p>
                                         <a class="more-details" href="@Url.Action("Details", "Pledge", new { id=@m.ID})">More Details <i class="fa fa-caret-right"></i></a>
@@ -65,7 +65,7 @@
 
                     </div>
 
-                    <div class="pagination"><a href="@Url.Action("Query", new { page=1 })" class="real-btn current" style="margin-left: 323px;">1</a> <a href="@Url.Action("Query", new { page=2 })" class="real-btn">2</a> <a href="@Url.Action("Index", new { page=3 })" class="real-btn">3</a></div>
+                    <div class="pagination"><a href="@Url.Action("Index", new { page=1 })" class="real-btn current" style="margin-left: 323px;">1</a> <a href="@Url.Action("Index", new { page = 2 })" class="real-btn">2</a> <a href="@Url.Action("Index", new { page=3 })" class="real-btn">3</a></div>
                 </section>
 
             </div>
