@@ -26,6 +26,10 @@ namespace Deed.Web.Controllers
         {
             return View();
         }
+        public ActionResult CorporatesAndFoundation()
+        {
+            return View();
+        }
        
 	}
 }

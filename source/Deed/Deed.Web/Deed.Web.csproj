@@ -666,6 +666,7 @@
     <Content Include="Views\Shared\_story.cshtml" />
     <Content Include="Views\Story\Index.cshtml" />
     <Content Include="Views\Shared\StoryIndex.cshtml" />
+    <Content Include="Views\LendAHand\CorporatesAndFoundation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,69 @@
+﻿<div class="page-head" style="background-repeat: no-repeat; background-position: center top; background-image: url('/Content/images/SliderImg/13772.jpg'); background-size: cover; ">
+    <div class="container">
+        <div class="wrap clearfix">
+            <h1 class="page-title"><span>Corporates & Foundations</span></h1>
+            <p></p>
+        </div>
+    </div>
+</div>
+
+<div class="container contents lisitng-grid-layout">
+    <div class="row">
+        <div class="span8 main-wrap">
+            <div class="main">
+                <section class="listing-layout">
+                    <h3 class="title-heading">Corporates & Foundations</h3>
+                    <div class="list-container">
+                        <img class="alignright" alt="" src="http://www.barusahib.org/images/corporate.png" width="705" height="300" >
+                        <article class="post-25 post type-post status-publish format-image has-post-thumbnail hentry category-sales tag-custom tag-interior">
+
+                            
+                            <p> Join our community, register as a donor, and start logging your volunteer hours: even if you only have 5 minutes to spare, there's plenty that you can do! We strongly believe that small hours and small dollars is a powerful force of change. </p>
+                            <blockquote>
+                                <p> The Kalgidhar Society invites all companies – from small businesses to large corporations – to partner with our programs to help make a difference. Contributions from the corporate sector would allow The Kalgidhar Society to provide the value based education to the rural underprivileged and other humanitarian services to the people we serve. Make your company more admirable and liked in the community and, hence, more profitable and a better entity with the blessings of the Divine.</p>
+                                <p>We will tailor our partnership with you to meet your needs and desires for involvement. Opportunities for individuals or groups from local companies to volunteer vary. For more information, please contact our representative in your region.</p>
+                                <p>Many donors work for employers who will match their employees’ gifts to charities within guidelines set by the employer. We encourage our donors, employed or retired, to inquire whether their employer will match their gifts to us. We also welcome and value grants of any kind – from general operating support to those designated for specific services or programs.</p>
+                            </blockquote>
+
+
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="span3">
+
+            <div class="post property type-property status-publish has-post-thumbnail hentry gallery-item isotope-item for-sale">
+                <figure>
+                    <div class="" style="display: none;">
+
+                        @*<a href ="" id ="link" class="link" data-url="http://youtube.com/v/mjOehs9HMcY?autoplay=1" style="margin-top: -16px; right: 0px;"></a>*@
+                    </div>
+                    <img class="img-border" src="http://img.youtube.com/vi/g6lkZVgYZII/0.jpg?autoplay=1" style="width:247px;height:124px" alt="The Man behind DeedaDay - JS Uppal, CEO CK Morgan Australia "><img data-url="http://youtube.com/v/g6lkZVgYZII?autoplay=1" class="playbt" src="~/fonts/button_play_pink.png">
+                </figure>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    $('.playbt').on('click', function () {
+        $.ajax({
+            type: "POST",
+            url: '/Media/Player',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({
+                linkk: $(this).attr("data-url")
+
+            }),
+            success: function (d) {
+                if (!!d) { $('<div class="modal fade">' + d + '</div>').modal(); }
+            }
+
+        });
+    });
+</script>
