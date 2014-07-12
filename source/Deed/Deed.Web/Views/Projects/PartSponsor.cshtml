@@ -51,6 +51,11 @@
                                         <p>@m.FamilyHistory</p>
                                         <a class="more-details" href="@Url.Action("Details", "Pledge", new { id=@m.ID})">More Details <i class="fa fa-caret-right"></i></a>
                                         <button id="select" data-src="http://deedaday.in/img/upload/students/@m.Picture" class="btn btn-xs btn-danger pull-right" data-id="@m.ID">Select</button>
+                                        <div class="progresscontainer">
+                                            <div class="progress progress-striped active">
+                                                <div data-id="@m.ID" data-amount="@m.PartAmount" class="progress-bar" style="width: 0%;"></div>
+                                            </div>
+                                        </div>
 
 
                                     </div>
@@ -67,36 +72,71 @@
 
                     </div>
 
-                    <div class="pagination"><a href="@Url.Action("Query", new { page=1 })" class="real-btn current" style="margin-left: 323px;">1</a> <a href="@Url.Action("Query", new { page=2 })" class="real-btn">2</a> <a href="@Url.Action("Index", new { page=3 })" class="real-btn">3</a></div>
+                    <div class="pagination"><a href="@Url.Action("PartSponsor", new { page = 1 })" class="real-btn current" style="margin-left: 323px;">1</a> <a href="@Url.Action("PartSponsor", new { page = 2 })" class="real-btn">2</a> <a href="@Url.Action("PartSponsor", new { page = 3 })" class="real-btn">3</a></div>
                 </section>
 
             </div>
         </div>
         
-        <script type="text/javascript" async>
-            $(" .view-type #list").on('click', function (event) {
-                event.preventDefault();
+        <script type="text/javascript">
 
-                $('#sec').removeClass('property-grid');
-                $("h5").addClass("price");
-                $("div.property-meta").show();
-                //$("#divstudent #select").show();
-                $(".property-item #divstudent").addClass('detail');
-                $(".list-container #articleparent").addClass('span6');
-                $("p").css('font-size', '13px');
-                $("p").css('line-height', '23px');
+            
 
-            });
-            $(".view-type  #grid").on('click', function (event) {
-                //event.preventDefault();
-                $('#sec').addClass('property-grid ');
-                $("h5").removeClass("price");
-                $("div.property-meta").hide();
-                //$("#divstudent #select").remove();
-                $(".property-item #divstudent").removeClass('detail');
-                $(".list-container #articleparent").removeClass('span6');
-                $("p").css('font-size', '12px');
-                $("p").css('line-height', '14px');
+            $('.progress-bar').each( function () {
+                var $bar = this;
+                var amount = $(this).attr("data-amount");
+                var result = parseFloat(parseInt(amount, 10) * 100) / 365;
+                var widdth = 400 * result / 100;
+                widdth = Math.round(widdth);
+                $(this).width(widdth);
+                $(this).text(parseInt(result) + "%");
 
-            });
+                });
+                    //var self = this;
+                    //var progress = setInterval(function () {
+                    //    var $bar = $('.progress-bar');
+                    //    var amount = 255;
+                    //    var result = parseFloat(parseInt($bar.attr("data-amount"), 10) * 100) / 365;
+                    //    var widdth = 400 * result / 100;
+                    //    widdth = Math.round(widdth);
+                    //    if ($bar.width() == widdth) {
+                    //        clearInterval(progress);
+                    //        $('.progress').removeClass('active');
+                    //    } else {
+                    //        $bar.width($bar.width() + 4);
+                    //    }
+                    //    $bar.text(parseInt($bar.width() / 4) + "%");
+                    //}, 1);
+
+
+                
+
+
+
+                $(" .view-type #list").on('click', function (event) {
+                    event.preventDefault();
+
+                    $('#sec').removeClass('property-grid');
+                    $("h5").addClass("price");
+                    $("div.property-meta").show();
+                    //$("#divstudent #select").show();
+                    $(".property-item #divstudent").addClass('detail');
+                    $(".list-container #articleparent").addClass('span6');
+                    $("p").css('font-size', '13px');
+                    $("p").css('line-height', '23px');
+
+                });
+                $(".view-type  #grid").on('click', function (event) {
+                    //event.preventDefault();
+                    $('#sec').addClass('property-grid ');
+                    $("h5").removeClass("price");
+                    $("div.property-meta").hide();
+                    //$("#divstudent #select").remove();
+                    $(".property-item #divstudent").removeClass('detail');
+                    $(".list-container #articleparent").removeClass('span6');
+                    $("p").css('font-size', '12px');
+                    $("p").css('line-height', '14px');
+
+                });
+            
     </script>

@@ -19,8 +19,11 @@ namespace Deed.Web.Controllers {
         }
 
         protected IQueryable<CardViewModel> Query() {
-            var query = from r in db.Students
-                        join cast in db.Casts on r.cast_id equals cast.id
+            var query = 
+                from p in db.StudentPaymentDetails
+                join
+                 r in db.Students on p.student_id equals r.id
+                    
                         select new CardViewModel {
                             ID = r.id,
                             Name = r.first_name + "   " + r.last_name,
@@ -29,7 +32,7 @@ namespace Deed.Web.Controllers {
                             District = r.district,
                             Adress1 = r.address_line1,
                             Adress2 = r.address_line2,
-                            Caste = cast.name,
+                            //Caste = cast.name,
                             City = r.city,
                             Country = r.country,
                             History = r.family_history,
@@ -39,10 +42,11 @@ namespace Deed.Web.Controllers {
                             PostOffice = r.post_office,
                             Picture = r.image,
                             Fee=0,
+                            PartAmount=Math.Round( p.total_payment / 90,2 ),
                             PoliceStation = r.police_station,
                             FamilyHistory = r.family_history
                         };
-            query = query.OrderBy(x => x.Name);
+            query = query.Distinct().OrderBy(x => x.Name);
             return query;
 
         }

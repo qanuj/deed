@@ -32,7 +32,7 @@ namespace Deed.Web.ViewModels
 
 
 
-
+        public double PartAmount { get; set; }
         public int Fee { get; set; }
     }
 }
