@@ -21,14 +21,13 @@ namespace Deed.Web.Controllers {
         public ActionResult Query(int? page,int? size=4)
         {
             var result = from r in db.Students
-                         join fee in db.Fees on r.id equals fee.student_id
                          select new CardViewModel
                          {
                              ID = r.id,
                              Name = r.first_name + "   " + r.last_name,
                              Father = r.father_first_name,
                              Mother = r.mother_first_name,
-                             YearlyFee = fee.total_per_year,
+                             YearlyFee = 450*12,
                              District = r.district,
                              Adress1 = r.address_line1,
                              Adress2 = r.address_line2,
