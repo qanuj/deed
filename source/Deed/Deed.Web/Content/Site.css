@@ -15,11 +15,11 @@
 }
 
 .header-wrapper {
-    background-color: #252A2B;
+    background-color: #fff;
 }
 
 .header-wrapper, #contact-email, #contact-email a, .user-nav a, .social_networks li a {
-    color: #929A9B;
+    color: #000;
 }
 
     #contact-email a:hover, .user-nav a:hover {
@@ -27,7 +27,7 @@
     }
 
 #header-top, .social_networks li a, .user-nav a {
-    border-color: #343A3B;
+    border-color: #fff;
 }
 
 .main-menu ul li a {
@@ -82,7 +82,7 @@
     list-style-type: none;
 }
 .child-detail > ul > li {
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #fff;
 }
 .price {
  

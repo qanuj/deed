@@ -1,11 +1,12 @@
 ﻿@model IEnumerable<Deed.Data.Objects.Student>
 @{
     ViewBag.Title = "Deed A Day";
+    var maxHeight = 350;
 }
 <!-- START REVOLUTION SLIDER 4.2.5 fullwidth mode -->
 
-<div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:#dedede;padding:0px;margin-top:0px;margin-bottom:0px;max-height:550px;">
-    <div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;max-height:550px;height:550px;">
+<div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:#dedede;padding:0px;margin-top:0px;margin-bottom:0px;max-height:@(maxHeight)px;">
+    <div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;max-height:@(maxHeight)px;height:@(maxHeight)px;">
         <ul>
             <!-- SLIDE  -->
             
@@ -26,7 +27,7 @@
                      data-endelementdelay="0.1"
                      data-endspeed="300"
                      style="z-index: 2;">
-                    <div class="circulabox"><img class="img-circular" src="~/Content/images/SliderImg/s1.jpg" alt=""></div>
+                    <div class="circulabox"><img class="img-circular" src="~/Content/images/SliderImg/kid.png" alt=""></div>
                 </div>
 
                 <!-- LAYER NR. 2 -->
@@ -336,7 +337,7 @@
                  dottedOverlay: "none",
                  delay: 6000,
                  startwidth: 1170,
-                 startheight: 550,
+                 startheight: @(maxHeight),
                  hideThumbs: 200,
 
                  thumbWidth: 100,
