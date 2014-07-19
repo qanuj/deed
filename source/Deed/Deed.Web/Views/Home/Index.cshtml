@@ -389,7 +389,7 @@
                  hideThumbsUnderResolution: 0,
 
                  hideSliderAtLimit: 0,
-                 hideCaptionAtLimit: 768,
+                 hideCaptionAtLimit: 258,
                  hideAllCaptionAtLilmit: 0,
                  startWithSlide: 0,
                  videoJsPath: "http://alt-realhomes.inspirythemes.com/wp-content/plugins/revslider/rs-plugin/videojs/",
@@ -519,7 +519,7 @@
                     </div>
                 </section>
 
-                @Html.Action("Query") 
+                @Html.Action("Query", new { page= ViewBag.Page}) 
                 @Html.Action("Story")
                 <section class="featured-properties-carousel clearfix">
                     <div class="narrative">

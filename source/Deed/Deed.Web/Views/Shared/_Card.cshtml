@@ -1,56 +1,44 @@
 ﻿@model PagedList.IPagedList<Deed.Web.ViewModels.CardViewModel>
-
-
 <div class="property-items">
     <div class="narrative">
         <h2>Deed A Day</h2><p>Your Deed A Day,Your Community,Your Impact.</p>
     </div>
     <div class="property-items-container clearfix">
-        @foreach (var m in Model)
-        {
+        @foreach(var m in Model) {
             <div class="span6" style="margin-top:5px">
                 <article class="property-item clearfix">
                     <h4>
                         <a href="@Url.Action("Details", "Search", new {id = m.ID })" title="15421 Southwest 39th Terrace">
-                            @m.Name
+
                         </a>
                     </h4>
-
                     <figure>
                         <a href="@Url.Action("Details", "Search", new {id = m.ID })" title="@m.Name">
-                            <img width="244" height="163" src="http://deedaday.in/img/upload/students/@m.Picture" class="attachment-property-thumb-image wp-post-image" alt="@m.Name" title="@m.Name">
-
+                            <img width="244" height="163" src="http://deedaday.in/img/upload/students/@m.Picture"
+                                 class="attachment-property-thumb-image wp-post-image" alt="@m.Name" title="@m.Name">
                         </a>
-                       
-                        
-
                     </figure>
-
                     <div class="detail">
-
-                        <h5 class="price">
-                            &#163; 281 per Year
-
-                        </h5>
-
+                        <h5 class="price">@m.Name</h5>
                         <p>@m.FamilyHistory</p>
                         <a class="more-details" href="@Url.Action("Details", "Pledge", new { id=@m.ID})">More Details <i class="fa fa-caret-right"></i></a>
-
-                       
-
                     </div>
-
                     <div class="property-meta">
-                        <span><b>Father:</b></span><span>@m.Father</span><span><b>Mother:</b></span><span>@m.Mother</span>
+                        <span><b>Father:</b></span>
+                        <span>@m.Father</span>
+                        <span><b>Mother:</b></span>
+                        <span>@m.Mother</span>
+                        <span><b>Fees:</b></span>
+                        <span>@(m.YearlyFee/12) / monthly</span>
+                       
                     </div>
-
                 </article>
-
             </div>
-
-
-
         }
-        </div>
-    <div class="pagination"><a href="@Url.Action("Index", new { page=1 })" class="real-btn current">1</a> <a href="@Url.Action("Index", new { page=2 })" class="real-btn">2</a> </div>
     </div>
+    <div class="pagination">
+        @for(var i = 1; i < Model.PageCount; i++) {
+            <a href="@Url.Action("Index","Home", new { page=i })" class="real-btn @(i==Model.PageNumber?"current":"")">@i</a>
+        }
+    </div>
+</div>

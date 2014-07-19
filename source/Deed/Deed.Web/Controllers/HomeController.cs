@@ -9,24 +9,26 @@ using PagedList;
 
 namespace Deed.Web.Controllers {
     public class HomeController : DbController {
-        public ActionResult Index()
+        public ActionResult Index(int? page=1)
         {
             ViewBag.Country = new SelectList(GetCountry(), "ID", "Name");
             ViewBag.State = new SelectList(GetState(), "ID", "Name");
             ViewBag.City = new SelectList(GetCity(), "ID", "Name");
+            ViewBag.Page = page??1;
             return View();
         }
         
-        public ActionResult Query(int? page)
+        public ActionResult Query(int? page,int? size=4)
         {
-            var pageNumber = page ?? 1;
             var result = from r in db.Students
+                         join fee in db.Fees on r.id equals fee.student_id
                          select new CardViewModel
                          {
                              ID = r.id,
                              Name = r.first_name + "   " + r.last_name,
                              Father = r.father_first_name,
                              Mother = r.mother_first_name,
+                             YearlyFee = fee.total_per_year,
                              District = r.district,
                              Adress1 = r.address_line1,
                              Adress2 = r.address_line2,
@@ -43,9 +45,7 @@ namespace Deed.Web.Controllers {
                              FamilyHistory = r.family_history
                        
             };
-
-            result = result.OrderBy(x => x.Name).Take(4);
-            return PartialView("_Card", result.ToPagedList(pageNumber, 4));
+            return PartialView("_Card", result.OrderByDescending(x => x.ID).ToPagedList(page??1, size ?? 4));
         }
 
         public ActionResult Get(int? page,long? StudentID,string StudentFirstName,string StudentLastName, long? State,long? Country,string City)
