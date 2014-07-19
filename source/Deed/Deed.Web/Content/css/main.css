@@ -1202,8 +1202,9 @@ $list_item_margin: 1px;*/
 /* Footer
 /*------------------------------------------------------*/
 #footer-wrapper {
-  background: url("../images/background-outer-wrapper.png") repeat-x scroll bottom center transparent;
-  padding-bottom: 245px;
+  background: url("../images/background-outer-wrapper.png");
+  background-position-x: center;
+  /* background-repeat: repeat-y; */
 }
 
 .disable-responsive #footer-wrapper {
@@ -1283,8 +1284,8 @@ $list_item_margin: 1px;*/
 #footer-bottom {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   border-top: 1px solid #dedede;
-  padding: 25px 0;
-  margin-top: 38px;
+  /* padding: 25px 0; */
+  /* margin-top: 38px; */
 }
 #footer-bottom p {
   font-size: 13px;
