@@ -340,6 +340,7 @@
     <Content Include="Content\images\arrowd.jpg" />
     <Content Include="Content\images\arrowdr.jpg" />
     <Content Include="Content\images\background-outer-wrapper.png" />
+    <Content Include="Content\images\olar.png" />
     <Content Include="Content\images\banner.jpg" />
     <Content Include="Content\images\button_play_pink.png" />
     <Content Include="Content\images\carousel-nav-left.png" />
