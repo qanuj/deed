@@ -18,7 +18,7 @@
                                  class="attachment-property-thumb-image wp-post-image" alt="@m.Name" title="@m.Name">
                         </a>
                     </figure>
-                    <div class="detail">
+                    <div class="detail" style="max-height:115px">
                         <h5 class="price">@m.Name</h5>
                         <p>@m.FamilyHistory</p>
                         <a class="more-details" href="@Url.Action("Details", "Pledge", new { id=@m.ID})">More Details <i class="fa fa-caret-right"></i></a>
@@ -29,7 +29,7 @@
                         <span><b>Mother:</b></span>
                         <span>@m.Mother</span>
                         <span><b>Fees:</b></span>
-                        <span>@(m.YearlyFee/12) / monthly</span>
+                        <span>@(m.YearlyFee/12) / mo</span>
                        
                     </div>
                 </article>

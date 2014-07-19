@@ -21,6 +21,7 @@ namespace Deed.Web.Controllers {
         public ActionResult Query(int? page,int? size=4)
         {
             var result = from r in db.Students
+                         where !r.first_name.Contains("dummy") && r.first_name!="" && r.image!=""
                          select new CardViewModel
                          {
                              ID = r.id,
